@@ -3,6 +3,8 @@
 
 <head>
 	<!--5ETOOLS_VERSION-->
+	<!--5ETOOLS_ANALYTICS-->
+	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +20,7 @@
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/browsercheck.js"></script>
 
 	<style>
 		.intro {
@@ -55,12 +58,12 @@
 	</div>
 </header>
 <nav class="container page__nav" id="navigation">
-	<ul class="nav nav-pills" id="navbar">
+	<ul class="nav page__nav-inner" id="navbar">
 	</ul>
 </nav>
 
 <div class="cancer__wrp-leaderboard"><!--5ETOOLS_AD_LEADERBOARD--></div>
-<div class="cancer__wrp-sidebar-rhs"><!--5ETOOLS_AD_RIGHT_1--><!--5ETOOLS_AD_RIGHT_2--></div>
+<div class="cancer__wrp-sidebar-rhs"><!--5ETOOLS_AD_RIGHT_1--><div class="cancer__sidebar-rhs-inner"><!--5ETOOLS_AD_RIGHT_2--></div></div>
 
 <main class="container" id="main_content">
 	<div class="row intro">
@@ -70,10 +73,10 @@
 			as well as the removal of extraneous content.
 		</p>
 		<p><i class="text-muted">
-			With great power comes great responsibility. If you're a DM intending to use this system to remove parts of the game you
-			consider broken, inconvenient, or otherwise in need of adjustment; please first consider the needs and expectations of your players,
-			as well as the extensive playtesting and design iterations of which 5th Edition was the result.
-			If something is in the game, it's probably there for a reason.
+			With great power comes great responsibility. If you are a DM intending to use this system to remove parts of the game you
+			consider broken; inconvenient; or otherwise in need of adjustment, please first consider the needs and expectations of your players,
+			as well as the extensive playtesting and design iteration of which 5th Edition was the result.
+			If something is in the game, it is probably there for a reason.
 		</i></p>
 	</div>
 
@@ -132,7 +135,7 @@
 	<div class="row" id="listcontainer">
 
 		<div class="lst__form-top" id="filter-search-input-group">
-			<div class="full-width relative">
+			<div class="w-100 relative">
 				<input type="search" id="search" autocomplete="off" autocapitalize="off" spellcheck="false" class="search form-control lst__search lst__search--no-border-h">
 				<div class="lst__wrp-search-glass no-events flex-vh-center"><span class="glyphicon glyphicon-search"></span></div>
 				<div class="lst__wrp-search-visible no-events flex-vh-center"></div>
@@ -144,13 +147,14 @@
 			<button class="col-3 sort btn btn-default btn-xs" data-sort="source">Source</button>
 			<button class="col-3 sort btn btn-default btn-xs" data-sort="category">Category</button>
 			<button class="col-3 sort btn btn-default btn-xs" data-sort="name">Name</button>
-			<button class="col-3 sort btn btn-default btn-xs" disabled>&nbsp;</button>
+			<button class="sort btn btn-default btn-xs" disabled>&nbsp;</button>
 		</div>
 
 		<ul class="list-display-only blacklist"></ul>
 	</div>
 </main>
 <!--5ETOOLS_SCRIPT_ANCHOR-->
+<!--5ETOOLS_AD_ADHESION-->
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/jquery-ui.js"></script>
 <script type="text/javascript" src="lib/jquery-ui-slider-pip.js"></script>
@@ -162,7 +166,7 @@
 <script type="text/javascript" src="js/render.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
 <script type="text/javascript" src="js/blacklist.js"></script>
-<script type="text/javascript" src="lib/list.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
 <script type="text/javascript" src="lib/elasticlunr.js"></script>
 </body>
 

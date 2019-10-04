@@ -11,6 +11,8 @@
 				"int",
 				"wis"
 			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "full",
 			"classTableGroups": [
 				{
 					"colLabels": [
@@ -355,7 +357,7 @@
 				"additionalFromBackground": true,
 				"default": [
 					"(a) a wooden {@item shield|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) a {@item scimitar|phb} or (b) any {@filter simple melee weapon|items|source=phb|category=basic|type=simple weapon;melee weapon=&}",
+					"(a) a {@item scimitar|phb} or (b) any {@filter simple melee weapon|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
 					"{@item Leather armor|phb}, an {@item explorer's pack|phb}, and a {@item druidic focus|phb}"
 				],
 				"goldAlternative": "{@dice 2d4×10|2d4 × 10|Starting Gold}"
@@ -455,27 +457,27 @@
 									"Example"
 								],
 								"colStyles": [
-									"col-2 text-align-center",
-									"col-2 text-align-center",
+									"col-2 text-center",
+									"col-2 text-center",
 									"col-5",
 									"col-3"
 								],
 								"rows": [
 									[
-										"{@filter 2nd|bestiary|challenge rating=0;1/8;1/4|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
-										"1/4",
+										"2nd",
+										"{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
 										"No flying or swimming speed",
 										"Wolf"
 									],
 									[
-										"{@filter 4th|bestiary|challenge rating=0;1/8;1/4;1/2|type=beast|speed type=!fly|miscellaneous=!swarm}",
-										"1/2",
+										"4th",
+										"{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
 										"No flying speed",
 										"Crocodile"
 									],
 									[
-										"{@filter 8th|bestiary|challenge rating=0;1/8;1/4;1/2;1|type=beast|miscellaneous=!swarm}",
-										"1",
+										"8th",
+										"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}",
 										"\u2014",
 										"Giant eagle"
 									]
@@ -658,7 +660,7 @@
 													"Circle Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -688,7 +690,7 @@
 													"Circle Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -718,7 +720,7 @@
 													"Circle Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -748,7 +750,7 @@
 													"Circle Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -766,7 +768,7 @@
 													],
 													[
 														"9th",
-														"{@spell commune with nature}, {@spell insect plague}"
+														"{@spell commune with nature}, {@spell tree stride}"
 													]
 												]
 											},
@@ -778,7 +780,7 @@
 													"Circle Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -808,7 +810,7 @@
 													"Circle Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -838,7 +840,7 @@
 													"Circle Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -868,7 +870,7 @@
 													"Circle Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -961,7 +963,7 @@
 										"type": "entries",
 										"name": "Circle Forms",
 										"entries": [
-											"The rites of your circle grant you the ability to transform into more dangerous animal forms. Starting at 2nd level, you can use your Wild Shape to transform into a {@filter beast with a challenge rating as high as 1|bestiary|challenge rating=0;1/8;1/4;1/2;1|type=beast|speed type=!fly;!swim|miscellaneous=!swarm} (you ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there).",
+											"The rites of your circle grant you the ability to transform into more dangerous animal forms. Starting at 2nd level, you can use your Wild Shape to transform into a {@filter beast with a challenge rating as high as 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm} (you ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there).",
 											"Starting at 6th level, you can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down.",
 											{
 												"type": "table",
@@ -972,49 +974,49 @@
 													"Limitations"
 												],
 												"colStyles": [
-													"col-2 text-align-center",
-													"col-2 text-align-center",
+													"col-2 text-center",
+													"col-2 text-center",
 													"col-8"
 												],
 												"rows": [
 													[
 														"2nd",
-														"{@filter 1|bestiary|challenge rating=0;1/8;1/4;1/2;1|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
+														"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
 														"No flying or swimming speed"
 													],
 													[
 														"4th",
-														"{@filter 1|bestiary|challenge rating=0;1/8;1/4;1/2;1|type=beast|speed type=!fly|miscellaneous=!swarm}",
+														"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly|miscellaneous=!swarm}",
 														"No flying speed"
 													],
 													[
 														"6th",
-														"{@filter 2|bestiary|challenge rating=0;1/8;1/4;1/2;1;2|type=beast|speed type=!fly|miscellaneous=!swarm}",
+														"{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
 														"No flying speed"
 													],
 													[
 														"8th",
-														"{@filter 2|bestiary|challenge rating=0;1/8;1/4;1/2;1;2|type=beast|miscellaneous=!swarm}",
+														"{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}",
 														"\u2014"
 													],
 													[
 														"9th",
-														"{@filter 3|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3|type=beast|miscellaneous=!swarm}",
+														"{@filter 3|bestiary|challenge rating=[&0;&3]|type=beast|miscellaneous=!swarm}",
 														"\u2014"
 													],
 													[
 														"12th",
-														"{@filter 4|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4|type=beast|miscellaneous=!swarm}",
+														"{@filter 4|bestiary|challenge rating=[&0;&4]|type=beast|miscellaneous=!swarm}",
 														"\u2014"
 													],
 													[
 														"15th",
-														"{@filter 5|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4;5|type=beast|miscellaneous=!swarm}",
+														"{@filter 5|bestiary|challenge rating=[&0;&5]|type=beast|miscellaneous=!swarm}",
 														"\u2014"
 													],
 													[
 														"18th",
-														"{@filter 6|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4;5;6|type=beast|miscellaneous=!swarm}",
+														"{@filter 6|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}",
 														"\u2014"
 													]
 												]
@@ -1621,7 +1623,7 @@
 													"Circle Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -1731,7 +1733,7 @@
 													"Circle Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -1834,6 +1836,116 @@
 					"source": "GGR",
 					"shortName": "Spores",
 					"page": 26
+				},
+				{
+					"name": "Circle of Wildfire (UA)",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Circle of Wildfire (UA)",
+								"entries": [
+									"Druids who are members of the Circle of Wildfire understand the necessity of destruction, such as how a forest fire promotes growth. These druids bond with a primal spirit that harbors destructive tendencies, allowing the druids to use their power to create controlled flames that help flora and fauna reproduce and grow.",
+									{
+										"type": "entries",
+										"name": "Circle Spells",
+										"entries": [
+											"{@i 2nd-level Circle of Wildfire feature}",
+											"You have formed a mystical bond with a wildfire spirit, a primal being of creation and destruction. Your link with this spirit grants you access to certain spells. At 2nd level, you learn the fire bolt cantrip.",
+											"When you reach certain levels in this class, you gain access to the spells listed for that level in the Circle of Wildfire Spells table. Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.",
+											{
+												"type": "table",
+												"caption": "Circle of Wildfire Spells",
+												"colLabels": [
+													"Druid Level",
+													"Circle Spells"
+												],
+												"colStyles": [
+													"col-3 text-center",
+													"col-9"
+												],
+												"rows": [
+													[
+														"3rd",
+														"{@spell locate animals or plants}, {@spell scorching ray}"
+													],
+													[
+														"5th",
+														"{@spell fireball}, {@spell plant growth}"
+													],
+													[
+														"7th",
+														"{@spell aura of life}, {@spell fire shield}"
+													],
+													[
+														"9th",
+														"{@spell flame strike}, {@spell raise dead}"
+													]
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Summon Wildfire",
+										"entries": [
+											"{@i 2nd-level Circle of Wildfire feature}",
+											"You can summon the primal spirit bound to your soul. As an action, you can expend one use of your Wild Shape feature to summon your {@creature wildfire spirit|UAClericDruidWizard}, rather than assuming a beast form.",
+											"The spirit appears in an unoccupied space of your choice you can see within 30 feet of you. Each creature within 10 feet of the spirit (other than you) when it appears must succeed on a Dexterity saving throw against your spell save DC or take {@dice 2d10} fire damage.",
+											"The wildfire spirit is friendly to you and your companions and obeys your commands. See this creature's game statistics in the wildfire spirit stat block. You determine the spirit's appearance. Some spirits take the form of a humanoid figure made of gnarled branches covered in flame, while others look like beasts wreathed in fire.",
+											"In combat, the wildfire spirit shares your initiative count, but it takes its turn immediately after yours. The only action it takes on its turn is the {@action Dodge} action, unless you take a bonus action on your turn to command it to take one of the actions in its stat block or to take the {@action Dash}, {@action Disengage}, {@action Help}, or {@action Hide} action.",
+											"The wildfire spirit manifests for 1 hour, until it is reduced to 0 hit points, or until you use your Wild Shape again."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"name": "Enhanced Bond",
+										"type": "entries",
+										"entries": [
+											"{@i 6th-level Circle of Wildfire feature}",
+											"The bond with your wildfire spirit enhances your destructive and restorative spells. Whenever you cast a spell that deals fire damage or restores hit points while your wildfire spirit is summoned, roll a {@dice d8}, and you gain a bonus to one roll of the spell equal to the number rolled. In addition, when you cast a spell with a range other than self, the spell can originate from you or your wildfire spirit."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"name": "Flames of Life",
+										"type": "entries",
+										"entries": [
+											"{@i 10th-level Circle of Wildfire feature}",
+											"You gain the ability to turn death into flames of vitality. When a Small or larger creature that you can see dies within 30 feet of you or your wildfire spirit, you can use your reaction to cause primal flames to spring from the body. When a creature you can see touches these flames, the creature regains hit points or takes fire damage (your choice) equal to {@dice 2d10} + your Wisdom modifier. The flames vanish after a creature has touched them or after 1 minute. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"name": "Blazing Endurance",
+										"type": "entries",
+										"entries": [
+											"{@i 14th-level Circle of Wildfire feature}",
+											"The bond with your wildfire spirit is exceptionally strong, even fatal blows only fuel your defiance. If you drop to 0 hit points and don't die outright, you drop to 1 hit point instead and gain temporary hit points equal to five times your druid level, and each creature of your choice within 30 feet of you that you can see takes fire damage equal to {@dice 2d10} + your druid level.",
+											"Once you use this feature, you can't use it again until you finish a long rest."
+										]
+									}
+								]
+							}
+						]
+					],
+					"source": "UAClericDruidWizard",
+					"shortName": "Wildfire (UA)",
+					"page": 2
 				}
 			],
 			"fluff": [
@@ -1904,7 +2016,7 @@
 										"Treasured Item"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -1979,7 +2091,7 @@
 										"Guiding Aspects"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -2055,7 +2167,7 @@
 										"Mentors"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -2134,7 +2246,7 @@
 										"Fly/Swim"
 									],
 									"colStyles": [
-										"col-2 text-align-center",
+										"col-2 text-center",
 										"col-8",
 										"col-2"
 									],
@@ -2185,7 +2297,7 @@
 										"Fly/Swim"
 									],
 									"colStyles": [
-										"col-2 text-align-center",
+										"col-2 text-center",
 										"col-8",
 										"col-2"
 									],
@@ -2261,7 +2373,7 @@
 										"Fly/Swim"
 									],
 									"colStyles": [
-										"col-2 text-align-center",
+										"col-2 text-center",
 										"col-8",
 										"col-2"
 									],
@@ -2382,7 +2494,7 @@
 										"Fly/Swim"
 									],
 									"colStyles": [
-										"col-2 text-align-center",
+										"col-2 text-center",
 										"col-8",
 										"col-2"
 									],
@@ -2583,7 +2695,7 @@
 										"Fly/Swim"
 									],
 									"colStyles": [
-										"col-2 text-align-center",
+										"col-2 text-center",
 										"col-8",
 										"col-2"
 									],
@@ -2774,7 +2886,7 @@
 										"Fly/Swim"
 									],
 									"colStyles": [
-										"col-2 text-align-center",
+										"col-2 text-center",
 										"col-8",
 										"col-2"
 									],
@@ -2925,7 +3037,7 @@
 										"Fly/Swim"
 									],
 									"colStyles": [
-										"col-2 text-align-center",
+										"col-2 text-center",
 										"col-8",
 										"col-2"
 									],
@@ -2991,7 +3103,7 @@
 										"Fly/Swim"
 									],
 									"colStyles": [
-										"col-2 text-align-center",
+										"col-2 text-center",
 										"col-8",
 										"col-2"
 									],
@@ -3077,7 +3189,7 @@
 										"Fly/Swim"
 									],
 									"colStyles": [
-										"col-2 text-align-center",
+										"col-2 text-center",
 										"col-8",
 										"col-2"
 									],
@@ -3148,7 +3260,7 @@
 										"Fly/Swim"
 									],
 									"colStyles": [
-										"col-2 text-align-center",
+										"col-2 text-center",
 										"col-8",
 										"col-2"
 									],
@@ -3211,7 +3323,8 @@
 					"source": "XGE",
 					"page": 21
 				}
-			]
+			],
+			"page": 64
 		}
 	]
 }

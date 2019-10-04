@@ -831,8 +831,8 @@
 													"Attack and Damage Bonus"
 												],
 												"colStyles": [
-													"col-6 text-align-center",
-													"col-6 text-align-center"
+													"col-6 text-center",
+													"col-6 text-center"
 												],
 												"rows": [
 													[
@@ -939,8 +939,8 @@
 													"Psi Cost"
 												],
 												"colStyles": [
-													"col-6 text-align-center",
-													"col-6 text-align-center"
+													"col-6 text-center",
+													"col-6 text-center"
 												],
 												"rows": [
 													[
@@ -966,7 +966,7 @@
 												]
 											},
 											"The spell slot remains until you use it or finish a long rest. You must observe your psi limit when spending psi points to create a spell slot.",
-											"Whenever you gain a level in this class, you cna replace on of the chosen wizard spells with a different wizard spell of 1st through 3rh level."
+											"Whenever you gain a level in this class, you can replace on of the chosen wizard spells with a different wizard spell of 1st through 3rh level."
 										]
 									}
 								]
@@ -989,7 +989,8 @@
 					"source": "UATheMysticClass",
 					"shortName": "Wu Jen"
 				}
-			]
+			],
+			"page": 1
 		}
 	]
 }

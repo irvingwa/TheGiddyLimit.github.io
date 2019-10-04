@@ -417,7 +417,7 @@
 										"type": "entries",
 										"name": "Student of War",
 										"entries": [
-											"At 3rd level, you gain proficiency with one type of artisan's tools of your choice."
+											"At 3rd level, you gain proficiency with one type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan tool} of your choice."
 										]
 									},
 									{
@@ -1289,6 +1289,8 @@
 							]
 						}
 					],
+					"spellcastingAbility": "int",
+					"casterProgression": "1/3",
 					"subclassFeatures": [
 						[
 							{
@@ -1433,6 +1435,7 @@
 				},
 				{
 					"name": "Monster Hunter (UA)",
+					"spellcastingAbility": "wis",
 					"subclassFeatures": [
 						[
 							{
@@ -2791,8 +2794,8 @@
 													"Damage Increase"
 												],
 												"colStyles": [
-													"col-6 text-align-center",
-													"col-6 text-align-center"
+													"col-6 text-center",
+													"col-6 text-center"
 												],
 												"rows": [
 													[
@@ -3078,11 +3081,11 @@
 													"Gambits"
 												],
 												"colStyles": [
-													"col-4 text-align-center",
-													"col-2 text-align-center",
-													"col-2 text-align-center",
-													"col-2 text-align-center",
-													"col-2 text-align-center"
+													"col-4 text-center",
+													"col-2 text-center",
+													"col-2 text-center",
+													"col-2 text-center",
+													"col-2 text-center"
 												],
 												"rows": [
 													[
@@ -3295,6 +3298,7 @@
 				},
 				{
 					"name": "Psychic Warrior (Livestream)",
+					"spellcastingAbility": "int",
 					"subclassFeatures": [
 						[
 							{
@@ -3792,8 +3796,8 @@
 													"Uses"
 												],
 												"colStyles": [
-													"col-6 text-align-center",
-													"col-6 text-align-center"
+													"col-6 text-center",
+													"col-6 text-center"
 												],
 												"rows": [
 													[
@@ -4000,7 +4004,7 @@
 										"Heraldic Signs"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -4077,7 +4081,7 @@
 										"Instructor"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -4115,7 +4119,7 @@
 													"exact": 4
 												}
 											},
-											"Tribal Warrior. Your instructor grew up in a tribe, where fighting for one's life was practically an every­day occurrence."
+											"Tribal Warrior. Your instructor grew up in a tribe, where fighting for one's life was practically an everyday occurrence."
 										],
 										[
 											{
@@ -4153,7 +4157,7 @@
 										"Style"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -4219,7 +4223,8 @@
 					"source": "XGE",
 					"page": 27
 				}
-			]
+			],
+			"page": 70
 		}
 	]
 }

@@ -110,7 +110,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -388,7 +388,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -468,7 +468,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -706,7 +706,7 @@
 						"Damage Type"
 					],
 					"colStyles": [
-						"col-1 text-align-center",
+						"col-1 text-center",
 						"col-11"
 					],
 					"rows": [
@@ -886,7 +886,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Beauty (Stream)",
+							"name": "Beauty (Twitter)",
 							"source": "Twitter"
 						}
 					}
@@ -1137,7 +1137,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -1332,7 +1332,7 @@
 				]
 			},
 			"entries": [
-				"Threads of dark power leap from your fingers to pierce up to five Small or Medium corpses you can see within range. Each corpse immediately stands up and becomes undead. You decide whether it is a {@creature zombie} or a {@creature skeleton} (the statistics for {@creature zombie|mm|zombies} and {@creature skeleton|mm|skeletons} are in the Monster Manual), and it gains a bonus to its attack and damage rolls equal to your spellcasting ability modifier.",
+				"Threads of dark power leap from your fingers to pierce up to five Small or Medium corpses you can see within range. Each corpse immediately stands up and becomes undead. You decide whether it is a {@creature zombie} or a {@creature skeleton} (the statistics for {@creature zombie||zombies} and {@creature skeleton||skeletons} are in the Monster Manual), and it gains a bonus to its attack and damage rolls equal to your spellcasting ability modifier.",
 				"You can use a bonus action to mentally command the creatures you make with this spell, issuing the same command to all of them. To receive the command, a creature must be within 60 feet of you. You decide what action the creatures will take and where they will move during their next turn, or you can issue a general command, such as to guard a chamber or passageway against your foes. If you issue no commands, the creatures do nothing except defend themselves against hostile creatures. Once given an order, the creatures continue to follow it until their task is complete.",
 				"The creatures are under your control until the spell ends, after which they become inanimate once more."
 			],
@@ -1347,7 +1347,8 @@
 			],
 			"page": 153,
 			"miscTags": [
-				"SGT"
+				"SGT",
+				"SMN"
 			]
 		},
 		{
@@ -1856,7 +1857,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -2018,7 +2019,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Darkness (Stream)",
+							"name": "Darkness (Twitter)",
 							"source": "Twitter"
 						}
 					}
@@ -2280,7 +2281,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -2354,7 +2355,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -2935,7 +2936,7 @@
 				]
 			},
 			"entries": [
-				"Uttering a dark incantation, you summon a devil from the Nine Hells. You choose the devil's type, which must be one of {@filter challenge rating 6 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4;5;6|tag=devil|miscellaneous=!swarm}, such as a {@creature barbed devil} or a {@creature bearded devil}. The devil appears in an unoccupied space that you can see within range. The devil disappears when it drops to 0 hit points or when the spell ends.",
+				"Uttering a dark incantation, you summon a devil from the Nine Hells. You choose the devil's type, which must be one of {@filter challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|tag=devil|miscellaneous=!swarm}, such as a {@creature barbed devil} or a {@creature bearded devil}. The devil appears in an unoccupied space that you can see within range. The devil disappears when it drops to 0 hit points or when the spell ends.",
 				"The devil is unfriendly toward you and your companions. Roll initiative for the devil, which has its own turns. It is under the Dungeon Master's control and acts according to its nature on each of its turns, which might result in its attacking you if it thinks it can prevail, or trying to tempt you to undertake an evil act in exchange for limited service. The DM has the creature's statistics.",
 				"On each of your turns, you can try to issue a verbal command to the devil (no action required by you). It obeys the command if the likely outcome is in accordance with its desires, especially if the result would draw you toward evil. Otherwise, you must make a Charisma (Deception, Intimidation, or Persuasion) check contested by its Wisdom (Insight) check. You make the check with advantage if you say the devil's true name. If your check fails, the devil becomes immune to your verbal commands for the duration of the spell, though it can still carry out your commands if it chooses. If your check succeeds, the devil carries out your command\u2014such as \"attack my enemies,\" \"explore the room ahead,\" or \"bear this message to the queen\"\u2014until it completes the activity, at which point it returns to you to report having done so.",
 				"If your concentration ends before the spell reaches its full duration, the devil doesn't disappear if it has become immune to your verbal commands. Instead, it acts in whatever manner it chooses for {@dice 3d6} minutes, and then it disappears.",
@@ -3638,7 +3639,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -4488,7 +4489,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -4906,7 +4907,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -4966,7 +4967,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -5037,7 +5038,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -5268,7 +5269,6 @@
 				"M"
 			],
 			"areaTags": [
-				"ST",
 				"MT"
 			],
 			"miscTags": [
@@ -5401,7 +5401,7 @@
 				]
 			},
 			"entries": [
-				"You utter foul words, summoning one demon from the chaos of the Abyss. You choose the demon's type, which must be {@filter one of challenge rating 5 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4;5|tag=demon|miscellaneous=!swarm}, such as a {@creature shadow demon} or a {@creature barlgura}. The demon appears in an unoccupied space you can see within range, and the demon disappears when it drops to 0 hit points or when the spell ends.",
+				"You utter foul words, summoning one demon from the chaos of the Abyss. You choose the demon's type, which must be {@filter one of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|tag=demon|miscellaneous=!swarm}, such as a {@creature shadow demon} or a {@creature barlgura}. The demon appears in an unoccupied space you can see within range, and the demon disappears when it drops to 0 hit points or when the spell ends.",
 				"Roll initiative for the demon, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach that has attacked it.",
 				"At the end of each of the demon's turns, it makes a Charisma saving throw. The demon has disadvantage on this saving throw if you say its true name. On a failed save, the demon continues to obey you. On a successful save, your control of the demon ends for the rest of the duration, and the demon spends its turns pursuing and attacking the nearest non-demons to the best of its ability. If you stop concentrating on the spell before it reaches its full duration, an uncontrolled demon doesn't disappear for {@dice 1d6} rounds if it still has hit points.",
 				"As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demon can't cross the circle or harm it, and it can't target anyone within it. Using the material component in this manner consumes it when the spell ends."
@@ -5478,7 +5478,7 @@
 						"Demons Summoned"
 					],
 					"colStyles": [
-						"col-1 text-align-center",
+						"col-1 text-center",
 						"col-11"
 					],
 					"rows": [
@@ -5490,7 +5490,7 @@
 									"max": 2
 								}
 							},
-							"Two {@filter demons of challenge rating 1 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1|tag=demon|miscellaneous=!swarm}"
+							"Two {@filter demons of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|tag=demon|miscellaneous=!swarm}"
 						],
 						[
 							{
@@ -5500,7 +5500,7 @@
 									"max": 4
 								}
 							},
-							"Four {@filter demons of challenge rating 1/2 or lower|bestiary|challenge rating=0;1/8;1/4;1/2|tag=demon|miscellaneous=!swarm}"
+							"Four {@filter demons of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|tag=demon|miscellaneous=!swarm}"
 						],
 						[
 							{
@@ -5510,7 +5510,7 @@
 									"max": 6
 								}
 							},
-							"Eight {@filter demons of challenge rating 1/4 or lower|bestiary|challenge rating=0;1/8;1/4|tag=demon|miscellaneous=!swarm}"
+							"Eight {@filter demons of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|tag=demon|miscellaneous=!swarm}"
 						]
 					]
 				},
@@ -5843,7 +5843,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -5976,7 +5976,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -5995,7 +5995,10 @@
 					]
 				}
 			],
-			"page": 168
+			"page": 168,
+			"miscTags": [
+				"SMN"
+			]
 		},
 		{
 			"name": "Toll the Dead",
@@ -6101,7 +6104,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -6195,7 +6198,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -6508,7 +6511,7 @@
 				{
 					"type": "list",
 					"items": [
-						"It {@condition deafened|phb|deafens} you and other creatures in its area.",
+						"It {@condition deafened||deafens} you and other creatures in its area.",
 						"It extinguishes unprotected flames in its area that are torch-sized or smaller.",
 						"It hedges out vapor, gas, and fog that can be dispersed by strong wind.",
 						"The area is difficult terrain for creatures other than you.",

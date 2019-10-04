@@ -3,6 +3,8 @@
 
 <head>
 	<!--5ETOOLS_VERSION-->
+	<!--5ETOOLS_ANALYTICS-->
+	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +20,7 @@
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/browsercheck.js"></script>
 
 	<style>
 		/* GENERAL/PAGE STYLES */
@@ -47,10 +50,6 @@
 			text-align: right;
 		}
 
-		input {
-			min-width: 0;
-		}
-
 		label {
 			font-weight: initial;
 			max-width: initial;
@@ -63,25 +62,6 @@
 
 		.mkbru__wrp-tab-heads--border {
 			border-bottom: 1px solid #ccc;
-		}
-
-		.mkbru__wrp-tab-body {
-			width: 100%;
-			height: 100%;
-			overflow-y: auto;
-			overflow-x: hidden;
-			display: none;
-		}
-
-		.mkbru__wrp-tab-body--border {
-			padding: 3px 0;
-		}
-
-		.hr--sm {
-			margin-top: 10px;
-			margin-bottom: 10px;
-			width: 100%;
-			flex-shrink: 0;
 		}
 
 		/* Loading overlay */
@@ -104,10 +84,6 @@
 		.mkbru__row {
 			padding: 2px;
 			border-radius: 5px;
-		}
-
-		.mkbru__row:nth-child(even) {
-			background: #88888818;
 		}
 
 		.mkbru__wrp-row {
@@ -143,10 +119,6 @@
 			margin-bottom: 4px;
 		}
 
-		.mkbru__multi-cb-row:nth-child(odd) {
-			background: #bbbbbb18;
-		}
-
 		.mkbru__ipt-cb[type=checkbox] {
 			margin-top: 0;
 			margin-left: 2px;
@@ -159,10 +131,6 @@
 
 		.mkbru__ipt-cb--plain[type=checkbox] {
 			margin-top: 0;
-		}
-
-		.mkbru__ipt-textarea {
-			resize: vertical;
 		}
 
 		.mkbru__sub-name--50 {
@@ -181,62 +149,28 @@
 			padding-right: 3px;
 		}
 
-		.mkbru__wrp-drag-block {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-		}
-
-		.mkbru__wrp-drag-dummy--highlight {
-			background: #cfe5ff78;
-		}
-
-		.mkbru__wrp-drag-dummy--lowlight {
-			background: #8882;
-		}
-
-		.mkbru__drag-patch {
-			cursor: move;
-			user-select: none;
-			display: flex;
-			flex-shrink: 0;
-			padding: 5px 3px;
-		}
-
-		.mkbru__drag-patch-col {
-			display: flex;
-			flex-direction: column;
-			flex-shrink: 0;
-		}
-
-		.mkbru__drag-patch-col > div {
-			line-height: 4px;
-			text-align: center;
-		}
-		/* *** */
-
-		/* CREATURE STYLES */
-		.mkbru_mon__wrp-rows {
+		/* Row (array) inputs */
+		.mkbru__wrp-rows {
 			border-bottom: 1px solid #cccccc80;
 			margin-bottom: 5px;
 		}
 
-		.mkbru_mon__wrp-rows--removable:only-child .mkbru_mon__btn-rm-row,
-		.mkbru_mon__wrp-rows--removable:only-child .mkbru__btn-up-row,
-		.mkbru_mon__wrp-rows--removable:only-child .mkbru__btn-down-row,
-		.mkbru_mon__wrp-rows--removable:only-child .mkbru__btn-drag-row,
+		.mkbru__wrp-rows--removable:only-child .mkbru__btn-rm-row,
+		.mkbru__wrp-rows--removable:only-child .mkbru__btn-up-row,
+		.mkbru__wrp-rows--removable:only-child .mkbru__btn-down-row,
+		.mkbru__wrp-rows--removable:only-child .mkbru__btn-drag-row,
 			/* CSS hacks to support nesting */
-		.mkbru_mon__wrp-rows--removable-nested-1:only-child .mkbru_mon__btn-rm-row--nested-1 {
+		.mkbru__wrp-rows--removable-nested-1:only-child .mkbru__btn-rm-row--nested-1 {
 			display: none;
 		}
 
-		.mkbru_mon__wrp-rows--removable:first-child .mkbru__btn-up-row,
-		.mkbru_mon__wrp-rows--removable:last-child .mkbru__btn-down-row {
+		.mkbru__wrp-rows--removable:first-child .mkbru__btn-up-row,
+		.mkbru__wrp-rows--removable:last-child .mkbru__btn-down-row {
 			display: none;
 		}
+		/* *** */
 
+		/* CREATURE STYLES */
 		.mkbru_mon__ac-split {
 			max-width: calc(50% - 0.25rem);
 		}
@@ -256,7 +190,6 @@
 		}
 
 		.mkbru_mon__spell-header-wrp {
-			justify-content: space-between;
 			width: 100%;
 			align-items: center;
 		}
@@ -314,13 +247,13 @@
 		</div>
 	</header>
 
-	<nav class="container page__nav" id="navigation"><ul class="nav nav-pills" id="navbar"></ul></nav>
+	<nav class="container page__nav" id="navigation"><ul class="nav page__nav-inner" id="navbar"></ul></nav>
 
 	<div class="cancer__wrp-leaderboard"><!--5ETOOLS_AD_LEADERBOARD--></div>
 	<div class="cancer__wrp-sidebar-rhs cancer__wrp-sidebar-rhs--single"><!--5ETOOLS_AD_RIGHT_1--></div>
 
 	<div id="page_loading" class="container view-col-wrapper">
-		<div class="full-height full-width flex-vh-center"><span class="initial-message">Loading...</span></div>
+		<div class="h-100 w-100 flex-vh-center"><span class="initial-message">Loading...</span></div>
 	</div>
 
 	<div id="page_source" class="container view-col-wrapper" style="display: none"></div>
@@ -328,7 +261,7 @@
 	<div id="page_main" class="container view-col-wrapper" style="display: none">
 		<div class="view-col">
 			<div id="content_input"></div>
-			<div id="content_input_controls" class="text-align-center"></div>
+			<div id="content_input_controls" class="text-center"></div>
 		</div>
 
 		<div class="view-col" id="content_output"></div>
@@ -336,6 +269,7 @@
 </div>
 
 <!--5ETOOLS_SCRIPT_ANCHOR-->
+<!--5ETOOLS_AD_ADHESION-->
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
 <script type="text/javascript" src="js/utils-proporder.js"></script>
@@ -344,11 +278,13 @@
 <script type="text/javascript" src="js/omnisearch.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
 <script type="text/javascript" src="js/render-bestiary.js"></script>
+<script type="text/javascript" src="js/render-spells.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
 <script type="text/javascript" src="js/converterutils.js"></script>
 <script type="text/javascript" src="js/makebrew.js"></script>
 <script type="text/javascript" src="js/makebrew-creature.js"></script>
-<script type="text/javascript" src="lib/list.js"></script>
+<script type="text/javascript" src="js/makebrew-spell.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/jquery-ui.js"></script>
 <script type="text/javascript" src="lib/jquery-ui-slider-pip.js"></script>

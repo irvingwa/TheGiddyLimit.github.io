@@ -3,6 +3,8 @@
 
 <head>
 	<!--5ETOOLS_VERSION-->
+	<!--5ETOOLS_ANALYTICS-->
+	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +20,7 @@
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/browsercheck.js"></script>
 </head>
 
 <body id="lootgen">
@@ -28,17 +31,17 @@
 	</div>
 </header>
 <nav class="container page__nav" id="navigation">
-	<ul class="nav nav-pills" id="navbar">
+	<ul class="nav page__nav-inner" id="navbar">
 	</ul>
 </nav>
 
 <div class="cancer__wrp-leaderboard"><!--5ETOOLS_AD_LEADERBOARD--></div>
-<div class="cancer__wrp-sidebar-rhs"><!--5ETOOLS_AD_RIGHT_1--><!--5ETOOLS_AD_RIGHT_2--></div>
+<div class="cancer__wrp-sidebar-rhs"><!--5ETOOLS_AD_RIGHT_1--><div class="cancer__sidebar-rhs-inner"><!--5ETOOLS_AD_RIGHT_2--></div></div>
 
 <main class="container">
 	<div class="row">
 		<div class="col-sm-5">
-			<div class="btn-group full-width">
+			<div class="btn-group w-100">
 				<span class="btn btn-default col-4" id="btn-lootgen">Find Treasure</span>
 				<span class="btn btn-default col-4" id="btn-loot-table">Loot Tables</span>
 				<span class="btn btn-default col-4" id="btn-random-magic-item">Party Loot</span>
@@ -74,13 +77,13 @@
 
 			<div id="container-loot-table" class="hidden">
 				<div class="mb-2"></div>
-				<div class="btn-group full-width mb-2">
+				<div class="btn-group w-100 mb-2">
 					<span class="btn btn-default col-6" id="btn-dmg-loot-table">DMG</span>
 					<span class="btn btn-default col-6" id="btn-xge-loot-table">XGE</span>
 				</div>
 				<br/>
 				<div id="container-dmg-loot-table">
-					<div class="input-group full-width">
+					<div class="input-group w-100">
 						<span class="input-group-addon">Select Table </span>
 						<select class="form-control clickable" id="table-sel">
 							<option value="" selected>View individual tables...</option>
@@ -142,8 +145,8 @@
 							</span>
 						</div>
 					</div>
-					<div class="slider full-width" style="margin-bottom: 23px;"></div>
-					<div id="random-magic-item-select-tier" class="input-group full-width">
+					<div class="slider w-100" style="margin-bottom: 23px;"></div>
+					<div id="random-magic-item-select-tier" class="input-group w-100">
 						<select class="form-control clickable" id="charLevel" style="border-top-right-radius: 3px; border-bottom-right-radius: 3px;">
 							<option value="4" selected>1-4</option>
 							<option value="10">5-10</option>
@@ -171,6 +174,7 @@
 	</div>
 </main>
 <!--5ETOOLS_SCRIPT_ANCHOR-->
+<!--5ETOOLS_AD_ADHESION-->
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/jquery-ui.js"></script>
 <script type="text/javascript" src="lib/jquery-ui-slider-pip.js"></script>
@@ -184,7 +188,7 @@
 <script type="text/javascript" src="js/render.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
 <script type="text/javascript" src="js/lootgen.js"></script>
-<script type="text/javascript" src="lib/list.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
 
 </body>
 </html>

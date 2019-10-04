@@ -5,6 +5,7 @@ class PropOrder {
 		const order = (() => {
 			switch (dataProp) {
 				case "monster": return PropOrder.MONSTER;
+				case "spell": return PropOrder.SPELL;
 				default: throw new Error(`Unhandled prop "${dataProp}"`);
 			}
 		})();
@@ -38,6 +39,7 @@ PropOrder.MONSTER = [
 
 	"_copy",
 
+	"level",
 	"size",
 	"type",
 	"alignment",
@@ -66,6 +68,7 @@ PropOrder.MONSTER = [
 
 	"spellcasting",
 	"trait",
+	"actionNote",
 	"action",
 	"reaction",
 	"legendaryHeader",
@@ -91,4 +94,41 @@ PropOrder.MONSTER = [
 	"damageTags",
 	"spellcastingTags",
 	"miscTags"
+];
+PropOrder.SPELL = [
+	"name",
+
+	"source",
+	"page",
+	"otherSources",
+
+	"level",
+	"school",
+	"subschools",
+	"time",
+	"range",
+	"components",
+	"duration",
+	"meta",
+
+	"entries",
+	"entriesHigherLevel",
+
+	"damageResist",
+	"damageImmune",
+	"damageVulnerable",
+
+	"damageInflict",
+	"conditionInflict",
+
+	"spellAttack",
+	"savingThrow",
+	"opposedCheck",
+
+	"miscTags",
+	"areaTags",
+
+	"classes",
+	"races",
+	"backgrounds"
 ];

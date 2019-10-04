@@ -685,6 +685,202 @@
 			"entries": [
 				"Imagine a perfect world: one in which nature and civilization exist in harmony, adapted to each other; one in which life is shaped to match its environment and the environment is shaped to match life. That's the world you have been trying to grow in the laboratories of the Simic Combine. Nature is all about adaptation, evolution, and balance\u2014but for it to keep up with the pace of advancing civilization, nature needs some help from biomancers and terraformers. If, along the way, you happen to create super-soldiers and mutant monsters that can bolster the combine's defenses against the schemes and ambitions of the other guilds, so much the better."
 			]
+		},
+		{
+			"name": "Fisher",
+			"source": "GoS",
+			"entries": [
+				"You have spent your life aboard fishing vessels or combing the shallows for the bounty of the ocean. Perhaps you were born into a family of fisher folk, working with your kin to feed your village. Maybe the job was a means to an end\u2014a way out of an undesirable circumstance that forced you to take up life aboard a ship. Regardless of how you began, you soon fell in love with the sea, the art of fishing, and the promise of the eternal horizon."
+			]
+		},
+		{
+			"name": "Marine",
+			"source": "GoS",
+			"entries": [
+				"You were trained for battle on sandy beaches and rocky shores. You have launched midnight raids from swift ships whose names evoke terror in the hearts of your adversaries. The water is your second home, the rain your shelter, and the crashing waves your battle cry."
+			]
+		},
+		{
+			"name": "Shipwright",
+			"source": "GoS",
+			"entries": [
+				"You have sailed into war on the decks of great ships, patching their hulls with soup bowls and prayers. You once helped build a fishing vessel that single-handedly saved a town from starvation. You have seen a majestic prow in your dreams that you have not been able to replicate in wood. Since childhood, you have loved the water and have been captivated by the many vessels that travel on it."
+			]
+		},
+		{
+			"name": "Smuggler",
+			"source": "GoS",
+			"entries": [
+				"On a rickety barge, you carried a hundred longswords in fish barrels right past the dock master's oblivious lackeys. You have paddled a riverboat filled with stolen elven wine under the gaze of the moon and sold it for twice its value in the morning. In your more charitable times, you have transported innocents out of war zones or helped guide herd animals to safety on the banks of a burning river."
+			]
+		},
+		{
+			"name": "Celebrity Adventurer's Scion",
+			"source": "AI",
+			"entries": [
+				"Your family name strikes fear and admiration in the hearts of the common folk\u2014but that's got nothing to do with you. Songs and stories celebrating the adventuring exploits of your famous parent are widely known. Kids across the land grew up wishing they were you. But being the child of a famous adventurer wasn't all hugs and kisses.",
+				"You seldom saw your celebrity-adventurer parent, and when they were around, it was all about them and tales of slaying this demon or vanquishing that dragon. All too often, you'd be woken out of a sound sleep by someone standing outside your home screaming about the latest threat to the town, the region, or the world.",
+				"In the end, all you have to show for your lineage is your name. Most of the family's money went for consumables, from potions of healing and spell scrolls to copious amounts of dwarven ale. And everyone expects you to swing a sword or sling spells like your famous forebear, making it doubly hard for you to prove yourself."
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "backgrounds/AI/celebrity-adventurers-scion.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Failed Merchant",
+			"source": "AI",
+			"entries": [
+				"Maybe you come from a long line of merchants. Perhaps you were an entrepreneur. Regardless, your ventures ended poorly. Whether it was because of outside influences, bad luck, or simply because your business acumen was weak, you lost everything.",
+				"With failure, however, comes experience. You're free of that old life, having made some connections and learned your lessons. Prepared to pursue the life of an adventurer, your insight into the world of commerce brought you into the sphere of Acquisitions Incorporated\u2014and a franchise just might be in your future."
+			]
+		},
+		{
+			"name": "Gambler",
+			"source": "AI",
+			"entries": [
+				"All you need to make a lot of gold is a little gold. Except at those times when all you need to have no gold at all is a little gold. Whether you're a good gambler or a bad one rarely matters, because no one can divine the whims of Lady Luck. Sometimes you're up, sometimes you're down. But the thing about gambling is that someone is always willing to take a bet."
+			]
+		},
+		{
+			"name": "Plaintiff",
+			"source": "AI",
+			"entries": [
+				"Sure, accidents happen. But they seem to happen an awful lot when Acquisitions Incorporated operatives are on the scene. Naturally, nothing ever happens when there are no witnesses left behind. But sometimes one casualty is left a little less than dead, just waiting to discover what a lucky break that accident actually was.",
+				"You were a victim of a legal incident that was ostensibly the fault of Acquisitions Incorporated. At least that's what the local magistrate said. But before a final ruling could be handed down, Acquisitions Incorporated offered you a job! Don't know how to swing a sword? They promised to teach you! Think you have what it takes to sling spells? They've got masters who'll have you throwing fire in no time!",
+				"With the promise of untold treasures and realms of magic and mystery just a dungeon away, you left your old life behind. Now a world of adventure is yours. Just initial here and sign here and here. Absolve Acq Inc of all former claims, and acknowledge you understand past outcomes don't guarantee future results."
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "backgrounds/AI/plaintiff-coin.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Rival Intern",
+			"source": "AI",
+			"entries": [
+				"You were an intern at a rival of Acquisitions Incorporated, and you gained a healthy respect for not just the job and the franchising opportunities, but for the ruthless and efficient way Acquisitions Incorporated goes about its business. Why deal with the rest, when you can work for the best?",
+				"Perhaps the rival did not treat you as well as you were hoping, or you washed out of that organization. Maybe you hope to leverage the knowledge you gained there for an advantage at Acquisitions Incorporated. Either way, you're now bringing your talents to the company, ready to put your skills to use."
+			]
+		},
+		{
+			"name": "Faceless",
+			"source": "BGDIA",
+			"entries": [
+				"Being who you are, you could never be a hero. Whether due to your class, your people, your family, or your sins, something about you prevents you from effectively pursuing the path you've chosen. Even so, that doesn't stop you. You've left your old face behind, taking on a new persona, becoming something more.",
+				"Characters with the faceless background don a disguise\u2014literally or otherwise\u2014as they adventure. This persona might be dramatic or subtle. In a way, though, many characters have such larger than life personalities. Therefore, this background largely focuses on detailing the hero behind the mask."
+			]
+		},
+		{
+			"name": "Baldur's Gate Acolyte",
+			"source": "BGDIA",
+			"entries": [
+				"It's said that every faith in the world has a believer in Baldur's Gate. Not only are most established faiths tolerated\u2014even if some of them, including most of the openly evil faiths, are relegated to the Outer City's Twin Songs neighborhood\u2014but new ones arrive constantly, carried by travelers and proselytizers from far-flung lands. A character with this background might aspire to greater things, not for themselves, but for their faith."
+			]
+		},
+		{
+			"name": "Baldur's Gate Charlatan",
+			"source": "BGDIA",
+			"entries": [
+				"Everybody's always trying to get a leg up on somebody in Baldur's Gate. One group's con artist might be another's revolutionary. Or maybe you're just in it for yourself. In any case, characters with this background have a plan to hit the big time; all they need is audacity and a little time."
+			]
+		},
+		{
+			"name": "Baldur's Gate Criminal",
+			"source": "BGDIA",
+			"entries": [
+				"No career criminal in Baldur's Gate operates without being aware of the Guild. Some studiously keep a low profile, carrying just the occasional smuggled load in with legitimate merchandise, or only breaking knees when it can plausibly be claimed as an act of personal revenge. Others join up with crews for protection, or with the Guild itself. A few former Guild members have been cast out of the organization due to incompetence or after offending a more powerful member, and now shuffle for scraps to survive."
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "backgrounds/BGDIA/Baldur's Gate Criminal.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Baldur's Gate Entertainer",
+			"source": "BGDIA",
+			"entries": [
+				"From the Oasis Theater's spectacular singers and acrobats to the pantomimes and shadow puppeteers of the Wide, Baldur's Gate hosts a colorful array of performers. Good acts can always find ready audiences, and the constant flow of travelers means that both new spectators and new spectacles are always passing through."
+			]
+		},
+		{
+			"name": "Baldur's Gate Folk Hero",
+			"source": "BGDIA",
+			"entries": [
+				"Baldur's Gate is a city badly in need of heroes, and every so often, one rises from among its own. Ordinary people who rise to greatness are beloved in local history, but the popular imagination can turn on such champions almost as quickly as it anoints them."
+			]
+		},
+		{
+			"name": "Baldur's Gate Guild Artisan",
+			"source": "BGDIA",
+			"entries": [
+				"Numerous guilds and professional associations exist in Baldur's Gate, covering every imaginable trade and discipline from gravediggers to moneylenders."
+			]
+		},
+		{
+			"name": "Baldur's Gate Hermit",
+			"source": "BGDIA",
+			"entries": [
+				"While some might think it strange to find hermits in a bustling city, others know that sometimes the most profound solitude exists in the midst of a crowd. Baldur's Gate holds a handful of souls who manage to find isolation amid its tumult."
+			]
+		},
+		{
+			"name": "Baldur's Gate Noble",
+			"source": "BGDIA",
+			"entries": [
+				"The patriars of Baldur's Gate live in the Upper City, where they host grand galas and flaunt cosmopolitan fashions, but are walled off from the poverty and squalor of the less fortunate districts and their neighborhoods. Although they might visit prosperous Bloomridge to try a fashionable restaurant or boutique, or watch a spectacle at the Oasis Theater, the patriars have little reason to venture into the dirtier, more dangerous parts of the city. If they do, it is generally as thrill-seeking tourists or enclosed by a retinue of armed guards, not as friends or neighbors. As a result, many patriars are at once acutely attuned to the nuances of royal courts half a continent away and shockingly ignorant of what life is like for the poor outside their own doorsteps.",
+				"This combination of worldly savvy and local blindness characterizes almost all the nobility of Baldur's Gate. As a result, for those who wish to play patriars, the Patriar feature below replaces the Position and Privilege feature of the noble background. Those who wish to use the background's standard feature might have gained their standing in Baldur's Gate from business rather than inheritance."
+			]
+		},
+		{
+			"name": "Baldur's Gate Outlander",
+			"source": "BGDIA",
+			"entries": [
+				"Coming to Baldur's Gate might seem like a good idea for a spectrum of reasons. Profit, excitement, and cosmopolitan opportunities all present tempting prospects, but rarely does one start on the path to Baldur's Gate fully understanding the complex social morass that awaits. You enter the city an outsider, and it's likely that\u2014no matter how long you spend in the city\u2014you'll leave an outsider, if you leave at all."
+			]
+		},
+		{
+			"name": "Baldur's Gate Sage",
+			"source": "BGDIA",
+			"entries": [
+				"Baldur's Gate has a modest academic community centered around the libraries of the High Hall and the various temples dedicated to gods of learning and innovation. Lecturers, researchers, and historians all participate with passing scholars from Candlekeep in a lively exchange of ideas, debating and collaborating in book-filled halls across the Upper and Lower City. The city is also rife with opportunities for arcane study, although its masters are dispersed across individual wizards' abodes and lack concentrated communities."
+			]
+		},
+		{
+			"name": "Baldur's Gate Sailor",
+			"source": "BGDIA",
+			"entries": [
+				"Baldur's Gate was founded by sailors, and its harbor is still the city's beating heart. Several patriars are descended from captains of yore, the commerce of the Lower City is built on the port, and even the Outer City's rhythms are dominated by the ebb and flow of river trade. Because sailors are as fundamental and ubiquitous to Baldur's Gate as the cobbles on its streets, characters with this background are common."
+			]
+		},
+		{
+			"name": "Baldur's Gate Soldier",
+			"source": "BGDIA",
+			"entries": [
+				"Mercenaries, private guards, Watch soldiers, and members of the Flaming Fist number among just a few of the many soldiers on the streets of Baldur's Gate."
+			]
+		},
+		{
+			"name": "Baldur's Gate Urchin",
+			"source": "BGDIA",
+			"entries": [
+				"Bands of orphans and runaways band together in the Outer City, running after passersby in ragged throngs to plead for scraps. In the Lower City, urchins are often recruited into the lowest echelons of the Guild or pressed into dirty and dangerous work by unscrupulous masters."
+			]
 		}
 	]
 }

@@ -181,28 +181,28 @@ class AcConvert {
 
 						// TODO general auto-detect for enchanted versions of items
 						case "+3 plate armor":
-							from.push("{@item plate armor +3|dmg|+3 plate armor}");
+							from.push("{@item plate armor +3||+3 plate armor}");
 							break;
 						case "half plate armor +1":
-							from.push("{@item half plate armor +1|dmg|+1 half-plate armor}");
+							from.push("{@item half plate armor +1||+1 half-plate armor}");
 							break;
 						case "scale mail +1":
-							from.push("{@item scale mail +1|dmg|+1 scale mail}");
+							from.push("{@item scale mail +1||+1 scale mail}");
 							break;
 						case "scale mail +2":
-							from.push("{@item scale mail +2|dmg|+2 scale mail}");
+							from.push("{@item scale mail +2||+2 scale mail}");
 							break;
 						case "splint mail +2":
-							from.push("{@item splint armor +2|dmg|+2 splint armor}");
+							from.push("{@item splint armor +2||+2 splint armor}");
 							break;
 						case "studded leather armor +1":
-							from.push("{@item studded leather armor +1|dmg|+1 studded leather armor}");
+							from.push("{@item studded leather armor +1||+1 studded leather armor}");
 							break;
 						case "+2 leather armor":
-							from.push("{@item leather armor +2|dmg|+2 leather armor}");
+							from.push("{@item leather armor +2||+2 leather armor}");
 							break;
 						case "+3 leather armor":
-							from.push("{@item leather armor +3|dmg|+3 leather armor}");
+							from.push("{@item leather armor +3||+3 leather armor}");
 							break;
 
 						default: {
@@ -398,7 +398,7 @@ AlignmentConvert.ALIGNMENTS = {
 	"chaotic neutral": ["C", "N"],
 	"lawful evil": ["L", "E"],
 	"lawful neutral": ["L", "N"],
-	"neutral evil": ["N", "E"], // TODO this was mistakenly marked as "L" "E" before; do a validation pass for all LE creatures -> check if NE
+	"neutral evil": ["N", "E"],
 	"chaotic evil": ["C", "E"],
 
 	"good": ["G"],
@@ -936,6 +936,7 @@ class SpellcastingTraitConvert {
 			let spellcastingEntry = {"name": name, "headerEntries": [parseToHit(trait.entries[0])]};
 			let doneHeader = false;
 			trait.entries.forEach((thisLine, i) => {
+				thisLine = thisLine.replace(/,\s*\*/g, ",*"); // put asterisks on the correct side of commas
 				if (i === 0) return;
 				if (thisLine.includes("/rest")) {
 					doneHeader = true;
@@ -969,11 +970,25 @@ class SpellcastingTraitConvert {
 				} else if (thisLine.includes(" level") && thisLine.includes(": ")) {
 					doneHeader = true;
 					let property = thisLine.substr(0, 1);
-					const value = getParsedSpells(thisLine);
-					if (!spellcastingEntry.spells) spellcastingEntry.spells = {};
-					let slots = thisLine.includes(" slot") ? parseInt(thisLine.substr(11, 1)) : 0;
-					spellcastingEntry.spells[property] = {"slots": slots, "spells": value};
-					if (!spellcastingEntry.spells[property]) delete spellcastingEntry.spells[property];
+					const allSpells = getParsedSpells(thisLine);
+					spellcastingEntry.spells = spellcastingEntry.spells || {};
+
+					const out = {};
+					if (thisLine.includes(" slot")) {
+						const mWarlock = /^(\d)..-(\d).. level \((\d) \d..-level slots?\)/.exec(thisLine);
+						if (mWarlock) {
+							out.lower = parseInt(mWarlock[1]);
+							out.slots = parseInt(mWarlock[2]);
+						} else {
+							const mSlots = /\((\d) slots?\)/.exec(thisLine);
+							if (!mSlots) throw new Error(`Could not find slot count!`);
+							out.slots = parseInt(mSlots[1]);
+						}
+					}
+					// add these last, to have nicer ordering
+					out.spells = allSpells;
+
+					spellcastingEntry.spells[property] = out;
 				} else {
 					if (doneHeader) {
 						if (!spellcastingEntry.footerEntries) spellcastingEntry.footerEntries = [];
@@ -1057,8 +1072,8 @@ class DiceConvert {
 		str = str.replace(/{@(?:dice|damage) ([^}]*)}/gi, "$1");
 
 		// re-tag + format dice
-		str = str.replace(/((\s*[-+]\s*)?(([1-9]\d*)?d([1-9]\d*)(\s*?[-+×x]\s*?\d+)?))+/gi, (...m) => {
-			const expanded = m[0].replace(/([^0-9d])/gi, " $1 ").replace(/\s+/g, " ");
+		str = str.replace(/((\s*[-+]\s*)?(([1-9]\d*)?d([1-9]\d*)(\s*?[-+×x*÷/]\s*?(\d,\d|\d)+(\.\d+)?)?))+/gi, (...m) => {
+			const expanded = m[0].replace(/([^0-9d.,])/gi, " $1 ").replace(/\s+/g, " ");
 			return `{@dice ${expanded}}`;
 		});
 
@@ -1174,7 +1189,9 @@ SpeedConvert._SPEED_TYPES = new Set(["walk", "fly", "swim", "climb", "burrow"]);
 class TextClean {
 	static getCleanedJson (str) {
 		str = str.replace(TextClean.REPLACEMENT_REGEX, (match) => TextClean.REPLACEMENTS[match]);
-		return str.replace(/\s*(\\u2014|\\u2013)\s*/g, "$1");
+		return str
+			.replace(/\u00AD/g, "") // soft hyphens
+			.replace(/\s*(\\u2014|\\u2013)\s*/g, "$1");
 	}
 
 	static getReplacedQuotesText (str) {
@@ -1191,7 +1208,8 @@ TextClean.REPLACEMENTS = {
 	"’": "'",
 	"“": '\\"',
 	"”": '\\"',
-	"…": "..."
+	"…": "...",
+	"ﬁ": "fi"
 };
 TextClean.REPLACEMENT_REGEX = new RegExp(Object.keys(TextClean.REPLACEMENTS).join("|"), 'g');
 

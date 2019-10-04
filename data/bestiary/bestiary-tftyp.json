@@ -520,7 +520,7 @@
 			"size": "M",
 			"type": "undead",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -654,7 +654,7 @@
 			"size": "M",
 			"type": "undead",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -1447,7 +1447,7 @@
 			"size": "H",
 			"type": "undead",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -1541,6 +1541,14 @@
 			"miscTags": [
 				"MW",
 				"RCH"
+			],
+			"otherSources": [
+				{
+					"source": "DC"
+				},
+				{
+					"source": "SDW"
+				}
 			]
 		},
 		{
@@ -1625,7 +1633,7 @@
 			"size": "M",
 			"type": "undead",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -1722,6 +1730,14 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"otherSources": [
+				{
+					"source": "DC"
+				},
+				{
+					"source": "SDW"
+				}
 			]
 		},
 		{
@@ -1736,7 +1752,7 @@
 				]
 			},
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -1966,6 +1982,11 @@
 			"miscTags": [
 				"MW",
 				"RCH"
+			],
+			"otherSources": [
+				{
+					"source": "SLW"
+				}
 			]
 		},
 		{
@@ -2221,7 +2242,7 @@
 			"size": "M",
 			"type": "plant",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -3109,6 +3130,20 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "LR"
+				}
+			],
+			"altArt": [
+				{
+					"name": "Sea Lion (Alt)",
+					"source": "GoS"
+				}
 			]
 		},
 		{
@@ -3123,7 +3158,7 @@
 				]
 			},
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -3242,7 +3277,7 @@
 				]
 			},
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -3757,7 +3792,7 @@
 			"size": "M",
 			"type": "undead",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -4402,7 +4437,7 @@
 			"size": "M",
 			"type": "undead",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -4911,7 +4946,8 @@
 			"cr": "3",
 			"actionTags": [
 				"Multiattack"
-			]
+			],
+			"page": 84
 		},
 		{
 			"name": "Ashdra",
@@ -4943,7 +4979,8 @@
 			],
 			"spellcastingTags": [
 				"I"
-			]
+			],
+			"page": 158
 		},
 		{
 			"name": "Bandagh",
@@ -4952,7 +4989,8 @@
 			"_copy": {
 				"name": "Orc",
 				"source": "MM"
-			}
+			},
+			"page": 159
 		},
 		{
 			"name": "Bugbear Gardener",
@@ -4982,7 +5020,8 @@
 				"RCH",
 				"RW",
 				"THW"
-			]
+			],
+			"page": 29
 		},
 		{
 			"name": "Bugbear Lieutenant",
@@ -5012,7 +5051,8 @@
 				"RCH",
 				"RW",
 				"THW"
-			]
+			],
+			"page": 173
 		},
 		{
 			"name": "Chief Nosnra",
@@ -5038,7 +5078,8 @@
 					]
 				}
 			],
-			"immune": null
+			"immune": null,
+			"page": 170
 		},
 		{
 			"name": "Grutha",
@@ -5055,7 +5096,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 170
 		},
 		{
 			"name": "Hill Giant Subchief",
@@ -5064,7 +5106,8 @@
 				"name": "Stone Giant",
 				"source": "MM"
 			},
-			"trait": null
+			"trait": null,
+			"page": 170
 		},
 		{
 			"name": "Hill Giant Sergeant",
@@ -5084,7 +5127,8 @@
 			"hp": {
 				"average": 115,
 				"formula": "10d12 + 40"
-			}
+			},
+			"page": 170
 		},
 		{
 			"name": "Hill Giant Servant",
@@ -5099,7 +5143,8 @@
 						"with": "giant"
 					}
 				}
-			}
+			},
+			"page": 170
 		},
 		{
 			"name": "Cloud Giant Noble",
@@ -5115,7 +5160,8 @@
 						"{@item chain mail|phb}"
 					]
 				}
-			]
+			],
+			"page": 206
 		},
 		{
 			"name": "Curran Corvalin",
@@ -5133,7 +5179,8 @@
 				"C",
 				"X",
 				"H"
-			]
+			],
+			"page": 158
 		},
 		{
 			"name": "Dragonpriest",
@@ -5163,7 +5210,9 @@
 						"names": "Multiattack"
 					}
 				}
-			}
+			},
+			"page": 16,
+			"actionTags": []
 		},
 		{
 			"name": "Drevin",
@@ -5188,7 +5237,8 @@
 			"languageTags": [
 				"X",
 				"H"
-			]
+			],
+			"page": 126
 		},
 		{
 			"name": "Drow Commander",
@@ -5242,7 +5292,8 @@
 			"hp": {
 				"average": 110,
 				"formula": "11d8 + 22"
-			}
+			},
+			"page": 209
 		},
 		{
 			"name": "Eira",
@@ -5259,7 +5310,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 159
 		},
 		{
 			"name": "Elder Black Pudding",
@@ -5272,14 +5324,23 @@
 			"hp": {
 				"average": 130,
 				"formula": "10d12 + 30"
-			}
+			},
+			"page": 143
 		},
 		{
 			"name": "Elder Giant Lizard",
 			"source": "TftYP",
 			"_copy": {
 				"name": "Giant Crocodile",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "crocodile",
+						"with": "lizard",
+						"flags": "i"
+					}
+				}
 			},
 			"speed": {
 				"walk": 30,
@@ -5290,7 +5351,8 @@
 			],
 			"senseTags": [
 				"D"
-			]
+			],
+			"page": 176
 		},
 		{
 			"name": "Jarl Grugnur",
@@ -5352,7 +5414,10 @@
 			"damageTags": [
 				"S",
 				"B"
-			]
+			],
+			"page": 189,
+			"traitTags": [],
+			"spellcastingTags": []
 		},
 		{
 			"name": "Estia",
@@ -5384,7 +5449,10 @@
 				"cold"
 			],
 			"spellcasting": null,
-			"trait": null
+			"trait": null,
+			"page": 189,
+			"traitTags": [],
+			"spellcastingTags": []
 		},
 		{
 			"name": "Fire Giant Royal Headsman",
@@ -5414,7 +5482,8 @@
 						}
 					}
 				]
-			}
+			},
+			"page": 201
 		},
 		{
 			"name": "Fire Giant Servant",
@@ -5447,7 +5516,8 @@
 			},
 			"immune": [
 				"fire"
-			]
+			],
+			"page": 171
 		},
 		{
 			"name": "Flying Shield",
@@ -5464,7 +5534,9 @@
 					}
 				}
 			},
-			"action": null
+			"action": null,
+			"page": 224,
+			"miscTags": []
 		},
 		{
 			"name": "Frost Giant Servant",
@@ -5475,7 +5547,8 @@
 			},
 			"immune": [
 				"cold"
-			]
+			],
+			"page": 187
 		},
 		{
 			"name": "Young Frost Giant",
@@ -5494,7 +5567,8 @@
 			},
 			"immune": [
 				"cold"
-			]
+			],
+			"page": 187
 		},
 		{
 			"name": "Gargantuan Rug of Smothering",
@@ -5507,7 +5581,8 @@
 				"average": 63,
 				"formula": "6d20"
 			},
-			"size": "G"
+			"size": "G",
+			"page": 56
 		},
 		{
 			"name": "Goblin Commoner",
@@ -5540,7 +5615,8 @@
 			],
 			"senseTags": [
 				"D"
-			]
+			],
+			"page": 24
 		},
 		{
 			"name": "Gorvan Ironheart",
@@ -5557,7 +5633,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 151
 		},
 		{
 			"name": "Great Ulfe",
@@ -5588,10 +5665,11 @@
 			"damageTags": [
 				"S",
 				"P"
-			]
+			],
+			"page": 42
 		},
 		{
-			"name": "Hedrun",
+			"name": "Hedrun Arnsfirth",
 			"isNpc": true,
 			"source": "TftYP",
 			"_copy": {
@@ -5605,7 +5683,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 160
 		},
 		{
 			"name": "Huge Ochre Jelly",
@@ -5618,7 +5697,8 @@
 				"average": 51,
 				"formula": "6d12 + 12"
 			},
-			"size": "H"
+			"size": "H",
+			"page": 225
 		},
 		{
 			"name": "Huge Polar Bear",
@@ -5631,7 +5711,8 @@
 				"average": 65,
 				"formula": "5d12 + 15"
 			},
-			"size": "H"
+			"size": "H",
+			"page": 187
 		},
 		{
 			"name": "Irisoth",
@@ -5655,7 +5736,8 @@
 			],
 			"traitTags": [
 				"Fey Ancestry"
-			]
+			],
+			"page": 157
 		},
 		{
 			"name": "Jot",
@@ -5672,7 +5754,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 15
 		},
 		{
 			"name": "Keeper",
@@ -5724,7 +5807,8 @@
 			"damageTags": [
 				"S",
 				"B"
-			]
+			],
+			"page": 173
 		},
 		{
 			"name": "Kelson Darktreader",
@@ -5748,7 +5832,8 @@
 			],
 			"traitTags": [
 				"Fey Ancestry"
-			]
+			],
+			"page": 132
 		},
 		{
 			"name": "Kieren",
@@ -5763,7 +5848,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 157
 		},
 		{
 			"name": "King Snurre",
@@ -5811,7 +5897,8 @@
 			"languageTags": [
 				"C",
 				"GI"
-			]
+			],
+			"page": 193
 		},
 		{
 			"name": "Kobold Commoner",
@@ -5847,7 +5934,8 @@
 			"traitTags": [
 				"Sunlight Sensitivity",
 				"Pack Tactics"
-			]
+			],
+			"page": 18
 		},
 		{
 			"name": "Kobold Elite",
@@ -5859,7 +5947,8 @@
 			"hp": {
 				"average": 7,
 				"formula": "2d6 - 2"
-			}
+			},
+			"page": 18
 		},
 		{
 			"name": "Lacedon",
@@ -5879,7 +5968,8 @@
 			"speed": {
 				"walk": 30,
 				"swim": 30
-			}
+			},
+			"page": 147
 		},
 		{
 			"name": "Lahnis",
@@ -5896,7 +5986,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 131
 		},
 		{
 			"name": "Lesser Mummy Lord",
@@ -5905,7 +5996,9 @@
 				"name": "Mummy Lord",
 				"source": "MM"
 			},
-			"spellcasting": null
+			"spellcasting": null,
+			"page": 224,
+			"spellcastingTags": []
 		},
 		{
 			"name": "Lumalia",
@@ -5922,7 +6015,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 153
 		},
 		{
 			"name": "Mennek Ariz",
@@ -5939,7 +6033,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 157
 		},
 		{
 			"name": "Nedylene",
@@ -5975,7 +6070,8 @@
 						}
 					}
 				}
-			}
+			},
+			"page": 209
 		},
 		{
 			"name": "Obmi",
@@ -6004,7 +6100,8 @@
 				}
 			},
 			"str": 16,
-			"cha": 16
+			"cha": 16,
+			"page": 196
 		},
 		{
 			"name": "Ogre Skeleton",
@@ -6021,7 +6118,8 @@
 				"C",
 				"GI",
 				"CS"
-			]
+			],
+			"page": 54
 		},
 		{
 			"name": "Orc Commoner",
@@ -6044,7 +6142,8 @@
 			],
 			"traitTags": [
 				"Aggressive"
-			]
+			],
+			"page": 167
 		},
 		{
 			"name": "Oussa",
@@ -6061,7 +6160,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 157
 		},
 		{
 			"name": "Phaia",
@@ -6078,7 +6178,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 132
 		},
 		{
 			"name": "Reduced-Threat Aboleth",
@@ -6090,7 +6191,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Basilisk",
@@ -6102,7 +6204,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Remorhaz",
@@ -6114,7 +6217,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Darkmantle",
@@ -6126,7 +6230,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Ettercap",
@@ -6143,7 +6248,8 @@
 				"P",
 				"I",
 				"S"
-			]
+			],
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Carrion Crawler",
@@ -6155,7 +6261,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Behir",
@@ -6183,7 +6290,8 @@
 			],
 			"actionTags": [
 				"Multiattack"
-			]
+			],
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Hook Horror",
@@ -6195,7 +6303,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Wyvern",
@@ -6207,7 +6316,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Beholder",
@@ -6219,7 +6329,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Black Pudding",
@@ -6231,7 +6342,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Clay Golem",
@@ -6243,7 +6355,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Displacer Beast",
@@ -6255,7 +6368,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Dragon Turtle",
@@ -6292,7 +6406,8 @@
 				"P",
 				"S",
 				"F"
-			]
+			],
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Flesh Golem",
@@ -6304,7 +6419,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Glabrezu",
@@ -6316,7 +6432,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Gray Ooze",
@@ -6332,7 +6449,8 @@
 			"damageTags": [
 				"B",
 				"A"
-			]
+			],
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Helmed Horror",
@@ -6344,7 +6462,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Hezrou",
@@ -6356,7 +6475,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Ochre Jelly",
@@ -6368,7 +6488,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Otyugh",
@@ -6400,7 +6521,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Owlbear",
@@ -6412,7 +6534,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Peryton",
@@ -6424,7 +6547,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Stone Golem",
@@ -6436,7 +6560,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Vrock",
@@ -6448,7 +6573,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Reduced-Threat Wight",
@@ -6460,7 +6586,8 @@
 					"name": "Reduced Threat",
 					"source": "TftYP"
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "Scrag",
@@ -6472,7 +6599,8 @@
 			"speed": {
 				"walk": 30,
 				"swim": 30
-			}
+			},
+			"page": 147
 		},
 		{
 			"name": "Sentient Gray Ooze",
@@ -6497,7 +6625,8 @@
 			],
 			"languageTags": [
 				"C"
-			]
+			],
+			"page": 158
 		},
 		{
 			"name": "Sentient Ochre Jelly",
@@ -6518,7 +6647,8 @@
 			],
 			"languageTags": [
 				"C"
-			]
+			],
+			"page": 158
 		},
 		{
 			"name": "Shalendra Floshin",
@@ -6527,7 +6657,8 @@
 			"_copy": {
 				"name": "Knight",
 				"source": "MM"
-			}
+			},
+			"page": 119
 		},
 		{
 			"name": "Snow Leopard",
@@ -6543,10 +6674,11 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 183
 		},
 		{
-			"name": "Snow Dragon Statue",
+			"name": "Stone Dragon Statue",
 			"source": "TftYP",
 			"_copy": {
 				"name": "Stone Golem",
@@ -6570,7 +6702,10 @@
 			],
 			"damageTags": [
 				"F"
-			]
+			],
+			"page": 85,
+			"miscTags": [],
+			"actionTags": []
 		},
 		{
 			"name": "Therzt",
@@ -6598,7 +6733,8 @@
 			],
 			"spellcastingTags": [
 				"I"
-			]
+			],
+			"page": 158
 		},
 		{
 			"name": "Torlin Silvershield",
@@ -6615,7 +6751,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 159
 		},
 		{
 			"name": "Werejaguar",
@@ -6631,7 +6768,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 79
 		},
 		{
 			"name": "Xilonen",
@@ -6649,7 +6787,8 @@
 					}
 				}
 			},
-			"int": 2
+			"int": 2,
+			"page": 83
 		},
 		{
 			"name": "Yeti Leader",
@@ -6681,7 +6820,8 @@
 						}
 					]
 				}
-			}
+			},
+			"page": 183
 		},
 		{
 			"name": "Young Fire Giant",
@@ -6700,7 +6840,8 @@
 			},
 			"immune": [
 				"fire"
-			]
+			],
+			"page": 192
 		},
 		{
 			"name": "Young Hill Giant",
@@ -6716,7 +6857,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 167
 		},
 		{
 			"name": "Young Ogre Servant",
@@ -6732,7 +6874,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 171
 		},
 		{
 			"name": "Young Troglodyte",
@@ -6748,7 +6891,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 176
 		},
 		{
 			"name": "Young Winter Wolf",
@@ -6756,7 +6900,8 @@
 			"_copy": {
 				"name": "Dire Wolf",
 				"source": "MM"
-			}
+			},
+			"page": 181
 		}
 	]
 }

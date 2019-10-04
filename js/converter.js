@@ -2,58 +2,56 @@
 
 window.onload = doPageInit;
 
-String.prototype.split_handleColon = String.prototype.split_handleColon ||
-	function (str, maxSplits = Number.MAX_SAFE_INTEGER) {
-		if (str === "") return this.split("");
+String.prototype.split_handleColon = String.prototype.split_handleColon || function (str, maxSplits = Number.MAX_SAFE_INTEGER) {
+	if (str === "") return this.split("");
 
-		const colonStr = `${str.trim()}:`;
-		const isColon = this.toLowerCase().startsWith(colonStr.toLowerCase());
+	const colonStr = `${str.trim()}:`;
+	const isColon = this.toLowerCase().startsWith(colonStr.toLowerCase());
 
-		const re = isColon ? new RegExp(colonStr, "ig") : new RegExp(str, "ig");
-		const targetString = isColon ? colonStr : str;
+	const re = isColon ? new RegExp(colonStr, "ig") : new RegExp(str, "ig");
+	const targetString = isColon ? colonStr : str;
 
-		let m = re.exec(this);
-		let splits = 0;
-		const out = [];
-		const indexes = [];
+	let m = re.exec(this);
+	let splits = 0;
+	const out = [];
+	const indexes = [];
 
-		while (m && splits < maxSplits) {
-			indexes.push(m.index);
+	while (m && splits < maxSplits) {
+		indexes.push(m.index);
 
-			splits++;
-			m = re.exec(this);
-		}
+		splits++;
+		m = re.exec(this);
+	}
 
-		if (indexes.length === 1) {
-			out.push(this.substring(0, indexes[0]));
-			out.push(this.substring(indexes[0] + targetString.length, this.length));
-		} else {
-			for (let i = 0; i < indexes.length - 1; ++i) {
-				const start = indexes[i];
+	if (indexes.length === 1) {
+		out.push(this.substring(0, indexes[0]));
+		out.push(this.substring(indexes[0] + targetString.length, this.length));
+	} else {
+		for (let i = 0; i < indexes.length - 1; ++i) {
+			const start = indexes[i];
 
-				if (i === 0) {
-					out.push(this.substring(0, start));
-				}
+			if (i === 0) {
+				out.push(this.substring(0, start));
+			}
 
-				const end = indexes[i + 1];
-				out.push(this.substring(start + targetString.length, end));
+			const end = indexes[i + 1];
+			out.push(this.substring(start + targetString.length, end));
 
-				if (i === indexes.length - 2) {
-					out.push(this.substring(end + targetString.length, this.length))
-				}
+			if (i === indexes.length - 2) {
+				out.push(this.substring(end + targetString.length, this.length));
 			}
 		}
+	}
 
-		return out.map(it => it.trim());
-	};
+	return out.map(it => it.trim());
+};
 
-String.prototype.indexOf_handleColon = String.prototype.indexOf_handleColon ||
-	function (str) {
-		const colonStr = `${str.trim()}:`;
-		const idxColon = this.toLowerCase().indexOf(colonStr.toLowerCase());
-		if (~idxColon) return idxColon;
-		return this.toLowerCase().indexOf(str.toLowerCase());
-	};
+String.prototype.indexOf_handleColon = String.prototype.indexOf_handleColon || function (str) {
+	const colonStr = `${str.trim()}:`;
+	const idxColon = this.toLowerCase().indexOf(colonStr.toLowerCase());
+	if (~idxColon) return idxColon;
+	return this.toLowerCase().indexOf(str.toLowerCase());
+};
 
 class ConverterUi {
 	constructor () {
@@ -319,8 +317,8 @@ class ConverterUi {
 			const $wrpSource = $(`<div class="sidemenu__row split-v-center"><div class="sidemenu__row__label">Source</div></div>`).appendTo($wrpCustom);
 			this._menuAccess.getSource = () => this._$selSource.val();
 
-			const $wrpSourceOverlay = $(`<div class="full-height full-width"/>`);
-			let $sourceModal = null;
+			const $wrpSourceOverlay = $(`<div class="h-100 w-100"/>`);
+			let modalMeta = null;
 
 			const rebuildStageSource = (options) => {
 				SourceUiUtil.render({
@@ -334,14 +332,14 @@ class ConverterUi {
 
 						if (isNewSource) this._$selSource.append(`<option value="${source.json.escapeQuotes()}">${source.full.escapeQuotes()}</option>`);
 						this._$selSource.val(source.json);
-						if ($sourceModal) $sourceModal.data("close")();
+						if (modalMeta) modalMeta.doClose();
 					},
 					cbConfirmExisting: (source) => {
 						this._$selSource.val(source.json);
-						if ($sourceModal) $sourceModal.data("close")();
+						if (modalMeta) modalMeta.doClose();
 					},
 					cbCancel: () => {
-						if ($sourceModal) $sourceModal.data("close")();
+						if (modalMeta) modalMeta.doClose();
 					}
 				});
 			};
@@ -373,23 +371,23 @@ class ConverterUi {
 					const curSource = BrewUtil.sourceJsonToSource(curSourceJson);
 					if (!curSource) return;
 					rebuildStageSource({mode: "edit", source: MiscUtil.copy(curSource)});
-					$sourceModal = UiUtil.getShow$Modal({
+					modalMeta = UiUtil.getShowModal({
 						fullHeight: true,
-						fullWidth: true,
+						isLarge: true,
 						cbClose: () => $wrpSourceOverlay.detach()
 					});
-					$wrpSourceOverlay.appendTo($sourceModal);
+					$wrpSourceOverlay.appendTo(modalMeta.$modalInner);
 				});
 			$$`<div class="sidemenu__row">${$btnSourceEdit}</div>`.appendTo($wrpCustom);
 
 			const $btnSourceAdd = $(`<button class="btn btn-default btn-sm">Add New Source</button>`).click(() => {
 				rebuildStageSource({mode: "add"});
-				$sourceModal = UiUtil.getShow$Modal({
+				modalMeta = UiUtil.getShowModal({
 					fullHeight: true,
-					fullWidth: true,
+					isLarge: true,
 					cbClose: () => $wrpSourceOverlay.detach()
 				});
-				$wrpSourceOverlay.appendTo($sourceModal);
+				$wrpSourceOverlay.appendTo(modalMeta.$modalInner);
 			});
 			$$`<div class="sidemenu__row">${$btnSourceAdd}</div>`.appendTo($wrpCustom);
 
@@ -557,7 +555,7 @@ class StatblockConverter {
 			const spl = clean.split(/(Challenge)/i);
 			spl[0] = spl[0]
 				.replace(/(\d\d?\s+\([-—+]\d\)\s*)+/gi, (...m) => `${m[0].replace(/\n/g, " ").replace(/\s+/g, " ")}\n`); // collapse multi-line ability scores
-			return spl.join("").split("\n");
+			return spl.join("").split("\n").filter(it => it && it.trim());
 		})();
 		const stats = {};
 		stats.source = options.source || "";
@@ -602,10 +600,11 @@ class StatblockConverter {
 				continue;
 			}
 
-			if (i === 5) continue;
 			// ability scores
-			if (i === 6) {
-				const abilities = curLine.split(/ ?\(([+\-—])?[0-9]*\) ?/g);
+			if (/STR\s*DEX\s*CON\s*INT\s*WIS\s*CHA/i.test(curLine)) {
+				// skip forward a line and grab the ability scores
+				++i;
+				const abilities = toConvert[i].trim().split(/ ?\(([+\-—])?[0-9]*\) ?/g);
 				stats.str = StatblockConverter._tryConvertNumber(abilities[0]);
 				stats.dex = StatblockConverter._tryConvertNumber(abilities[2]);
 				stats.con = StatblockConverter._tryConvertNumber(abilities[4]);
@@ -615,19 +614,23 @@ class StatblockConverter {
 				continue;
 			}
 
-			// alternate ability scores
-			switch (prevLine.toLowerCase()) {
-				case "str": stats.str = StatblockConverter._tryGetStat(curLine); break;
-				case "dex": stats.dex = StatblockConverter._tryGetStat(curLine); break;
-				case "con": stats.con = StatblockConverter._tryGetStat(curLine); break;
-				case "int": stats.int = StatblockConverter._tryGetStat(curLine); break;
-				case "wis": stats.wis = StatblockConverter._tryGetStat(curLine); break;
-				case "cha": stats.cha = StatblockConverter._tryGetStat(curLine); break;
+			// alternate ability scores (alternating lines of abbreviation and score)
+			if (Parser.ABIL_ABVS.includes(curLine.toLowerCase())) {
+				// skip forward a line and grab the ability score
+				++i;
+				switch (curLine.toLowerCase()) {
+					case "str": stats.str = StatblockConverter._tryGetStat(toConvert[i]); continue;
+					case "dex": stats.dex = StatblockConverter._tryGetStat(toConvert[i]); continue;
+					case "con": stats.con = StatblockConverter._tryGetStat(toConvert[i]); continue;
+					case "int": stats.int = StatblockConverter._tryGetStat(toConvert[i]); continue;
+					case "wis": stats.wis = StatblockConverter._tryGetStat(toConvert[i]); continue;
+					case "cha": stats.cha = StatblockConverter._tryGetStat(toConvert[i]); continue;
+				}
 			}
 
 			// saves (optional)
 			if (!curLine.indexOf_handleColon("Saving Throws ")) {
-				StatblockConverter._setCleanSaves(stats, curLine);
+				StatblockConverter._setCleanSaves(stats, curLine, options);
 				continue;
 			}
 
@@ -677,99 +680,99 @@ class StatblockConverter {
 			// goes into actions
 			if (!curLine.indexOf_handleColon("Challenge ")) {
 				StatblockConverter._setCleanCr(stats, curLine);
+				continue;
+			}
 
-				// traits
-				i++;
-				curLine = toConvert[i];
-				stats.trait = [];
-				stats.action = [];
-				stats.reaction = [];
-				stats.legendary = [];
+			// traits
+			stats.trait = [];
+			stats.action = [];
+			stats.reaction = [];
+			stats.legendary = [];
 
-				let curTrait = {};
+			let curTrait = {};
 
-				let isTraits = true;
-				let isActions = false;
-				let isReactions = false;
-				let isLegendaryActions = false;
-				let isLegendaryDescription = false;
+			let isTraits = true;
+			let isActions = false;
+			let isReactions = false;
+			let isLegendaryActions = false;
+			let isLegendaryDescription = false;
 
-				// keep going through traits til we hit actions
-				while (i < toConvert.length) {
-					if (startNextPhase(curLine)) {
-						isTraits = false;
-						isActions = !curLine.toUpperCase().indexOf_handleColon("ACTIONS");
-						isReactions = !curLine.toUpperCase().indexOf_handleColon("REACTIONS");
-						isLegendaryActions = !curLine.toUpperCase().indexOf_handleColon("LEGENDARY ACTIONS");
-						isLegendaryDescription = isLegendaryActions;
-						i++;
-						curLine = toConvert[i];
+			// keep going through traits til we hit actions
+			while (i < toConvert.length) {
+				if (startNextPhase(curLine)) {
+					isTraits = false;
+					isActions = !curLine.toUpperCase().indexOf_handleColon("ACTIONS");
+					if (isActions) {
+						const mActionNote = /actions:?\s*\((.*?)\)/gi.exec(curLine);
+						if (mActionNote) stats.actionNote = mActionNote[1];
 					}
-
-					curTrait.name = "";
-					curTrait.entries = [];
-
-					const parseFirstLine = line => {
-						curTrait.name = line.split(/([.!?])/g)[0];
-						curTrait.entries.push(line.substring(curTrait.name.length + 1, line.length).trim());
-					};
-
-					if (isLegendaryDescription) {
-						// usually the first paragraph is a description of how many legendary actions the creature can make
-						// but in the case that it's missing the substring "legendary" and "action" it's probably an action
-						const compressed = curLine.replace(/\s*/g, "").toLowerCase();
-						if (!compressed.includes("legendary") && !compressed.includes("action")) isLegendaryDescription = false;
-					}
-
-					if (isLegendaryDescription) {
-						curTrait.entries.push(curLine.trim());
-						isLegendaryDescription = false;
-					} else {
-						parseFirstLine(curLine);
-					}
-
+					isReactions = !curLine.toUpperCase().indexOf_handleColon("REACTIONS");
+					isLegendaryActions = !curLine.toUpperCase().indexOf_handleColon("LEGENDARY ACTIONS");
+					isLegendaryDescription = isLegendaryActions;
 					i++;
 					curLine = toConvert[i];
-
-					// get paragraphs
-					// connecting words can start with: o ("of", "or"); t ("the"); a ("and", "at"). Accept numbers, e.g. (Costs 2 Actions)
-					// allow numbers
-					// allow "a" and "I" as single-character words
-					while (curLine && !ConvertUtil.isNameLine(curLine) && !startNextPhase(curLine)) {
-						curTrait.entries.push(curLine.trim());
-						i++;
-						curLine = toConvert[i];
-					}
-
-					if (curTrait.name || curTrait.entries) {
-						// convert dice tags
-						DiceConvert.convertTraitActionDice(curTrait);
-
-						// convert spellcasting
-						if (isTraits) {
-							if (curTrait.name.toLowerCase().includes("spellcasting")) {
-								curTrait = this._tryParseSpellcasting(curTrait, false, options);
-								if (curTrait.success) {
-									// merge in e.g. innate spellcasting
-									if (stats.spellcasting) stats.spellcasting = stats.spellcasting.concat(curTrait.out);
-									else stats.spellcasting = curTrait.out;
-								} else stats.trait.push(curTrait.out);
-							} else {
-								if (StatblockConverter._hasEntryContent(curTrait)) stats.trait.push(curTrait);
-							}
-						}
-						if (isActions && StatblockConverter._hasEntryContent(curTrait)) stats.action.push(curTrait);
-						if (isReactions && StatblockConverter._hasEntryContent(curTrait)) stats.reaction.push(curTrait);
-						if (isLegendaryActions && StatblockConverter._hasEntryContent(curTrait)) stats.legendary.push(curTrait);
-					}
-					curTrait = {};
 				}
 
-				// Remove keys if they are empty
-				if (stats.trait.length === 0) delete stats.trait;
-				if (stats.reaction.length === 0) delete stats.reaction;
-				if (stats.legendary.length === 0) delete stats.legendary;
+				curTrait.name = "";
+				curTrait.entries = [];
+
+				const parseFirstLine = line => {
+					curTrait.name = line.split(/([.!?])/g)[0];
+					curTrait.entries.push(line.substring(curTrait.name.length + 1, line.length).trim());
+				};
+
+				if (isLegendaryDescription) {
+					// usually the first paragraph is a description of how many legendary actions the creature can make
+					// but in the case that it's missing the substring "legendary" and "action" it's probably an action
+					const compressed = curLine.replace(/\s*/g, "").toLowerCase();
+					if (!compressed.includes("legendary") && !compressed.includes("action")) isLegendaryDescription = false;
+				}
+
+				if (isLegendaryDescription) {
+					curTrait.entries.push(curLine.trim());
+					isLegendaryDescription = false;
+				} else {
+					parseFirstLine(curLine);
+				}
+
+				i++;
+				curLine = toConvert[i];
+
+				// collect subsequent paragraphs
+				while (curLine && !ConvertUtil.isNameLine(curLine) && !startNextPhase(curLine)) {
+					curTrait.entries.push(curLine.trim());
+					i++;
+					curLine = toConvert[i];
+				}
+
+				if (curTrait.name || curTrait.entries) {
+					// convert dice tags
+					DiceConvert.convertTraitActionDice(curTrait);
+
+					// convert spellcasting
+					if (isTraits) {
+						if (curTrait.name.toLowerCase().includes("spellcasting")) {
+							curTrait = this._tryParseSpellcasting(curTrait, false, options);
+							if (curTrait.success) {
+								// merge in e.g. innate spellcasting
+								if (stats.spellcasting) stats.spellcasting = stats.spellcasting.concat(curTrait.out);
+								else stats.spellcasting = curTrait.out;
+							} else stats.trait.push(curTrait.out);
+						} else {
+							if (StatblockConverter._hasEntryContent(curTrait)) stats.trait.push(curTrait);
+						}
+					}
+					if (isActions && StatblockConverter._hasEntryContent(curTrait)) stats.action.push(curTrait);
+					if (isReactions && StatblockConverter._hasEntryContent(curTrait)) stats.reaction.push(curTrait);
+					if (isLegendaryActions && StatblockConverter._hasEntryContent(curTrait)) stats.legendary.push(curTrait);
+				}
+				curTrait = {};
 			}
+
+			// Remove keys if they are empty
+			if (stats.trait.length === 0) delete stats.trait;
+			if (stats.reaction.length === 0) delete stats.reaction;
+			if (stats.legendary.length === 0) delete stats.legendary;
 		}
 
 		(function doCleanLegendaryActionHeader () {
@@ -943,8 +946,8 @@ class StatblockConverter {
 			curLine = stripQuote(curLine).trim();
 			if (curLine === "") continue;
 			else if (
-				(curLine === "___" && prevBlank) || // handle nicely separated blocks
-				curLineRaw === "___" // handle multiple stacked blocks
+				(curLine === "___" && prevBlank) // handle nicely separated blocks
+				|| curLineRaw === "___" // handle multiple stacked blocks
 			) {
 				if (stats !== null) hasMultipleBlocks = true;
 				doOutputStatblock();
@@ -1008,7 +1011,7 @@ class StatblockConverter {
 			if (parsed === 8) {
 				// saves (optional)
 				if (~curLine.indexOf("Saving Throws")) {
-					StatblockConverter._setCleanSaves(stats, stripDashStarStar(curLine));
+					StatblockConverter._setCleanSaves(stats, stripDashStarStar(curLine), options);
 					continue;
 				}
 
@@ -1156,6 +1159,8 @@ class StatblockConverter {
 			});
 		};
 
+		if (stats.trait) stats.trait.forEach(trait => RechargeConvert.tryConvertRecharge(trait, () => {}, () => options.cbWarning(`Manual recharge tagging required for trait "${trait.name}"`)));
+		if (stats.action) stats.action.forEach(action => RechargeConvert.tryConvertRecharge(action, () => {}, () => options.cbWarning(`Manual recharge tagging required for action "${action.name}"`)));
 		AcConvert.tryPostProcessAc(
 			stats,
 			(ac) => options.cbWarning(`AC "${ac}" requires manual conversion`),
@@ -1251,12 +1256,21 @@ class StatblockConverter {
 	}
 
 	static _setCleanSizeTypeAlignment (stats, line, options) {
-		stats.size = line[0].toUpperCase();
-		stats.type = line.split(StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX)[0].split(" ").splice(1).join(" ");
-		stats.type = StatblockConverter._tryParseType(stats.type);
+		const mSidekick = /^(\d+)(?:st|nd|rd|th)\s*\W+\s*level\s+(.*)$/i.exec(line.trim());
+		if (mSidekick) {
+			// sidekicks
+			stats.level = Number(mSidekick[1]);
+			stats.size = mSidekick[2].trim()[0].toUpperCase();
+			stats.type = mSidekick[2].split(" ").splice(1).join(" ");
+		} else {
+			// regular creatures
+			stats.size = line[0].toUpperCase();
+			stats.type = line.split(StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX)[0].split(" ").splice(1).join(" ");
 
-		stats.alignment = line.split(StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX)[1].toLowerCase();
-		AlignmentConvert.tryConvertAlignment(stats, (ali) => options.cbWarning(`Alignment "${ali}" requires manual conversion`));
+			stats.alignment = line.split(StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX)[1].toLowerCase();
+			AlignmentConvert.tryConvertAlignment(stats, (ali) => options.cbWarning(`Alignment "${ali}" requires manual conversion`));
+		}
+		stats.type = StatblockConverter._tryParseType(stats.type);
 	}
 
 	static _setCleanHp (stats, line) {
@@ -1278,15 +1292,19 @@ class StatblockConverter {
 		SpeedConvert.tryConvertSpeed(stats, options.cbWarning);
 	}
 
-	static _setCleanSaves (stats, line) {
+	static _setCleanSaves (stats, line, options) {
 		stats.save = line.split_handleColon("Saving Throws", 1)[1].trim();
 		// convert to object format
 		if (stats.save && stats.save.trim()) {
 			const spl = stats.save.split(",").map(it => it.trim().toLowerCase()).filter(it => it);
 			const nu = {};
 			spl.forEach(it => {
-				const sv = it.split(" ");
-				nu[sv[0]] = sv[1];
+				const m = /(\w+)\s*([-+])\s*(\d+)/.exec(it);
+				if (m) {
+					nu[m[1]] = `${m[2]}${m[3]}`;
+				} else {
+					options.cbWarning(`Save "${it}" requires manual conversion`);
+				}
 			});
 			stats.save = nu;
 		}
@@ -1348,7 +1366,21 @@ class StatblockConverter {
 	static _setCleanLanguages (stats, line) {
 		stats.languages = line.split_handleColon("Languages", 1)[1].trim();
 		if (stats.languages && /^([-–‒—]|\\u201\d)$/.exec(stats.languages.trim())) delete stats.languages;
-		else stats.languages = stats.languages.split(StrUtil.COMMA_SPACE_NOT_IN_PARENTHESES_REGEX);
+		else {
+			stats.languages = stats.languages
+			// Clean caps words
+				.split(/(\W)/g)
+				.map(s => {
+					return s
+						.replace(/Telepathy/g, "telepathy")
+						.replace(/All/g, "all")
+						.replace(/Understands/g, "understands")
+						.replace(/Cant/g, "cant")
+						.replace(/Can/g, "can")
+				})
+				.join("")
+				.split(StrUtil.COMMA_SPACE_NOT_IN_PARENTHESES_REGEX);
+		}
 	}
 
 	static _setCleanCr (stats, line) {
@@ -1467,13 +1499,6 @@ class TableConverter {
 		}
 	}
 
-	static _doCleanTable (tbl) {
-		if (!tbl.caption) delete tbl.caption;
-		if (tbl.colLabels && !tbl.colLabels.some(Boolean)) delete tbl.colLabels;
-		if (tbl.colStyles && !tbl.colStyles.some(Boolean)) delete tbl.colStyles;
-		if (!tbl.rows.some(Boolean)) throw new Error("Table had no rows!");
-	}
-
 	/**
 	 * Parses tables from HTML.
 	 * @param inText Input text.
@@ -1545,7 +1570,7 @@ class TableConverter {
 				$table.find(`tr`).each(handleTableRow);
 			}
 
-			this._postProcessTable(tbl);
+			MarkdownConverter.postProcessTable(tbl);
 			options.cbOutput(tbl, options.isAppend);
 		};
 
@@ -1573,56 +1598,6 @@ class TableConverter {
 	doParseMarkdown (inText, options) {
 		if (!inText || !inText.trim()) return options.cbWarning("No input!");
 
-		const getConvertedTable = (lines, caption) => {
-			// trim leading/trailing pipes if they're uniformly present
-			const contentLines = lines.filter(l => l && l.trim());
-			if (contentLines.every(l => l.trim().startsWith("|"))) {
-				lines = lines.map(l => l.replace(/^\s*\|(.*?)$/, "$1"));
-			}
-			if (contentLines.every(l => l.trim().endsWith("|"))) {
-				lines = lines.map(l => l.replace(/^(.*?)\|\s*$/, "$1"));
-			}
-
-			const tbl = {
-				type: "table",
-				caption,
-				colLabels: [],
-				colStyles: [],
-				rows: []
-			};
-
-			let seenHeaderBreak = false;
-			let alignment = [];
-			lines.map(l => l.trim()).filter(Boolean).forEach(l => {
-				const cells = l.split("|").map(it => it.trim());
-				if (cells.length) {
-					if (cells.every(c => !c || !!/^:?\s*---+\s*:?$/.exec(c))) { // a header break
-						alignment = cells.map(c => {
-							if (c.startsWith(":") && c.endsWith(":")) {
-								return "text-align-center";
-							} else if (c.startsWith(":")) {
-								return "text-align-left";
-							} else if (c.endsWith(":")) {
-								return "text-align-right";
-							} else {
-								return "";
-							}
-						});
-						seenHeaderBreak = true;
-					} else if (seenHeaderBreak) {
-						tbl.rows.push(cells);
-					} else {
-						tbl.colLabels = cells;
-					}
-				}
-			});
-
-			tbl.colStyles = alignment;
-
-			this._postProcessTable(tbl);
-			return tbl;
-		};
-
 		const lines = inText.replace(/\r\n/g, "\n").replace(/\r/g, "\n").split(/\n/g);
 		const stack = [];
 		let cur = null;
@@ -1637,7 +1612,7 @@ class TableConverter {
 		});
 		if (cur && cur.lines.length) stack.push(cur);
 
-		const toOutput = stack.map(tbl => getConvertedTable(tbl.lines, tbl.caption)).reverse();
+		const toOutput = stack.map(tbl => MarkdownConverter.getConvertedTable(tbl.lines, tbl.caption)).reverse();
 		toOutput.forEach((out, i) => {
 			if (options.isAppend) options.cbOutput(out, true);
 			else {
@@ -1645,81 +1620,6 @@ class TableConverter {
 				else options.cbOutput(out, true);
 			}
 		});
-	}
-
-	_postProcessTable (tbl) {
-		// Post-processing
-		(function normalizeCellCounts () {
-			// pad all rows to max width
-			const maxWidth = Math.max(tbl.colLabels, ...tbl.rows.map(it => it.length));
-			tbl.rows.forEach(row => {
-				while (row.length < maxWidth) row.push("");
-			});
-		})();
-
-		(function doCalculateWidths () {
-			const BASE_CHAR_CAP = 200; // assume tables are approx 200 characters wide
-
-			// total the
-			const avgWidths = (() => {
-				if (!tbl.rows.length) return null;
-				const out = [...new Array(tbl.rows[0].length)].map(() => 0);
-				tbl.rows.forEach(r => {
-					r.forEach((cell, i) => {
-						out[i] += Math.min(BASE_CHAR_CAP, cell.length);
-					});
-				});
-				return out.map(it => it / tbl.rows.length);
-			})();
-
-			if (avgWidths != null) {
-				const totalWidths = avgWidths.reduce((a, b) => a + b, 0);
-				const redistributedWidths = (() => {
-					const MIN = totalWidths / 12;
-					const sorted = avgWidths.map((it, i) => ({ix: i, val: it})).sort((a, b) => SortUtil.ascSort(a.val, b.val));
-
-					for (let i = 0; i < sorted.length - 1; ++i) {
-						const it = sorted[i];
-						if (it.val < MIN) {
-							const diff = MIN - it.val;
-							sorted[i].val = MIN;
-							const toSteal = diff / sorted.length - (i + 1);
-							for (let j = i + 1; j < sorted.length; ++j) {
-								sorted[j].val -= toSteal;
-							}
-						}
-					}
-
-					return sorted.sort((a, b) => SortUtil.ascSort(a.ix, b.ix)).map(it => it.val);
-				})();
-				let nmlxWidths = redistributedWidths.map(it => it / totalWidths);
-				while (nmlxWidths.reduce((a, b) => a + b, 0) > 1) {
-					const diff = 1 - nmlxWidths.reduce((a, b) => a + b, 0);
-					nmlxWidths = nmlxWidths.map(it => it + diff / nmlxWidths.length);
-				}
-				const twelfthWidths = nmlxWidths.map(it => Math.round(it * 12));
-
-				twelfthWidths.forEach((it, i) => {
-					const widthPart = `col-${it}`;
-					tbl.colStyles[i] = tbl.colStyles[i] ? `${tbl.colStyles[i]} ${widthPart}` : widthPart;
-				});
-			}
-		})();
-
-		(function doCheckDiceCol () {
-			// check if first column is dice
-			let isDiceCol0 = true;
-			tbl.rows.forEach(r => {
-				if (isNaN(Number(r[0]))) isDiceCol0 = false;
-			});
-			if (isDiceCol0 && !tbl.colStyles.includes("text-align-center")) tbl.colStyles[0] += " text-align-center";
-		})();
-
-		(function tagRowDice () {
-			tbl.rows = tbl.rows.map(r => r.map(c => c.replace(RollerUtil.DICE_REGEX, `{@dice $&}`)));
-		})();
-
-		TableConverter._doCleanTable(tbl);
 	}
 }
 TableConverter.SAMPLE_HTML =

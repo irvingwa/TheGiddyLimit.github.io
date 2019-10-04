@@ -3,6 +3,8 @@
 
 <head>
 	<!--5ETOOLS_VERSION-->
+	<!--5ETOOLS_ANALYTICS-->
+	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +20,7 @@
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/browsercheck.js"></script>
 
 	<style>
 		.inputArea,
@@ -83,7 +86,7 @@
 		</div>
 	</header>
 	<nav class="container page__nav" id="navigation">
-		<ul class="nav nav-pills" id="navbar">
+		<ul class="nav page__nav-inner" id="navbar">
 		</ul>
 	</nav>
 
@@ -94,7 +97,7 @@
 		<div class="view-col">
 			<h3 class="conv__head">Input</h3>
 			<pre id="converter_input" class="inputArea ace_editor"></pre>
-			<div class="text-align-right">
+			<div class="text-right">
 				<button id="parsestatblock" class="btn btn-sm btn-default">Parse</button>
 				<button id="parsestatblockadd" class="btn btn-sm btn-default">Parse and Add</button>
 			</div>
@@ -120,6 +123,7 @@
 </div>
 
 <!--5ETOOLS_SCRIPT_ANCHOR-->
+<!--5ETOOLS_AD_ADHESION-->
 <!--5ETOOLS_SCRIPT_ANCHOR__ACE-JS-->
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
@@ -128,10 +132,11 @@
 <script type="text/javascript" src="js/omnidexer.js"></script>
 <script type="text/javascript" src="js/omnisearch.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
+<script type="text/javascript" src="js/render-markdown.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
 <script type="text/javascript" src="js/converterutils.js"></script>
 <script type="text/javascript" src="js/converter.js"></script>
-<script type="text/javascript" src="lib/list.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/jquery-ui.js"></script>
 <script type="text/javascript" src="lib/jquery-ui-slider-pip.js"></script>

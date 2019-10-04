@@ -3,6 +3,8 @@
 
 <head>
 	<!--5ETOOLS_VERSION-->
+	<!--5ETOOLS_ANALYTICS-->
+	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +20,7 @@
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/browsercheck.js"></script>
 	<style>
 		#jsoninput {
 			width: 100%;
@@ -40,7 +43,7 @@
 		</div>
 	</header>
 	<nav class="container page__nav" id="navigation">
-		<ul class="nav nav-pills" id="navbar">
+		<ul class="nav page__nav-inner" id="navbar">
 		</ul>
 	</nav>
 
@@ -49,7 +52,7 @@
 	<div class="view-col-wrapper">
 		<div class="view-col">
 			<pre id="jsoninput" class="inputArea ace_editor"></pre>
-			<div class="text-align-right"><button class="btn btn-default btn-sm" id="demoRender">Render</button> <button class="btn btn-default btn-sm" id="demoReset">Reset</button> <span id="message"></span></div>
+			<div class="text-right"><button class="btn btn-default btn-sm" id="demoRender">Render</button> <button class="btn btn-default btn-sm" id="demoReset">Reset</button> <span id="message"></span></div>
 		</div>
 
 		<div id="capheight" class="view-col">
@@ -61,6 +64,7 @@
 </div>
 
 <!--5ETOOLS_SCRIPT_ANCHOR-->
+<!--5ETOOLS_AD_ADHESION-->
 <!--5ETOOLS_SCRIPT_ANCHOR__ACE-JS-->
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>

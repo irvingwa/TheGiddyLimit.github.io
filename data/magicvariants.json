@@ -16,7 +16,7 @@
 				"tier": "Minor",
 				"rarity": "Unknown",
 				"source": "XGE",
-				"page": 71,
+				"page": 78,
 				"namePrefix": "Adamantine ",
 				"entries": [
 					"Whenever you hit an object using this ammunition, the hit is a critical hit."
@@ -67,7 +67,7 @@
 				"rarity": "Unknown",
 				"tier": "Major",
 				"source": "XGE",
-				"page": 71,
+				"page": 78,
 				"namePrefix": "Adamantine ",
 				"entries": [
 					"Whenever you hit an object with this weapon, the hit is a critical hit."
@@ -193,6 +193,26 @@
 			}
 		},
 		{
+			"name": "Drow Armor +1",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"genericBonus": "+1",
+				"rarity": "Unknown (Magic)",
+				"source": "DMG",
+				"page": 126,
+				"namePrefix": "Drow ",
+				"nameSuffix": " +1",
+				"entries": [
+					"You have a {=genericBonus} bonus to AC while wearing this armor. This armor loses its enchantment bonus permanently if it exposed to sunlight for 1 hour or longer."
+				]
+			}
+		},
+		{
 			"name": "Armor +2",
 			"type": "GV",
 			"requires": [
@@ -245,7 +265,7 @@
 				"tier": "Major",
 				"rarity": "Rare",
 				"source": "DMG",
-				"page": 162,
+				"page": 152,
 				"reqAttune": true,
 				"nameSuffix": " of Acid Resistance"
 			}
@@ -263,7 +283,7 @@
 				"tier": "Major",
 				"rarity": "Rare",
 				"source": "DMG",
-				"page": 162,
+				"page": 152,
 				"reqAttune": true,
 				"nameSuffix": " of Cold Resistance"
 			}
@@ -281,7 +301,7 @@
 				"tier": "Major",
 				"rarity": "Rare",
 				"source": "DMG",
-				"page": 162,
+				"page": 152,
 				"reqAttune": true,
 				"nameSuffix": " of Fire Resistance"
 			}
@@ -299,7 +319,7 @@
 				"tier": "Major",
 				"rarity": "Rare",
 				"source": "DMG",
-				"page": 162,
+				"page": 152,
 				"reqAttune": true,
 				"nameSuffix": " of Force Resistance"
 			}
@@ -336,7 +356,7 @@
 				"tier": "Major",
 				"rarity": "Rare",
 				"source": "DMG",
-				"page": 162,
+				"page": 152,
 				"reqAttune": true,
 				"nameSuffix": " of Lightning Resistance"
 			}
@@ -354,7 +374,7 @@
 				"tier": "Major",
 				"rarity": "Rare",
 				"source": "DMG",
-				"page": 162,
+				"page": 152,
 				"reqAttune": true,
 				"nameSuffix": " of Necrotic Resistance"
 			}
@@ -372,7 +392,7 @@
 				"tier": "Major",
 				"rarity": "Rare",
 				"source": "DMG",
-				"page": 162,
+				"page": 152,
 				"reqAttune": true,
 				"nameSuffix": " of Poison Resistance"
 			}
@@ -390,7 +410,7 @@
 				"tier": "Major",
 				"rarity": "Rare",
 				"source": "DMG",
-				"page": 162,
+				"page": 152,
 				"reqAttune": true,
 				"nameSuffix": " of Psychic Resistance"
 			}
@@ -408,7 +428,7 @@
 				"tier": "Major",
 				"rarity": "Rare",
 				"source": "DMG",
-				"page": 162,
+				"page": 152,
 				"reqAttune": true,
 				"nameSuffix": " of Radiant Resistance"
 			}
@@ -426,7 +446,7 @@
 				"tier": "Major",
 				"rarity": "Rare",
 				"source": "DMG",
-				"page": 162,
+				"page": 152,
 				"reqAttune": true,
 				"nameSuffix": " of Thunder Resistance"
 			}
@@ -988,11 +1008,7 @@
 				"lootTables": [
 					"Magic Item Table I"
 				]
-			},
-			"charges": "{@dice 1d4-1}",
-			"attachedSpells": [
-				"wish"
-			]
+			}
 		},
 		{
 			"name": "Mariner's Armor",
@@ -1074,6 +1090,7 @@
 				"source": "DMG",
 				"page": 182,
 				"stealth": false,
+				"strength": null,
 				"namePrefix": "Mithral ",
 				"entries": [
 					"Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity ({@skill Stealth}) checks or has a Strength requirement, the mithral version of the armor doesn't."
@@ -1574,7 +1591,7 @@
 						"entries": [
 							"This sword is cursed and possessed by a vengeful spirit. Becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the sword, keeping it on your person at all times. While attuned to this weapon, you have disadvantage on attack rolls made with weapons other than this one.",
 							"In addition, while the sword is on your person, you must succeed on a DC 15 Wisdom saving throw whenever you take damage in combat. On a failed save you must attack the creature that damaged you until you drop to 0 hit points or it does, or until you can't reach the creature to make a melee attack against it.",
-							"You can break the curse in the usual ways. Alternatively, casting {@spell banishment|phb} on the sword forces the vengeful spirit to leave it. The sword then becomes a +1 weapon with no other properties."
+							"You can break the curse in the usual ways. Alternatively, casting {@spell banishment} on the sword forces the vengeful spirit to leave it. The sword then becomes a +1 weapon with no other properties."
 						]
 					}
 				],
@@ -1768,6 +1785,29 @@
 			}
 		},
 		{
+			"name": "Drow Weapon +1",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"name": "Net"
+			},
+			"inherits": {
+				"genericBonus": "+1",
+				"rarity": "Unknown (Magic)",
+				"source": "MM",
+				"page": 126,
+				"namePrefix": "Drow ",
+				"nameSuffix": " +1",
+				"entries": [
+					"You have a {=genericBonus} bonus to attack and damage rolls made with this weapon. This weapon loses its enchantment bonus permanently if it exposed to sunlight for 1 hour or longer."
+				]
+			}
+		},
+		{
 			"name": "Weapon +2",
 			"type": "GV",
 			"requires": [
@@ -1946,7 +1986,7 @@
 							"New Form"
 						],
 						"colStyles": [
-							"col-2 text-align-center",
+							"col-2 text-center",
 							"col-10"
 						],
 						"rows": [
@@ -1996,7 +2036,7 @@
 							],
 							[
 								"12",
-								"{@creature Riding Horse|mm|Horse}"
+								"{@creature Riding Horse||Horse}"
 							],
 							[
 								"13",
@@ -2040,6 +2080,83 @@
 							"This weapon is cursed, and becoming attuned to it extends the curse to you. Until the curse is broken with a {@spell remove curse} spell or similar magic, you are unwilling to part with the weapon. Whenever you attack a creature with this weapon and roll a 1 on the attack roll, you suffer the effect of a {@spell polymorph} spell for 1 hour, rolling on the table to determine your new form."
 						]
 					}
+				]
+			}
+		},
+		{
+			"name": "Vicious Weapon +1",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"name": "Net"
+			},
+			"entries": [
+				"When you roll a 20 with this magic weapon, the target takes an extra 7 damage of the weapon's type.",
+				"{@i Note: According to the SRD, it is an extra {@dice 2d6} damage.}"
+			],
+			"inherits": {
+				"genericBonus": "+1",
+				"rarity": "Rare",
+				"source": "AI",
+				"page": 149,
+				"namePrefix": "Vicious ",
+				"nameSuffix": " +1",
+				"entries": [
+					"You have a {=genericBonus} bonus to attack and damage rolls made with this weapon.",
+					"When you roll a 20 with this magic weapon, the target takes an extra 7 {=dmgType} damage.",
+					"{@i Note: According to the SRD, it is an extra {@dice 2d6} {=dmgType} damage.}"
+				]
+			}
+		},
+		{
+			"name": "Mithral Armor +1",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "HA"
+				},
+				{
+					"type": "MA"
+				}
+			],
+			"excludes": {
+				"name": "Hide Armor"
+			},
+			"inherits": {
+				"genericBonus": "+1",
+				"rarity": "Rare",
+				"source": "AI",
+				"page": 156,
+				"stealth": false,
+				"strength": null,
+				"namePrefix": "Mithral ",
+				"nameSuffix": " +1",
+				"entries": [
+					"You have a {=genericBonus} bonus to AC while wearing this armor.",
+					"Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity ({@skill Stealth}) checks or has a Strength requirement, the mithral version of the armor doesn't."
+				]
+			}
+		},
+		{
+			"name": "Hellfire Weapon",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"inherits": {
+				"rarity": "Uncommon",
+				"source": "BGDIA",
+				"page": 223,
+				"namePrefix": "Hellfire ",
+				"entries": [
+					"This weapon is fashioned from infernal iron and traced with veins of hellfire that shed dim light in a 5-foot-radius.",
+					"Any humanoid killed by an attack made with this weapon has its soul funneled into the River Styx, where it's reborn instantly as a {@creature lemure} devil."
 				]
 			}
 		}

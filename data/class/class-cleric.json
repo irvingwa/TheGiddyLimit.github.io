@@ -11,6 +11,8 @@
 				"wis",
 				"cha"
 			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "full",
 			"classTableGroups": [
 				{
 					"colLabels": [
@@ -475,7 +477,7 @@
 					{
 						"name": "Destroy Undead (CR 1/2)",
 						"entries": [
-							"Starting at 5th level, when an {@filter undead of CR 1/2 or lower|bestiary|challenge rating=0;1/8;1/4;1/2|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+							"Starting at 5th level, when an {@filter undead of CR 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
 						]
 					}
 				],
@@ -506,7 +508,7 @@
 					{
 						"name": "Destroy Undead (CR 1)",
 						"entries": [
-							"Starting at 8th level, when an {@filter undead of CR 1 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+							"Starting at 8th level, when an {@filter undead of CR 1 or lower|bestiary|challenge rating=[&0;&1]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
 						]
 					},
 					{
@@ -532,7 +534,7 @@
 					{
 						"name": "Destroy Undead (CR 2)",
 						"entries": [
-							"Starting at 11th level, when an {@filter undead of CR 2 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1;2|type=undead|miscellaneous=!swarm} or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+							"Starting at 11th level, when an {@filter undead of CR 2 or lower|bestiary|challenge rating=[&0;&2]|type=undead|miscellaneous=!swarm} or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
 						]
 					}
 				],
@@ -550,7 +552,7 @@
 					{
 						"name": "Destroy Undead (CR 3)",
 						"entries": [
-							"Starting at 14th level, when an {@filter undead of CR 3 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+							"Starting at 14th level, when an {@filter undead of CR 3 or lower|bestiary|challenge rating=[&0;&3]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
 						]
 					}
 				],
@@ -568,7 +570,7 @@
 					{
 						"name": "Destroy Undead (CR 4)",
 						"entries": [
-							"Starting at 17th level, when an {@filter undead of CR 4 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+							"Starting at 17th level, when an {@filter undead of CR 4 or lower|bestiary|challenge rating=[&0;&4]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
 						]
 					},
 					{
@@ -625,7 +627,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -671,7 +673,7 @@
 											"Starting at 2nd level, you can use your Channel Divinity to abjure otherworldly creatures",
 											"As an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provided that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
 											"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, then the creature can use the {@action Dodge} action.",
-											"After you reach 5th level, when a creature fails its saving throw against you Arcane Abjuration feature, the creature is banished for 1 minute (as in the {@spell banishment} spell, no concentration required) if it isn't on its plane of origin, and its challenge rating is at or below a certain threshold, as shown below.",
+											"After you reach 5th level, when a creature fails its saving throw against your Arcane Abjuration feature, the creature is banished for 1 minute (as in the {@spell banishment} spell, no concentration required) if it isn't on its plane of origin, and its challenge rating is at or below a certain threshold, as shown below.",
 											{
 												"type": "table",
 												"caption": "Arcane Banishment",
@@ -680,7 +682,7 @@
 													"Banishes Creatures of CR..."
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -772,7 +774,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -897,7 +899,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -1014,7 +1016,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -1221,7 +1223,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -1338,7 +1340,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -1456,7 +1458,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -1573,7 +1575,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -1691,7 +1693,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -1803,7 +1805,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -1919,7 +1921,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -2046,7 +2048,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -2179,7 +2181,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -2306,7 +2308,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -2425,7 +2427,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -2543,7 +2545,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -2660,7 +2662,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -2773,7 +2775,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -2791,7 +2793,7 @@
 											],
 											[
 												"7th",
-												"{@spell fire shield|PHB|fire shield (warm shield only)}, {@spell freedom of movement}"
+												"{@spell fire shield||fire shield (warm shield only)}, {@spell freedom of movement}"
 											],
 											[
 												"9th",
@@ -2892,7 +2894,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -3014,7 +3016,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -3133,7 +3135,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -3252,7 +3254,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -3373,7 +3375,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -3497,7 +3499,7 @@
 											"Spells"
 										],
 										"colStyles": [
-											"col-3 text-align-center",
+											"col-3 text-center",
 											"col-9"
 										],
 										"rows": [
@@ -3600,6 +3602,153 @@
 					"source": "GGR",
 					"shortName": "Order",
 					"page": 25
+				},
+				{
+					"name": "Twilight Domain (UA)",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Twilight Domain (UA)",
+								"entries": [
+									"The Twilight Domain governs the transition and blending of light into darkness. It is a time of rest and comfort, but also the threshold between safety and the unknown. Deities of healing or respite (such as Boldrei, Hestia, Mishakal, or Pelor), bravery or protection (such as Dol Arrah, Hajama, Helm, or Ilmater), travel or transition (such as Fharlanghn, Hermes, the Raven Queen, or the Traveler), or the night and dreams (such as Celestian, Morpheus, Nut, or Selûne) might grant their clerics the Twilight Domain. Clerics who serve these deities tend to be brave, delving into the dark to hold its dangers at bay and to bring comfort to those lost far from the light.",
+									"At each indicated cleric level, you add the listed spells to your spells prepared.",
+									{
+										"type": "table",
+										"caption": "Twilight Domain Spells",
+										"colLabels": [
+											"Cleric Level",
+											"Spells"
+										],
+										"colStyles": [
+											"col-3 text-center",
+											"col-9"
+										],
+										"rows": [
+											[
+												"1st",
+												"{@spell faerie fire}, {@spell sleep}"
+											],
+											[
+												"3rd",
+												"{@spell darkness}, {@spell invisibility}"
+											],
+											[
+												"5th",
+												"{@spell aura of vitality}, {@spell Leomund's tiny hut}"
+											],
+											[
+												"7th",
+												"{@spell aura of life}, {@spell greater invisibility}"
+											],
+											[
+												"9th",
+												"{@spell circle of power}, {@spell dream}"
+											]
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Bonus Proficiency",
+										"entries": [
+											"{@i 1st-level Twilight Domain feature}",
+											"You gain proficiency with martial weapons and heavy armor."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Eyes of Night",
+										"entries": [
+											"{@i 1st-level Twilight Domain feature}",
+											"Your eyes are blessed, allowing you to see through the deepest gloom. You have darkvision with no maximum range; you can see in dim light as if it were bright light and in darkness as if it were dim light.",
+											"As an action, you can magically give the benefit of this feature to any number of creatures you can see within 10 feet of you. The shared benefit lasts for 10 minutes. You can extend this benefit a number of times equal to your Wisdom modifier (a minimum of once), and you regain all expended uses when you finish a long rest."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Vigilant Blessing",
+										"entries": [
+											"{@i 1st-level Twilight Domain feature}",
+											"The night has taught you to be vigilant. As an action, you give one creature you touch (including possibly yourself) advantage on the next initiative roll the creature makes. This benefit ends immediately after the roll or if you use this feature again."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Channel Divinity: Twilight Sanctuary",
+										"entries": [
+											"{@i 2nd-level Twilight Domain feature}",
+											"You can use your Channel Divinity to refresh your allies with soothing twilight.",
+											"As an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are {@condition incapacitated} or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:",
+											{
+												"type": "list",
+												"items": [
+													"Give it {@dice 1d8} temporary hit points.",
+													"End one effect causing it to be {@condition charmed} or {@condition frightened}."
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Steps of the Brave",
+										"entries": [
+											"{@i 6th-level Twilight Domain feature}",
+											"You draw strength from your connection to twilight and find yourself at home within its dark embrace, gaining two benefits:",
+											{
+												"type": "list",
+												"items": [
+													"You have advantage on saving throws against being {@condition frightened}.",
+													"If you are in dim light or darkness, you can use a bonus action to magically give yourself a flying speed equal to your walking speed until the end of your next turn."
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Divine Strike",
+										"entries": [
+											"{@i 8th-level Twilight Domain feature}",
+											"You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} psychic damage. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Midnight Shroud",
+										"entries": [
+											"{@i 17th-level Twilight Domain feature}",
+											"You can harness the shrouding power of night to protect your allies and stymie your foes. Whenever you cast the {@spell darkness} spell using a spell slot, you can choose a number of creatures that you can see (including yourself) equal to your Wisdom modifier (minimum of one). The chosen creatures can see through the darkness"
+										]
+									}
+								]
+							}
+						]
+					],
+					"source": "UAClericDruidWizard",
+					"shortName": "Twilight (UA)",
+					"page": 1
 				}
 			],
 			"fluff": [
@@ -3672,7 +3821,7 @@
 										"Temple"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -3745,7 +3894,7 @@
 												"Keepsake"
 											],
 											"colStyles": [
-												"col-1 text-align-center",
+												"col-1 text-center",
 												"col-11"
 											],
 											"rows": [
@@ -3821,7 +3970,7 @@
 												"Secret"
 											],
 											"colStyles": [
-												"col-1 text-align-center",
+												"col-1 text-center",
 												"col-11"
 											],
 											"rows": [
@@ -3899,7 +4048,8 @@
 					"source": "XGE",
 					"page": 17
 				}
-			]
+			],
+			"page": 36
 		}
 	]
 }

@@ -93,6 +93,7 @@
 		},
 		{
 			"name": "Baphomet",
+			"isNpc": true,
 			"size": "H",
 			"type": {
 				"type": "fiend",
@@ -578,7 +579,7 @@
 				{
 					"ac": 20,
 					"from": [
-						"{@item dwarven plate|dmg}"
+						"{@item dwarven plate}"
 					]
 				}
 			],
@@ -724,6 +725,7 @@
 		},
 		{
 			"name": "Demogorgon",
+			"isNpc": true,
 			"size": "H",
 			"type": {
 				"type": "fiend",
@@ -2407,6 +2409,7 @@
 		},
 		{
 			"name": "Fraz-Urb'luu",
+			"isNpc": true,
 			"size": "L",
 			"type": {
 				"type": "fiend",
@@ -2672,6 +2675,7 @@
 		},
 		{
 			"name": "Graz'zt",
+			"isNpc": true,
 			"size": "L",
 			"type": {
 				"type": "fiend",
@@ -3277,6 +3281,7 @@
 		},
 		{
 			"name": "Juiblex",
+			"isNpc": true,
 			"size": "H",
 			"type": {
 				"type": "fiend",
@@ -3842,7 +3847,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Narrak is a 5th-level spellcaster. His spellcasting ability is Charisma (Save {@dc 13}, {@hit 5} to hit with spell attacks) Narrak has two 2nd-level spell slots, which he regains after finishing a short or long rest, and knows the following Warlock spells:"
+						"Narrak is a 5th-level spellcaster. His spellcasting ability is Charisma (Save {@dc 13}, {@hit 5} to hit with spell attacks) Narrak has two 2nd-level spell slots, which he regains after finishing a short or long rest, and knows the following warlock spells:"
 					],
 					"spells": {
 						"0": {
@@ -3852,17 +3857,13 @@
 								"{@spell poison spray}"
 							]
 						},
-						"1": {
-							"slots": 0,
+						"2": {
+							"lower": 1,
+							"slots": 2,
 							"spells": [
 								"{@spell armor of Agathys}",
 								"{@spell charm person}",
-								"{@spell hex}"
-							]
-						},
-						"2": {
-							"slots": 2,
-							"spells": [
+								"{@spell hex}",
 								"{@spell hold person}",
 								"{@spell ray of enfeeblement}",
 								"{@spell spider climb}"
@@ -3895,6 +3896,7 @@
 		},
 		{
 			"name": "Orcus",
+			"isNpc": true,
 			"size": "H",
 			"type": {
 				"type": "fiend",
@@ -4119,7 +4121,7 @@
 			],
 			"hp": {
 				"average": 44,
-				"formula": "4d10 + 22"
+				"formula": "4d10 + 4"
 			},
 			"speed": {
 				"walk": 30,
@@ -4436,7 +4438,7 @@
 			"dex": 12,
 			"con": 18,
 			"int": 8,
-			"wis": 23,
+			"wis": 12,
 			"cha": 12,
 			"skill": {
 				"athletics": "+6",
@@ -4802,6 +4804,7 @@
 		},
 		{
 			"name": "Yeenoghu",
+			"isNpc": true,
 			"size": "H",
 			"type": {
 				"type": "fiend",
@@ -4823,15 +4826,15 @@
 				}
 			],
 			"hp": {
-				"average": 348,
-				"formula": "24d12 + 192"
+				"average": 333,
+				"formula": "23d12 + 184"
 			},
 			"speed": {
 				"walk": 50
 			},
 			"str": 29,
 			"dex": 16,
-			"con": 23,
+			"con": 26,
 			"int": 15,
 			"wis": 24,
 			"cha": 15,
@@ -5003,6 +5006,7 @@
 		},
 		{
 			"name": "Yestabrod",
+			"isNpc": true,
 			"size": "L",
 			"type": "monstrosity",
 			"source": "OotA",
@@ -5197,6 +5201,7 @@
 		},
 		{
 			"name": "Zuggtmoy",
+			"isNpc": true,
 			"size": "L",
 			"type": {
 				"type": "fiend",
@@ -5404,7 +5409,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 6
 		},
 		{
 			"name": "Prince Derendil",
@@ -5421,7 +5427,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 6
 		},
 		{
 			"name": "Eldeth Feldrun",
@@ -5450,7 +5457,8 @@
 			],
 			"senseTags": [
 				"D"
-			]
+			],
+			"page": 6
 		},
 		{
 			"name": "Giant Rocktopus",
@@ -5483,7 +5491,8 @@
 			},
 			"traitTags": [
 				"Water Breathing"
-			]
+			],
+			"page": 28
 		}
 	]
 }

@@ -57,13 +57,11 @@ class Omnidexer {
 	 * @param arbiter The indexer arbiter.
 	 * @param json A raw JSON object of a file, typically containing an array to be indexed.
 	 * @param options Options object.
-	 * @param options.idOffset An offset for the ID.
 	 * @param options.isNoFilter If filtering rules are to be ignored (e.g. for tests).
 	 * @param options.alt Sub-options for alternate indices.
 	 */
 	addToIndex (arbiter, json, options) {
 		options = options || {};
-		if (options.idOffset) this.id += options.idOffset;
 		const index = this._index;
 		let id = this.id;
 
@@ -256,8 +254,8 @@ Omnidexer.TO_INDEX = [
 	},
 	{
 		category: Parser.CAT_ID_ITEM,
-		file: "basicitems.json",
-		listProp: "basicitem",
+		file: "items-base.json",
+		listProp: "baseitem",
 		baseUrl: "items.html",
 		hover: true
 	},
@@ -358,6 +356,30 @@ Omnidexer.TO_INDEX = [
 		include: (it) => Omnidexer.arrIncludesOrEquals(it.featureType, "AI")
 	},
 	{
+		category: Parser.CAT_ID_SHIP_UPGRADE,
+		file: "optionalfeatures.json",
+		listProp: "optionalfeature",
+		baseUrl: "optionalfeatures.html",
+		hover: true,
+		include: (it) => Omnidexer.arrIncludesOrEquals(it.featureType, "SHP:H") || Omnidexer.arrIncludesOrEquals(it.featureType, "SHP:M") || Omnidexer.arrIncludesOrEquals(it.featureType, "SHP:W") || Omnidexer.arrIncludesOrEquals(it.featureType, "SHP:F")
+	},
+	{
+		category: Parser.CAT_ID_INFERNAL_WAR_MACHINE_UPGRADE,
+		file: "optionalfeatures.json",
+		listProp: "optionalfeature",
+		baseUrl: "optionalfeatures.html",
+		hover: true,
+		include: (it) => Omnidexer.arrIncludesOrEquals(it.featureType, "IWM:W") || Omnidexer.arrIncludesOrEquals(it.featureType, "IWM:A") || Omnidexer.arrIncludesOrEquals(it.featureType, "IWM:G")
+	},
+	{
+		category: Parser.CAT_ID_ONOMANCY_RESONANT,
+		file: "optionalfeatures.json",
+		listProp: "optionalfeature",
+		baseUrl: "optionalfeatures.html",
+		hover: true,
+		include: (it) => Omnidexer.arrIncludesOrEquals(it.featureType, "OR")
+	},
+	{
 		category: Parser.CAT_ID_ITEM,
 		file: "items.json",
 		listProp: "item",
@@ -409,24 +431,25 @@ Omnidexer.TO_INDEX = [
 		category: Parser.CAT_ID_VARIANT_OPTIONAL_RULE,
 		file: "variantrules.json",
 		listProp: "variantrule",
-		baseUrl: "variantrules.html",
-		deepIndex: (indexer, primary, it) => {
-			const names = [];
-			it.entries.forEach(e => {
-				Renderer.getNames(names, e, 1);
-			});
-			const allNames = Renderer.getNumberedNames(it);
-			const nameKeys = Object.keys(allNames).filter(it => names.includes(it));
-
-			return nameKeys.map(n => {
-				const ix = allNames[n];
-				return {
-					u: `${UrlUtil.encodeForHash([it.name, it.source])}${HASH_PART_SEP}${ix}`,
-					d: 1,
-					n: `${primary.parentName}; ${n}`
-				};
-			});
-		}
+		baseUrl: "variantrules.html"
+		// FIXME is this still needed?
+		// deepIndex: (indexer, primary, it) => {
+		// 	const names = [];
+		// 	it.entries.forEach(e => {
+		// 		Renderer.getNames(names, e, 1);
+		// 	});
+		// 	const allNames = Renderer.getNumberedNames(it);
+		// 	const nameKeys = Object.keys(allNames).filter(it => names.includes(it));
+		//
+		// 	return nameKeys.map(n => {
+		// 		const ix = allNames[n];
+		// 		return {
+		// 			u: `${UrlUtil.encodeForHash([it.name, it.source])}${HASH_PART_SEP}${ix}`,
+		// 			d: 1,
+		// 			n: `${primary.parentName}; ${n}`
+		// 		};
+		// 	});
+		// }
 	},
 	{
 		category: Parser.CAT_ID_ADVENTURE,
@@ -457,7 +480,16 @@ Omnidexer.TO_INDEX = [
 		},
 		additionalIndexes: {
 			item: async (indexer, rawVariants) => {
-				const specVars = await UtilSearchIndex._node_pGetBasicVariantItems(rawVariants);
+				const specVars = await (async () => {
+					if (typeof module !== "undefined") return Renderer.item.getAllIndexableItems(rawVariants, require(`../data/items-base.json`));
+					else {
+						const baseItemJson = await DataUtil.loadJSON(`data/items-base.json`);
+						const rawBaseItems = {...baseItemJson, baseitem: [...baseItemJson.baseitem]};
+						const brew = await BrewUtil.pAddBrewData();
+						if (brew.baseitem) rawBaseItems.baseitem.push(...brew.baseitem);
+						return Renderer.item.getAllIndexableItems(rawVariants, rawBaseItems);
+					}
+				})();
 				return specVars.map(sv => {
 					const out = {
 						c: Parser.CAT_ID_ITEM,
@@ -574,10 +606,10 @@ Omnidexer.TO_INDEX = [
 		hover: true
 	},
 	{
-		category: Parser.CAT_ID_SHIP,
-		file: "ships.json",
-		listProp: "ship",
-		baseUrl: "ships.html",
+		category: Parser.CAT_ID_VEHICLE,
+		file: "vehicles.json",
+		listProp: "vehicle",
+		baseUrl: "vehicles.html",
 		hover: true
 	}
 ];

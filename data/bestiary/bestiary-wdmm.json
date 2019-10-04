@@ -63,7 +63,7 @@
 				"understands one language (usually Common) but can't speak"
 			],
 			"cr": "0",
-			"page": 0,
+			"page": 313,
 			"senses": [
 				"blindsight 60 ft. (blind beyond this radius)"
 			],
@@ -147,7 +147,7 @@
 			],
 			"passive": 11,
 			"cr": "8",
-			"page": 0,
+			"page": 315,
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -257,7 +257,7 @@
 				"Goblin (can't speak in bat form)"
 			],
 			"cr": "2",
-			"page": 0,
+			"page": 317,
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -407,7 +407,7 @@
 				"Undercommon"
 			],
 			"cr": "23",
-			"page": 0,
+			"page": 310,
 			"senses": [
 				"darkvision 120 ft."
 			],
@@ -651,7 +651,7 @@
 				"Ignan"
 			],
 			"cr": "3",
-			"page": 0,
+			"page": 313,
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -751,7 +751,7 @@
 				"Undercommon"
 			],
 			"cr": "13",
-			"page": 0,
+			"page": 314,
 			"senses": [
 				"darkvision 120 ft."
 			],
@@ -976,7 +976,7 @@
 				"understands the languages it knew in life but can't speak"
 			],
 			"cr": "9",
-			"page": 0,
+			"page": 316,
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -1150,10 +1150,12 @@
 			"miscTags": [
 				"MW",
 				"RCH"
-			]
+			],
+			"page": 171
 		},
 		{
 			"name": "Zorak Lightdrinker",
+			"isNpc": true,
 			"isNamedCreature": true,
 			"size": "M",
 			"type": {
@@ -1310,7 +1312,7 @@
 				{
 					"name": "Children of the Night (1/Day)",
 					"entries": [
-						"Zorak magically calls {@dice 2d4} swarms of {@creature swarm of bats|mm|bats} or {@creature swarm of rats|mm|rats}, provided that the sun isn't up. While outdoors, Zorak can call {@dice 3d6} {@creature wolf|mm|wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of Zorak and obeying his spoken commands. The beasts remain for 1 hour, until Zorak dies, or until Zorak dismisses them as a bonus action."
+						"Zorak magically calls {@dice 2d4} swarms of {@creature swarm of bats||bats} or {@creature swarm of rats||rats}, provided that the sun isn't up. While outdoors, Zorak can call {@dice 3d6} {@creature wolf||wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of Zorak and obeying his spoken commands. The beasts remain for 1 hour, until Zorak dies, or until Zorak dismisses them as a bonus action."
 					]
 				}
 			],
@@ -1362,7 +1364,8 @@
 			"miscTags": [
 				"RW",
 				"MW"
-			]
+			],
+			"page": 204
 		},
 		{
 			"name": "Big Xorn",
@@ -1481,6 +1484,7 @@
 		},
 		{
 			"name": "Haungharassk",
+			"isNpc": true,
 			"size": "H",
 			"type": "beast",
 			"source": "WDMM",
@@ -1709,70 +1713,6 @@
 			]
 		},
 		{
-			"name": "Iron Spider",
-			"size": "L",
-			"type": "construct",
-			"source": "WDMM",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				19
-			],
-			"hp": {
-				"average": 80,
-				"formula": "80d1"
-			},
-			"speed": {
-				"walk": 30,
-				"climb": 30
-			},
-			"str": 18,
-			"dex": 10,
-			"con": 10,
-			"int": 3,
-			"wis": 3,
-			"cha": 1,
-			"immune": [
-				"psychic",
-				"poison"
-			],
-			"passive": 6,
-			"cr": "Unknown",
-			"page": 165,
-			"senses": [
-				"blindsight 60 ft. (blind beyond this radius)"
-			],
-			"trait": [
-				{
-					"name": "Spider Climb",
-					"entries": [
-						"The iron spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Shoot",
-					"entries": [
-						"As an action, the iron spider can shoot out a 6-inch-thick web cable up to 50 feet long, attaching the far end of the cable to a solid surface up to 50 feet away from it. Once it creates 200 feet of web cable, the spider can't produce any more cable until the next dawn."
-					]
-				},
-				{
-					"name": "Detach",
-					"entries": [
-						"As a bonus action, the iron spider can detach the other end of the cable from itself and attach it to a solid surface within 10 feet of it."
-					]
-				}
-			],
-			"traitTags": [
-				"Spider Climb"
-			],
-			"senseTags": [
-				"B"
-			]
-		},
-		{
 			"name": "Mad Golem",
 			"source": "WDMM",
 			"page": 254,
@@ -1929,6 +1869,7 @@
 		},
 		{
 			"name": "Shockerstomper",
+			"isNpc": true,
 			"size": "G",
 			"type": "construct",
 			"source": "WDMM",
@@ -2065,7 +2006,7 @@
 			"cha": 1,
 			"passive": 6,
 			"cr": "3",
-			"page": 0,
+			"page": 186,
 			"senses": [
 				"blindsight 30 ft. (blind beyond this radius)"
 			],
@@ -2279,37 +2220,7 @@
 			]
 		},
 		{
-			"name": "Emberosa",
-			"isNpc": true,
-			"source": "WDMM",
-			"page": 185,
-			"hp": {
-				"average": 221,
-				"formula": "13d12 + 78"
-			},
-			"_copy": {
-				"name": "Fire Giant",
-				"source": "MM",
-				"_mod": {
-					"action": {
-						"mode": "appendArr",
-						"items": {
-							"name": "Fireball",
-							"entries": [
-								"{@atk rw} {@hit 11} to hit, range 60/240 ft., one target. {@h}29 ({@damage 4d10 + 7}) fire damage."
-							]
-						}
-					}
-				}
-			},
-			"damageTags": [
-				"S",
-				"B",
-				"F"
-			]
-		},
-		{
-			"name": "Berlain",
+			"name": "Berlain Shadowdusk",
 			"isNpc": true,
 			"source": "WDMM",
 			"page": 283,
@@ -2587,45 +2498,8 @@
 				"DS",
 				"I",
 				"U"
-			]
-		},
-		{
-			"name": "Deformed Duergar",
-			"source": "WDMM",
-			"page": 180,
-			"hp": {
-				"average": 40,
-				"formula": "4d8 + 4"
-			},
-			"_copy": {
-				"name": "Duergar",
-				"source": "MM",
-				"_mod": {
-					"trait": {
-						"mode": "appendArr",
-						"items": [
-							{
-								"name": "Extra Arm",
-								"entries": [
-									"As a bonus action, the duergar can make an attack with its javelin."
-								]
-							},
-							{
-								"name": "Deformed Head",
-								"entries": [
-									"The duergar has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition charmed}, {@condition frightened}, {@condition stunned}, or knocked {@condition unconscious}."
-								]
-							}
-						]
-					}
-				}
-			},
-			"miscTags": [
-				"MW",
-				"RCH",
-				"RW",
-				"THW"
-			]
+			],
+			"miscTags": []
 		},
 		{
 			"name": "Sundeth",
@@ -2704,6 +2578,7 @@
 			"source": "WDMM",
 			"page": 243,
 			"cr": "8",
+			"size": "H",
 			"hp": {
 				"average": 152,
 				"formula": "16d12 + 48"
@@ -2891,141 +2766,6 @@
 			]
 		},
 		{
-			"name": "Nester",
-			"isNpc": true,
-			"source": "WDMM",
-			"page": 131,
-			"type": "undead",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"languages": [
-				"Auran",
-				"Common",
-				"Draconic",
-				"Dwarvish",
-				"Giant",
-				"and Terran",
-				"but can't speak"
-			],
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Nester is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Nester can cast disguise self and invisibility at will and has the following wizard spells prepared:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell detect magic}",
-								"{@spell identify}",
-								"{@spell mage armor}*",
-								"{@spell magic missile}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell mirror image}",
-								"{@spell misty step}"
-							]
-						},
-						"3": {
-							"slots": 3,
-							"spells": [
-								"{@spell counterspell}",
-								"{@spell animate dead}",
-								"{@spell lightning bolt}"
-							]
-						},
-						"4": {
-							"slots": 3,
-							"spells": [
-								"{@spell blight}",
-								"{@spell fire shield}",
-								"{@spell stoneskin}*"
-							]
-						},
-						"5": {
-							"slots": 3,
-							"spells": [
-								"{@spell cone of cold}",
-								"{@spell Rary's telepathic bond}",
-								"{@spell wall of force}"
-							]
-						},
-						"6": {
-							"slots": 1,
-							"spells": [
-								"{@spell globe of invulnerability}"
-							]
-						},
-						"7": {
-							"slots": 1,
-							"spells": [
-								"{@spell teleport}"
-							]
-						},
-						"8": {
-							"slots": 1,
-							"spells": [
-								"{@spell mind blank}*"
-							]
-						},
-						"9": {
-							"slots": 1,
-							"spells": [
-								"{@spell time stop}"
-							]
-						}
-					},
-					"footerEntries": [
-						"*Nester casts these spells on himself before combat."
-					],
-					"ability": "int"
-				}
-			],
-			"_copy": {
-				"name": "Archmage",
-				"source": "MM",
-				"_mod": {
-					"*": {
-						"mode": "replaceTxt",
-						"replace": "the archmage",
-						"with": "Nester",
-						"flags": "i"
-					}
-				}
-			},
-			"languageTags": [
-				"AU",
-				"C",
-				"DR",
-				"D",
-				"GI",
-				"T",
-				"CS"
-			],
-			"senseTags": [
-				"D"
-			]
-		},
-		{
 			"name": "Trenzia",
 			"isNpc": true,
 			"source": "WDMM",
@@ -3109,7 +2849,7 @@
 		{
 			"name": "Undead Bulette",
 			"source": "WDMM",
-			"page": 0,
+			"page": 90,
 			"type": "undead",
 			"hp": {
 				"average": 125,
@@ -3147,7 +2887,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 218
 		},
 		{
 			"name": "Animated Jade Serpent",
@@ -3162,7 +2903,8 @@
 			],
 			"conditionImmune": [
 				"poisoned"
-			]
+			],
+			"page": 92
 		},
 		{
 			"name": "Animated Staff",
@@ -3211,7 +2953,6 @@
 				"blindsight 60 ft. (blind beyond this radius)"
 			],
 			"passive": 12,
-			"cr": "Unknown",
 			"trait": [
 				{
 					"name": "Wielder Domination",
@@ -3246,7 +2987,8 @@
 			],
 			"senseTags": [
 				"B"
-			]
+			],
+			"page": 262
 		},
 		{
 			"name": "Animated Wand",
@@ -3266,12 +3008,13 @@
 						"items": {
 							"name": "Wand of Wonder",
 							"entries": [
-								"The animated wand can expend 1 of its charges and target a random creature with one of its {@item wand of wonder|dmg|randomly determined effects}. Any such effect that would target the wand's user targets the wand instead. If reduced to 0 hit points, the wand crumbles into dust and is destroyed."
+								"The animated wand can expend 1 of its charges and target a random creature with one of its {@item wand of wonder||randomly determined effects}. Any such effect that would target the wand's user targets the wand instead. If reduced to 0 hit points, the wand crumbles into dust and is destroyed."
 							]
 						}
 					}
 				}
-			}
+			},
+			"page": 299
 		},
 		{
 			"name": "Arcturia",
@@ -3378,17 +3121,18 @@
 							"spells": [
 								"{@spell True Polymorph}"
 							]
-						},
-						"will": [
-							"{@spell alter self}"
-						],
-						"hidden": [
-							"will"
-						]
+						}
 					},
+					"will": [
+						"{@spell alter self}"
+					],
+					"hidden": [
+						"will"
+					],
 					"ability": "int"
 				}
-			]
+			],
+			"page": 296
 		},
 		{
 			"name": "Ashtyrranthor",
@@ -3425,10 +3169,10 @@
 					"ability": "cha"
 				}
 			],
-			"dragonCastingColor": null,
 			"spellcastingTags": [
 				"I"
-			]
+			],
+			"page": 210
 		},
 		{
 			"name": "Copper Stormforge",
@@ -3461,7 +3205,8 @@
 			],
 			"senseTags": [
 				"D"
-			]
+			],
+			"page": 30
 		},
 		{
 			"name": "Crow",
@@ -3477,7 +3222,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 302
 		},
 		{
 			"name": "Crystal Battleaxe",
@@ -3493,7 +3239,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 89
 		},
 		{
 			"name": "Deformed Duergar",
@@ -3531,7 +3278,8 @@
 				"RCH",
 				"RW",
 				"THW"
-			]
+			],
+			"page": 180
 		},
 		{
 			"name": "Dezmyr Shadowdusk",
@@ -3605,7 +3353,8 @@
 					},
 					"ability": "cha"
 				}
-			]
+			],
+			"page": 287
 		},
 		{
 			"name": "Drivvin Freth",
@@ -3630,7 +3379,7 @@
 						"items": {
 							"name": "Summon Demon (1/Day)",
 							"entries": [
-								"Drivvin magically summons a {@filter demon of challenge rating 6 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4;5;6|tag=demon|miscellaneous=!swarm}. The summoned demon appears in an unoccupied space within 60 feet of him, acts as his ally, and can't summon other demons. The summoned demon remains until Drivvin dismisses it as an action or until the demon is reduced to 0 hit points."
+								"Drivvin magically summons a {@filter demon of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|tag=demon|miscellaneous=!swarm}. The summoned demon appears in an unoccupied space within 60 feet of him, acts as his ally, and can't summon other demons. The summoned demon remains until Drivvin dismisses it as an action or until the demon is reduced to 0 hit points."
 							]
 						}
 					}
@@ -3663,7 +3412,8 @@
 			"spellcastingTags": [
 				"CW",
 				"I"
-			]
+			],
+			"page": 169
 		},
 		{
 			"name": "Emberosa",
@@ -3694,7 +3444,8 @@
 			"damageTags": [
 				"S",
 				"F"
-			]
+			],
+			"page": 185
 		},
 		{
 			"name": "Stonecloak",
@@ -3726,7 +3477,8 @@
 				"E",
 				"I",
 				"U"
-			]
+			],
+			"page": 253
 		},
 		{
 			"name": "Ezzat",
@@ -3854,7 +3606,8 @@
 				"E",
 				"S",
 				"U"
-			]
+			],
+			"page": 262
 		},
 		{
 			"name": "Fazrian",
@@ -3875,7 +3628,8 @@
 			"miscTags": [
 				"MW",
 				"RCH"
-			]
+			],
+			"page": 275
 		},
 		{
 			"name": "Fidelio",
@@ -3896,7 +3650,8 @@
 			"hp": {
 				"average": 80,
 				"formula": "10d8"
-			}
+			},
+			"page": 197
 		},
 		{
 			"name": "Five-Armed Troll",
@@ -3916,7 +3671,8 @@
 						}
 					}
 				}
-			}
+			},
+			"page": 154
 		},
 		{
 			"name": "Flying Trident",
@@ -3950,7 +3706,8 @@
 			],
 			"damageTags": [
 				"P"
-			]
+			],
+			"page": 106
 		},
 		{
 			"name": "Gorzil's Gang Troglodyte",
@@ -3997,7 +3754,8 @@
 			"languageTags": [
 				"CS",
 				"U"
-			]
+			],
+			"page": 150
 		},
 		{
 			"name": "Glyster",
@@ -4018,7 +3776,8 @@
 			"alignment": [
 				"L",
 				"G"
-			]
+			],
+			"page": 241
 		},
 		{
 			"name": "Halaster Puppet",
@@ -4045,7 +3804,6 @@
 				"special": "8"
 			},
 			"passive": 10,
-			"cr": "Unknown",
 			"immune": [
 				"poison",
 				"psychic"
@@ -4070,7 +3828,8 @@
 			],
 			"traitTags": [
 				"Antimagic Susceptibility"
-			]
+			],
+			"page": 31
 		},
 		{
 			"name": "Horned Sister",
@@ -4105,7 +3864,8 @@
 			"spellcastingTags": [
 				"CW",
 				"I"
-			]
+			],
+			"page": 118
 		},
 		{
 			"name": "Iron Spider",
@@ -4133,7 +3893,6 @@
 				"special": "80"
 			},
 			"passive": 6,
-			"cr": "Unknown",
 			"immune": [
 				"poison",
 				"psychic"
@@ -4151,7 +3910,8 @@
 			],
 			"senseTags": [
 				"B"
-			]
+			],
+			"page": 165
 		},
 		{
 			"name": "Junior Drow Priestess of Lolth",
@@ -4189,7 +3949,8 @@
 			"spellcastingTags": [
 				"CC",
 				"I"
-			]
+			],
+			"page": 149
 		},
 		{
 			"name": "Keresta Delvingstone",
@@ -4211,7 +3972,7 @@
 						"items": {
 							"name": "Children of the Night (1/Day)",
 							"entries": [
-								"The vampire magically calls {@dice 2d4} swarms of {@creature swarm of bats|mm|bats} or {@creature swarm of rats|mm|rats}, provided that the sun isn't up. While outdoors, the vampire can call {@dice 3d6} {@creature giant centipede|mm|giant centipedes} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
+								"The vampire magically calls {@dice 2d4} swarms of {@creature swarm of bats||bats} or {@creature swarm of rats||rats}, provided that the sun isn't up. While outdoors, the vampire can call {@dice 3d6} {@creature giant centipede||giant centipedes} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
 							]
 						}
 					}
@@ -4279,7 +4040,8 @@
 			],
 			"spellcastingTags": [
 				"CW"
-			]
+			],
+			"page": 232
 		},
 		{
 			"name": "Kol'daan",
@@ -4322,7 +4084,8 @@
 				"P",
 				"S",
 				"B"
-			]
+			],
+			"page": 155
 		},
 		{
 			"name": "Large Mimic",
@@ -4335,82 +4098,8 @@
 			"hp": {
 				"average": 67,
 				"formula": "9d10 + 18"
-			}
-		},
-		{
-			"name": "Mad Golem",
-			"isNpc": true,
-			"source": "WDMM",
-			"_copy": {
-				"name": "Stone Golem",
-				"source": "MM",
-				"action": {
-					"mode": "replaceArr",
-					"replace": "Slam",
-					"items": {
-						"name": "Slam",
-						"entries": [
-							"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}24 ({@damage 4d8 + 6}) bludgeoning damage."
-						]
-					}
-				}
 			},
-			"size": "H",
-			"hp": {
-				"average": 264,
-				"formula": "23d12 + 115"
-			},
-			"cr": "12",
-			"int": 9,
-			"cha": 9,
-			"languages": [
-				"understands Abyssal, Celestial, Common, Draconic, Dwarvish, Elvish, Infernal, and Undercommon but can't speak"
-			],
-			"languageTags": [
-				"AB",
-				"CE",
-				"C",
-				"CS",
-				"DR",
-				"D",
-				"E",
-				"I",
-				"U"
-			]
-		},
-		{
-			"name": "Maddgoth's Homunculus",
-			"isNpc": true,
-			"source": "WDMM",
-			"_copy": {
-				"name": "Homunculus",
-				"source": "MM",
-				"action": {
-					"mode": "replaceArr",
-					"replace": "Bite",
-					"items": {
-						"name": "Bite",
-						"entries": [
-							"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}9 ({@dice 2d6 + 2}) piercing damage, and the target must succeed on a {@dc 10} Constitution saving throw or be {@condition poisoned} for 1 minute. If the saving throw fails by 5 or more, the target is instead {@condition poisoned} for 5 ({@dice 1d10}) minutes and {@condition unconscious} while {@condition poisoned} in this way."
-						]
-					}
-				}
-			},
-			"str": 15,
-			"hp": {
-				"average": 55,
-				"formula": "10d10"
-			},
-			"languages": [
-				"understands Abyssal, Common, Draconic, Gnomish but can't speak"
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"CS",
-				"DR",
-				"G"
-			]
+			"page": 76
 		},
 		{
 			"name": "Marta Moonshadow",
@@ -4467,7 +4156,8 @@
 			],
 			"traitTags": [
 				"Fey Ancestry"
-			]
+			],
+			"page": 46
 		},
 		{
 			"name": "Melissara Shadowdusk",
@@ -4486,14 +4176,12 @@
 					"_": {
 						"mode": "replaceSpells",
 						"spells": {
-							"4": {
-								"spells": [
-									{
-										"replace": "{@spell banishment}",
-										"with": "{@spell dimension door}"
-									}
-								]
-							}
+							"4": [
+								{
+									"replace": "{@spell banishment}",
+									"with": "{@spell dimension door}"
+								}
+							]
 						}
 					}
 				}
@@ -4512,7 +4200,8 @@
 				"DS",
 				"DR",
 				"D"
-			]
+			],
+			"page": 281
 		},
 		{
 			"name": "Mobar",
@@ -4542,7 +4231,8 @@
 			"hp": {
 				"average": 42,
 				"formula": "7d6"
-			}
+			},
+			"page": 77
 		},
 		{
 			"name": "Giant Mutated Drow",
@@ -4579,7 +4269,8 @@
 				"Keen Senses",
 				"Fey Ancestry",
 				"Sunlight Sensitivity"
-			]
+			],
+			"page": 143
 		},
 		{
 			"name": "Nerozar the Defeated",
@@ -4605,7 +4296,7 @@
 								"1. Paralyzing Ray. The targeted creature must succeed on a {@dc 14} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
 								"2. Fear Ray. The targeted creature must succeed on a {@dc 14} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
 								"3. Enervation Ray. The targeted creature must make a {@dc 14} Constitution saving throw, taking 36 ({@damage 8d8}) necrotic damage on a failed save, or half as much damage on a successful one.",
-								"4. Telekinetic Ray. If the target is a creature, it must succeed on a DC 14 Strength saving throw, or the zombie moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the zombie's next turn or until the zombie is incapacitated.If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The zombie can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or container."
+								"4. Telekinetic Ray. If the target is a creature, it must succeed on a DC 14 Strength saving throw, or the zombie moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the zombie's next turn or until the zombie is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The zombie can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or container."
 							]
 						}
 					}
@@ -4617,7 +4308,8 @@
 			],
 			"miscTags": [
 				"MW"
-			]
+			],
+			"page": 52
 		},
 		{
 			"name": "Nester",
@@ -4636,30 +4328,24 @@
 					"_": {
 						"mode": "replaceSpells",
 						"spells": {
-							"3": {
-								"spells": [
-									{
-										"replace": "{@spell fly}",
-										"with": "{@spell animate dead}"
-									}
-								]
-							},
-							"4": {
-								"spells": [
-									{
-										"replace": "{@spell banishment}",
-										"with": "{@spell blight}"
-									}
-								]
-							},
-							"5": {
-								"spells": [
-									{
-										"replace": "{@spell scrying}",
-										"with": "{@spell Rary's telepathic bond}"
-									}
-								]
-							}
+							"3": [
+								{
+									"replace": "{@spell fly}",
+									"with": "{@spell animate dead}"
+								}
+							],
+							"4": [
+								{
+									"replace": "{@spell banishment}",
+									"with": "{@spell blight}"
+								}
+							],
+							"5": [
+								{
+									"replace": "{@spell scrying}",
+									"with": "{@spell Rary's telepathic bond}"
+								}
+							]
 						}
 					}
 				}
@@ -4685,7 +4371,8 @@
 			],
 			"senseTags": [
 				"D"
-			]
+			],
+			"page": 131
 		},
 		{
 			"name": "Old Troglodyte",
@@ -4715,7 +4402,8 @@
 			"cr": "1/8",
 			"damageTags": [
 				"S"
-			]
+			],
+			"page": 155
 		},
 		{
 			"name": "Play-by-Play Generator",
@@ -4771,7 +4459,8 @@
 			],
 			"languageTags": [
 				"C"
-			]
+			],
+			"page": 205
 		},
 		{
 			"name": "Portia Dzuth",
@@ -4809,7 +4498,8 @@
 			],
 			"languageTags": [
 				"C"
-			]
+			],
+			"page": 239
 		},
 		{
 			"name": "Preeta Kreepa",
@@ -4872,7 +4562,8 @@
 			],
 			"senseTags": [
 				"SD"
-			]
+			],
+			"page": 56
 		},
 		{
 			"name": "Rabbithead",
@@ -4885,7 +4576,9 @@
 			"languages": null,
 			"alignment": [
 				"U"
-			]
+			],
+			"page": 295,
+			"languageTags": []
 		},
 		{
 			"name": "Rowboat Mimic",
@@ -4899,7 +4592,8 @@
 				"average": 67,
 				"formula": "9d10 + 18"
 			},
-			"size": "L"
+			"size": "L",
+			"page": 76
 		},
 		{
 			"name": "Runed Behir",
@@ -4921,7 +4615,8 @@
 						"The behir casts {@spell invisibility} or {@spell misty step}, requiring no components."
 					]
 				}
-			]
+			],
+			"page": 158
 		},
 		{
 			"name": "Shapechanged Roper",
@@ -4945,7 +4640,8 @@
 				"False Appearance",
 				"Spider Climb",
 				"Shapechanger"
-			]
+			],
+			"page": 106
 		},
 		{
 			"name": "Shunn Shurreth",
@@ -4975,10 +4671,12 @@
 			"alignment": [
 				"L",
 				"E"
-			]
+			],
+			"page": 33
 		},
 		{
 			"name": "Sing-Along",
+			"isNpc": true,
 			"source": "WDMM",
 			"_copy": {
 				"name": "Commoner",
@@ -5003,7 +4701,8 @@
 			"languageTags": [
 				"C",
 				"H"
-			]
+			],
+			"page": 148
 		},
 		{
 			"name": "Space Hamster",
@@ -5020,7 +4719,9 @@
 					}
 				}
 			},
-			"action": null
+			"action": null,
+			"page": 251,
+			"miscTags": []
 		},
 		{
 			"name": "Statue of Vergadain",
@@ -5045,7 +4746,8 @@
 						}
 					}
 				}
-			}
+			},
+			"page": 202
 		},
 		{
 			"name": "Thwad Underbrew",
@@ -5104,7 +4806,8 @@
 			],
 			"senseTags": [
 				"D"
-			]
+			],
+			"page": 204
 		},
 		{
 			"name": "Torbit",
@@ -5138,7 +4841,8 @@
 			"traitTags": [
 				"Sneak Attack",
 				"Amphibious"
-			]
+			],
+			"page": 115
 		},
 		{
 			"name": "Trobriand",
@@ -5209,7 +4913,7 @@
 							"slots": 3,
 							"spells": [
 								"{@spell animate objects}",
-								"{@spell Bigby's Hand|PHB|Bigby's hand}",
+								"{@spell Bigby's hand}",
 								"{@spell scrying}"
 							]
 						},
@@ -5246,7 +4950,8 @@
 			],
 			"spellcastingTags": [
 				"CW"
-			]
+			],
+			"page": 294
 		},
 		{
 			"name": "Undead Shambling Mound",
@@ -5273,7 +4978,8 @@
 				"deafened",
 				"exhaustion",
 				"poisoned"
-			]
+			],
+			"page": 142
 		},
 		{
 			"name": "Valtagar Steelshadow",
@@ -5293,14 +4999,12 @@
 					"_": {
 						"mode": "replaceSpells",
 						"spells": {
-							"4": {
-								"spells": [
-									{
-										"replace": "{@spell banishment}",
-										"with": "{@spell Otiluke's Resilient Sphere}"
-									}
-								]
-							}
+							"4": [
+								{
+									"replace": "{@spell banishment}",
+									"with": "{@spell Otiluke's Resilient Sphere}"
+								}
+							]
 						}
 					}
 				},
@@ -5365,7 +5069,8 @@
 			],
 			"senseTags": [
 				"B"
-			]
+			],
+			"page": 84
 		},
 		{
 			"name": "Vertrand Shadowdusk",
@@ -5384,14 +5089,12 @@
 					"_": {
 						"mode": "replaceSpells",
 						"spells": {
-							"4": {
-								"spells": [
-									{
-										"replace": "{@spell banishment}",
-										"with": "{@spell confusion}"
-									}
-								]
-							}
+							"4": [
+								{
+									"replace": "{@spell banishment}",
+									"with": "{@spell confusion}"
+								}
+							]
 						}
 					}
 				}
@@ -5417,7 +5120,8 @@
 			],
 			"senseTags": [
 				"B"
-			]
+			],
+			"page": 282
 		},
 		{
 			"name": "Wyllow",
@@ -5458,7 +5162,8 @@
 			],
 			"traitTags": [
 				"Fey Ancestry"
-			]
+			],
+			"page": 70
 		},
 		{
 			"name": "Zalthar Shadowdusk",
@@ -5496,14 +5201,12 @@
 					"_": {
 						"mode": "replaceSpells",
 						"spells": {
-							"4": {
-								"spells": [
-									{
-										"replace": "{@spell banishment}",
-										"with": "{@spell locate creature}"
-									}
-								]
-							}
+							"4": [
+								{
+									"replace": "{@spell banishment}",
+									"with": "{@spell locate creature}"
+								}
+							]
 						}
 					}
 				}
@@ -5517,7 +5220,8 @@
 				"AB",
 				"C",
 				"DS"
-			]
+			],
+			"page": 286
 		},
 		{
 			"name": "Zox Clammersham",
@@ -5536,14 +5240,12 @@
 					"_": {
 						"mode": "replaceSpells",
 						"spells": {
-							"4": {
-								"spells": [
-									{
-										"replace": "{@spell banishment}",
-										"with": "{@spell confusion}"
-									}
-								]
-							}
+							"4": [
+								{
+									"replace": "{@spell banishment}",
+									"with": "{@spell confusion}"
+								}
+							]
 						}
 					}
 				},
@@ -5570,7 +5272,8 @@
 			],
 			"senseTags": [
 				"D"
-			]
+			],
+			"page": 176
 		},
 		{
 			"name": "Zress Orlezziir",
@@ -5587,7 +5290,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 136
 		}
 	]
 }

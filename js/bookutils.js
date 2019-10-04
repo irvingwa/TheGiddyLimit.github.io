@@ -6,6 +6,7 @@ const BookUtil = {
 	},
 
 	_getSelectors (scrollTo) {
+		scrollTo = scrollTo.trim().toLowerCase();
 		return [
 			`.rd__h--0 > .entry-title-inner:textEquals("${scrollTo}")`,
 			`.rd__h--1 > .entry-title-inner:textEquals("${scrollTo}")`,
@@ -15,11 +16,17 @@ const BookUtil = {
 		];
 	},
 
-	scrollClick (scrollTo, scrollIndex) {
+	scrollClick (scrollTo, scrollIndex, ele) {
+		if (ele != null && !~BookUtil.curRender.chapter) {
+			// if in full-book mode, find the index of our header against the
+			const $list = $(ele).closest(".bk-headers");
+			const $siblings = $list.parent().children(".bk-headers").filter((i, e) => $(e).find(`[data-header="${scrollTo}"]`).length);
+			scrollIndex = $siblings.index($list);
+		}
+
 		const selectors = BookUtil._getSelectors(scrollTo);
 
-		if (scrollIndex === undefined) {
-			// textEquals selector defined below; added on window load
+		if (scrollIndex == null) {
 			const goToSect = $(selectors[0]);
 			if (goToSect.length) {
 				goToSect[0].scrollIntoView();
@@ -64,38 +71,29 @@ const BookUtil = {
 	},
 
 	makeContentsBlock (options) {
-		let out =
-			`<ul class="bk-contents" ${options.defaultHidden ? `style="display: none;"` : ""}>`;
-
+		let out = `<ul class="bk-contents" ${options.defaultHidden ? `style="display: none;"` : ""}>`;
 		options.book.contents.forEach((c, i) => {
-			out +=
-				`<li>
+			out += `<li>
 				<a href="${options.addPrefix || ""}#${UrlUtil.encodeForHash(options.book.id)},${i}" ${options.addOnclick ? `onclick="BookUtil.scrollPageTop(this)"` : ""}>
 					<span class="sect">${Parser.bookOrdinalToAbv(c.ordinal)}${c.name}</span>
 				</a>
 			</li>`;
 			out += BookUtil.makeHeadersBlock(options.book.id, i, c, options.addPrefix, options.addOnclick, options.defaultHeadersHidden);
 		});
-
-		out +=
-			"</ul>";
+		out += "</ul>";
 		return out;
 	},
 
 	makeHeadersBlock (bookId, chapterIndex, chapter, addPrefix, addOnclick, defaultHeadersHidden) {
-		let out =
-			`<ul class="bk-headers" ${defaultHeadersHidden ? `style="display: none;"` : ""}>`;
+		let out = `<ul class="bk-headers" ${defaultHeadersHidden ? `style="display: none;"` : ""}>`;
 		chapter.headers && chapter.headers.forEach(h => {
 			const headerText = BookUtil.getHeaderText(h);
 			const displayText = h.header ? `<span class="bk-contents__sub_spacer--1">\u2013</span>${h.header}` : h; // handle entries with depth
-			out += `
-				<li>
-					<a href="${addPrefix || ""}#${bookId},${chapterIndex},${UrlUtil.encodeForHash(headerText)}" data-book="${bookId}" data-chapter="${chapterIndex}" data-header="${headerText}" ${addOnclick ? `onclick="BookUtil.scrollClick('${headerText.replace(/'/g, "\\'")}')"` : ""}>${displayText}</a>
-				</li>
-			`;
+			out += `<li>
+				<a href="${addPrefix || ""}#${bookId},${chapterIndex},${UrlUtil.encodeForHash(headerText)}" data-book="${bookId}" data-chapter="${chapterIndex}" data-header="${headerText}" ${addOnclick ? `onclick="BookUtil.scrollClick('${headerText.replace(/'/g, "\\'")}', null, this)"` : ""}>${displayText}</a>
+			</li>`;
 		});
-		out +=
-			"</ul>";
+		out += "</ul>";
 		return out;
 	},
 
@@ -136,50 +134,34 @@ const BookUtil = {
 		}
 	},
 
-	_buildHeaderMap (bookData, dbgTag) {
+	getEntryIdLookup (bookData, doThrowError = true) {
 		const out = {};
-		function recurse (data, ixChap) {
-			if ((data.type === "section" || data.type === "entries") && data.entries && data.name) {
-				const m = /^([A-Z]+\d+(?:[a-z]+)?)\./.exec(data.name.trim());
-				if (m) {
-					const k = m[1];
-					if (out[k]) throw new Error(`Header "${k}" was already defined!`);
-					out[k] = {chapter: ixChap, entry: data};
-				} else {
-					const m = /^(\d+(?:[A-Za-z]+)?)\./.exec(data.name.trim()); // case seems to be important
-					if (m) {
-						let k = `${ixChap}>${m[1]}>0`;
-						while (out[k]) {
-							k = k.split(">");
-							k[k.length - 1] = Number(k.last()) + 1;
-							k = k.join(">");
+
+		const handlers = {
+			object: (chapIx, obj) => {
+				Renderer.ENTRIES_WITH_CHILDREN
+					.filter(meta => meta.key === "entries")
+					.forEach(meta => {
+						if (obj.type !== meta.type) return;
+						if (obj.id) {
+							if (out[obj.id]) {
+								(out.__BAD = out.__BAD || []).push(obj.id);
+							} else {
+								out[obj.id] = {
+									chapter: chapIx,
+									entry: obj
+								};
+							}
 						}
-						out[k] = out[k] = {chapter: ixChap, entry: data};
-					} else out[data.name] = {chapter: ixChap, entry: data};
-				}
-				data.entries.forEach(nxt => recurse(nxt, ixChap));
+					});
+				return obj;
 			}
-		}
-		bookData.forEach((chapter, i) => recurse(chapter, i));
-		// cleaning stage
-		// convert `chapter>headerId>0`'s to `chapter>headerId` if there's no `>1`
-		const keyBuckets = {};
-		const keys = Object.keys(out);
-		keys.forEach(k => {
-			if (k.includes(">")) {
-				const bucket = k.split(">").slice(0, 2).join(">");
-				(keyBuckets[bucket] = keyBuckets[bucket] || []).push(k);
-			}
-		});
-		keys.forEach(k => {
-			if (k.includes(">")) {
-				const bucket = k.split(">").slice(0, 2).join(">");
-				if (keyBuckets[bucket].length === 1) {
-					out[bucket] = out[k];
-					delete out[k];
-				}
-			}
-		});
+		};
+
+		bookData.forEach((chap, chapIx) => MiscUtil.getWalker().walk(chapIx, chap, handlers));
+
+		if (doThrowError) if (out.__BAD) throw new Error(`IDs were already in storage: ${out.__BAD.map(it => `"${it}"`).join(", ")}`);
+
 		return out;
 	},
 
@@ -193,6 +175,7 @@ const BookUtil = {
 		controls: {},
 		headerMap: {}
 	},
+	_lastClickedLink: null,
 	showBookContent (data, fromIndex, bookId, hashParts) {
 		function handleQuickReferenceShowAll () {
 			$(`.${Renderer.HEAD_NEG_1}`).show();
@@ -209,7 +192,8 @@ const BookUtil = {
 				const $allSects = $(`.${Renderer.HEAD_NEG_1}`);
 				const $toShow = $allSects.filter((i, e) => {
 					const $e = $(e);
-					const $match = $e.children(`.rd__h`).find(`span.entry-title-inner`).filter(`:textEquals("${sectionHeader}")`);
+					const cleanSectionHead = sectionHeader.trim().toLowerCase();
+					const $match = $e.children(`.rd__h`).find(`span.entry-title-inner`).filter(`:textEquals("${cleanSectionHead}")`);
 					return $match.length;
 				});
 
@@ -247,8 +231,8 @@ const BookUtil = {
 
 		BookUtil.curRender.data = data;
 		BookUtil.curRender.fromIndex = fromIndex;
-		BookUtil.curRender.headerMap = BookUtil._buildHeaderMap(data);
-		if (BookUtil.curRender.chapter !== chapter || BookUtil.curRender.curBookId !== bookId) {
+		BookUtil.curRender.headerMap = BookUtil.getEntryIdLookup(data);
+		if (BookUtil.curRender.chapter !== chapter || UrlUtil.encodeForHash(BookUtil.curRender.curBookId.toLowerCase()) !== UrlUtil.encodeForHash(bookId)) {
 			BookUtil.thisContents.children(`ul`).children(`ul, li`).removeClass("active");
 			if (~chapter) {
 				BookUtil.thisContents.children(`ul`).children(`li:nth-of-type(${chapter + 1}), ul:nth-of-type(${chapter + 1})`).addClass("active");
@@ -336,7 +320,7 @@ const BookUtil = {
 			BookUtil._renderer.resetHeaderIndex();
 			if (chapter === -1) data.forEach(d => BookUtil._renderer.recursiveRender(d, textStack));
 			else BookUtil._renderer.recursiveRender(data[chapter], textStack);
-			BookUtil.renderArea.append(`<tr class="text"><td colspan="6">${textStack.join("")}</td></tr>`);
+			BookUtil.renderArea.append(`<tr class="text"><td colspan="6" style="padding: 5px 20px;">${textStack.join("")}</td></tr>`);
 			Renderer.initLazyImageLoaders();
 			BookUtil._renderer.setLazyImages(false);
 			renderNavButtons();
@@ -349,7 +333,7 @@ const BookUtil = {
 				if (!handled) {
 					setTimeout(() => {
 						BookUtil.scrollClick(scrollTo, scrollIndex);
-					}, BookUtil.isHashReload ? 1 : 75);
+					}, BookUtil.isHashReload ? 15 : 75);
 					BookUtil.isHashReload = false;
 				}
 			}
@@ -358,8 +342,25 @@ const BookUtil = {
 				if (~chapter) {
 					if (BookUtil.referenceId) MiscUtil.scrollPageTop();
 					else BookUtil.scrollPageTop();
+				} else {
+					if (hashParts.length === 1 && BookUtil._lastClickedLink) {
+						const $lastLink = $(BookUtil._lastClickedLink);
+						const lastHref = $lastLink.attr("href");
+						const mLink = new RegExp(`^${UrlUtil.PG_ADVENTURE}#${BookUtil.curRender.curBookId},(\\d+)$`, "i").exec(lastHref.trim());
+						if (mLink) {
+							const linkChapterIx = Number(mLink[1]);
+							const ele = $(`#pagecontent tr.text td`).children(`.${Renderer.HEAD_NEG_1}`)[linkChapterIx];
+							if (ele) ele.scrollIntoView();
+							else setTimeout(() => { throw new Error(`Failed to find header scroll target with index "${linkChapterIx}"`) });
+							return;
+						}
+					}
 				}
-			} else if (forceScroll) BookUtil.scrollClick(scrollTo, scrollIndex);
+			} else if (forceScroll) {
+				setTimeout(() => {
+					BookUtil.scrollClick(scrollTo, scrollIndex);
+				}, BookUtil.isHashReload ? 15 : 75);
+			}
 		}
 
 		/**
@@ -453,7 +454,7 @@ const BookUtil = {
 		function handleNotFound () {
 			if (!window.location.hash) window.history.back();
 			else {
-				$(`.initial-message`).text(`Loading failed\u2014could not find a book with id "${bookId}"`);
+				$(`.initial-message`).text(`Loading failed\u2014could not find ${Parser.getArticle(BookUtil.contentType)} ${BookUtil.contentType} with ID "${bookId}." You may need to load it as homebrew.`);
 				throw new Error(`No book with ID: ${bookId}`);
 			}
 		}
@@ -462,9 +463,9 @@ const BookUtil = {
 		const bookId = decodeURIComponent(bookIdRaw);
 
 		// if current chapter is -1 (full book mode), and a chapter is specified, override + stay in full-book mode
-		if (BookUtil.curRender.chapter === -1 &&
-			hashParts.length && hashParts[0] !== "-1" &&
-			UrlUtil.encodeForHash(BookUtil.curRender.curBookId) === UrlUtil.encodeForHash(bookId)) {
+		if (BookUtil.curRender.chapter === -1
+			&& hashParts.length && hashParts[0] !== "-1"
+			&& UrlUtil.encodeForHash(BookUtil.curRender.curBookId) === UrlUtil.encodeForHash(bookId)) {
 			window.history.replaceState(
 				{},
 				document.title,
@@ -484,8 +485,7 @@ const BookUtil = {
 					pHandleFound(fromIndex, bookData);
 				})
 				.catch(e => {
-					BrewUtil.pPurgeBrew();
-					setTimeout(() => { throw e; });
+					BrewUtil.pPurgeBrew(e);
 				});
 		} else handleNotFound();
 	},
@@ -784,4 +784,10 @@ const BookUtil = {
 
 if (typeof module !== "undefined") {
 	module.exports.BookUtil = BookUtil;
+} else {
+	window.addEventListener("load", () => $("body").on("click", "a", (evt) => {
+		let $a = $(evt.target);
+		while ($a.length && !$a.is("a")) $a = $a.parent();
+		BookUtil._lastClickedLink = $a[0];
+	}));
 }

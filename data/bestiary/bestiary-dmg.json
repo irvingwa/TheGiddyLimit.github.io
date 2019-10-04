@@ -6,7 +6,7 @@
 			"type": "undead",
 			"source": "DMG",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -49,7 +49,6 @@
 			"languages": [
 				"all languages known to its summoner"
 			],
-			"cr": "Unknown",
 			"trait": [
 				{
 					"name": "Incorporeal Movement",
@@ -131,7 +130,7 @@
 			"size": "M",
 			"type": "fiend",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -172,6 +171,11 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"otherSources": [
+				{
+					"source": "BGDIA"
+				}
 			]
 		}
 	]

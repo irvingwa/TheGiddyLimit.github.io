@@ -1,7 +1,6 @@
 "use strict";
 
 const JSON_DIR = "data/bestiary/";
-const META_URL = "meta.json";
 const FLUFF_INDEX = "fluff-index.json";
 const JSON_LIST_NAME = "monster";
 const ECGEN_BASE_PLAYERS = 4; // assume a party size of four
@@ -11,6 +10,23 @@ window.PROF_MODE_BONUS = "bonus";
 window.PROF_MODE_DICE = "dice";
 window.PROF_DICE_MODE = PROF_MODE_BONUS;
 
+class BestiaryPage {
+	static sortMonsters (a, b, o) {
+		function getPrimary () {
+			if (o.sortBy === "count") return SortUtil.ascSort(a.values.count, b.values.count);
+			a = monsters[a.ix];
+			b = monsters[b.ix];
+			switch (o.sortBy) {
+				case "name": return SortUtil.ascSort(a.name, b.name);
+				case "type": return SortUtil.ascSort(a._pTypes.asText, b._pTypes.asText);
+				case "source": return SortUtil.ascSort(a.source, b.source);
+				case "cr": return SortUtil.ascSortCr(a._pCr, b._pCr);
+			}
+		}
+		return getPrimary() || SortUtil.ascSort(a.name, b.name) || SortUtil.ascSort(a.source, b.source);
+	}
+}
+
 const _MISC_FILTER_SPELLCASTER = "Spellcaster, ";
 function ascSortMiscFilter (a, b) {
 	a = a.item;
@@ -18,7 +34,7 @@ function ascSortMiscFilter (a, b) {
 	if (a.includes(_MISC_FILTER_SPELLCASTER) && b.includes(_MISC_FILTER_SPELLCASTER)) {
 		a = Parser.attFullToAbv(a.replace(_MISC_FILTER_SPELLCASTER, ""));
 		b = Parser.attFullToAbv(b.replace(_MISC_FILTER_SPELLCASTER, ""));
-		return SortUtil.ascSortAtts(b, a);
+		return SortUtil.ascSortAtts(a, b);
 	} else return SortUtil.ascSort(a, b);
 }
 
@@ -39,24 +55,6 @@ function getAllImmRest (toParse, key) {
 
 const meta = {};
 const languages = {};
-
-function pLoadMeta () {
-	return new Promise(resolve => {
-		DataUtil.loadJSON(JSON_DIR + META_URL)
-			.then((data) => {
-				// Convert the legendary Group JSONs into a look-up, i.e. use the name as a JSON property name
-				data.legendaryGroup.forEach(lg => {
-					meta[lg.source] = meta[lg.source] || {};
-					meta[lg.source][lg.name] = lg;
-				});
-
-				Object.keys(data.language).forEach(k => languages[k] = data.language[k]);
-				Object.keys(languages).sort((a, b) => SortUtil.ascSortLower(languages[a], languages[b]))
-					.forEach(la => languageFilter.addItem(la));
-				resolve();
-			});
-	});
-}
 
 // for use in homebrew only
 function addLegendaryGroups (toAdd) {
@@ -98,46 +96,51 @@ function pPostLoad () {
 let filterBox;
 let encounterBuilder;
 window.onload = async function load () {
-	filterBox = await pInitFilterBox(
-		sourceFilter,
-		crFilter,
-		typeFilter,
-		tagFilter,
-		environmentFilter,
-		defenceFilter,
-		conditionImmuneFilter,
-		traitFilter,
-		actionReactionFilter,
-		miscFilter,
-		spellcastingTypeFilter,
-		sizeFilter,
-		speedFilter,
-		speedTypeFilter,
-		alignmentFilter,
-		saveFilter,
-		skillFilter,
-		senseFilter,
-		languageFilter,
-		damageTypeFilter,
-		acFilter,
-		averageHpFilter,
-		abilityScoreFilter
-	);
+	filterBox = await pInitFilterBox({
+		filters: [
+			sourceFilter,
+			crFilter,
+			typeFilter,
+			tagFilter,
+			environmentFilter,
+			defenceFilter,
+			conditionImmuneFilter,
+			traitFilter,
+			actionReactionFilter,
+			miscFilter,
+			spellcastingTypeFilter,
+			sizeFilter,
+			speedFilter,
+			speedTypeFilter,
+			alignmentFilter,
+			saveFilter,
+			skillFilter,
+			senseFilter,
+			languageFilter,
+			damageTypeFilter,
+			acFilter,
+			averageHpFilter,
+			abilityScoreFilter
+		]
+	});
 	encounterBuilder = new EncounterBuilder();
-	await ExcludeUtil.pInitialise();
-	SortUtil.initHandleFilterButtonClicks();
 	encounterBuilder.initUi();
-	pLoadMeta()
-		.then(pLoadFluffIndex)
-		.then(multisourceLoad.bind(null, JSON_DIR, JSON_LIST_NAME, pPageInit, addMonsters, pPostLoad))
-		.then(() => {
-			if (History.lastLoadedId == null) History._freshLoad();
-			ExcludeUtil.checkShowAllExcluded(monsters, $(`#pagecontent`));
-			encounterBuilder.initState();
-		});
+	await Promise.all([
+		ExcludeUtil.pInitialise(),
+		RenderBestiary.pPopulateMetaAndLanguages(meta, languages),
+		pLoadFluffIndex()
+	]);
+	Object.keys(languages).sort((a, b) => SortUtil.ascSortLower(languages[a], languages[b]))
+		.forEach(la => languageFilter.addItem(la));
+	await pMultisourceLoad(JSON_DIR, JSON_LIST_NAME, pPageInit, addMonsters, pPostLoad);
+	if (Hist.lastLoadedId == null) Hist._freshLoad();
+	ExcludeUtil.checkShowAllExcluded(monsters, $(`#pagecontent`));
+	handleFilterChange();
+	encounterBuilder.initState();
 };
 
 let list;
+let subList;
 let printBookView;
 const sourceFilter = getSourceFilter();
 const crFilter = new RangeFilter({
@@ -158,7 +161,7 @@ const sizeFilter = new Filter({
 		SZ_VARIES
 	],
 	displayFn: Parser.sizeAbvToFull,
-	itemSortFn: SortUtil.ascSortCr
+	itemSortFn: null
 });
 const speedFilter = new RangeFilter({header: "Speed", min: 30, max: 30});
 const speedTypeFilter = new Filter({header: "Speed Type", items: ["walk", "burrow", "climb", "fly", "hover", "swim"], displayFn: StrUtil.uppercaseFirst});
@@ -185,7 +188,8 @@ const tagFilter = new Filter({header: "Tag", displayFn: StrUtil.uppercaseFirst})
 const alignmentFilter = new Filter({
 	header: "Alignment",
 	items: ["L", "NX", "C", "G", "NY", "E", "N", "U", "A"],
-	displayFn: Parser.alignmentAbvToFull
+	displayFn: Parser.alignmentAbvToFull,
+	itemSortFn: null
 });
 const languageFilter = new Filter({
 	header: "Languages",
@@ -211,7 +215,8 @@ const skillFilter = new Filter({
 const saveFilter = new Filter({
 	header: "Saves",
 	displayFn: Parser.attAbvToFull,
-	items: [...Parser.ABIL_ABVS]
+	items: [...Parser.ABIL_ABVS],
+	itemSortFn: null
 });
 const environmentFilter = new Filter({
 	header: "Environment",
@@ -296,9 +301,9 @@ const actionReactionFilter = new Filter({
 });
 const miscFilter = new Filter({
 	header: "Miscellaneous",
-	items: ["Familiar", ...Object.keys(Parser.MON_MISC_TAG_TO_FULL), "Lair Actions", "Legendary", "Named NPC", "Spellcaster", ...Object.values(Parser.ATB_ABV_TO_FULL).map(it => `${_MISC_FILTER_SPELLCASTER}${it}`), "Regional Effects", "Reactions", "Swarm", "Has Variants"],
+	items: ["Familiar", ...Object.keys(Parser.MON_MISC_TAG_TO_FULL), "Lair Actions", "Legendary", "Adventure NPC", "Spellcaster", ...Object.values(Parser.ATB_ABV_TO_FULL).map(it => `${_MISC_FILTER_SPELLCASTER}${it}`), "Regional Effects", "Reactions", "Swarm", "Has Variants", "Modified Copy", "Has Alternate Token"],
 	displayFn: (it) => Parser.monMiscTagToFull(it).uppercaseFirst(),
-	deselFn: (it) => it === "Named NPC",
+	deselFn: (it) => it === "Adventure NPC",
 	itemSortFn: ascSortMiscFilter
 });
 const spellcastingTypeFilter = new Filter({
@@ -307,16 +312,20 @@ const spellcastingTypeFilter = new Filter({
 	displayFn: Parser.monSpellcastingTagToFull
 });
 
-function pPageInit (loadedSources) {
+async function pPageInit (loadedSources) {
 	Object.keys(loadedSources)
 		.map(src => new FilterItem({item: src, changeFn: loadSource(JSON_LIST_NAME, addMonsters)}))
 		.forEach(fi => sourceFilter.addItem(fi));
 
-	list = ListUtil.search({
-		valueNames: ["name", "source", "type", "cr", "group", "alias", "uniqueid"],
-		listClass: "monsters",
-		sortFunction: sortMonsters
-	});
+	list = ListUtil.initList(
+		{
+			listClass: "monsters",
+			fnSort: BestiaryPage.sortMonsters
+		}
+	);
+	ListUtil.setOptions({primaryLists: [list]});
+	SortUtil.initBtnSortHandlers($(`#filtertools`), list);
+
 	const $outVisibleResults = $(`.lst__wrp-search-visible`);
 	list.on("updated", () => {
 		$outVisibleResults.html(`${list.visibleItems.length}/${list.items.length}`);
@@ -328,31 +337,22 @@ function pPageInit (loadedSources) {
 		handleFilterChange
 	);
 
-	// sorting headers
-	$("#filtertools").find("button.sort").click(function () {
-		const $this = $(this);
-		let direction = $this.data("sortby") === "desc" ? "asc" : "desc";
-
-		$this.data("sortby", direction);
-		$this.find('span').addClass($this.data("sortby") === "desc" ? "caret" : "caret caret--reverse");
-		list.sort($this.data("sort"), {order: $this.data("sortby"), sortFunction: sortMonsters});
-	});
-
-	const subList = ListUtil.initSublist({
-		valueNames: ["name", "source", "type", "cr", "count", "id", "uid"],
+	subList = ListUtil.initSublist({
 		listClass: "submonsters",
-		sortFunction: sortMonsters,
+		sortFunction: BestiaryPage.sortMonsters,
 		onUpdate: onSublistChange,
 		uidHandler: (mon, uid) => ScaleCreature.scale(mon, Number(uid.split("_").last())),
 		uidUnpacker: getUnpackedUid
 	});
+	SortUtil.initBtnSortHandlers($("#sublistsort"), subList);
+
 	const baseHandlerOptions = {shiftCount: 5};
 	function addHandlerGenerator () {
 		return (evt, proxyEvt) => {
 			evt = proxyEvt || evt;
 			if (lastRendered.isScaled) {
-				if (evt.shiftKey) ListUtil.pDoSublistAdd(History.lastLoadedId, true, 5, getScaledData());
-				else ListUtil.pDoSublistAdd(History.lastLoadedId, true, 1, getScaledData());
+				if (evt.shiftKey) ListUtil.pDoSublistAdd(Hist.lastLoadedId, true, 5, getScaledData());
+				else ListUtil.pDoSublistAdd(Hist.lastLoadedId, true, 1, getScaledData());
 			} else ListUtil.genericAddButtonHandler(evt, baseHandlerOptions);
 		};
 	}
@@ -360,8 +360,8 @@ function pPageInit (loadedSources) {
 		return (evt, proxyEvt) => {
 			evt = proxyEvt || evt;
 			if (lastRendered.isScaled) {
-				if (evt.shiftKey) ListUtil.pDoSublistSubtract(History.lastLoadedId, 5, getScaledData());
-				else ListUtil.pDoSublistSubtract(History.lastLoadedId, 1, getScaledData());
+				if (evt.shiftKey) ListUtil.pDoSublistSubtract(Hist.lastLoadedId, 5, getScaledData());
+				else ListUtil.pDoSublistSubtract(Hist.lastLoadedId, 1, getScaledData());
 			} else ListUtil.genericSubtractButtonHandler(evt, baseHandlerOptions);
 		};
 	}
@@ -369,48 +369,51 @@ function pPageInit (loadedSources) {
 	ListUtil.bindSubtractButton(subtractHandlerGenerator, baseHandlerOptions);
 	ListUtil.initGenericAddable();
 
-	// print view
-	printBookView = new BookModeView("bookview", $(`#btn-printbook`), "If you wish to view multiple creatures, please first make a list",
-		($tbl) => {
-			return new Promise(resolve => {
-				const promises = ListUtil.genericPinKeyMapper();
+	// region print view
+	printBookView = new BookModeView(
+		"bookview",
+		$(`#btn-printbook`),
+		"If you wish to view multiple creatures, please first make a list",
+		"Bestiary Printer View",
+		async $wrpContent => {
+			const toShow = await Promise.all(ListUtil.genericPinKeyMapper());
 
-				Promise.all(promises).then(toShow => {
-					toShow.sort((a, b) => SortUtil.ascSort(a._displayName || a.name, b._displayName || b.name));
+			toShow.sort((a, b) => SortUtil.ascSort(a._displayName || a.name, b._displayName || b.name));
 
-					let numShown = 0;
+			let numShown = 0;
 
-					const stack = [];
+			const stack = [];
 
-					const renderCreature = (mon) => {
-						stack.push(`<table class="printbook-bestiary-entry"><tbody>`);
-						stack.push(Renderer.monster.getCompactRenderedString(mon, renderer));
-						if (mon.legendaryGroup) {
-							const thisGroup = (meta[mon.legendaryGroup.source] || {})[mon.legendaryGroup.name];
-							if (thisGroup) {
-								stack.push(Renderer.monster.getCompactRenderedStringSection(thisGroup, renderer, "Lair Actions", "lairActions", 0));
-								stack.push(Renderer.monster.getCompactRenderedStringSection(thisGroup, renderer, "Regional Effects", "regionalEffects", 0));
-							}
-						}
-						stack.push(`</tbody></table>`);
-					};
-
-					stack.push(`<tr class="printbook-bestiary"><td>`);
-					toShow.forEach(mon => renderCreature(mon));
-					if (!toShow.length && History.lastLoadedId != null) {
-						renderCreature(monsters[History.lastLoadedId]);
+			const renderCreature = (mon) => {
+				stack.push(`<div class="bkmv__wrp-item"><table class="stats stats--book stats--bkmv"><tbody>`);
+				stack.push(Renderer.monster.getCompactRenderedString(mon, renderer));
+				if (mon.legendaryGroup) {
+					const thisGroup = (meta[mon.legendaryGroup.source] || {})[mon.legendaryGroup.name];
+					if (thisGroup) {
+						stack.push(Renderer.monster.getCompactRenderedStringSection(thisGroup, renderer, "Lair Actions", "lairActions", 0));
+						stack.push(Renderer.monster.getCompactRenderedStringSection(thisGroup, renderer, "Regional Effects", "regionalEffects", 0));
 					}
-					stack.push(`</td></tr>`);
+				}
+				stack.push(`</tbody></table></div>`);
+			};
 
-					numShown += toShow.length;
-					$tbl.append(stack.join(""));
-					resolve(numShown);
-				});
-			});
-		}, true
+			stack.push(`<div class="w-100 h-100">`);
+			toShow.forEach(mon => renderCreature(mon));
+			if (!toShow.length && Hist.lastLoadedId != null) {
+				renderCreature(monsters[Hist.lastLoadedId]);
+			}
+			stack.push(`</div>`);
+
+			numShown += toShow.length;
+			$wrpContent.append(stack.join(""));
+
+			return numShown;
+		},
+		true
 	);
+	// endregion
 
-	// proficiency bonus/dice toggle
+	// region proficiency bonus/dice toggle
 	const profBonusDiceBtn = $("button#profbonusdice");
 	profBonusDiceBtn.click(function () {
 		if (window.PROF_DICE_MODE === PROF_MODE_DICE) {
@@ -431,23 +434,22 @@ function pPageInit (loadedSources) {
 			});
 		}
 	});
-
-	return Promise.resolve();
+	// endregion
 }
 
 class EncounterBuilderUtils {
 	static getSublistedEncounter () {
 		return ListUtil.sublist.items.map(it => {
-			const mon = monsters[Number(it._values.id)];
+			const mon = monsters[it.ix];
 			if (mon.cr) {
-				const crScaled = it._values.uid ? Number(getUnpackedUid(it._values.uid).scaled) : null;
+				const crScaled = it.values.uniqueid ? Number(getUnpackedUid(it.values.uniqueid).scaled) : null;
 				return {
-					cr: it._values.cr,
-					count: Number(it._values.count),
+					cr: it.values.cr,
+					count: Number(it.values.count),
 
 					// used for encounter adjuster
 					crScaled: crScaled,
-					uid: it._values.uid,
+					uid: it.values.uniqueid,
 					hash: UrlUtil.autoEncodeHash(mon)
 				}
 			}
@@ -484,7 +486,7 @@ class EncounterBuilderUtils {
 		const crCutoff = EncounterBuilderUtils.getCrCutoff(data);
 		data.forEach(it => {
 			if (getCr(it) >= crCutoff) relevantCount += it.count;
-			baseXp += Parser.crToXpNumber(Parser.numberToCr(getCr(it))) * it.count;
+			baseXp += (Parser.crToXpNumber(Parser.numberToCr(getCr(it))) || 0) * it.count;
 		});
 
 		const playerAdjustedXpMult = Parser.numMonstersToXpMult(relevantCount, playerCount);
@@ -504,9 +506,11 @@ function onSublistChange () {
 }
 
 function handleFilterChange () {
+	if (Hist.initialLoad) return;
+
 	const f = filterBox.getValues();
-	list.filter(function (item) {
-		const m = monsters[$(item.elm).attr(FLTR_ID)];
+	list.filter(function (li) {
+		const m = monsters[li.ix];
 		return filterBox.toDisplay(
 			f,
 			m._fSources,
@@ -561,21 +565,31 @@ function getUid (name, source, scaledCr) {
 	return `${name}_${source}_${scaledCr}`.toLowerCase();
 }
 
+function handleBestiaryLiClick (evt, listItem) {
+	if (encounterBuilder.isActive()) Renderer.hover.doPopoutCurPage(evt, monsters, listItem.ix);
+	else list.doSelect(listItem, evt);
+}
+
+function handleBestiaryLiContext (evt, listItem) {
+	if (!encounterBuilder.isActive()) ListUtil.openContextMenu(evt, list, listItem);
+}
+
+function handleBestiaryLinkClick (evt) {
+	if (encounterBuilder.isActive()) evt.preventDefault();
+}
+
 const _NEUT_ALIGNS = ["NX", "NY"];
 const _addedHashes = new Set();
 function addMonsters (data) {
 	if (!data || !data.length) return;
-
 	monsters = monsters.concat(data);
 
-	const table = $("ul.monsters");
-	let textStack = "";
 	// build the table
 	for (; mI < monsters.length; mI++) {
 		const mon = monsters[mI];
-		const monHash = UrlUtil.autoEncodeHash(mon);
-		if (_addedHashes.has(monHash)) continue;
-		_addedHashes.add(monHash);
+		const hash = UrlUtil.autoEncodeHash(mon);
+		if (!mon.uniqueId && _addedHashes.has(hash)) continue;
+		_addedHashes.add(hash);
 		if (ExcludeUtil.isExcluded(mon.name, "monster", mon.source)) continue;
 		RenderBestiary.initParsed(mon);
 		mon._fSpeedType = Object.keys(mon.speed).filter(k => mon.speed[k]);
@@ -584,41 +598,61 @@ function addMonsters (data) {
 		if (mon.speed.canHover) mon._fSpeedType.push("hover");
 		mon._fAc = mon.ac.map(it => it.ac || it);
 		mon._fHp = mon.hp.average;
-		const tempAlign = typeof mon.alignment[0] === "object"
-			? Array.prototype.concat.apply([], mon.alignment.map(a => a.alignment))
-			: [...mon.alignment];
-		if (tempAlign.includes("N") && !tempAlign.includes("G") && !tempAlign.includes("E")) tempAlign.push("NY");
-		else if (tempAlign.includes("N") && !tempAlign.includes("L") && !tempAlign.includes("C")) tempAlign.push("NX");
-		else if (tempAlign.length === 1 && tempAlign.includes("N")) Array.prototype.push.apply(tempAlign, _NEUT_ALIGNS);
-		mon._fAlign = tempAlign;
+		if (mon.alignment) {
+			const tempAlign = typeof mon.alignment[0] === "object"
+				? Array.prototype.concat.apply([], mon.alignment.map(a => a.alignment))
+				: [...mon.alignment];
+			if (tempAlign.includes("N") && !tempAlign.includes("G") && !tempAlign.includes("E")) tempAlign.push("NY");
+			else if (tempAlign.includes("N") && !tempAlign.includes("L") && !tempAlign.includes("C")) tempAlign.push("NX");
+			else if (tempAlign.length === 1 && tempAlign.includes("N")) Array.prototype.push.apply(tempAlign, _NEUT_ALIGNS);
+			mon._fAlign = tempAlign;
+		} else {
+			mon._fAlign = null;
+		}
 		mon._fVuln = mon.vulnerable ? getAllImmRest(mon.vulnerable, "vulnerable") : [];
 		mon._fRes = mon.resist ? getAllImmRest(mon.resist, "resist") : [];
 		mon._fImm = mon.immune ? getAllImmRest(mon.immune, "immune") : [];
 		mon._fCondImm = mon.conditionImmune ? getAllImmRest(mon.conditionImmune, "conditionImmune") : [];
 		mon._fSave = mon.save ? Object.keys(mon.save) : [];
 		mon._fSkill = mon.skill ? Object.keys(mon.skill) : [];
-		mon._fSources = ListUtil.getCompleteSources(mon);
+		mon._fSources = ListUtil.getCompleteFilterSources(mon);
 
-		const abvSource = Parser.sourceJsonToAbv(mon.source);
+		const eleLi = document.createElement("li");
+		eleLi.className = "row";
+		eleLi.addEventListener("click", (evt) => handleBestiaryLiClick(evt, listItem));
+		eleLi.addEventListener("contextmenu", (evt) => handleBestiaryLiContext(evt, listItem));
 
-		textStack +=
-			`<li class="row" ${FLTR_ID}="${mI}" onclick="ListUtil.toggleSelected(event, this)" oncontextmenu="ListUtil.openContextMenu(event, this)">
-				<a id=${mI} href="#${monHash}" title="${mon.name}">
-					${EncounterBuilder.getButtons(mI)}
-					<span class="ecgen__name name col-4-2">${mon.name}</span>
-					<span class="type col-4-1">${mon._pTypes.asText.uppercaseFirst()}</span>
-					<span class="col-1-7 text-align-center cr">${mon._pCr}</span>
-					<span title="${Parser.sourceJsonToFull(mon.source)}${Renderer.utils.getSourceSubText(mon)}" class="col-2 source text-align-center ${Parser.sourceJsonToColor(mon.source)}">${abvSource}</span>
-					
-					${mon.group ? `<span class="group hidden">${mon.group}</span>` : ""}
-					<span class="alias hidden">${(mon.alias || []).map(it => `"${it}"`).join(",")}</span>
-					<span class="uniqueid hidden">${mon.uniqueId ? mon.uniqueId : mI}</span>
-				</a>
-			</li>`;
+		const source = Parser.sourceJsonToAbv(mon.source);
+		const type = mon._pTypes.asText.uppercaseFirst();
+		const cr = mon._pCr || "\u2014";
+
+		eleLi.innerHTML += `<a href="#${hash}" onclick="handleBestiaryLinkClick(event)">
+			${EncounterBuilder.getButtons(mI, mon.uniqueId)}
+			<span class="ecgen__name bold col-4-2 pl-0">${mon.name}</span>
+			<span class="type col-4-1">${type}</span>
+			<span class="col-1-7 text-center">${cr}</span>
+			<span title="${Parser.sourceJsonToFull(mon.source)}${Renderer.utils.getSourceSubText(mon)}" class="col-2 text-center ${Parser.sourceJsonToColor(mon.source)} pr-0" ${BrewUtil.sourceJsonToStyle(mon.source)}>${source}</span>
+		</a>`;
+
+		const listItem = new ListItem(
+			mI,
+			eleLi,
+			mon.name,
+			{
+				hash,
+				source,
+				type,
+				cr,
+				group: mon.group || "",
+				alias: (mon.alias || []).map(it => `"${it}"`).join(","),
+				uniqueid: mon.uniqueId ? mon.uniqueId : mI
+			}
+		);
+		list.addItem(listItem);
 
 		// populate filters
 		sourceFilter.addItem(mon._fSources);
-		crFilter.addItem(mon._pCr);
+		if (mon._pCr != null) crFilter.addItem(mon._pCr);
 		strengthFilter.addItem(mon.str);
 		dexterityFilter.addItem(mon.dex);
 		constitutionFilter.addItem(mon.con);
@@ -638,7 +672,7 @@ function addMonsters (data) {
 				if (sc.ability) mon._fMisc.push(`${_MISC_FILTER_SPELLCASTER}${Parser.attAbvToFull(sc.ability)}`);
 			});
 		}
-		if (mon.isNpc) mon._fMisc.push("Named NPC");
+		if (mon.isNpc) mon._fMisc.push("Adventure NPC");
 		if (mon.legendaryGroup && (meta[mon.legendaryGroup.source] || {})[mon.legendaryGroup.name]) {
 			if ((meta[mon.legendaryGroup.source] || {})[mon.legendaryGroup.name].lairActions) mon._fMisc.push("Lair Actions");
 			if ((meta[mon.legendaryGroup.source] || {})[mon.legendaryGroup.name].regionalEffects) mon._fMisc.push("Regional Effects");
@@ -646,16 +680,15 @@ function addMonsters (data) {
 		if (mon.reaction) mon._fMisc.push("Reactions");
 		if (mon.variant) mon._fMisc.push("Has Variants");
 		if (mon.miscTags) mon._fMisc.push(...mon.miscTags);
+		if (mon._isCopy) mon._fMisc.push("Modified Copy");
+		if (mon.altArt) mon._fMisc.push("Has Alternate Token");
 		traitFilter.addItem(mon.traitTags);
 		actionReactionFilter.addItem(mon.actionTags);
 		environmentFilter.addItem(mon.environment);
 	}
-	const lastSearch = ListUtil.getSearchTermAndReset(list);
-	table.append(textStack);
 
-	list.reIndex();
-	if (lastSearch) list.search(lastSearch);
-	list.sort("name");
+	list.update();
+
 	filterBox.render();
 	handleFilterChange();
 
@@ -665,13 +698,36 @@ function addMonsters (data) {
 		primaryLists: [list]
 	});
 
-	function popoutHandlerGenerator (toList, $btnPop, popoutCodeId) {
+	function popoutHandlerGenerator (toList) {
 		return (evt) => {
+			const mon = toList[Hist.lastLoadedId];
 			if (evt.shiftKey) {
-				Renderer.hover.handlePopoutCode(evt, toList, $btnPop, popoutCodeId);
+				const $content = Renderer.hover.$getHoverContent_statsCode(mon);
+				Renderer.hover.getShowWindow(
+					$content,
+					Renderer.hover.getWindowPositionFromEvent(evt),
+					{
+						title: `${mon.name} \u2014 Source Data`,
+						isPermanent: true,
+						isBookContent: true
+					}
+				);
 			} else {
-				if (lastRendered.mon != null && lastRendered.isScaled) Renderer.hover.doPopoutPreloaded($btnPop, lastRendered.mon, evt.clientX);
-				else if (History.lastLoadedId !== null) Renderer.hover.doPopout($btnPop, toList, History.lastLoadedId, evt.clientX);
+				if (lastRendered.mon != null && lastRendered.isScaled) {
+					const renderFn = Renderer.hover._pageToRenderFn(UrlUtil.getCurrentPage());
+					const $content = $$`<table class="stats">${renderFn(lastRendered.mon)}</table>`;
+					Renderer.hover.getShowWindow(
+						$content,
+						Renderer.hover.getWindowPositionFromEvent(evt),
+						{
+							pageUrl: `#${UrlUtil.autoEncodeHash(lastRendered.mon)}`,
+							title: lastRendered.mon._displayName || lastRendered.mon.name,
+							isPermanent: true
+						}
+					);
+				} else {
+					Renderer.hover.doPopoutCurPage(evt, toList, Hist.lastLoadedId);
+				}
 			}
 		};
 	}
@@ -708,72 +764,92 @@ function sublistFuncPreload (json, funcOnload) {
 	}
 }
 
-function pGetSublistItem (mon, pinId, addCount, data = {}) {
-	return new Promise(resolve => {
-		const pMon = data.scaled ? ScaleCreature.scale(mon, data.scaled) : Promise.resolve(mon);
+async function pGetSublistItem (monRaw, pinId, addCount, data = {}) {
+	const mon = await (data.scaled ? ScaleCreature.scale(monRaw, data.scaled) : monRaw);
+	RenderBestiary.updateParsed(mon);
+	const subHash = data.scaled ? `${HASH_PART_SEP}${MON_HASH_SCALED}${HASH_SUB_KV_SEP}${data.scaled}` : "";
+	RenderBestiary.initParsed(mon);
 
-		pMon.then(mon => {
-			RenderBestiary.updateParsed(mon);
-			const subHash = data.scaled ? `${HASH_PART_SEP}${MON_HASH_SCALED}${HASH_SUB_KV_SEP}${data.scaled}` : "";
-			RenderBestiary.initParsed(mon);
+	const name = mon._displayName || mon.name;
+	const hash = `${UrlUtil.autoEncodeHash(mon)}${subHash}`;
+	const type = mon._pTypes.asText.uppercaseFirst();
+	const count = addCount || 1;
+	const cr = mon._pCr || "Unknown";
 
-			resolve(`
-				<li class="row row--bestiary_sublist" ${FLTR_ID}="${pinId}" oncontextmenu="ListUtil.openSubContextMenu(event, this)">
-					<a href="#${UrlUtil.autoEncodeHash(mon)}${subHash}" title="${mon._displayName || mon.name}" draggable="false" class="ecgen__hidden">
-						<span class="name col-5">${mon._displayName || mon.name}</span>
-						<span class="type col-3">${mon._pTypes.asText.uppercaseFirst()}</span>
-						<span class="cr col-2 text-align-center">${mon._pCr}</span>						
-						<span class="count col-2 text-align-center">${addCount || 1}</span>
-						<span class="id hidden">${pinId}</span>
-						<span class="uid hidden">${data.uid || ""}</span>
-					</a>
-					
-					<div class="list__item_inner ecgen__visible--flex">
-						${EncounterBuilder.getButtons(pinId, true)}
-						<span class="ecgen__name--sub col-5">${mon._displayName || mon.name}</span>
-						<span class="col-1-5 help--hover ecgen__visible" onmouseover="EncounterBuilder.doStatblockMouseOver(event, this, ${pinId}, ${mon._isScaledCr})">Statblock</span>
-						<span class="col-1-5 ecgen__visible help--hover" ${EncounterBuilder.getTokenMouseOver(mon)}>Token</span>
-						${mon._pCr !== "Unknown" ? `
-							<span class="col-2 text-align-center">
-								<input value="${mon._pCr}" onchange="encounterBuilder.doCrChange(this, ${pinId}, ${mon._isScaledCr})" class="ecgen__cr_input form-control form-control--minimal input-xs">
-							</span>
-						` : `<span class="col-2 text-align-center">${mon._pCr}</span>`}
-						<span class="col-2 text-align-center count">${addCount || 1}</span>
-					</div>
-				</li>
-			`);
-		});
-	});
-}
+	const $hovStatblock = $(`<span class="col-1-4 help--hover ecgen__visible">Statblock</span>`)
+		.mouseover(evt => EncounterBuilder.doStatblockMouseOver(evt, $hovStatblock[0], pinId, mon._isScaledCr))
+		.mousemove(evt => Renderer.hover.handleLinkMouseMove(evt, $hovStatblock[0]))
+		.mouseleave(evt => Renderer.hover.handleLinkMouseLeave(evt, $hovStatblock[0]));
 
-// sorting for form filtering
-function sortMonsters (a, b, o) {
-	function getPrimary () {
-		if (o.valueName === "count") return SortUtil.ascSort(Number(a.values().count), Number(b.values().count));
-		a = monsters[a.elm.getAttribute(FLTR_ID)];
-		b = monsters[b.elm.getAttribute(FLTR_ID)];
-		switch (o.valueName) {
-			case "name":
-				return SortUtil.ascSort(a.name, b.name);
-			case "type":
-				return SortUtil.ascSort(a._pTypes.asText, b._pTypes.asText);
-			case "source":
-				return SortUtil.ascSort(a.source, b.source);
-			case "cr":
-				return SortUtil.ascSortCr(a._pCr, b._pCr);
+	const hovTokenMeta = EncounterBuilder.getTokenHoverMeta(mon);
+	const $hovToken = $(`<span class="col-1-2 ecgen__visible help--hover">Token</span>`)
+		.mouseover(evt => hovTokenMeta.mouseOver(evt, $hovToken[0]))
+		.mousemove(evt => hovTokenMeta.mouseMove(evt, $hovToken[0]))
+		.mouseleave(evt => hovTokenMeta.mouseLeave(evt, $hovToken[0]));
+
+	const $hovImage = $(`<span class="col-1-2 ecgen__visible help--hover">Image</span>`)
+		.mouseover(evt => EncounterBuilder.handleImageMouseOver(evt, $hovImage, pinId));
+
+	const $ptCr = (() => {
+		if (cr === "Unknown") return $(`<span class="col-1-2 text-center">${cr}</span>`);
+
+		const $iptCr = $(`<input value="${cr}" class="ecgen__cr_input form-control form-control--minimal input-xs">`)
+			.change(() => encounterBuilder.doCrChange($iptCr, pinId, mon._isScaledCr));
+
+		return $$`<span class="col-1-2 text-center">${$iptCr}</span>`;
+	})();
+
+	const $eleCount1 = $(`<span class="col-2 text-center">${count}</span>`);
+	const $eleCount2 = $(`<span class="col-2 pr-0 text-center">${count}</span>`);
+
+	const $ele = $$`<li class="row row--bestiary_sublist">
+		<a href="#${hash}" draggable="false" class="ecgen__hidden">
+			<span class="bold col-5 pl-0">${name}</span>
+			<span class="col-3-8">${type}</span>
+			<span class="col-1-2 text-center">${cr}</span>
+			${$eleCount1}
+		</a>
+		
+		<div class="list__item_inner ecgen__visible--flex">
+			${EncounterBuilder.$getSublistButtons(pinId, mon.uniqueId, true)}
+			<span class="ecgen__name--sub col-3-5">${name}</span>
+			${$hovStatblock}
+			${$hovToken}
+			${$hovImage}
+			${$ptCr}
+			${$eleCount2}
+		</div>
+	</li>`
+		.contextmenu(evt => ListUtil.openSubContextMenu(evt, listItem));
+
+	const listItem = new ListItem(
+		pinId,
+		$ele,
+		name,
+		{
+			hash,
+			source: Parser.sourceJsonToAbv(mon.source),
+			type,
+			cr,
+			count,
+			uniqueid: data.uid || ""
+		},
+		{
+			$elesCount: [$eleCount1, $eleCount2]
 		}
-	}
-	return getPrimary() || SortUtil.ascSort(a.name, b.name) || SortUtil.ascSort(a.source, b.source);
+	);
+
+	return listItem;
 }
 
 let profBtn = null;
 // load selected monster stat block
-function loadhash (id) {
+function loadHash (id) {
 	const mon = monsters[id];
 
 	renderStatblock(mon);
 
-	loadsub([]);
+	loadSubHash([]);
 	ListUtil.updateSelected();
 }
 
@@ -791,26 +867,26 @@ function renderStatblock (mon, isScaled) {
 	}
 
 	function buildStatsTab () {
-		const $btnScaleCr = $(`
+		const $btnScaleCr = mon.cr != null ? $(`
 			<button id="btn-scale-cr" title="Scale Creature By CR (Highly Experimental)" class="mon__btn-scale-cr btn btn-xs btn-default">
 				<span class="glyphicon glyphicon-signal"/>
 			</button>`)
 			.off("click").click((evt) => {
 				evt.stopPropagation();
-				const mon = monsters[History.lastLoadedId];
+				const mon = monsters[Hist.lastLoadedId];
 				const lastCr = lastRendered.mon ? lastRendered.mon.cr.cr || lastRendered.mon.cr : mon.cr.cr || mon.cr;
 				Renderer.monster.getCrScaleTarget($btnScaleCr, lastCr, (targetCr) => {
 					if (targetCr === Parser.crToNumber(mon.cr)) renderStatblock(mon);
-					else History.setSubhash(MON_HASH_SCALED, targetCr);
+					else Hist.setSubhash(MON_HASH_SCALED, targetCr);
 				});
-			}).toggle(Parser.crToNumber(mon.cr.cr || mon.cr) !== 100);
+			}).toggle(Parser.crToNumber(mon.cr.cr || mon.cr) !== 100) : null;
 
-		const $btnResetScaleCr = $(`
+		const $btnResetScaleCr = mon.cr != null ? $(`
 			<button id="btn-reset-cr" title="Reset CR Scaling" class="mon__btn-reset-cr btn btn-xs btn-default">
 				<span class="glyphicon glyphicon-refresh"></span>
 			</button>`)
-			.click(() => History.setSubhash(MON_HASH_SCALED, null))
-			.toggle(isScaled);
+			.click(() => Hist.setSubhash(MON_HASH_SCALED, null))
+			.toggle(isScaled) : null;
 
 		$content.append(RenderBestiary.$getRenderedCreature(mon, meta, {$btnScaleCr, $btnResetScaleCr}));
 
@@ -913,7 +989,7 @@ function renderStatblock (mon, isScaled) {
 						meta.$ele.show();
 						setTimeout(() => meta.$ele.css("max-width", ""), 10); // hack to clear the earlier 100% width
 
-						if (meta.name && meta.source) $footer.html(`<div>${meta.displayName || meta.name}; <span title="${Parser.sourceJsonToFull(meta.source)}">${Parser.sourceJsonToAbv(meta.source)}${meta.page ? ` p${meta.page}` : ""}</span></div>`);
+						if (meta.name && meta.source) $footer.html(`<div>${meta.displayName || meta.name}; <span title="${Parser.sourceJsonToFull(meta.source)}">${Parser.sourceJsonToAbv(meta.source)}${meta.page > 0 ? ` p${meta.page}` : ""}</span></div>`);
 						else $footer.html("");
 
 						$wrpFooter.detach().appendTo(meta.$ele);
@@ -1030,7 +1106,7 @@ function renderStatblock (mon, isScaled) {
 	}
 
 	function buildFluffTab (isImageTab) {
-		return Renderer.utils.buildFluffTab(
+		return Renderer.utils.pBuildFluffTab(
 			isImageTab,
 			$content,
 			mon,
@@ -1073,11 +1149,12 @@ function handleUnknownHash (link, sub) {
 	if (src) {
 		loadSource(JSON_LIST_NAME, (monsters) => {
 			addMonsters(monsters);
-			History.hashChange();
+			Hist.hashChange();
 		})(src, "yes");
 	}
 }
 
+// Used in DC roller event handlers
 function dcRollerClick (event, ele, exp) {
 	if (window.PROF_DICE_MODE === PROF_MODE_BONUS) return;
 	const it = {
@@ -1094,10 +1171,11 @@ function getUnpackedUid (uid) {
 
 function getCr (obj) {
 	if (obj.crScaled != null) return obj.crScaled;
+	if (obj.cr == null) return null;
 	return typeof obj.cr === "string" ? obj.cr.includes("/") ? Parser.crToNumber(obj.cr) : Number(obj.cr) : obj.cr;
 }
 
-function loadsub (sub) {
+function loadSubHash (sub) {
 	sub = filterBox.setFromSubHashes(sub);
 	ListUtil.setFromSubHashes(sub, sublistFuncPreload);
 
@@ -1107,7 +1185,7 @@ function loadsub (sub) {
 	if (scaledHash) {
 		const scaleTo = Number(UrlUtil.unpackSubHash(scaledHash)[MON_HASH_SCALED][0]);
 		const scaleToStr = Parser.numberToCr(scaleTo);
-		const mon = monsters[History.lastLoadedId];
+		const mon = monsters[Hist.lastLoadedId];
 		if (Parser.isValidCr(scaleToStr) && scaleTo !== Parser.crToNumber(lastRendered.mon.cr)) {
 			ScaleCreature.scale(mon, scaleTo).then(scaled => renderStatblock(scaled, true));
 		}

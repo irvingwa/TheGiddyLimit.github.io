@@ -18,7 +18,7 @@
 			"type": "undead",
 			"source": "LMoP",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -95,6 +95,7 @@
 		},
 		{
 			"name": "Evil Mage",
+			"isNpc": true,
 			"size": "M",
 			"type": {
 				"type": "humanoid",
@@ -627,7 +628,8 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM"
-			}
+			},
+			"page": 41
 		},
 		{
 			"name": "Nundro Rockseeker",
@@ -636,7 +638,26 @@
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM"
-			}
+			},
+			"page": 50
+		},
+		{
+			"name": "Venomfang",
+			"isNpc": true,
+			"source": "LMoP",
+			"_copy": {
+				"name": "Young Green Dragon",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the dragon",
+						"with": "Venomfang",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 63
 		}
 	]
 }

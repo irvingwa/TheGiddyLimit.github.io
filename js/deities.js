@@ -2,49 +2,6 @@
 
 const STR_REPRINTED = "reprinted";
 
-window.onload = async function load () {
-	await ExcludeUtil.pInitialise();
-	SortUtil.initHandleFilterButtonClicks();
-	DataUtil.deity.loadJSON().then(onJsonLoad);
-};
-
-let list;
-const sourceFilter = getSourceFilter();
-const pantheonFilter = new Filter({
-	header: "Pantheon",
-	items: [
-		"Celtic",
-		"Dawn War",
-		"Dragonlance",
-		"Drow",
-		"Dwarven",
-		"Eberron",
-		"Egyptian",
-		"Elven",
-		"Faerûnian",
-		"Forgotten Realms",
-		"Gnomish",
-		"Greek",
-		"Greyhawk",
-		"Halfling",
-		"Nonhuman",
-		"Norse",
-		"Orc"
-	]
-});
-const categoryFilter = new Filter({
-	header: "Category",
-	items: [
-		STR_NONE,
-		"Other Faiths of Eberron",
-		"The Dark Six",
-		"The Gods of Evil",
-		"The Gods of Good",
-		"The Gods of Neutrality",
-		"The Sovereign Host"
-	]
-});
-
 function unpackAlignment (g) {
 	g.alignment.sort(SortUtil.alignmentSort);
 	if (g.alignment.length === 2 && g.alignment.includes("N")) {
@@ -56,86 +13,87 @@ function unpackAlignment (g) {
 	return MiscUtil.copy(g.alignment);
 }
 
-let filterBox;
-async function onJsonLoad (data) {
-	list = ListUtil.search({
-		valueNames: ["name", "pantheon", "alignment", "domains", "symbol", "source", "uniqueid"],
-		listClass: "deities",
-		sortFunction: SortUtil.listSort
-	});
-
-	const alignmentFilter = new Filter({
-		header: "Alignment",
-		items: ["L", "NX", "C", "G", "NY", "E", "N"],
-		displayFn: Parser.alignmentAbvToFull
-	});
-	const domainFilter = new Filter({
-		header: "Domain",
-		items: ["Arcana", "Death", "Forge", "Grave", "Knowledge", "Life", "Light", "Nature", STR_NONE, "Order", "Tempest", "Trickery", "War"]
-	});
-	const miscFilter = new Filter({
-		header: "Miscellaneous",
-		items: [STR_REPRINTED],
-		displayFn: StrUtil.uppercaseFirst,
-		deselFn: (it) => { return it === STR_REPRINTED }
-	});
-
-	filterBox = await pInitFilterBox(sourceFilter, alignmentFilter, pantheonFilter, categoryFilter, domainFilter, miscFilter);
-
-	const $outVisibleResults = $(`.lst__wrp-search-visible`);
-	list.on("updated", () => {
-		$outVisibleResults.html(`${list.visibleItems.length}/${list.items.length}`);
-	});
-
-	// filtering function
-	$(filterBox).on(
-		FilterBox.EVNT_VALCHANGE,
-		handleFilterChange
-	);
-
-	const subList = ListUtil.initSublist({
-		valueNames: ["name", "pantheon", "alignment", "domains", "id"],
-		listClass: "subdeities",
-		getSublistRow: getSublistItem
-	});
-	ListUtil.initGenericPinnable();
-
-	addDeities(data);
-	BrewUtil.pAddBrewData()
-		.then(handleBrew)
-		.then(() => BrewUtil.bind({list}))
-		.then(() => BrewUtil.pAddLocalBrewData())
-		.catch(BrewUtil.pPurgeBrew)
-		.then(async () => {
-			BrewUtil.makeBrewButton("manage-brew");
-			BrewUtil.bind({filterBox, sourceFilter});
-			await ListUtil.pLoadState();
-			RollerUtil.addListRollButton();
-			ListUtil.addListShowHide();
-
-			History.init(true);
-			ExcludeUtil.checkShowAllExcluded(deitiesList, $(`#pagecontent`));
+class DeitiesPage extends ListPage {
+	constructor () {
+		const sourceFilter = getSourceFilter();
+		const pantheonFilter = new Filter({
+			header: "Pantheon",
+			items: [
+				"Celtic",
+				"Dawn War",
+				"Dragonlance",
+				"Drow",
+				"Dwarven",
+				"Eberron",
+				"Egyptian",
+				"Elven",
+				"Faerûnian",
+				"Forgotten Realms",
+				"Gnomish",
+				"Greek",
+				"Greyhawk",
+				"Halfling",
+				"Nonhuman",
+				"Norse",
+				"Orc"
+			]
 		});
-}
+		const categoryFilter = new Filter({
+			header: "Category",
+			items: [
+				STR_NONE,
+				"Other Faiths of Eberron",
+				"The Dark Six",
+				"The Gods of Evil",
+				"The Gods of Good",
+				"The Gods of Neutrality",
+				"The Sovereign Host"
+			],
+			itemSortFn: null
+		});
+		const alignmentFilter = new Filter({
+			header: "Alignment",
+			items: ["L", "NX", "C", "G", "NY", "E", "N"],
+			displayFn: Parser.alignmentAbvToFull,
+			itemSortFn: null
+		});
+		const domainFilter = new Filter({
+			header: "Domain",
+			items: ["Arcana", "Death", "Forge", "Grave", "Knowledge", "Life", "Light", "Nature", STR_NONE, "Order", "Tempest", "Trickery", "War"]
+		});
+		const miscFilter = new Filter({
+			header: "Miscellaneous",
+			items: [STR_REPRINTED],
+			displayFn: StrUtil.uppercaseFirst,
+			deselFn: (it) => { return it === STR_REPRINTED }
+		});
 
-function handleBrew (homebrew) {
-	addDeities(homebrew);
-	return Promise.resolve();
-}
+		super({
+			dataSource: DataUtil.deity.loadJSON,
 
-let deitiesList = [];
-let dtI = 0;
-function addDeities (data) {
-	if (!data.deity || !data.deity.length) return;
+			filters: [
+				sourceFilter,
+				alignmentFilter,
+				pantheonFilter,
+				categoryFilter,
+				domainFilter,
+				miscFilter
+			],
+			filterSource: sourceFilter,
 
-	deitiesList = deitiesList.concat(data.deity);
+			listClass: "deities",
 
-	let tempString = "";
-	for (; dtI < deitiesList.length; dtI++) {
-		const g = deitiesList[dtI];
-		if (ExcludeUtil.isExcluded(g.name, "deity", g.source)) continue;
-		const abvSource = Parser.sourceJsonToAbv(g.source);
+			sublistClass: "subdeities",
 
+			dataProps: ["deity"]
+		});
+
+		this._sourceFilter = sourceFilter;
+		this._pantheonFilter = pantheonFilter;
+		this._categoryFilter = categoryFilter;
+	}
+
+	getListItem (g, dtI) {
 		g._fAlign = unpackAlignment(g);
 		if (!g.category) g.category = STR_NONE;
 		if (!g.domains) g.domains = [STR_NONE];
@@ -143,118 +101,106 @@ function addDeities (data) {
 
 		g._fReprinted = g.reprinted ? STR_REPRINTED : "";
 
-		tempString += `
-			<li class="row" ${FLTR_ID}="${dtI}" onclick="ListUtil.toggleSelected(event, this)" oncontextmenu="ListUtil.openContextMenu(event, this)">
-				<a id="${dtI}" href="#${UrlUtil.autoEncodeHash(g)}" title="${g.name}">
-					<span class="name col-3">${g.name}</span>
-					<span class="pantheon col-2 text-align-center">${g.pantheon}</span>
-					<span class="alignment col-2 text-align-center">${g.alignment.join("")}</span>
-					<span class="domains col-3 ${g.domains[0] === STR_NONE ? `list-entry-none` : ""}">${g.domains.join(", ")}</span>
-					<span class="source col-2 text-align-center ${Parser.sourceJsonToColor(abvSource)}" title="${Parser.sourceJsonToFull(g.source)}">${abvSource}</span>
-					
-					<span class="uniqueid hidden">${g.uniqueId ? g.uniqueId : dtI}</span>
-				</a>
-			</li>
-		`;
+		this._sourceFilter.addItem(g.source);
+		this._pantheonFilter.addItem(g.pantheon);
+		this._categoryFilter.addItem(g.category);
 
-		sourceFilter.addItem(g.source);
-		pantheonFilter.addItem(g.pantheon);
-		categoryFilter.addItem(g.category);
-	}
-	const lastSearch = ListUtil.getSearchTermAndReset(list);
-	$(`#deitiesList`).append(tempString);
+		const eleLi = document.createElement("li");
+		eleLi.className = "row";
 
-	list.reIndex();
-	if (lastSearch) list.search(lastSearch);
-	list.sort("name");
-	filterBox.render();
-	handleFilterChange();
+		const source = Parser.sourceJsonToAbv(g.source);
+		const hash = UrlUtil.autoEncodeHash(g);
+		const alignment = g.alignment.join("");
+		const domains = g.domains.join(", ");
 
-	ListUtil.setOptions({
-		itemList: deitiesList,
-		getSublistRow: getSublistItem,
-		primaryLists: [list]
-	});
-	ListUtil.bindPinButton();
-	Renderer.hover.bindPopoutButton(deitiesList);
-	UrlUtil.bindLinkExportButton(filterBox);
-	ListUtil.bindDownloadButton();
-	ListUtil.bindUploadButton();
-}
+		eleLi.innerHTML = `<a href="#${hash}">
+			<span class="bold col-3 pl-0">${g.name}</span>
+			<span class="col-2 text-center">${g.pantheon}</span>
+			<span class="col-2 text-center">${alignment}</span>
+			<span class="col-3 ${g.domains[0] === STR_NONE ? `list-entry-none` : ""}">${domains}</span>
+			<span class="col-2 text-center ${Parser.sourceJsonToColor(g.source)} pr-0" title="${Parser.sourceJsonToFull(g.source)}" ${BrewUtil.sourceJsonToStyle(g.source)}>${source}</span>
+		</a>`;
 
-function handleFilterChange () {
-	const f = filterBox.getValues();
-	list.filter(function (item) {
-		const g = deitiesList[$(item.elm).attr(FLTR_ID)];
-		return filterBox.toDisplay(
-			f,
-			g.source,
-			g._fAlign,
-			g.pantheon,
-			g.category,
-			g.domains,
-			g._fReprinted
+		const listItem = new ListItem(
+			dtI,
+			eleLi,
+			g.name,
+			{
+				hash,
+				source,
+				pantheon: g.pantheon,
+				alignment,
+				domains,
+				uniqueid: g.uniqueId ? g.uniqueId : dtI
+			}
 		);
-	});
-	FilterBox.selectFirstVisible(deitiesList);
-}
 
-function getSublistItem (g, pinId) {
-	return `
-		<li class="row" ${FLTR_ID}="${pinId}" oncontextmenu="ListUtil.openSubContextMenu(event, this)">
-			<a href="#${UrlUtil.autoEncodeHash(g)}" title="${g.name}">
-				<span class="name col-4">${g.name}</span>
-				<span class="pantheon col-2">${g.pantheon}</span>
-				<span class="alignment col-2">${g.alignment.join("")}</span>
-				<span class="domains col-4 ${g.domains[0] === STR_NONE ? `list-entry-none` : ""}">${g.domains.join(", ")}</span>
-				<span class="id hidden">${pinId}</span>
-			</a>
-		</li>
-	`;
-}
+		eleLi.addEventListener("click", (evt) => this._list.doSelect(listItem, evt));
+		eleLi.addEventListener("contextmenu", (evt) => ListUtil.openContextMenu(evt, this._list, listItem));
 
-const renderer = Renderer.get();
-function loadhash (jsonIndex) {
-	renderer.setFirstSection(true);
-	const deity = deitiesList[jsonIndex];
-
-	function getDeityBody (deity, reprintIndex) {
-		const renderStack = [];
-		if (deity.entries) renderer.recursiveRender({entries: deity.entries}, renderStack);
-		return `
-		${reprintIndex ? `
-			<tr><td colspan="6">
-			<i class="text-muted">
-			${reprintIndex === 1 ? `This deity is a reprint.` : ""} The version below was printed in an older publication (${Parser.sourceJsonToFull(deity.source)}${deity.page ? `, page ${deity.page}` : ""}).
-			</i>
-			</td></tr>
-		` : ""}
-
-		${Renderer.deity.getOrderedParts(deity, `<tr><td colspan="6">`, `</td></tr>`)}
-		
-		${deity.symbolImg ? `<tr><td colspan="6">${renderer.render({entries: [deity.symbolImg]})}</td></tr>` : ""}
-		${renderStack.length ? `<tr class="text"><td colspan="6">${renderStack.join("")}</td></tr>` : ""}
-		`;
+		return listItem;
 	}
 
-	const $content = $(`#pagecontent`).empty();
-	$content.append(`
-		${Renderer.utils.getBorderTr()}
-		${Renderer.utils.getNameTr(deity, false, "", deity.title ? `, ${deity.title.toTitleCase()}` : "")}
-		${getDeityBody(deity)}
-		${deity.reprinted ? `<tr class="text"><td colspan="6"><i class="text-muted">Note: this deity has been reprinted in a newer publication.</i></td></tr>` : ""}
-		${Renderer.utils.getPageTr(deity)}
-		${deity.previousVersions ? `
-		${Renderer.utils.getDividerTr()}
-		${deity.previousVersions.map((d, i) => getDeityBody(d, i + 1)).join(Renderer.utils.getDividerTr())}
-		` : ""}
-		${Renderer.utils.getBorderTr()}
-	`);
+	handleFilterChange () {
+		const f = this._filterBox.getValues();
+		this._list.filter(item => {
+			const g = this._dataList[item.ix];
+			return this._filterBox.toDisplay(
+				f,
+				g.source,
+				g._fAlign,
+				g.pantheon,
+				g.category,
+				g.domains,
+				g._fReprinted
+			);
+		});
+		FilterBox.selectFirstVisible(this._dataList);
+	}
 
-	ListUtil.updateSelected();
+	getSublistItem (g, pinId) {
+		const hash = UrlUtil.autoEncodeHash(g);
+
+		const alignment = g.alignment.join("");
+		const domains = g.domains.join(", ");
+
+		const $ele = $(`<li class="row">
+			<a href="#${hash}">
+				<span class="bold col-4 pl-0">${g.name}</span>
+				<span class="col-2">${g.pantheon}</span>
+				<span class="col-2">${alignment}</span>
+				<span class="col-4 ${g.domains[0] === STR_NONE ? `list-entry-none` : ""} pr-0">${domains}</span>
+			</a>
+		</li>`)
+			.contextmenu(evt => ListUtil.openSubContextMenu(evt, listItem));
+
+		const listItem = new ListItem(
+			pinId,
+			$ele,
+			g.name,
+			{
+				hash,
+				pantheon: g.pantheon,
+				alignment,
+				domains
+			}
+		);
+		return listItem;
+	}
+
+	doLoadHash (id) {
+		const deity = this._dataList[id];
+
+		$(`#pagecontent`).empty().append(RenderDeities.$getRenderedDeity(deity));
+
+		ListUtil.updateSelected();
+	}
+
+	doLoadSubHash (sub) {
+		sub = this._filterBox.setFromSubHashes(sub);
+		ListUtil.setFromSubHashes(sub);
+	}
 }
 
-function loadsub (sub) {
-	sub = filterBox.setFromSubHashes(sub);
-	ListUtil.setFromSubHashes(sub);
-}
+const deitiesPage = new DeitiesPage();
+window.addEventListener("load", () => deitiesPage.pOnLoad());

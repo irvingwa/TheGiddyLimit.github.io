@@ -88,24 +88,22 @@ class InitiativeTrackerUtil {
 		const $cond = $(`<div class="init__cond" ${styleStack.length ? `style="${styleStack.join(" ")}"` : ""}/>`)
 			.data("doTickDown", tickDown)
 			.data("getState", () => JSON.parse(JSON.stringify(state)))
-			.on("contextmenu", (e) => e.ctrlKey || (e.preventDefault() || tickDown(true)))
+			.on("contextmenu", (e) => e.preventDefault() || tickDown(true))
 			.click(() => tickUp(true));
 
 		if (opts.name) {
 			const cond = InitiativeTrackerUtil.CONDITIONS.find(it => it.condName !== null && it.name.toLowerCase() === opts.name.toLowerCase().trim());
 			if (cond) {
+				const ele = $cond[0];
 				$cond.on("mouseover", (evt) => {
 					if (evt.shiftKey) {
 						evt.shiftKey = false;
-						Renderer.hover.mouseOver(
-							evt,
-							$cond[0],
-							UrlUtil.PG_CONDITIONS_DISEASES,
-							SRC_PHB,
-							UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS_DISEASES]({name: cond.condName || cond.name, source: SRC_PHB})
-						);
+						const hash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS_DISEASES]({name: cond.condName || cond.name, source: SRC_PHB});
+						Renderer.hover.pHandleLinkMouseOver(evt, ele, UrlUtil.PG_CONDITIONS_DISEASES, SRC_PHB, hash);
 					}
-				})
+				});
+				$cond.on("mousemove", (evt) => Renderer.hover.handleLinkMouseMove(evt, ele));
+				$cond.on("mouseleave", (evt) => Renderer.hover.handleLinkMouseLeave(evt, ele));
 			}
 		}
 
@@ -121,19 +119,19 @@ InitiativeTrackerUtil._WOUND_META = {
 	},
 	0: {
 		text: "Healthy",
-		color: "#00bb20"
+		color: MiscUtil.COLOR_HEALTHY
 	},
 	1: {
 		text: "Hurt",
-		color: "#c5ca00"
+		color: MiscUtil.COLOR_HURT
 	},
 	2: {
 		text: "Bloodied",
-		color: "#f7a100"
+		color: MiscUtil.COLOR_BLOODIED
 	},
 	3: {
 		text: "Defeated",
-		color: "#cc0000"
+		color: MiscUtil.COLOR_DEFEATED
 	}
 };
 InitiativeTrackerUtil.CONDITIONS = [
@@ -372,17 +370,19 @@ class InitiativeTrackerPlayerMessageHandler {
 		};
 		const {hpText, hpColor} = getHpContent();
 
+		const $namePart = $(`<div/>`).text(`${(rowData.m || rowData.n || "")}${rowData.o != null ? ` (${rowData.o})` : ""}`);
+
 		return $$`
 			<div class="initp__r${rowData.a ? ` initp__r--active` : ""}">
 				<div class="initp__r_name">
-					<div>${(rowData.n || "").escapeQuotes()}${rowData.o != null ? ` (${rowData.o})` : ""}</div>
+					${$namePart}
 					${$conds}
 				</div>
 				<div class="initp__r_hp">
 					<div class="initp__r_hp_pill" style="background: ${hpColor};">${hpText}</div>
 				</div>
 				${(rowData.k || []).map(statVal => `<div class="initp__r_stat flex-vh-center">
-					${statVal.v === true ? `<span class="text-success glyphicon glyphicon-ok"/>` : statVal.v === false ? `<span class="text-danger glyphicon glyphicon-remove"/>` : statVal.v}
+					${statVal.u ? "?" : statVal.v === true ? `<span class="text-success glyphicon glyphicon-ok"/>` : statVal.v === false ? `<span class="text-danger glyphicon glyphicon-remove"/>` : statVal.v}
 				</div>`).join("")}
 				<div class="initp__r_score${this._isCompact ? " initp__r_score--compact" : ""}">${rowData.i}</div>
 			</div>

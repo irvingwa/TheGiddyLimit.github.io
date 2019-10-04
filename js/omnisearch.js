@@ -8,9 +8,11 @@ const Omnisearch = {
 	highestId: -1,
 
 	init: function () {
+		if (IS_VTT) return;
+
 		const $nav = $(`#navbar`);
 
-		const $searchIn = $(`<input class="form-control search omni__input" placeholder="${Omnisearch._PLACEHOLDER_TEXT}" title="Disclaimer: unlikely to search everywhere. Use with caution.">`).disableSpellcheck();
+		const $searchIn = $(`<input class="form-control search omni__input" placeholder="${Omnisearch._PLACEHOLDER_TEXT}" title="Hotkey: F. Disclaimer: unlikely to search everywhere. Use with caution.">`).disableSpellcheck();
 		const $searchSubmit = $(`<button class="btn btn-default omni__submit" tabindex="-1"><span class="glyphicon glyphicon-search"></span></button>`);
 
 		const $searchInputWrapper = $$`
@@ -136,7 +138,7 @@ const Omnisearch = {
 
 			function renderLinks () {
 				function getHoverStr (category, url, src) {
-					return `onmouseover="Renderer.hover.mouseOver(event, this, '${UrlUtil.categoryToPage(category)}', '${src}', '${url.replace(/'/g, "\\'")}')" ${Renderer.hover._getPreventTouchString()}`;
+					return `onmouseover="Renderer.hover.pHandleLinkMouseOver(event, this, '${UrlUtil.categoryToPage(category)}', '${src}', '${url.replace(/'/g, "\\'")}')" onmouseleave="Renderer.hover.handleLinkMouseLeave(event, this)" onmousemove="Renderer.hover.handleLinkMouseMove(event, this)" ${Renderer.hover.getPreventTouchString()}`;
 				}
 
 				$searchOut.empty();
@@ -154,11 +156,11 @@ const Omnisearch = {
 						pDoSearch();
 					});
 
-				$searchOut.append($(`<div class="text-align-right"/>`).append([$btnUaEtc, $btnBlacklist]));
+				$searchOut.append($(`<div class="text-right"/>`).append([$btnUaEtc, $btnBlacklist]));
 				const base = page * MAX_RESULTS;
 				for (let i = base; i < Math.max(Math.min(results.length, MAX_RESULTS + base), base); ++i) {
 					const r = results[i].doc;
-					const $link = $(`<a href="${UrlUtil.categoryToPage(r.c)}#${r.u}" ${r.h ? getHoverStr(r.c, r.u, r.s) : ""}>${r.cf}: ${r.n}</a>`)
+					const $link = $(`<a href="${Renderer.get().baseUrl}${UrlUtil.categoryToPage(r.c)}#${r.u}" ${r.h ? getHoverStr(r.c, r.u, r.s) : ""}>${r.cf}: ${r.n}</a>`)
 						.keydown(evt => Omnisearch.handleLinkKeyDown(evt, $link, $searchOut));
 					$$`<p>
 						${$link}
@@ -244,7 +246,7 @@ const Omnisearch = {
 		$body.on("keypress", (e) => {
 			if (!noModifierKeys(e) || MiscUtil.isInInput(e)) return;
 			if (e.key === "f" || e.key === "F") {
-				const toSel = e.key === "F" ? $searchIn : $(`#${ID_SEARCH_BAR}`).find(`.search`);
+				const toSel = e.key === "F" ? $searchIn : $(`#filter-search-input-group`).find(`.search`);
 				// defer, otherwise the "f" will be input into the search field
 				setTimeout(() => toSel.select().focus(), 0);
 			}
@@ -261,7 +263,7 @@ const Omnisearch = {
 
 	_pDoSearchLoad: async function () {
 		if (Omnisearch._pLoadSearch) return;
-		const data = Omnidexer.decompressIndex(await DataUtil.loadJSON("search/index.json"));
+		const data = Omnidexer.decompressIndex(await DataUtil.loadJSON(`${Renderer.get().baseUrl}search/index.json`));
 
 		elasticlunr.clearStopWords();
 		Omnisearch._searchIndex = elasticlunr(function () {

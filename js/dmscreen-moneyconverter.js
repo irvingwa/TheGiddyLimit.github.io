@@ -25,7 +25,7 @@ class MoneyConverter {
 		}).reverse();
 		const DEFAULT_CURRENCY = 3;
 
-		const $wrpConverter = $(`<div class="dm_money split-column"/>`);
+		const $wrpConverter = $(`<div class="dm_money dm__panel-bg split-column"/>`);
 
 		const doUpdate = () => {
 			if (!$wrpRows.find(`.dm_money__row`).length) {
@@ -171,12 +171,12 @@ class MoneyConverter {
 		const $btnSettings = $(`<button class="btn btn-default btn-sm" title="Settings"><span class="glyphicon glyphicon-cog"/></button>`)
 			.appendTo($wrpBtnAddSettings)
 			.click(() => {
-				const $modalInner = UiUtil.getShow$Modal(
-					"Settings",
-					() => doUpdate()
-				);
+				const {$modalInner} = UiUtil.getShowModal({
+					title: "Settings",
+					cbClose: () => doUpdate()
+				});
 				[...CURRENCY_INDEXED].reverse().forEach(cx => {
-					UiUtil.$getAddModalRowCb($modalInner, `Disable ${cx.n}`, disabledCurrency, cx.ix);
+					UiUtil.$getAddModalRowCb($modalInner, `Disable ${cx.n} in Output`, disabledCurrency, cx.ix);
 				});
 			});
 		const $iptOut = $(`<input class="form-control input-sm dm_money__out" disabled/>`)

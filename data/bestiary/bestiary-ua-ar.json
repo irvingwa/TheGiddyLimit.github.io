@@ -49,7 +49,6 @@
 			"languages": [
 				"understands the languages you speak"
 			],
-			"cr": "Unknown",
 			"trait": [
 				{
 					"name": "Might of the Master",
@@ -58,6 +57,7 @@
 					]
 				}
 			],
+			"actionNote": "Requires Your Bonus Action",
 			"action": [
 				{
 					"name": "Acidic Spittle",
@@ -98,7 +98,8 @@
 			],
 			"miscTags": [
 				"RW"
-			]
+			],
+			"page": 6
 		},
 		{
 			"source": "UAArtificerRevisited",
@@ -147,7 +148,6 @@
 			"languages": [
 				"understands the languages you speak"
 			],
-			"cr": "Unknown",
 			"trait": [
 				{
 					"name": "Might of the Master",
@@ -162,6 +162,7 @@
 					]
 				}
 			],
+			"actionNote": "Requires Your Bonus Action",
 			"action": [
 				{
 					"name": "Bite",

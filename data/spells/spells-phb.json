@@ -37,7 +37,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -115,7 +115,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -216,7 +216,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -280,7 +280,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -640,6 +640,26 @@
 							"name": "Oathbreaker",
 							"source": "DMG"
 						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores (UA)",
+							"source": "UAThreeSubclasses"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "GGR"
+						}
 					}
 				]
 			},
@@ -716,7 +736,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -760,11 +780,11 @@
 					],
 					"colStyles": [
 						"col-2",
-						"col-1 text-align-center",
-						"col-1 text-align-center",
+						"col-1 text-center",
+						"col-1 text-center",
 						"col-6",
-						"col-1 text-align-center",
-						"col-1 text-align-center"
+						"col-1 text-center",
+						"col-1 text-center"
 					],
 					"rows": [
 						[
@@ -1157,7 +1177,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -1320,7 +1340,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -1505,8 +1525,18 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Darkness (Stream)",
+							"name": "Darkness (Twitter)",
 							"source": "Twitter"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Aberrant Mind (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -1755,6 +1785,26 @@
 							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Twilight (UA)",
+							"source": "UAClericDruidWizard"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Wildfire (UA)",
+							"source": "UAClericDruidWizard"
+						}
 					}
 				]
 			},
@@ -1819,7 +1869,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -1891,12 +1941,22 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
 							"name": "Battle Smith",
 							"source": "UAArtificerRevisited"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Twilight (UA)",
+							"source": "UAClericDruidWizard"
 						}
 					}
 				]
@@ -2070,6 +2130,16 @@
 							"name": "Divine Soul",
 							"source": "XGE"
 						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Onomancy (UA)",
+							"source": "UAClericDruidWizard"
+						}
 					}
 				]
 			},
@@ -2146,7 +2216,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -2505,7 +2575,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Beauty (Stream)",
+							"name": "Beauty (Twitter)",
 							"source": "Twitter"
 						}
 					}
@@ -2710,7 +2780,7 @@
 						"While the target is cursed, your attacks and spells deal an extra {@dice 1d8} necrotic damage to the target."
 					]
 				},
-				"A remove curse spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect."
+				"A {@spell remove curse} spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect."
 			],
 			"entriesHigherLevel": [
 				{
@@ -2777,7 +2847,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -3028,6 +3098,16 @@
 							"name": "Divine Soul",
 							"source": "XGE"
 						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Onomancy (UA)",
+							"source": "UAClericDruidWizard"
+						}
 					}
 				]
 			},
@@ -3162,18 +3242,38 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Darkness (Stream)",
+							"name": "Darkness (Twitter)",
 							"source": "Twitter"
 						}
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
 							"name": "Alchemist",
 							"source": "UAArtificerRevisited"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores (UA)",
+							"source": "UAThreeSubclasses"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "GGR"
 						}
 					}
 				]
@@ -3256,13 +3356,13 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Stone",
+							"name": "Stone (UA)",
 							"source": "UASorcerer"
 						}
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -3379,8 +3479,18 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Darkness (Stream)",
+							"name": "Darkness (Twitter)",
 							"source": "Twitter"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores (UA)",
+							"source": "UAThreeSubclasses"
 						}
 					}
 				]
@@ -3457,7 +3567,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -3558,7 +3668,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -3655,13 +3765,13 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Stone",
+							"name": "Stone (UA)",
 							"source": "UASorcerer"
 						}
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -4020,6 +4130,16 @@
 							"name": "Redemption",
 							"source": "XGE"
 						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Aberrant Mind (UA)",
+							"source": "UASorcererAndWarlock"
+						}
 					}
 				]
 			},
@@ -4195,7 +4315,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Beauty (Stream)",
+							"name": "Beauty (Twitter)",
 							"source": "Twitter"
 						}
 					}
@@ -4547,6 +4667,16 @@
 							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Twilight (UA)",
+							"source": "UAClericDruidWizard"
+						}
 					}
 				]
 			},
@@ -4882,18 +5012,38 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Destruction (Stream)",
+							"name": "Destruction (Twitter)",
 							"source": "Twitter"
 						}
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
 							"name": "Alchemist",
 							"source": "UAArtificerRevisited"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "GGR"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores (UA)",
+							"source": "UAThreeSubclasses"
 						}
 					}
 				]
@@ -5370,6 +5520,16 @@
 							"name": "Kraken (Stream)",
 							"source": "Stream"
 						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lurker in the Deep (UA)",
+							"source": "UASorcererAndWarlock"
+						}
 					}
 				]
 			},
@@ -5464,7 +5624,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Stone",
+							"name": "Stone (UA)",
 							"source": "UASorcerer"
 						}
 					}
@@ -5548,13 +5708,13 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City (PSA)",
+							"name": "City (UA)",
 							"source": "UAModernMagic"
 						}
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -5629,7 +5789,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Beauty (Stream)",
+							"name": "Beauty (Twitter)",
 							"source": "Twitter"
 						}
 					},
@@ -5641,6 +5801,16 @@
 						"subclass": {
 							"name": "Order",
 							"source": "GGR"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Aberrant Mind (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -5749,12 +5919,22 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
 							"name": "Artillerist",
 							"source": "UAArtificerRevisited"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lurker in the Deep (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -5873,7 +6053,27 @@
 						},
 						"subclass": {
 							"name": "Treachery (UA)",
-							"source": "UAP"
+							"source": "UAPaladin"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores (UA)",
+							"source": "UAThreeSubclasses"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "GGR"
 						}
 					}
 				]
@@ -5890,7 +6090,7 @@
 						"Behavior"
 					],
 					"colStyles": [
-						"col-1 text-align-center",
+						"col-1 text-center",
 						"col-11"
 					],
 					"rows": [
@@ -6031,10 +6231,10 @@
 				{
 					"type": "list",
 					"items": [
-						"One {@filter beast of challenge rating 2 or lower|bestiary|challenge rating=2|type=beast|miscellaneous=!swarm}",
-						"Two {@filter beasts of challenge rating 1 or lower|bestiary|challenge rating=1|type=beast|miscellaneous=!swarm}",
-						"Four {@filter beasts of challenge rating 1/2 or lower|bestiary|challenge rating=1/2|type=beast|miscellaneous=!swarm}",
-						"Eight {@filter beasts of challenge rating 1/4 or lower|bestiary|challenge rating=0;1/8;1/4|type=beast|miscellaneous=!swarm}"
+						"One {@filter beast of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}",
+						"Two {@filter beasts of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}",
+						"Four {@filter beasts of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=beast|miscellaneous=!swarm}",
+						"Eight {@filter beasts of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=beast|miscellaneous=!swarm}"
 					]
 				},
 				"Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends.",
@@ -6156,16 +6356,16 @@
 			},
 			"source": "PHB",
 			"entries": [
-				"You summon a {@filter celestial of challenge rating 4 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4|type=celestial|miscellaneous=!swarm}, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends.",
+				"You summon a {@filter celestial of challenge rating 4 or lower|bestiary|challenge rating=[&0;&4]|type=celestial|miscellaneous=!swarm}, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends.",
 				"The celestial is friendly to you and your companions for the duration. Roll initiative for the celestial, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the celestial, it defends itself from hostile creatures but otherwise takes no actions.",
-				"The DM has {@creature couatl|mm|the celestial}'s statistics."
+				"The DM has {@creature couatl||the celestial}'s statistics."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a 9th-level spell slot, you summon a {@filter celestial of challenge rating 5 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4;5|type=celestial|miscellaneous=!swarm}."
+						"When you cast this spell using a 9th-level spell slot, you summon a {@filter celestial of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=celestial|miscellaneous=!swarm}."
 					]
 				}
 			],
@@ -6234,7 +6434,7 @@
 			},
 			"source": "PHB",
 			"entries": [
-				"You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An {@filter elemental of challenge rating 5 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4;5|type=elemental|miscellaneous=!swarm} appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a {@creature fire elemental} emerges from a bonfire, and an {@creature earth elemental} rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.",
+				"You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An {@filter elemental of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=elemental|miscellaneous=!swarm} appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a {@creature fire elemental} emerges from a bonfire, and an {@creature earth elemental} rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.",
 				"The elemental is friendly to you and your companions for the duration. Roll initiative for the elemental, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.",
 				"If your concentration is broken, the elemental doesn't disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental can't be dismissed by you, and it disappears 1 hour after you summoned it.",
 				"The DM has the elemental's statistics."
@@ -6304,7 +6504,7 @@
 			},
 			"source": "PHB",
 			"entries": [
-				"You summon a {@filter fey creature of challenge rating 6 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4;5;6|type=fey|miscellaneous=!swarm}, or a fey spirit that takes the form of a {@filter beast of challenge rating 6 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4;5;6|type=beast|miscellaneous=!swarm}. It appears in an unoccupied space that you can see within range. The fey creature disappears when it drops to 0 hit points or when the spell ends.",
+				"You summon a {@filter fey creature of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm}, or a fey spirit that takes the form of a {@filter beast of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}. It appears in an unoccupied space that you can see within range. The fey creature disappears when it drops to 0 hit points or when the spell ends.",
 				"The fey creature is friendly to you and your companions for the duration. Roll initiative for the creature, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the fey creature, it defends itself from hostile creatures but otherwise takes no actions.",
 				"If your concentration is broken, the fey creature doesn't disappear. Instead, you lose control of the fey creature, it becomes hostile toward you and your companions, and it might attack. An uncontrolled fey creature can't be dismissed by you, and it disappears 1 hour after you summoned it.",
 				"The DM has the fey creature's statistics."
@@ -6373,10 +6573,10 @@
 				{
 					"type": "list",
 					"items": [
-						"One {@filter elemental of challenge rating 2 or lower|bestiary|challenge rating=2|type=elemental|miscellaneous=!swarm}",
-						"Two {@filter elementals of challenge rating 1 or lower|bestiary|challenge rating=1|type=elemental|miscellaneous=!swarm}",
-						"Four {@filter elementals of challenge rating 1/2 or lower|bestiary|challenge rating=1/2|type=elemental|miscellaneous=!swarm}",
-						"Eight {@filter elementals of challenge rating 1/4 or lower|bestiary|challenge rating=0;1/8;1/4|type=elemental|miscellaneous=!swarm}."
+						"One {@filter elemental of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=elemental|miscellaneous=!swarm}",
+						"Two {@filter elementals of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=elemental|miscellaneous=!swarm}",
+						"Four {@filter elementals of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=elemental|miscellaneous=!swarm}",
+						"Eight {@filter elementals of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=elemental|miscellaneous=!swarm}."
 					]
 				},
 				"An elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends.",
@@ -6505,10 +6705,10 @@
 				{
 					"type": "list",
 					"items": [
-						"One {@filter fey creature of challenge rating 2 or lower|bestiary|challenge rating=2|type=fey|miscellaneous=!swarm}",
-						"Two {@filter fey creatures of challenge rating 1 or lower|bestiary|challenge rating=1|type=fey|miscellaneous=!swarm}",
-						"Four {@filter fey creatures of challenge rating 1/2 or lower|bestiary|challenge rating=1/2|type=fey|miscellaneous=!swarm}",
-						"Eight {@filter fey creatures of challenge rating 1/4 or lower|bestiary|challenge rating=0;1/8;1/4|type=fey|miscellaneous=!swarm}"
+						"One {@filter fey creature of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=fey|miscellaneous=!swarm}",
+						"Two {@filter fey creatures of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=fey|miscellaneous=!swarm}",
+						"Four {@filter fey creatures of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=fey|miscellaneous=!swarm}",
+						"Eight {@filter fey creatures of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=fey|miscellaneous=!swarm}"
 					]
 				},
 				"A summoned creature disappears when it drops to 0 hit points or when the spell ends.",
@@ -6575,7 +6775,7 @@
 				"ritual": true
 			},
 			"entries": [
-				"You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a failure, you take {@dice 6d6} psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A greater restoration spell cast on you ends this effect.",
+				"You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a failure, you take {@dice 6d6} psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A {@spell greater restoration} spell cast on you ends this effect.",
 				"On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as \"yes,\" \"no,\" \"maybe,\" \"never,\" \"irrelevant,\" or \"unclear\" (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer."
 			],
 			"page": 226,
@@ -6653,8 +6853,28 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Darkness (Stream)",
+							"name": "Darkness (Twitter)",
 							"source": "Twitter"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "GGR"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores (UA)",
+							"source": "UAThreeSubclasses"
 						}
 					}
 				]
@@ -6820,7 +7040,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -6908,6 +7128,16 @@
 						"subclass": {
 							"name": "Kraken (Stream)",
 							"source": "Stream"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lurker in the Deep (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -7023,7 +7253,7 @@
 						"Condition"
 					],
 					"colStyles": [
-						"col-1 text-align-center",
+						"col-1 text-center",
 						"col-11"
 					],
 					"rows": [
@@ -7057,7 +7287,7 @@
 						"Condition"
 					],
 					"colStyles": [
-						"col-1 text-align-center",
+						"col-1 text-center",
 						"col-11"
 					],
 					"rows": [
@@ -7095,7 +7325,7 @@
 						"Condition"
 					],
 					"colStyles": [
-						"col-1 text-align-center",
+						"col-1 text-center",
 						"col-11"
 					],
 					"rows": [
@@ -7324,7 +7554,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -7397,7 +7627,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a 7th-level spell slot, you can animate or reassert control over four {@creature ghoul|mm|ghouls}. When you cast this spell using an 8th-level spell slot, you can animate or reassert control over five {@creature ghoul|mm|ghouls} or two {@creature ghast|mm|ghasts} or {@creature wight|mm|wights}. When you cast this spell using a 9th-level spell slot, you can animate or reassert control over six {@creature ghoul|mm|ghouls}, three {@creature ghast|mm|ghasts} or {@creature wight|mm|wights}, or two {@creature mummy|mm|mummies}."
+						"When you cast this spell using a 7th-level spell slot, you can animate or reassert control over four {@creature ghoul||ghouls}. When you cast this spell using an 8th-level spell slot, you can animate or reassert control over five {@creature ghoul||ghouls} or two {@creature ghast||ghasts} or {@creature wight||wights}. When you cast this spell using a 9th-level spell slot, you can animate or reassert control over six {@creature ghoul||ghouls}, three {@creature ghast||ghasts} or {@creature wight||wights}, or two {@creature mummy||mummies}."
 					]
 				}
 			],
@@ -7454,6 +7684,16 @@
 						"subclass": {
 							"name": "Kraken (Stream)",
 							"source": "Stream"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lurker in the Deep (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -7545,7 +7785,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -7856,7 +8096,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -7979,7 +8219,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -8101,8 +8341,18 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Darkness (Stream)",
+							"name": "Darkness (Twitter)",
 							"source": "Twitter"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Twilight (UA)",
+							"source": "UAClericDruidWizard"
 						}
 					}
 				]
@@ -8239,7 +8489,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -8484,7 +8734,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -8717,7 +8967,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Destruction (Stream)",
+							"name": "Destruction (Twitter)",
 							"source": "Twitter"
 						}
 					}
@@ -8860,7 +9110,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -9019,12 +9269,22 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
 							"name": "Archivist",
 							"source": "UAArtificerRevisited"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Aberrant Mind (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -9223,7 +9483,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -9274,7 +9534,7 @@
 							"source": "UATheRangerRevised"
 						},
 						"subclass": {
-							"name": "Deep Stalker (UA)",
+							"name": "Deep Stalker Conclave",
 							"source": "UATheRangerRevised"
 						}
 					},
@@ -9383,7 +9643,7 @@
 			"entries": [
 				"A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object, or a creation of magical force, such as the wall created by wall of force.",
 				"A creature targeted by this spell must make a Dexterity saving throw. On a failed save, the target takes {@dice 10d6 + 40} force damage. The target is disintegrated if this damage leaves it with 0 hit points.",
-				"A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a true resurrection or a wish spell.",
+				"A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a true resurrection or a {@spell wish} spell.",
 				"This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this spell disintegrates a 10-foot-cube portion of it. A magic item is unaffected by this spell."
 			],
 			"entriesHigherLevel": [
@@ -9539,7 +9799,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -9639,12 +9899,22 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
 							"name": "Archivist",
 							"source": "UAArtificerRevisited"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Aberrant Mind (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -9876,7 +10146,7 @@
 						"20 hit points or fewer: killed instantly"
 					]
 				},
-				"Regardless of its current hit points, a celestial, an elemental, a fey, or a fiend that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to your current plane for 24 hours by any means short of a wish spell."
+				"Regardless of its current hit points, a celestial, an elemental, a fey, or a fiend that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to your current plane for 24 hours by any means short of a {@spell wish} spell."
 			],
 			"page": 234,
 			"savingThrow": [
@@ -10279,7 +10549,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Beauty (Stream)",
+							"name": "Beauty (Twitter)",
 							"source": "Twitter"
 						}
 					},
@@ -10439,6 +10709,16 @@
 							"name": "Land",
 							"source": "PHB",
 							"subSubclass": "Forest"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Twilight (UA)",
+							"source": "UAClericDruidWizard"
 						}
 					}
 				]
@@ -10714,7 +10994,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -10755,7 +11035,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Stone",
+							"name": "Stone (UA)",
 							"source": "UASorcerer"
 						}
 					},
@@ -10765,7 +11045,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Stone",
+							"name": "Stone (UA)",
 							"source": "UASorcerer"
 						}
 					},
@@ -10863,7 +11143,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -11023,7 +11303,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -11045,7 +11325,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Destruction (Stream)",
+							"name": "Destruction (Twitter)",
 							"source": "Twitter"
 						}
 					}
@@ -11072,8 +11352,7 @@
 			],
 			"page": 237,
 			"savingThrow": [
-				"constitution",
-				"strength"
+				"constitution"
 			],
 			"races": [
 				{
@@ -11335,7 +11614,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Beauty (Stream)",
+							"name": "Beauty (Twitter)",
 							"source": "Twitter"
 						}
 					}
@@ -11519,8 +11798,28 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Darkness (Stream)",
+							"name": "Darkness (Twitter)",
 							"source": "Twitter"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Aberrant Mind (UA)",
+							"source": "UASorcererAndWarlock"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lurker in the Deep (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -11601,7 +11900,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -11757,7 +12056,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -11837,7 +12136,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -11870,6 +12169,16 @@
 						"subclass": {
 							"name": "Lolth (Twitter)",
 							"source": "Twitter"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Twilight (UA)",
+							"source": "UAClericDruidWizard"
 						}
 					}
 				]
@@ -11946,7 +12255,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -12136,7 +12445,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Darkness (Stream)",
+							"name": "Darkness (Twitter)",
 							"source": "Twitter"
 						}
 					}
@@ -12210,7 +12519,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -12288,7 +12597,7 @@
 				"You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes {@dice 4d6} psychic damage and must make an Intelligence saving throw.",
 				"On a failed save, the creature's Intelligence and Charisma scores become 1. The creature can't cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them.",
 				"At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends.",
-				"The spell can also be ended by greater restoration, heal, or wish."
+				"The spell can also be ended by {@spell greater restoration}, {@spell heal}, or {@spell wish}."
 			],
 			"page": 239,
 			"damageInflict": [
@@ -12452,6 +12761,7 @@
 			},
 			"entries": [
 				"You gain the service of a familiar, a spirit that takes an animal form you choose: {@creature bat}, {@creature cat}, {@creature crab}, {@creature frog} (toad), {@creature hawk}, {@creature lizard}, {@creature octopus}, {@creature owl}, {@creature poisonous snake}, fish ({@creature quipper}), {@creature rat}, {@creature raven}, {@creature sea horse}, {@creature spider}, or {@creature weasel}. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast.",
+				"{@note Additional {@filter animal form choices|bestiary|Miscellaneous=Familiar} may be available at the DM's discretion.}",
 				"Your familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.",
 				"When the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again.",
 				"While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as an action, you can see through your familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has. During this time, you are deaf and blind with regard to your own senses.",
@@ -12664,7 +12974,7 @@
 			"source": "PHB",
 			"entries": [
 				"You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a Constitution saving throw. It takes {@dice 7d8 + 30} necrotic damage on a failed save, or half as much damage on a successful one.",
-				"A humanoid killed by this spell rises at the start of your next turn as a zombie that is permanently under your command, following your verbal orders to the best of its ability."
+				"A humanoid killed by this spell rises at the start of your next turn as a {@creature zombie} that is permanently under your command, following your verbal orders to the best of its ability."
 			],
 			"page": 241,
 			"damageInflict": [
@@ -12718,7 +13028,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -12843,6 +13153,16 @@
 						"subclass": {
 							"name": "Zeal (PSA)",
 							"source": "PSA"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Wildfire (UA)",
+							"source": "UAClericDruidWizard"
 						}
 					}
 				]
@@ -12996,18 +13316,28 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Destruction (Stream)",
+							"name": "Destruction (Twitter)",
 							"source": "Twitter"
 						}
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
 							"name": "Artillerist",
 							"source": "UAArtificerRevisited"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Wildfire (UA)",
+							"source": "UAClericDruidWizard"
 						}
 					}
 				]
@@ -13223,6 +13553,16 @@
 						"subclass": {
 							"name": "Zeal (PSA)",
 							"source": "PSA"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Wildfire (UA)",
+							"source": "UAClericDruidWizard"
 						}
 					}
 				]
@@ -13503,7 +13843,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -13864,7 +14204,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -14123,7 +14463,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -14147,6 +14487,26 @@
 						"subclass": {
 							"name": "Treachery (UA)",
 							"source": "UAPaladin"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores (UA)",
+							"source": "UAThreeSubclasses"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "GGR"
 						}
 					}
 				]
@@ -14304,7 +14664,7 @@
 			"entries": [
 				"You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become {@condition charmed} by you for the duration. While the creature is {@condition charmed} by you, it takes {@dice 5d10} psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.",
 				"You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.",
-				"You can end the spell early by using an action to dismiss it. A remove curse, greater restoration, or wish spell also ends it."
+				"You can end the spell early by using an action to dismiss it. A {@spell remove curse}, {@spell greater restoration}, or {@spell wish} spell also ends it."
 			],
 			"entriesHigherLevel": [
 				{
@@ -14398,6 +14758,26 @@
 						"subclass": {
 							"name": "Grave",
 							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "GGR"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores (UA)",
+							"source": "UAThreeSubclasses"
 						}
 					}
 				]
@@ -14666,7 +15046,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -14687,7 +15067,7 @@
 							"source": "UATheRangerRevised"
 						},
 						"subclass": {
-							"name": "Deep Stalker (UA)",
+							"name": "Deep Stalker Conclave",
 							"source": "UATheRangerRevised"
 						}
 					}
@@ -14911,7 +15291,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -15035,7 +15415,7 @@
 							"source": "UATheRangerRevised"
 						},
 						"subclass": {
-							"name": "Deep Stalker (UA)",
+							"name": "Deep Stalker Conclave",
 							"source": "UATheRangerRevised"
 						}
 					},
@@ -15047,6 +15427,16 @@
 						"subclass": {
 							"name": "Gloom Stalker",
 							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Twilight (UA)",
+							"source": "UAClericDruidWizard"
 						}
 					}
 				]
@@ -15108,7 +15498,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -15428,7 +15818,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -15615,6 +16005,16 @@
 							"name": "Giant Soul (UA)",
 							"source": "UAGiantSoulSorcerer",
 							"subSubclass": "Storm"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lurker in the Deep (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -16035,7 +16435,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -16298,7 +16698,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -16309,7 +16709,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City (PSA)",
+							"name": "City (UA)",
 							"source": "UAModernMagic"
 						}
 					},
@@ -16597,7 +16997,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Beauty (Stream)",
+							"name": "Beauty (Twitter)",
 							"source": "Twitter"
 						}
 					},
@@ -16613,7 +17013,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -16693,7 +17093,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Darkness (Stream)",
+							"name": "Darkness (Twitter)",
 							"source": "Twitter"
 						}
 					}
@@ -16703,7 +17103,7 @@
 			"entries": [
 				"You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra {@dice 1d6} necrotic damage to the target whenever you hit it with an attack. Also, choose one ability when you cast the spell. The target has disadvantage on ability checks made with the chosen ability.",
 				"If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to curse a new creature.",
-				"A remove curse cast on the target ends this spell early."
+				"A {@spell remove curse} cast on the target ends this spell early."
 			],
 			"entriesHigherLevel": [
 				{
@@ -16841,7 +17241,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Beauty (Stream)",
+							"name": "Beauty (Twitter)",
 							"source": "Twitter"
 						}
 					}
@@ -17166,6 +17566,18 @@
 						"name": "Warlock",
 						"source": "PHB"
 					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Aberrant Mind (UA)",
+							"source": "UASorcererAndWarlock"
+						}
+					}
 				]
 			},
 			"source": "PHB",
@@ -17339,13 +17751,13 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Beauty (Stream)",
+							"name": "Beauty (Twitter)",
 							"source": "Twitter"
 						}
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -17462,13 +17874,13 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Destruction (Stream)",
+							"name": "Destruction (Twitter)",
 							"source": "Twitter"
 						}
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -17544,7 +17956,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -17893,7 +18305,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Destruction (Stream)",
+							"name": "Destruction (Twitter)",
 							"source": "Twitter"
 						}
 					}
@@ -18162,7 +18574,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -18197,6 +18609,16 @@
 							"name": "Giant Soul (UA)",
 							"source": "UAGiantSoulSorcerer",
 							"subSubclass": "Cloud"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Twilight (UA)",
+							"source": "UAClericDruidWizard"
 						}
 					}
 				]
@@ -18313,7 +18735,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -18510,7 +18932,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -18567,7 +18989,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -18710,7 +19132,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -18815,7 +19237,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -18911,7 +19333,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -19098,7 +19520,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City (PSA)",
+							"name": "City (UA)",
 							"source": "UAModernMagic"
 						}
 					},
@@ -19108,8 +19530,18 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Destruction (Stream)",
+							"name": "Destruction (Twitter)",
 							"source": "Twitter"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lurker in the Deep (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -19178,6 +19610,18 @@
 					{
 						"name": "Ranger",
 						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Wildfire (UA)",
+							"source": "UAClericDruidWizard"
+						}
 					}
 				]
 			},
@@ -19266,7 +19710,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City (PSA)",
+							"name": "City (UA)",
 							"source": "UAModernMagic"
 						}
 					},
@@ -19312,7 +19756,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -19401,7 +19845,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -19472,7 +19916,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -19595,7 +20039,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -19997,7 +20441,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -20061,7 +20505,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -20112,7 +20556,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Stone",
+							"name": "Stone (UA)",
 							"source": "UASorcerer"
 						}
 					},
@@ -20292,7 +20736,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -20708,7 +21152,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -20791,7 +21235,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -20849,7 +21293,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -20979,7 +21423,7 @@
 			},
 			"source": "PHB",
 			"entries": [
-				"Until the spell ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells, and the {@condition charmed} condition. The spell even foils wish spells and spells or effects of similar power used to affect the target's mind or to gain information about the target."
+				"Until the spell ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells, and the {@condition charmed} condition. The spell even foils {@spell wish} spells and spells or effects of similar power used to affect the target's mind or to gain information about the target."
 			],
 			"page": 259,
 			"damageInflict": [
@@ -21494,12 +21938,22 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
 							"name": "Archivist",
 							"source": "UAArtificerRevisited"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Aberrant Mind (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -21510,7 +21964,7 @@
 				"While this charm lasts, you can affect the target's memory of an event that it experienced within the last 24 hours and that lasted no more than 10 minutes. You can permanently eliminate all memory of the event, allow the target to recall the event with perfect clarity and exacting detail, change its memory of the details of the event, or create a memory of some other event.",
 				"You must speak to the target to describe how its memories are affected, and it must be able to understand your language for the modified memories to take root. Its mind fills in any gaps in the details of your description. If the spell ends before you have finished describing the modified memories, the creature's memory isn't altered. Otherwise, the modified memories take hold when the spell ends.",
 				"A modified memory doesn't necessarily affect how a creature behaves, particularly if the memory contradicts the creature's natural inclinations, alignment, or beliefs. An illogical modified memory, such as implanting a memory of how much the creature enjoyed dousing itself in acid, is dismissed, perhaps as a bad dream. The DM might deem a modified memory too nonsensical to affect a creature in a significant manner.",
-				"A remove curse or greater restoration spell cast on the target restores the creature's true memory."
+				"A {@spell remove curse} or {@spell greater restoration} spell cast on the target restores the creature's true memory."
 			],
 			"entriesHigherLevel": [
 				{
@@ -21664,7 +22118,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -21779,7 +22233,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -22213,7 +22667,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -22668,7 +23122,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -22752,9 +23206,12 @@
 			},
 			"entries": [
 				"A Large quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within range. You decide the creature's appearance, but it is equipped with a saddle, bit, and bridle. Any of the equipment created by the spell vanishes in a puff of smoke if it is carried more than 10 feet away from the steed.",
-				"For the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a riding horse, except it has a speed of 100 feet and can travel 10 miles in an hour, or 13 miles at a fast pace. When the spell ends, the steed gradually fades, giving the rider 1 minute to dismount. The spell ends if you use an action to dismiss it or if the steed takes any damage."
+				"For the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a {@creature riding horse}, except it has a speed of 100 feet and can travel 10 miles in an hour, or 13 miles at a fast pace. When the spell ends, the steed gradually fades, giving the rider 1 minute to dismount. The spell ends if you use an action to dismiss it or if the steed takes any damage."
 			],
-			"page": 265
+			"page": 265,
+			"miscTags": [
+				"SMN"
+			]
 		},
 		{
 			"name": "Planar Ally",
@@ -23093,6 +23550,16 @@
 							"name": "Archfey",
 							"source": "PHB"
 						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Wildfire (UA)",
+							"source": "UAClericDruidWizard"
+						}
 					}
 				]
 			},
@@ -23160,7 +23627,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -23258,7 +23725,7 @@
 			"source": "PHB",
 			"entries": [
 				"This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. The spell has no effect on a shapechanger or a creature with 0 hit points.",
-				"The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target's (or the target's level, if it doesn't have a challenge rating). The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality.",
+				"The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be {@filter any beast|bestiary|type=beast} whose challenge rating is equal to or less than the target's (or the target's level, if it doesn't have a challenge rating). The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality.",
 				"The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious.",
 				"The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech.",
 				"The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment."
@@ -23551,7 +24018,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -24094,7 +24561,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -24436,7 +24903,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -24526,7 +24993,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -24626,12 +25093,22 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
 							"name": "Alchemist",
 							"source": "UAArtificerRevisited"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Wildfire (UA)",
+							"source": "UAClericDruidWizard"
 						}
 					}
 				]
@@ -24684,6 +25161,18 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Aberrant Mind (UA)",
+							"source": "UASorcererAndWarlock"
+						}
 					}
 				]
 			},
@@ -24792,6 +25281,16 @@
 							"name": "Redemption (UA)",
 							"source": "UAATrioOfSubclasses"
 						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores (UA)",
+							"source": "UAThreeSubclasses"
+						}
 					}
 				]
 			},
@@ -24858,7 +25357,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -24969,7 +25468,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -25138,7 +25637,7 @@
 						"Race"
 					],
 					"colStyles": [
-						"col-1 text-align-center no-wrap",
+						"col-1 text-center no-wrap",
 						"col-11"
 					],
 					"rows": [
@@ -25162,7 +25661,7 @@
 									"pad": true
 								}
 							},
-							"{@race dwarf (hill)|phb|Dwarf, hill}"
+							"{@race dwarf (hill)||Dwarf, hill}"
 						],
 						[
 							{
@@ -25172,7 +25671,7 @@
 									"max": 21
 								}
 							},
-							"{@race dwarf (mountain)|phb|Dwarf, mountain}"
+							"{@race dwarf (mountain)||Dwarf, mountain}"
 						],
 						[
 							{
@@ -25182,7 +25681,7 @@
 									"max": 25
 								}
 							},
-							"{@race elf (drow)|phb|Elf, dark}"
+							"{@race elf (drow)||Elf, dark}"
 						],
 						[
 							{
@@ -25192,7 +25691,7 @@
 									"max": 34
 								}
 							},
-							"{@race elf (high)|phb|Elf, high}"
+							"{@race elf (high)||Elf, high}"
 						],
 						[
 							{
@@ -25202,7 +25701,7 @@
 									"max": 42
 								}
 							},
-							"{@race elf (wood)|phb|Elf, wood}"
+							"{@race elf (wood)||Elf, wood}"
 						],
 						[
 							{
@@ -25212,7 +25711,7 @@
 									"max": 46
 								}
 							},
-							"{@race gnome (forest)|phb|Gnome, forest}"
+							"{@race gnome (forest)||Gnome, forest}"
 						],
 						[
 							{
@@ -25222,7 +25721,7 @@
 									"max": 52
 								}
 							},
-							"{@race gnome (rock)|phb|Gnome, rock}"
+							"{@race gnome (rock)||Gnome, rock}"
 						],
 						[
 							{
@@ -25252,7 +25751,7 @@
 									"max": 68
 								}
 							},
-							"{@race halfling (lightfoot)|phb|Halfling, lightfoot}"
+							"{@race halfling (lightfoot)||Halfling, lightfoot}"
 						],
 						[
 							{
@@ -25262,7 +25761,7 @@
 									"max": 76
 								}
 							},
-							"{@race halfling (stout)|phb|Halfling, stout}"
+							"{@race halfling (stout)||Halfling, stout}"
 						],
 						[
 							{
@@ -25387,7 +25886,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -25576,7 +26075,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -25686,7 +26185,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -25717,7 +26216,7 @@
 							"source": "UATheRangerRevised"
 						},
 						"subclass": {
-							"name": "Deep Stalker (UA)",
+							"name": "Deep Stalker Conclave",
 							"source": "UATheRangerRevised"
 						}
 					},
@@ -25876,7 +26375,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -25986,12 +26485,22 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
 							"name": "Artillerist",
 							"source": "UAArtificerRevisited"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Wildfire (UA)",
+							"source": "UAClericDruidWizard"
 						}
 					}
 				]
@@ -26162,7 +26671,7 @@
 					],
 					"colStyles": [
 						"col-11",
-						"col-1 text-align-center"
+						"col-1 text-center"
 					],
 					"rows": [
 						[
@@ -26188,7 +26697,7 @@
 					],
 					"colStyles": [
 						"col-11",
-						"col-1 text-align-center"
+						"col-1 text-center"
 					],
 					"rows": [
 						[
@@ -26270,7 +26779,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Stone",
+							"name": "Stone (UA)",
 							"source": "UASorcerer"
 						}
 					},
@@ -26296,7 +26805,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -26386,7 +26895,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -26482,7 +26991,7 @@
 							"source": "UATheRangerRevised"
 						},
 						"subclass": {
-							"name": "Deep Stalker (UA)",
+							"name": "Deep Stalker Conclave",
 							"source": "UATheRangerRevised"
 						}
 					},
@@ -26583,6 +27092,16 @@
 						"subclass": {
 							"name": "Seeker (UA)",
 							"source": "UATheFaithful"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Aberrant Mind (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -26779,18 +27298,28 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Destruction (Stream)",
+							"name": "Destruction (Twitter)",
 							"source": "Twitter"
 						}
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
 							"name": "Artillerist",
 							"source": "UAArtificerRevisited"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lurker in the Deep (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -26910,7 +27439,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -27112,7 +27641,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -27435,6 +27964,16 @@
 							"name": "Redemption",
 							"source": "XGE"
 						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Twilight (UA)",
+							"source": "UAClericDruidWizard"
+						}
 					}
 				]
 			},
@@ -27534,6 +28073,16 @@
 							"name": "Land",
 							"source": "PHB",
 							"subSubclass": "Arctic"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lurker in the Deep (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -27692,7 +28241,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -27789,16 +28338,6 @@
 						"subclass": {
 							"name": "Ancients",
 							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Undying",
-							"source": "SCAG"
 						}
 					},
 					{
@@ -28038,7 +28577,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -28489,7 +29028,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Stone",
+							"name": "Stone (UA)",
 							"source": "UASorcerer"
 						}
 					},
@@ -28499,13 +29038,13 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Destruction (Stream)",
+							"name": "Destruction (Twitter)",
 							"source": "Twitter"
 						}
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -28609,7 +29148,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -28678,7 +29217,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -28771,7 +29310,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -29048,7 +29587,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Beauty (Stream)",
+							"name": "Beauty (Twitter)",
 							"source": "Twitter"
 						}
 					}
@@ -29683,10 +30222,10 @@
 					],
 					"colStyles": [
 						"col-8",
-						"col-1 text-align-center no-wrap",
-						"col-1 text-align-center no-wrap",
-						"col-1 text-align-center no-wrap",
-						"col-1 text-align-center no-wrap"
+						"col-1 text-center no-wrap",
+						"col-1 text-center no-wrap",
+						"col-1 text-center no-wrap",
+						"col-1 text-center no-wrap"
 					],
 					"rows": [
 						[
@@ -30128,7 +30667,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				]
@@ -30195,7 +30734,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Stone",
+							"name": "Stone (UA)",
 							"source": "UASorcerer"
 						}
 					},
@@ -30305,12 +30844,22 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
 							"name": "Artillerist",
 							"source": "UAArtificerRevisited"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lurker in the Deep (UA)",
+							"source": "UASorcererAndWarlock"
 						}
 					}
 				]
@@ -30452,7 +31001,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -30659,7 +31208,7 @@
 					"type": "entries",
 					"name": "Object into Creature",
 					"entries": [
-						"You can turn an object into any kind of creature, as long as the creature's size is no larger than the object's size and the creature's challenge rating is {@filter 9 or lower|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4;5;67;8;9|miscellaneous=!swarm}. The creature is friendly to you and your companions. It acts on each of your turns. You decide what action it takes and how it moves. The DM has the creature's statistics and resolves all of its actions and movement."
+						"You can turn an object into any kind of creature, as long as the creature's size is no larger than the object's size and the creature's challenge rating is {@filter 9 or lower|bestiary|challenge rating=[&0;&9]|miscellaneous=!swarm}. The creature is friendly to you and your companions. It acts on each of your turns. You decide what action it takes and how it moves. The DM has the creature's statistics and resolves all of its actions and movement."
 					]
 				},
 				"If the spell becomes permanent, you no longer control the creature. It might remain friendly to you, depending on how you have treated it.",
@@ -31089,7 +31638,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Darkness (Stream)",
+							"name": "Darkness (Twitter)",
 							"source": "Twitter"
 						}
 					}
@@ -31299,7 +31848,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -31417,7 +31966,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -31554,7 +32103,7 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -31733,7 +32282,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -31813,7 +32362,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -31916,7 +32465,7 @@
 						"source": "UAArtificer"
 					},
 					{
-						"name": "Artificer Revisited",
+						"name": "Artificer (Revisited)",
 						"source": "UAArtificerRevisited"
 					}
 				],
@@ -32028,7 +32577,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -32239,7 +32788,7 @@
 					},
 					{
 						"class": {
-							"name": "Artificer Revisited",
+							"name": "Artificer (Revisited)",
 							"source": "UAArtificerRevisited"
 						},
 						"subclass": {
@@ -32524,7 +33073,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Stone",
+							"name": "Stone (UA)",
 							"source": "UASorcerer"
 						}
 					},
@@ -32534,7 +33083,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Destruction (Stream)",
+							"name": "Destruction (Twitter)",
 							"source": "Twitter"
 						}
 					}

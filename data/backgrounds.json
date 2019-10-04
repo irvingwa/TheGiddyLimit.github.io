@@ -1,4 +1,9 @@
 {
+	"_meta": {
+		"internalCopies": [
+			"background"
+		]
+	},
 	"background": [
 		{
 			"name": "Acolyte",
@@ -55,7 +60,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -100,7 +105,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -137,7 +142,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -174,7 +179,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -209,7 +214,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 2
+					"anyStandard": 2
 				}
 			]
 		},
@@ -257,7 +262,7 @@
 								"Culture"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -319,7 +324,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -356,7 +361,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -393,7 +398,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -430,7 +435,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -465,7 +470,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 2
+					"anyStandard": 2
 				}
 			]
 		},
@@ -519,7 +524,7 @@
 								"Item"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -581,7 +586,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -626,7 +631,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -663,7 +668,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -700,7 +705,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -745,7 +750,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -818,7 +823,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -863,7 +868,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -900,7 +905,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -937,7 +942,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1054,7 +1059,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1099,7 +1104,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1136,7 +1141,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1173,7 +1178,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1213,7 +1218,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -1271,7 +1276,7 @@
 								"Scam"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1315,7 +1320,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1360,7 +1365,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1397,7 +1402,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1434,7 +1439,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1527,7 +1532,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 2
+					"anyStandard": 2
 				}
 			]
 		},
@@ -1597,7 +1602,7 @@
 					"dwarvish": true
 				},
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -1662,7 +1667,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 2
+					"anyStandard": 2
 				}
 			]
 		},
@@ -1737,7 +1742,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1782,7 +1787,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1819,7 +1824,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1856,7 +1861,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -1949,7 +1954,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 2
+					"anyStandard": 2
 				}
 			]
 		},
@@ -2007,7 +2012,7 @@
 								"Specialty"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2059,7 +2064,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2104,7 +2109,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2141,7 +2146,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2178,7 +2183,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2320,7 +2325,7 @@
 								"Tool Proficiency"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-5",
 								"col-6"
 							],
@@ -2392,7 +2397,7 @@
 								"Disfigurement"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2443,7 +2448,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2488,7 +2493,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2525,7 +2530,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2562,7 +2567,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2709,7 +2714,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2754,7 +2759,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2791,7 +2796,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2828,7 +2833,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2923,7 +2928,7 @@
 								"Routines"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -2983,7 +2988,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3028,7 +3033,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3065,7 +3070,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3102,7 +3107,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3155,7 +3160,6 @@
 							"animal handling",
 							"deception",
 							"history",
-							"insight",
 							"intimidation",
 							"investigation",
 							"medicine",
@@ -3212,7 +3216,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 2
+					"anyStandard": 2
 				}
 			]
 		},
@@ -3276,7 +3280,7 @@
 								"Reason"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3319,7 +3323,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3356,7 +3360,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3393,7 +3397,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3430,7 +3434,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3475,7 +3479,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -3533,7 +3537,7 @@
 								"Defining Event"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3593,7 +3597,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3638,7 +3642,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3675,7 +3679,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3712,7 +3716,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3818,7 +3822,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3863,7 +3867,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3900,7 +3904,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -3937,7 +3941,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4039,7 +4043,7 @@
 								"Guild Business"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4139,7 +4143,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4184,7 +4188,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4221,7 +4225,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4258,7 +4262,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4298,7 +4302,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -4368,7 +4372,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4413,7 +4417,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4450,7 +4454,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4487,7 +4491,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4576,7 +4580,7 @@
 								"Harrowing Event"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4636,7 +4640,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4681,7 +4685,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4718,7 +4722,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4755,7 +4759,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4878,7 +4882,7 @@
 								"Life of Seclusion"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4930,7 +4934,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -4975,7 +4979,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -5012,7 +5016,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -5049,7 +5053,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -5089,7 +5093,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -5171,7 +5175,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -5216,7 +5220,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -5253,7 +5257,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -5290,7 +5294,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -5403,7 +5407,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -5448,7 +5452,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -5485,7 +5489,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -5522,7 +5526,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -5563,7 +5567,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -5632,7 +5636,7 @@
 								"Role"
 							],
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"rows": [
@@ -5694,7 +5698,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"rows": [
@@ -5739,7 +5743,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"rows": [
@@ -5776,7 +5780,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"rows": [
@@ -5813,7 +5817,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"rows": [
@@ -5959,7 +5963,7 @@
 								"Object or item:"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -6019,7 +6023,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -6120,7 +6124,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -6165,7 +6169,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -6202,7 +6206,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -6239,7 +6243,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -6396,7 +6400,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -6441,7 +6445,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -6478,7 +6482,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -6515,7 +6519,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -6631,7 +6635,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -6759,7 +6763,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -6804,7 +6808,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -6841,7 +6845,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -6878,7 +6882,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -6978,7 +6982,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7023,7 +7027,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7060,7 +7064,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7097,7 +7101,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7137,7 +7141,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -7200,7 +7204,7 @@
 								"Origin"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7260,7 +7264,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7305,7 +7309,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7342,7 +7346,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7379,7 +7383,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7419,7 +7423,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -7483,7 +7487,7 @@
 								"Origin (Specific)"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-4",
 								"col-7"
 							],
@@ -7554,7 +7558,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7599,7 +7603,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7636,7 +7640,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7673,7 +7677,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7784,7 +7788,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7829,7 +7833,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7866,7 +7870,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7903,7 +7907,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -7944,7 +7948,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -8002,7 +8006,7 @@
 								"Field of Study"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8054,7 +8058,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8099,7 +8103,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8136,7 +8140,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8173,7 +8177,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8208,7 +8212,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 2
+					"anyStandard": 2
 				}
 			]
 		},
@@ -8266,7 +8270,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8311,7 +8315,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8348,7 +8352,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8374,7 +8378,7 @@
 								],
 								[
 									"6",
-									"Ruthless pirates murdered my captain and crewmates, plundered our ship, and left me lo die. Vengeance will be mine."
+									"Ruthless pirates murdered my captain and crewmates, plundered our ship, and left me to die. Vengeance will be mine."
 								]
 							]
 						},
@@ -8385,7 +8389,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8491,7 +8495,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8536,7 +8540,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8573,7 +8577,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8610,7 +8614,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8723,7 +8727,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8768,7 +8772,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8805,7 +8809,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8842,7 +8846,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8941,7 +8945,7 @@
 								"Role"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -8993,7 +8997,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9038,7 +9042,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9075,7 +9079,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9112,7 +9116,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9220,7 +9224,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9265,7 +9269,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9302,7 +9306,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9339,7 +9343,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9453,7 +9457,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9498,7 +9502,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9535,7 +9539,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9572,7 +9576,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9688,7 +9692,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9733,7 +9737,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9770,7 +9774,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9807,7 +9811,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -9977,7 +9981,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -10022,7 +10026,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -10059,7 +10063,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -10096,7 +10100,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -10206,7 +10210,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -10263,7 +10267,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 2
+					"anyStandard": 2
 				}
 			]
 		},
@@ -10271,101 +10275,64 @@
 			"name": "Variant Criminal (Spy)",
 			"source": "PHB",
 			"page": 130,
-			"skillProficiencies": [
-				{
-					"deception": true,
-					"stealth": true
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Deception}, {@skill Stealth}"
-						},
-						{
-							"type": "item",
-							"name": "Tool Proficiencies",
-							"entry": "One type of {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}, {@item thieves' tools|phb}"
-						},
-						{
-							"type": "item",
-							"name": "Equipment",
-							"entry": "A {@item crowbar|phb}, a set of dark {@item common clothes|phb} including a hood, and a belt {@item pouch|phb} containing 15 gp"
+			"_copy": {
+				"name": "Criminal",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Feature: Criminal Contact",
+						"items": {
+							"name": "Feature: Spy Contact",
+							"type": "entries",
+							"entries": [
+								"You have a reliable and trustworthy contact who acts as your liaison to a network of other spies. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you."
+							],
+							"data": {
+								"isFeature": true
+							}
 						}
-					]
-				},
-				{
-					"name": "Feature: Spy Contact",
-					"type": "entries",
-					"entries": [
-						"You have a reliable and trustworthy contact who acts as your liaison to a network of other spies. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you."
-					],
-					"data": {
-						"isFeature": true
 					}
 				}
-			],
-			"toolProficiencies": [
-				{
-					"gaming set": true,
-					"thieves' tools": true
-				}
-			]
+			}
 		},
 		{
 			"name": "Variant Entertainer (Gladiator)",
 			"source": "PHB",
 			"page": 131,
-			"skillProficiencies": [
-				{
-					"acrobatics": true,
-					"performance": true
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Acrobatics}, {@skill Performance}"
+			"_copy": {
+				"name": "Entertainer",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"index": 0
 						},
-						{
-							"type": "item",
-							"name": "Tool Proficiencies",
-							"entry": "{@item Disguise kit|phb}, one type of {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}"
-						},
-						{
-							"type": "item",
-							"name": "Equipment",
-							"entry": "An inexpensive but unusual weapon, such as a {@item trident|phb} or {@item net|phb} (one of your choice), the favor of an admirer (love letter, lock of hair, or trinket), {@item costume clothes|phb}, and a belt {@item pouch|phb} containing 15 gp"
+						"items": {
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Skill Proficiencies",
+									"entry": "{@skill Acrobatics}, {@skill Performance}"
+								},
+								{
+									"type": "item",
+									"name": "Tool Proficiencies",
+									"entry": "{@item Disguise kit|phb}, one type of {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}"
+								},
+								{
+									"type": "item",
+									"name": "Equipment",
+									"entry": "An inexpensive but unusual weapon, such as a {@item trident|phb} or {@item net|phb} (one of your choice), the favor of an admirer (love letter, lock of hair, or trinket), {@item costume clothes|phb}, and a belt {@item pouch|phb} containing 15 gp"
+								}
+							]
 						}
-					]
-				},
-				{
-					"name": "Feature: By Popular Demand",
-					"type": "entries",
-					"entries": [
-						"You can find a place to perform in any place that features combat for entertainment-perhaps a gladiatorial arena or secret pit fighting club. In such an area, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you."
-					],
-					"data": {
-						"isFeature": true
 					}
 				}
-			],
-			"toolProficiencies": [
-				{
-					"disguise kit": true,
-					"musical instrument": true
-				}
-			]
+			}
 		},
 		{
 			"name": "Variant Guild Artisan (Guild Merchant)",
@@ -10377,41 +10344,39 @@
 					"persuasion": true
 				}
 			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Insight}, {@skill Persuasion}"
+			"_copy": {
+				"name": "Guild Artisan",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"index": 0
 						},
-						{
-							"type": "item",
-							"name": "Tool Proficiencies",
-							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan tool}, or {@item navigator's tools|phb}, or an additional language"
-						},
-						{
-							"type": "item",
-							"name": "Equipment",
-							"entry": "A set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan tool} (one of your choice) or a {@item mule|phb} and {@item cart|phb}, a letter of introduction from your guild, a set of {@item traveler's clothes|phb}, and a belt {@item pouch|phb} containing 15 gp"
+						"items": {
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Skill Proficiencies",
+									"entry": "{@skill Insight}, {@skill Persuasion}"
+								},
+								{
+									"type": "item",
+									"name": "Tool Proficiencies",
+									"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan tool}, or {@item navigator's tools|phb}, or an additional language"
+								},
+								{
+									"type": "item",
+									"name": "Equipment",
+									"entry": "A set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan tool} (one of your choice) or a {@item mule|phb} and {@item cart|phb}, a letter of introduction from your guild, a set of {@item traveler's clothes|phb}, and a belt {@item pouch|phb} containing 15 gp"
+								}
+							]
 						}
-					]
-				},
-				{
-					"name": "Feature: Guild Membership",
-					"type": "entries",
-					"entries": [
-						"As an established and respected member of a guild or large merchant consortium, you can rely on certain benefits that membership provides. Your fellow guild members will provide you with lodging and food if necessary, and pay for your funeral if needed. In some cities and towns, a guildhall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings.",
-						"Guilds or consortiums often wield tremendous political power. If you are accused of a crime, your guild will support you if a good case can be made for your innocence or the crime is justifiable. You can also gain access to powerful political figures through the guild, if you are a member in good standing. Such connections might require the donation of money or magic items to the guild's coffers.",
-						"You must pay dues of 5 gp per month to the guild. If you miss payments, you must make up back dues to remain in the guild's good graces."
-					],
-					"data": {
-						"isFeature": true
 					}
 				}
-			],
+			},
 			"toolProficiencies": [
 				{
 					"choose": {
@@ -10427,119 +10392,66 @@
 			"name": "Variant Noble (Knight)",
 			"source": "PHB",
 			"page": 136,
-			"skillProficiencies": [
-				{
-					"history": true,
-					"persuasion": true
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
+			"_copy": {
+				"name": "Noble",
+				"source": "PHB",
+				"_mod": {
+					"entries": [
 						{
-							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill History}, {@skill Persuasion}"
+							"mode": "replaceArr",
+							"replace": "Feature: Position of Privilege",
+							"items": {
+								"name": "Feature: Retainers",
+								"type": "entries",
+								"entries": [
+									"You have the service of three retainers loyal to your family. These retainers can be attendants or messengers, and one might be a majordomo. {@b One of your retainers is a noble who serves as your squire, aiding you in exchange for training on his or her own path to knighthood} (This person could be your bond.). Your two remaining retainers might include a groom to care for your horse and a servant who polishes your armor (and even helps you put it on).",
+									"Your retainers can perform mundane tasks for you, but they do not fight for you, will not follow you into obviously dangerous areas (such as dungeons), and will leave if they are frequently endangered or abused."
+								],
+								"data": {
+									"isFeature": true
+								}
+							}
 						},
 						{
-							"type": "item",
-							"name": "Tool Proficiencies",
-							"entry": "One type of {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}"
-						},
-						{
-							"type": "item",
-							"name": "Languages",
-							"entry": "One of your choice"
-						},
-						{
-							"type": "item",
-							"name": "Equipment",
-							"entry": "A banner or other token from a noble lord or lady to whom you have given your heart, a set of {@item fine clothes|phb}, a {@item signet ring|phb}, a scroll of pedigree, and a purse containing 25 gp"
+							"mode": "insertArr",
+							"index": 1,
+							"items": {
+								"name": "Variant Noble (Knight)",
+								"type": "entries",
+								"entries": [
+									"A knighthood is among the lowest noble titles in most societies, but it can be a path to higher status. If you wish to be a knight, choose the Retainers feature instead of the Position of Privilege feature.",
+									"As an emblem of chivalry and the ideals of courtly love, you might include among your equipment a banner or other token from a noble lord or lady to whom you have given your heart-in a chaste sort of devotion."
+								]
+							}
 						}
 					]
-				},
-				{
-					"name": "Variant Noble (Knight)",
-					"type": "entries",
-					"entries": [
-						"A knighthood is among the lowest noble titles in most societies, but it can be a path to higher status. If you wish to be a knight, choose the Retainers feature instead of the Position of Privilege feature.",
-						"As an emblem of chivalry and the ideals of courtly love, you might include among your equipment a banner or other token from a noble lord or lady to whom you have given your heart-in a chaste sort of devotion."
-					]
-				},
-				{
-					"name": "Feature: Retainers",
-					"type": "entries",
-					"entries": [
-						"You have the service of three retainers loyal to your family. These retainers can be attendants or messengers, and one might be a majordomo. {@b One of your retainers is a noble who serves as your squire, aiding you in exchange for training on his or her own path to knighthood} (This person could be your bond.). Your two remaining retainers might include a groom to care for your horse and a servant who polishes your armor (and even helps you put it on).",
-						"Your retainers can perform mundane tasks for you, but they do not fight for you, will not follow you into obviously dangerous areas (such as dungeons), and will leave if they are frequently endangered or abused."
-					],
-					"data": {
-						"isFeature": true
-					}
 				}
-			],
-			"toolProficiencies": [
-				{
-					"gaming set": true
-				}
-			],
-			"languageProficiencies": [
-				{
-					"any": 1
-				}
-			]
+			}
 		},
 		{
 			"name": "Variant Sailor (Pirate)",
 			"source": "PHB",
 			"page": 139,
-			"skillProficiencies": [
-				{
-					"athletics": true,
-					"perception": true
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Athletics}, {@skill Perception}"
-						},
-						{
-							"type": "item",
-							"name": "Tool Proficiencies",
-							"entry": "{@item Navigator's tools|phb}, {@filter vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}"
-						},
-						{
-							"type": "item",
-							"name": "Equipment",
-							"entry": "A belaying pin ({@item club|phb}), {@item silk rope (50 feet)|phb}, a lucky charm such as a rabbit foot or a small stone with a hole in the center (or you may roll for a random trinket on the Trinkets table in chapter 5), a set of {@item common clothes|phb}, and a belt {@item pouch|phb} containing 10 gp"
+			"_copy": {
+				"name": "Sailor",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Feature: Ship's Passage",
+						"items": {
+							"name": "Feature: Bad Reputation",
+							"type": "entries",
+							"entries": [
+								"No matter where you go, people are afraid of you due to your reputation. When you are in a civilized settlement, you can get away with minor criminal offenses, such as refusing to pay for food at a tavern or breaking down doors at a local shop, since most people will not report your activity to the authorities."
+							],
+							"data": {
+								"isFeature": true
+							}
 						}
-					]
-				},
-				{
-					"name": "Feature: Bad Reputation",
-					"type": "entries",
-					"entries": [
-						"No matter where you go, people are afraid of you due to your reputation. When you are in a civilized settlement, you can get away with minor criminal offenses, such as refusing to pay for food at a tavern or breaking down doors at a local shop, since most people will not report your activity to the authorities."
-					],
-					"data": {
-						"isFeature": true
 					}
 				}
-			],
-			"toolProficiencies": [
-				{
-					"navigator's tools": true,
-					"vehicles (water)": true
-				}
-			]
+			}
 		},
 		{
 			"name": "Vizier",
@@ -10595,7 +10507,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -10648,7 +10560,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -10685,7 +10597,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -10722,7 +10634,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"col-1 text-align-center",
+								"col-1 text-center",
 								"col-11"
 							],
 							"rows": [
@@ -10831,7 +10743,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -10887,7 +10799,7 @@
 							"type": "table",
 							"caption": "Azorius Guild Spells",
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"colLabels": [
@@ -10937,7 +10849,7 @@
 								"Trait"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -10983,7 +10895,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11021,7 +10933,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11059,7 +10971,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11105,7 +11017,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11151,7 +11063,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11210,7 +11122,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 2
+					"anyStandard": 2
 				}
 			]
 		},
@@ -11271,7 +11183,7 @@
 							"type": "table",
 							"caption": "Boros Guild Spells",
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"colLabels": [
@@ -11321,7 +11233,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11367,7 +11279,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11405,7 +11317,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11443,7 +11355,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11489,7 +11401,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11535,7 +11447,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11668,7 +11580,7 @@
 								"Reason for Infiltration"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11721,7 +11633,7 @@
 							"type": "table",
 							"caption": "Dimir Guild Spells",
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"colLabels": [
@@ -11771,7 +11683,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11817,7 +11729,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11855,7 +11767,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11893,7 +11805,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11939,7 +11851,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -11969,7 +11881,7 @@
 								],
 								[
 									"7",
-									"My superior maintains an elaborate identity as a young street urchin ... unless it's all a lie, and I'm being sent on ridiculous missions by a twisted child."
+									"My superior maintains an elaborate identity as a young street urchin... unless it's all a lie, and I'm being sent on ridiculous missions by a twisted child."
 								],
 								[
 									"8",
@@ -11995,7 +11907,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 1
+					"anyStandard": 1
 				}
 			]
 		},
@@ -12056,7 +11968,7 @@
 							"type": "table",
 							"caption": "Golgari Guild Spells",
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"colLabels": [
@@ -12106,7 +12018,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -12152,7 +12064,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -12190,7 +12102,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -12228,7 +12140,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -12274,7 +12186,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -12320,7 +12232,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -12453,7 +12365,7 @@
 							"type": "table",
 							"caption": "Gruul Guild Spells",
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"colLabels": [
@@ -12503,7 +12415,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -12549,7 +12461,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -12587,7 +12499,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -12625,7 +12537,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -12671,7 +12583,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -12717,7 +12629,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -12851,7 +12763,7 @@
 							"type": "table",
 							"caption": "Izzet Guild Spells",
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"colLabels": [
@@ -12877,7 +12789,7 @@
 								],
 								[
 									"4th",
-									"{@spell conjure minor elementals}, {@spell divination}, {@spell Otiluke's Resilient Sphere|PHB|Otiluke's resilient sphere}"
+									"{@spell conjure minor elementals}, {@spell divination}, {@spell Otiluke's resilient sphere}"
 								],
 								[
 									"5th",
@@ -12903,13 +12815,13 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
 								[
 									"1",
-									"I have a hard time staying focused on ... oh, and my brain tends to jump from one ... did I mention focus?"
+									"I have a hard time staying focused on... oh, and my brain tends to jump from one... did I mention focus?"
 								],
 								[
 									"2",
@@ -12949,7 +12861,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -12987,7 +12899,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13025,7 +12937,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13071,7 +12983,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13117,7 +13029,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13242,7 +13154,7 @@
 							"type": "table",
 							"caption": "Orzhov Guild Spells",
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"colLabels": [
@@ -13268,7 +13180,7 @@
 								],
 								[
 									"4th",
-									"{@spell blight}, {@spell death ward}, {@spell Leomund's Secret Chest|PHB|Leomund's secret chest}"
+									"{@spell blight}, {@spell death ward}, {@spell Leomund's secret chest}"
 								],
 								[
 									"5th",
@@ -13292,7 +13204,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13338,7 +13250,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13376,7 +13288,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13414,7 +13326,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13458,7 +13370,7 @@
 										"Contact"
 									],
 									"colStyles": [
-										"text-align-center col-2",
+										"text-center col-2",
 										"col-10"
 									],
 									"rows": [
@@ -13504,7 +13416,7 @@
 										"Contact"
 									],
 									"colStyles": [
-										"text-align-center col-2",
+										"text-center col-2",
 										"col-10"
 									],
 									"rows": [
@@ -13565,7 +13477,7 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 2
+					"anyStandard": 2
 				}
 			]
 		},
@@ -13619,7 +13531,7 @@
 								"Type of Performer"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13679,7 +13591,7 @@
 							"type": "table",
 							"caption": "Rakdos Guild Spells",
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"colLabels": [
@@ -13729,7 +13641,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13775,7 +13687,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13813,7 +13725,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13851,7 +13763,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13897,7 +13809,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -13943,7 +13855,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -14074,7 +13986,7 @@
 							"type": "table",
 							"caption": "Selesnya Guild Spells",
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"colLabels": [
@@ -14124,7 +14036,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -14170,7 +14082,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -14208,7 +14120,7 @@
 								"Bond"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -14246,7 +14158,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -14292,7 +14204,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -14338,7 +14250,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -14462,7 +14374,7 @@
 								"Clade/Project"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -14515,7 +14427,7 @@
 							"type": "table",
 							"caption": "Simic Guild Spells",
 							"colStyles": [
-								"col-2 text-align-center",
+								"col-2 text-center",
 								"col-10"
 							],
 							"colLabels": [
@@ -14565,7 +14477,7 @@
 								"Personality Trait"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -14611,7 +14523,7 @@
 								"Ideal"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -14649,13 +14561,13 @@
 								"Bond"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
 								[
 									"1",
-									"I helped create a krasis that I love like a pet and would carry with me everywhere ... except it's the size of a building, and it might eat me."
+									"I helped create a krasis that I love like a pet and would carry with me everywhere... except it's the size of a building, and it might eat me."
 								],
 								[
 									"2",
@@ -14687,7 +14599,7 @@
 								"Flaw"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -14733,7 +14645,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -14779,7 +14691,7 @@
 								"Contact"
 							],
 							"colStyles": [
-								"text-align-center col-2",
+								"text-center col-2",
 								"col-10"
 							],
 							"rows": [
@@ -14838,9 +14750,3096 @@
 			],
 			"languageProficiencies": [
 				{
-					"any": 2
+					"anyStandard": 2
 				}
 			]
+		},
+		{
+			"name": "Fisher",
+			"source": "GoS",
+			"page": 29,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill History}, {@skill Survival}"
+						},
+						{
+							"type": "item",
+							"name": "Languages",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "Fishing tackle, a {@item net|phb}, a favorite fishing lure or oiled leather wading boots, a set of {@item traveler's clothes|phb}, and a belt {@item pouch|phb} containing 10 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Harvest the Water",
+					"entries": [
+						"You gain advantage on ability checks made using fishing tackle. If you have access to a body of water that sustains marine life, you can maintain a moderate lifestyle while working as a fisher, and you can catch enough food to feed yourself and up to ten other people each day."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Fishing Tale",
+					"entries": [
+						"You can tell a compelling tale, whether tall or true, to impress and entertain others. Once a day, you can tell your story to willing listeners. At the DM's discretion, a number of those listeners become friendly toward you; this is not a magical effect, and continued amicability on their part depends on your actions. You can roll on the following table to help determine the theme of your tale or choose one that best fits your character. Alternatively, work with your DM to create your own fishing tale.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Tale"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Lobster Wrestling. You fought in hand-to-hand combat with an immense lobster."
+								],
+								[
+									"2",
+									"It Dragged the Boat. You nearly caught a fish of monstrous size that pulled your boat for miles."
+								],
+								[
+									"3",
+									"Fins of Pure Gold. You caught a sea animal whose fins were made of pure gold, but another fisher stole it."
+								],
+								[
+									"4",
+									"Ghost Fish. You are haunted by a ghostly fish that only you can see."
+								],
+								[
+									"5",
+									"Nemesis Clam. A large clam containing a pearl the size of your head claimed one of your fingers before jetting away; one day, you'll find that clam."
+								],
+								[
+									"6",
+									"It Swallowed the Sun. You once saw a fish leap from the water and turn day into night."
+								],
+								[
+									"7",
+									"Dive into the Abyss. You found yourself in an underwater cave leading to the Abyss, and your luck has been sour ever since."
+								],
+								[
+									"8",
+									"Love Story. You fell in love with a creature of pure water, but your brief romance ended tragically."
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Fishers succeed only if they spend time at their jobs. As such, most fishers have a strong work ethic, and they admire others who earn their living honestly. Fishers tend to be superstitious, forming attachments to particular fishing lures or special fishing spots. They have a connection to the bodies of water in which they fish, and they think poorly of those whose actions adversely affect their livelihood.",
+						{
+							"type": "table",
+							"caption": "Fisher Personality Traits",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I am unmoved by the wrath of nature."
+								],
+								[
+									"2",
+									"My friends are my crew; we sink or float together."
+								],
+								[
+									"3",
+									"I need long stretches of quiet to clear my head."
+								],
+								[
+									"4",
+									"Rich folk don't know the satisfaction of hard work."
+								],
+								[
+									"5",
+									"I laugh heartily, feel deeply, and fear nothing."
+								],
+								[
+									"6",
+									"I work hard; nature offers no handouts."
+								],
+								[
+									"7",
+									"I dislike bargaining; state your price and mean it."
+								],
+								[
+									"8",
+									"Luck favors me, and I take risks others might not."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Fisher Ideals",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@b Camaraderie.} Good people make even the longest voyage bearable. (Good)"
+								],
+								[
+									"2",
+									"{@b Luck.} Our luck depends on respecting its rules\u2014now throw this salt over your shoulder. (Lawful)"
+								],
+								[
+									"3",
+									"{@b Daring.} The richest bounty goes to those who risk everything. (Chaotic)"
+								],
+								[
+									"4",
+									"{@b Plunder.} Take all that you can and leave nothing for the scavengers. (Evil)"
+								],
+								[
+									"5",
+									"{@b Balance.} Do not fish the same spot twice in a row; suppress your greed, and nature will reward you. (Neutral)"
+								],
+								[
+									"6",
+									"{@b Hard Work.} No wave can move a soul hard at work. (Any)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Fisher Bonds",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I lost something important in the deep sea, and I intend to find it."
+								],
+								[
+									"2",
+									"Someone else's greed destroyed my livelihood, and I will be compensated."
+								],
+								[
+									"3",
+									"I will fish the many famous waters of this land."
+								],
+								[
+									"4",
+									"The gods saved me during a terrible storm, and I will honor their gift."
+								],
+								[
+									"5",
+									"My destiny awaits me at the bottom of a particular pond in the Feywild."
+								],
+								[
+									"6",
+									"I must repay my village's debt."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Fisher Flaws",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I am judgmental, especially of those I deem homebodies or otherwise lazy."
+								],
+								[
+									"2",
+									"I become depressed and anxious if I'm away from the sea too long."
+								],
+								[
+									"3",
+									"I have lived a hard life and find it difficult to empathize with others."
+								],
+								[
+									"4",
+									"I am inclined to tell long-winded stories at inopportune times."
+								],
+								[
+									"5",
+									"I work hard, but I play harder."
+								],
+								[
+									"6",
+									"I am obsessed with catching an elusive aquatic beast, often to the detriment of other pursuits."
+								]
+							]
+						}
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"history": true,
+					"survival": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			]
+		},
+		{
+			"name": "Marine",
+			"source": "GoS",
+			"page": 31,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill Athletics}, {@skill Survival}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "{@filter Vehicles (water, land)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land);vehicle (water)}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "A {@item dagger|phb} that belonged to a fallen comrade, a folded flag emblazoned with the symbol of your ship or company, a set of {@item traveler's clothes|phb}, and a belt {@item pouch|phb} containing 10 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Steady",
+					"entries": [
+						"You can move twice the normal amount of time (up to 16 hours) each day before being subject to the effect of a forced march (see \"Travel Pace\" in chapter 8 of the Player's Handbook). Additionally, you can automatically find a safe route to land a boat on shore, provided such a route exists."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Hardship Endured",
+					"entries": [
+						"Hardship in your past has forged you into an unstoppable living weapon. This hardship is essential to you and is at the heart of a personal philosophy or ethos that often guides your actions. You can roll on the following table to determine this hardship or choose one that best fits your character.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Hardship"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Nearly Drowned. You hid underwater to avoid detection by enemies and held your breath for an extremely long time. Just before you would have died, you had a revelation about your existence."
+								],
+								[
+									"2",
+									"Captured. You spent months enduring thirst, starvation, and torture at the hands of your enemy, but you never broke."
+								],
+								[
+									"3",
+									"Sacrifice. You enabled the escape of your fellow soldiers, but at great cost to yourself. Some of your past comrades may think you're dead."
+								],
+								[
+									"4",
+									"Juggernaut. No reasonable explanation can explain how you survived a particular battle. Every arrow and bolt missed you. You slew scores of enemies single-handedly and led your comrades to victory."
+								],
+								[
+									"5",
+									"Stowaway. For days, you hid in the bilge of an enemy ship, surviving on brackish water and foolhardy rats. At the right moment, you crept up to the deck and took over the ship on your own."
+								],
+								[
+									"6",
+									"Leave None Behind. You carried an injured marine for miles to avoid capture and death."
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Marines are looked up to by other soldiers and respected by their superiors. They are veteran warriors who rarely lose composure on the battlefield. Marines who leave the service tend to work as mercenaries, but their combat experience also makes them excellent adventurers. Though they are self-reliant, marines tend to operate best in groups, valuing camaraderie and the companionship of like-minded individuals.",
+						{
+							"type": "table",
+							"caption": "Marine Personality Traits",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I speak rarely but mean every word I say."
+								],
+								[
+									"2",
+									"I laugh loudly and see the humor in stressful situations."
+								],
+								[
+									"3",
+									"I prefer to solve problems without violence, but I finish fights decisively."
+								],
+								[
+									"4",
+									"I enjoy being out in nature; poor weather never sours my mood."
+								],
+								[
+									"5",
+									"I am dependable."
+								],
+								[
+									"6",
+									"I am always working on some project or other."
+								],
+								[
+									"7",
+									"I become cantankerous and quiet in the rain."
+								],
+								[
+									"8",
+									"When the sea is within my sight, my mood is jovial and optimistic."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Marine Ideals",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@b Teamwork.} Success depends on cooperation and communication. (Good)"
+								],
+								[
+									"2",
+									"{@b Code.} The marines' code provides a solution for every problem, and following it is imperative. (Lawful)"
+								],
+								[
+									"3",
+									"{@b Embracing.} Life is messy. Throwing yourself into the worst of it is necessary to get the job done. (Chaotic)"
+								],
+								[
+									"4",
+									"{@b Might.} The strong train so that they might rule those who are weak. (Evil)"
+								],
+								[
+									"5",
+									"{@b Bravery.} To act when others quake in fear\u2014this is the essence of the warrior. (Any)"
+								],
+								[
+									"6",
+									"{@b Perseverance.} No injury or obstacle can turn me from my goal. (Any)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Marine Bonds",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I face danger and evil to offset an unredeemable act in my past."
+								],
+								[
+									"2",
+									"I. Will. Finish. The. Job."
+								],
+								[
+									"3",
+									"I must set an example of hope for those who have given up."
+								],
+								[
+									"4",
+									"I'm searching for a fellow marine captured by an elusive enemy."
+								],
+								[
+									"5",
+									"Fear leads to tyranny, and both must be eradicated."
+								],
+								[
+									"6",
+									"My commander betrayed my unit, and I will have revenge."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Marine Flaws",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I grow combative and unpredictable when I drink."
+								],
+								[
+									"2",
+									"I find civilian life difficult and struggle to say the right thing in social situations."
+								],
+								[
+									"3",
+									"My intensity can drive others away."
+								],
+								[
+									"4",
+									"I hold grudges and have difficulty forgiving others."
+								],
+								[
+									"5",
+									"I become irrational when innocent people are hurt."
+								],
+								[
+									"6",
+									"I sometimes stay up all night listening to the ghosts of my fallen enemies."
+								]
+							]
+						}
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"athletics": true,
+					"survival": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"vehicles (water)": true,
+					"vehicles (land)": true
+				}
+			]
+		},
+		{
+			"name": "Shipwright",
+			"source": "GoS",
+			"page": 33,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill History}, {@skill Perception}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "{@item Carpenter's tools|phb}, {@filter Vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "A set of well-loved {@item carpenter's tools|phb}, a blank book, 1 ounce of ink, an ink pen, a set of {@item traveler's clothes|phb}, and a leather {@item pouch|phb} with 10 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: I'll Patch It!",
+					"entries": [
+						"Provided you have carpenter's tools and wood, you can perform repairs on a water vehicle. When you use this ability, you restore a number of hit points to the hull of a water vehicle equal to 5 × your proficiency modifier. A vehicle cannot be patched by you in this way again until after it has been pulled ashore and fully repaired."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Life at Sea",
+					"entries": [
+						"Your life at sea and in port has shaped you; you can roll on the following table to determine its impact or choose an element that best fits your character.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Sea's Influence"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@b Grand Designs.} You are working on plans and schematics for a new, very fast ship. You must examine as many different kinds of vessels as possible to help ensure the success of your design."
+								],
+								[
+									"2",
+									"{@b Solid and Sound.} You patched up a war galley and prevented it from sinking. The local navy regards you as a friend."
+								],
+								[
+									"3",
+									"{@b Favored.} You insisted on thicker planking for a merchant vessel's hull, which saved it from sinking when it smashed against a reef. You have a standing invitation to visit the merchant's distant mansion."
+								],
+								[
+									"4",
+									"{@b Master of Armaments.} You specialized in designing and mounting defenses for the navy. You easily recognize and determine the quality of such items."
+								],
+								[
+									"5",
+									"{@b Low Places.} You have contacts in the smuggling outfits along the coast; you occasionally repair the criminals' ships in exchange for coin and favors."
+								],
+								[
+									"6",
+									"{@b Mysteries of the Deep.} You experienced an encounter with a possibly divine being while sailing alone. Work with your DM to determine the secret about the deep waters of the sea that this entity revealed to you."
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Shipwrights are resourceful carpenters and designers. They often have a dedicated spot at the local tavern, since shipwrights are invaluable to coastal communities. Some travel with naval fleets and might serve as officers if their temperament suits it. Shipwrights have an affinity for working with their hands and often perform feats of carpentry that others might deem miraculous.",
+						{
+							"type": "table",
+							"caption": "Shipwright Personality Traits",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I love talking and being heard more than I like to listen."
+								],
+								[
+									"2",
+									"I'm extremely fond of puzzles."
+								],
+								[
+									"3",
+									"I thrive under pressure."
+								],
+								[
+									"4",
+									"I love sketching and designing objects, especially boats."
+								],
+								[
+									"5",
+									"I'm not afraid of hard work\u2014in fact, I prefer it."
+								],
+								[
+									"6",
+									"A pipe, an ale, and the smell of the sea: paradise."
+								],
+								[
+									"7",
+									"I have an endless supply of cautionary tales related to the sea."
+								],
+								[
+									"8",
+									"I don't mind getting my hands dirty."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Shipwright Ideals",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Crew. If everyone on deck pitches in, we'll never sink. (Good)"
+								],
+								[
+									"2",
+									"Careful Lines. A ship must be balanced according to the laws of the universe. (Lawful)"
+								],
+								[
+									"3",
+									"Invention. Make what you need out of whatever is at hand. (Chaotic)"
+								],
+								[
+									"4",
+									"Perfection. To measure a being and find it lacking is the greatest disappointment. (Evil)"
+								],
+								[
+									"5",
+									"Reflection. Muddied water always clears in time. (Any)"
+								],
+								[
+									"6",
+									"Hope. The horizon at sea holds the greatest promise. (Any)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Shipwright Bonds",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I must visit all the oceans of the world and behold the ships that sail there."
+								],
+								[
+									"2",
+									"Much of the treasure I claim will be used to enrich my community."
+								],
+								[
+									"3",
+									"I must find a kind of wood rumored to possess magical qualities."
+								],
+								[
+									"4",
+									"I repair broken things to redeem what's broken in myself."
+								],
+								[
+									"5",
+									"I will craft a boat capable of sailing through the most dangerous of storms."
+								],
+								[
+									"6",
+									"A kraken destroyed my masterpiece; its teeth shall adorn my hearth."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Shipwright Flaws",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I don't know when to throw something away. You never know when it might be useful again."
+								],
+								[
+									"2",
+									"I get frustrated to the point of distraction by shoddy craftsmanship."
+								],
+								[
+									"3",
+									"Though I am an excellent crafter, my work tends to look as though it belongs on a ship."
+								],
+								[
+									"4",
+									"I am so obsessed with sketching my ideas for elaborate inventions that I sometimes forget little thing like eating and sleeping."
+								],
+								[
+									"5",
+									"I'm judgmental of those who are not skilled with tools of some kind."
+								],
+								[
+									"6",
+									"I sometimes take things that don't belong to me, especially if they are very well made."
+								]
+							]
+						}
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"history": true,
+					"perception": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"carpenter's tools": true,
+					"vehicles (water)": true
+				}
+			]
+		},
+		{
+			"name": "Smuggler",
+			"source": "GoS",
+			"page": 34,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill Athletics}, {@skill Deception}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "{@filter Vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "A fancy leather vest or a pair of leather boots, a set of {@item common clothes|phb}, and a leather {@item pouch|phb} with 15 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Down Low",
+					"entries": [
+						"You are acquainted with a network of smugglers who are willing to help you out of tight situations. While in a particular town, city, or other similarly sized community (DM's discretion), you and your companions can stay for free in safe houses. Safe houses provide a poor lifestyle. While staying at a safe house, you can choose to keep your presence (and that of your companions) a secret."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Claim to Fame",
+					"entries": [
+						"Every smuggler has that one tale that sets them apart from common criminals. By wits, sailing skill, or a silver tongue, you lived to tell the story\u2014and you tell it often. You can roll on the following table to determine your claim or choose one that best fits your character.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Accomplishment"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Spirit of the Whale. You smuggled stolen dwarven spirits in the body of a dead whale being pulled behind a fishing boat. When you delivered the goods, the corpse suddenly exploded, sending whale meat and whiskey bottles for half a mile."
+								],
+								[
+									"2",
+									"Cart and Sword. You drove a cart filled with stolen art through the middle of a battlefield while singing sea shanties to confuse the combatants."
+								],
+								[
+									"3",
+									"The Recruit. You enlisted in another nation's navy for the purpose of smuggling stolen jewels to a distant port. You attained a minor rank before disappearing from the navy and making your way here."
+								],
+								[
+									"4",
+									"River of Shadows. Your riverboat accidentally slipped through the veil into the Shadowfell for several hours. While you were there, you sold some stolen dragonborn artifacts before returning to this plane and paddling home."
+								],
+								[
+									"5",
+									"Gold-Hearted. You agreed to transport a family escaping a war. The baby began to cry at a checkpoint, and you gave the guards all your gold to let you pass. The family never found out about this gesture."
+								],
+								[
+									"6",
+									"Playing Both Sides. You once smuggled crates of crossbow bolts and bundles of arrows, each destined for an opposing side in a regional war, at the same time. The buyers arrived within moments of each other but did not discover your trickery."
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"In general, smugglers value survival, and then profit, above other things. One could be a part of a larger organization, or might run a small smuggling vessel of their own. Smugglers live the lies they have told, and they have a natural ability to recall all the falsehoods and half-truths they have ever spouted.",
+						{
+							"type": "table",
+							"caption": "Smuggler Personality Traits",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I love being on the water but hate fishing."
+								],
+								[
+									"2",
+									"I think of everything in terms of monetary value."
+								],
+								[
+									"3",
+									"I never stop smiling."
+								],
+								[
+									"4",
+									"Nothing rattles me; I have a lie for every occasion."
+								],
+								[
+									"5",
+									"I love gold but won't cheat a friend."
+								],
+								[
+									"6",
+									"I enjoy doing things others believe to be impossible."
+								],
+								[
+									"7",
+									"I become wistful when I see the sun rise over the ocean."
+								],
+								[
+									"8",
+									"I am no common criminal; I am a mastermind."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Smuggler Ideals",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@b Wealth} Heaps of coins in a secure vault is all I dream of. (Any)"
+								],
+								[
+									"2",
+									"{@b Smuggler's Code} I uphold the unwritten rules of the smugglers, who do not cheat one another or directly harm innocents. (Lawful)"
+								],
+								[
+									"3",
+									"{@b All for a Coin} I'll do nearly anything if it means I turn a profit. (Evil)"
+								],
+								[
+									"4",
+									"{@b Peace and Prosperity} I smuggle only to achieve a greater goal that benefits my community. (Good)"
+								],
+								[
+									"5",
+									"{@b People} For all my many lies, I place a high value on friendship. (Any)"
+								],
+								[
+									"6",
+									"{@b Daring} I am most happy when risking everything. (Any)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Smuggler Bonds",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"My vessel was stolen from me, and I burn with the desire to recover it."
+								],
+								[
+									"2",
+									"I intend to become the leader of the network of smugglers that I belong to."
+								],
+								[
+									"3",
+									"I owe a debt that cannot be repaid in gold."
+								],
+								[
+									"4",
+									"After one last job, I will retire from the business."
+								],
+								[
+									"5",
+									"I was tricked by a fellow smuggler who stole something precious from me. I will find that thief."
+								],
+								[
+									"6",
+									"I give most of my profits to a charitable cause, and I don't like to brag about it."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Smuggler Flaws",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Lying is reflexive, and I sometimes engage in it without realizing."
+								],
+								[
+									"2",
+									"I tend to assess my relationships in terms of profit and loss."
+								],
+								[
+									"3",
+									"I believe everyone has a price and am cynical toward those who present themselves as virtuous."
+								],
+								[
+									"4",
+									"I struggle to trust the words of others."
+								],
+								[
+									"5",
+									"Few people know the real me."
+								],
+								[
+									"6",
+									"Though I act charming, I feel nothing for others and don't know what friendship is."
+								]
+							]
+						}
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"athletics": true,
+					"deception": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"vehicles (water)": true
+				}
+			]
+		},
+		{
+			"name": "Celebrity Adventurer's Scion",
+			"source": "AI",
+			"page": 48,
+			"skillProficiencies": [
+				{
+					"perception": true,
+					"performance": true
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill Perception}, {@skill Performance}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "{@item Disguise kit|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Languages",
+							"entry": "Two of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "{@item Disguise kit|phb}, a set of {@item fine clothes|phb}, and a belt {@item pouch|phb} containing 30 gp."
+						}
+					]
+				},
+				{
+					"name": "Feature: Name Dropping",
+					"type": "entries",
+					"entries": [
+						"You know and have met any number of powerful people across the land\u2014and some of them might even remember you. You might be able to wrangle minor assistance from a major figure in the campaign, at the DM's discretion. Additionally, the common folk treat you with deference, and your heritage and the stories you tell might be good for a free meal or a place to sleep."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"Scions of celebrity adventurers must deal with fame that's not theirs, wealth they didn't earn, and expectations they can never hope to meet. These hardships can have adverse effects, but those who cope with them can arrive at a decent attitude and a grounded worldview. Those who fail become bitter\u2014or worse.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I will never get out of my famous parent's shadow, and no one else will ever understand this burden."
+								],
+								[
+									"2",
+									"I've seen enough of the adventuring life to have realistic expectations and empathy for my peers."
+								],
+								[
+									"3",
+									"Living up to my legacy will be difficult, but I'm going to do it."
+								],
+								[
+									"4",
+									"I'm used to the very best in life, and that's a hard habit to break."
+								],
+								[
+									"5",
+									"My parent taught me a sense of duty. I strive to uphold it, even when the odds are against me."
+								],
+								[
+									"6",
+									"No one can fake a smile, a handshake, or an interested nod like I can."
+								],
+								[
+									"7",
+									"I've been part of the adventuring life since I was old enough to walk. Let me explain a few things to you."
+								],
+								[
+									"8",
+									"No risk is too great for the rewards of defeating my enemies... and taking their stuff."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Power. The only way to get ahead in this world is to attain power and hold onto it with all your might. (Evil)"
+								],
+								[
+									"2",
+									"Peace. Those who can find or make peace in the chaotic world around them have everything. (Lawful)"
+								],
+								[
+									"3",
+									"Fame. I've seen what fame can bring. And I'll do anything to get all that for myself. (Neutral)"
+								],
+								[
+									"4",
+									"Training. Hard work, sacrifice, and training lead to success\u2014and eventually to perfection. (Any)"
+								],
+								[
+									"5",
+									"Anonymity. I want to be successful. And alone. With lots of guards and wards between me and everyone else in the world. (Any)"
+								],
+								[
+									"6",
+									"Wisdom. Material wealth is an illusion. Wisdom is the real treasure. (Good)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"While my parent was out adventuring, a servant raised me, and I care about that person more than anyone."
+								],
+								[
+									"2",
+									"I consider every member of my parent's former adventuring party to be family."
+								],
+								[
+									"3",
+									"Despite their absences, my famous parent was kind and generous. I love them and want to make them proud."
+								],
+								[
+									"4",
+									"My parent once brought a cursed magic item home. It is my obsession."
+								],
+								[
+									"5",
+									"My childhood home holds all my best memories, and its upkeep is my primary concern."
+								],
+								[
+									"6",
+									"Growing up, I had an imaginary friend I could always count on. That friend is still with me."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"You don't know what I'm going through. You never can."
+								],
+								[
+									"2",
+									"You. Fetch my cloak. And maybe rub my feet for a while."
+								],
+								[
+									"3",
+									"My comrades are brave, but I must defeat this threat alone to prove my worth."
+								],
+								[
+									"4",
+									"Oh, yeah, that spell? Named after my parent's best friend. Let me tell you about them."
+								],
+								[
+									"5",
+									"My best days are behind me. Ahead lies only toil, pain, and death."
+								],
+								[
+									"6",
+									"You have to look out for yourself. No one else will."
+								]
+							]
+						}
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 2
+				}
+			],
+			"toolProficiencies": [
+				{
+					"disguise kit": true
+				}
+			]
+		},
+		{
+			"name": "Failed Merchant",
+			"source": "AI",
+			"page": 49,
+			"skillProficiencies": [
+				{
+					"investigation": true,
+					"persuasion": true
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill Investigation}, {@skill Persuasion}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan tool}"
+						},
+						{
+							"type": "item",
+							"name": "Languages",
+							"entry": "Any one of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "One set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan tool}, {@item merchant's scale|phb}, a set of {@item fine clothes|phb}, and a belt {@item pouch|phb} containing 10 gp"
+						}
+					]
+				},
+				{
+					"name": "Feature: Supply Chain",
+					"type": "entries",
+					"entries": [
+						"From your time as a merchant, you retain connections with wholesalers, suppliers, and other merchants and entrepreneurs. You can call upon these connections when looking for items or information."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"Being a merchant involved having a head for numbers, a strong personality, the ability to make deals with hostile adversaries, a strong sword arm to fight off bandits, and the intuition for knowing what people want and need. The art of business is the art of finding the best path to profit, and that path might be different with each transaction. It takes a strong mind and a stronger stomach to succeed. So why did you fail?",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I didn't have the cutthroat attitude necessary to succeed. I won't make that mistake again."
+								],
+								[
+									"2",
+									"Even my competitors said I was affable and talented. Those traits should serve me well."
+								],
+								[
+									"3",
+									"To prosper, you have to be in control."
+								],
+								[
+									"4",
+									"The customer is always right."
+								],
+								[
+									"5",
+									"I was cutting corners and breaking deals to maximize profit. That's why I failed."
+								],
+								[
+									"6",
+									"When I get an idea, I am single-minded in its execution\u2014even if it's a terrible idea."
+								],
+								[
+									"7",
+									"If I can be everyone's friend, I'll always have support."
+								],
+								[
+									"8",
+									"My heart wasn't in being a merchant, so I failed. I'm not all that keen on adventuring either, but I need the money."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Survival. Where there's life, there's hope. If I remain alive and flexible, I can succeed. (Any)"
+								],
+								[
+									"2",
+									"Generosity. People helped me when I was down. Now that I'm back on my feet, I'll pay it forward. (Good)"
+								],
+								[
+									"3",
+									"Excitement. Caution got me nowhere in my previous business. I'm not going to let it hold me back now. (Chaotic)"
+								],
+								[
+									"4",
+									"Wealth. With enough coin, I can buy comfort, power, knowledge, and even eternal life. Nothing will stand between me and money. (Evil)"
+								],
+								[
+									"5",
+									"Stability. The mercantile trade was too chaotic for me. I need a nice stable profession, like adventuring. (Lawful)"
+								],
+								[
+									"6",
+									"Redemption. Too many people consider me a failure. So I need to prove them wrong. (Any)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"My family means everything to me. I failed them before, and I must not do so again."
+								],
+								[
+									"2",
+									"My church provides a connection to my god, so I must ensure that it is protected and funded."
+								],
+								[
+									"3",
+									"My former business partner fell ill, and then our business failed. Part of my new venture involves earning enough to take care of their family."
+								],
+								[
+									"4",
+									"If I take care of my possessions, they'll take care of me. People come and go, but a weapon or a wand is something you can always rely on."
+								],
+								[
+									"5",
+									"Although my business failed, the people of my community were kind to me. I'll do everything in my power to protect them."
+								],
+								[
+									"6",
+									"I owe a dangerous person a lot of money. As long as they're happy, they let my debt rest unpaid."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Why spend gold here when you can buy the same thing for copper in the next town?"
+								],
+								[
+									"2",
+									"I must have the best of everything. Like, right now."
+								],
+								[
+									"3",
+									"You haven't heard of me? I'm sure that's because of your ignorance and low breeding."
+								],
+								[
+									"4",
+									"I failed, but I'm awesome. So when anyone else is successful, it must be because of nepotism, dishonesty, or dumb luck."
+								],
+								[
+									"5",
+									"I find that most people are trustworthy. Hey, where's my belt pouch?"
+								],
+								[
+									"6",
+									"Nothing gets between me and danger except my fellow adventurers. So I'll be sure to put them there."
+								]
+							]
+						}
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"artisan's tools": true
+				}
+			]
+		},
+		{
+			"name": "Gambler",
+			"source": "AI",
+			"page": 49,
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"insight": true
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill Deception}, {@skill Insight}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "One {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}"
+						},
+						{
+							"type": "item",
+							"name": "Languages",
+							"entry": "Any one of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "One {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}, a lucky charm, a set of {@item fine clothes|phb}, and a belt {@item pouch|phb} containing 15 gp"
+						}
+					]
+				},
+				{
+					"name": "Feature: Never Tell Me the Odds",
+					"type": "entries",
+					"entries": [
+						"Odds and probability are your bread and butter. During downtime activities that involve games of chance or figuring odds on the best plan, you can get a solid sense of which choice is likely the best one and which opportunities seem too good to be true, at the DM's determination."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"Some gamble out of necessity. Others do so out of boredom. Still others become addicted to the thrill of winning or losing everything on a turn of fortune. For some, gambling is less a matter of chance and more a matter of seeking every advantage to ensure the outcome. The best gamblers can lose everything, and the worst gamblers sometimes win. Regardless, you can always tell gamblers by the look in their eyes. Lady Luck haunts them.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I plan for every contingency. Leave nothing to chance!"
+								],
+								[
+									"2",
+									"Every copper wants to be a silver. Each bet is an opportunity."
+								],
+								[
+									"3",
+									"I'm one of Lady Luck's favored. Anything I try is destined to succeed."
+								],
+								[
+									"4",
+									"I've lost so much to gambling that I refuse to spend money on anything anymore."
+								],
+								[
+									"5",
+									"Nothing is certain. Planning is a coward's act."
+								],
+								[
+									"6",
+									"I can't be sure who I've swindled, cheated, or defeated, so I keep a low profile in public."
+								],
+								[
+									"7",
+									"The perfect bet is out there somewhere. I just have to keep my eyes open."
+								],
+								[
+									"8",
+									"I have beaten my addiction, but all it takes is one weak moment and I'll be back at the card table."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Knowledge. Knowledge is power, and knowing which horse to back is the key to success. (Any)"
+								],
+								[
+									"2",
+									"Fate. Whatever happens is fated, regardless of any planning or striving. (Lawful)"
+								],
+								[
+									"3",
+									"Bravery. If you want to succeed, you have to take risks. (Chaotic)"
+								],
+								[
+									"4",
+									"Survival. You can't win if you're dead. Live to fight another day\u2014when the odds might be more in your favor. (Any)"
+								],
+								[
+									"5",
+									"Reliability. When I was in need, I was able to rely on others. Now I want to be the one others rely on. (Good)"
+								],
+								[
+									"6",
+									"Victory. Winning is the real measure of a person. In the end, the only thing that matters is the scoreboard. (Evil)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"One person in particular owes me a lot of money, and I need to keep them alive if I want to be repaid."
+								],
+								[
+									"2",
+									"I'm loyal to the friend or family member who taught me how to gamble."
+								],
+								[
+									"3",
+									"The person who saved me from my gambling addiction is the only reason I'm alive today."
+								],
+								[
+									"4",
+									"A patron once fronted me money in exchange for a percentage of my winnings. I owe them a debt of gratitude. And a lot of cash."
+								],
+								[
+									"5",
+									"A criminal syndicate I once played for isn't happy I left the game, and its enforcers are looking for me."
+								],
+								[
+									"6",
+									"Urchins once helped me find marks for my games. Now I'm driven to help them escape the streets."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I don't know when to quit. Especially when everyone else is telling me to."
+								],
+								[
+									"2",
+									"I save my sympathy for my friends, and I have no friends."
+								],
+								[
+									"3",
+									"You think we're in trouble now? Let me tell you how bad things are likely to get!"
+								],
+								[
+									"4",
+									"You can loan me a little, right? I've got a sure thing. I'll double your money, guaranteed."
+								],
+								[
+									"5",
+									"I was once a terribly flawed person, like you. Let me tell you how you can save yourself."
+								],
+								[
+									"6",
+									"I'm a great gambler. I'm just bad at math and logic."
+								]
+							]
+						}
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"gaming set": true
+				}
+			]
+		},
+		{
+			"name": "Plaintiff",
+			"source": "AI",
+			"page": 50,
+			"skillProficiencies": [
+				{
+					"medicine": true,
+					"persuasion": true
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill Medicine}, {@skill Persuasion}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan tool}"
+						},
+						{
+							"type": "item",
+							"name": "Languages",
+							"entry": "Any one of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "One set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan tool}, {@item fine clothes|phb}, 20 gp"
+						}
+					]
+				},
+				{
+					"name": "Feature: Legalese",
+					"type": "entries",
+					"entries": [
+						"Your experience with your local legal system has given you a firm knowledge of the ins and outs of that system. Even when the law is not on your side, you can use complex terms like ex injuria jus non oritur and cogitationis poenam nemo patitur to frighten people into thinking you know what you're talking about. With common folks who don't know any better, you might be able to intimidate or deceive to get favors or special treatment."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"Plaintiffs come in many varieties. Some are innocent bystanders who want only fair compensation for their injuries. Others are professional courtroom operatives, going to extreme lengths to appear wronged in pursuit of a large payout.",
+						{
+							"type": "table",
+							"caption": "",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I can't believe I have a chance to join Acquisitions Incorporated! The fun I'm going to have!"
+								],
+								[
+									"2",
+									"I've been wronged my entire life, and the world owes me."
+								],
+								[
+									"3",
+									"I have always tried to make the best of a bad situation."
+								],
+								[
+									"4",
+									"The law doesn't protect the honest and the hard working. I'm going to do whatever needs to be done to make things right."
+								],
+								[
+									"5",
+									"I'm always in the wrong place at the wrong time."
+								],
+								[
+									"6",
+									"My superiors are smarter and wiser than I am. I do what I'm told."
+								],
+								[
+									"7",
+									"Never pass up the opportunity to make an easy bit of coin. That's my motto."
+								],
+								[
+									"8",
+									"I'm beginning to feel like the gods are not on my side."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Justice. Those who break the law need to answer for their crimes. (Lawful)"
+								],
+								[
+									"2",
+									"Freedom. People must have the freedom to do what they want and pursue their dreams. (Chaotic)"
+								],
+								[
+									"3",
+									"Greed. Everyone I see is getting theirs, so I'm surely going to get mine. (Evil)"
+								],
+								[
+									"4",
+									"Chaos. You're out of order! And you're out of order! This whole realm is out of order! (Chaotic)"
+								],
+								[
+									"5",
+									"Humility. I'm just a small part of a larger whole. So is everyone else. (Neutral)"
+								],
+								[
+									"6",
+									"Responsibility. We all have our roles to play. I'll hold up my end of the bargain. (Any)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Others hurt in the same accident that hurt me are my new family. I'll make sure they're taken care of."
+								],
+								[
+									"2",
+									"The rulers of this place were kind to me, and they have my lifelong devotion."
+								],
+								[
+									"3",
+									"My parents worry about me, but I'll make them proud."
+								],
+								[
+									"4",
+									"The only bond that matters is the one holding my money pouch to my belt."
+								],
+								[
+									"5",
+									"The other new hires at Acquisitions Incorporated are my allies. We have each other's backs."
+								],
+								[
+									"6",
+									"My legal counsel is my best friend. I owe all my forthcoming opportunities to their hard work."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"The person who gains the most reward for the least effort wins."
+								],
+								[
+									"2",
+									"Three magic beans for just one cow? What a deal!"
+								],
+								[
+									"3",
+									"I have only one vice, but it controls my life."
+								],
+								[
+									"4",
+									"Sleep is for the weak. We need to keep training more if we're going to be ready for the challenges ahead."
+								],
+								[
+									"5",
+									"Until my songs are sung in every tavern in this realm, I won't be satisfied."
+								],
+								[
+									"6",
+									"If people find me unpleasant, that's their problem."
+								]
+							]
+						}
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"artisan's tools": true
+				}
+			]
+		},
+		{
+			"name": "Rival Intern",
+			"page": 51,
+			"source": "AI",
+			"skillProficiencies": [
+				{
+					"history": true,
+					"investigation": true
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill History}, {@skill Investigation}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan tool}"
+						},
+						{
+							"type": "item",
+							"name": "Languages",
+							"entry": "Any one of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "One set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan tool}, a ledger from your previous employer containing a small piece of useful information, a set of {@item fine clothes|phb}, and a belt {@item pouch|phb} containing 10 gp"
+						}
+					]
+				},
+				{
+					"name": "Feature: Inside Informant",
+					"type": "entries",
+					"entries": [
+						"You have connections to your previous employer or other groups you dealt with during your previous employment. You can communicate with your contacts, gaining information at the DM's discretion."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"If you were happy with your previous internship, the parting of ways might have been amicable. If not, it might have involved armed guards removing you from the premises. If you were passed over at your previous position, it might have left you a blend of seething rage, practiced nonchalance, and keen knowledge of where the bodies are buried (perhaps literally).",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"My previous employer didn't respect me, and now I'll do whatever I can to gain respect."
+								],
+								[
+									"2",
+									"The job is important, but the relationships I forge with my coworkers are even more so."
+								],
+								[
+									"3",
+									"The job is everything to me. Who needs relaxation, hobbies, and a social life?"
+								],
+								[
+									"4",
+									"I know I'm not the best and brightest, but if I put my best self forward, I can overcome anything."
+								],
+								[
+									"5",
+									"My former boss was an idiot. So was my boss before that. And before that. I'm sure those were all coincidences."
+								],
+								[
+									"6",
+									"This company is so much better than my previous one. It will always be the best until they stop paying me."
+								],
+								[
+									"7",
+									"I know this dagger belongs to the company, but I'm sure they won't miss it. Or this flask. Or this armor."
+								],
+								[
+									"8",
+									"It's only a matter of time before I'll be upper management. I just have to kiss up to my superiors and kick down those beneath me."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Advancement. Money and power can be gained more easily within an organization. I plan to gain as much as possible. (Evil)"
+								],
+								[
+									"2",
+									"Structure. Life goes much more smoothly when you follow the rules and work within a system. (Lawful)"
+								],
+								[
+									"3",
+									"Uncertainty. The more chaos that swirls around me, the more opportunities I can find to profit. (Chaotic)"
+								],
+								[
+									"4",
+									"Justice. I can't stand people being treated unjustly. I do whatever it takes to stop injustice and those who flout the law. (Lawful)"
+								],
+								[
+									"5",
+									"Pleasure. What's the use of working hard and making money if you can't enjoy the finer things in life? (Any)"
+								],
+								[
+									"6",
+									"Power. Money is fine, but real power means never having to say you're sorry. (Evil)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I have a family member in need. I consider them in everything I do."
+								],
+								[
+									"2",
+									"My peers keep me grounded."
+								],
+								[
+									"3",
+									"My past mistakes cost someone else dearly. I have to rectify that."
+								],
+								[
+									"4",
+									"A childhood mentor put me on my current path. If I succeed, I want to repay that mentor in some way."
+								],
+								[
+									"5",
+									"I value an oath of loyalty I took to a group of friends over everything else in my life."
+								],
+								[
+									"6",
+									"Although I don't get along well with people, my pet means the world to me."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I know what's best. Trust me."
+								],
+								[
+									"2",
+									"Flaw? I have no flaws. I'm perfect."
+								],
+								[
+									"3",
+									"My loyalties are... fluid."
+								],
+								[
+									"4",
+									"If anything goes wrong, it must be someone else's fault. Let me explain that in detail."
+								],
+								[
+									"5",
+									"There's right and there's wrong, and there's no gray area in between."
+								],
+								[
+									"6",
+									"Our superiors might not like what you're doing. I'm going to have to put that in my report."
+								]
+							]
+						}
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"artisan's tools": true
+				}
+			]
+		},
+		{
+			"name": "Faceless",
+			"source": "BGDIA",
+			"page": 203,
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"intimidation": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"disguise kit": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill Deception}, {@skill Intimidation}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "{@item Disguise kit|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Languages",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "{@item Disguise kit|phb}, a {@item costume clothes|phb|costume}, a {@item pouch|phb} containing 10 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Faceless Persona",
+					"entries": [
+						"A faceless character adventures behind the mask of a public persona. This persona is as natural to them as their hidden, true face, but it disguises their identity. Roll on the Faceless Persona table to determine your persona, or work with the DM to create a persona that's unique to your character and suits the tone of your game.",
+						{
+							"type": "table",
+							"caption": "",
+							"colLabels": [
+								"d10",
+								"Faceless Persona"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									1,
+									"A flamboyant spy or brigand"
+								],
+								[
+									2,
+									"The incarnation of a nation or people"
+								],
+								[
+									3,
+									"A scoundrel with a masked guise"
+								],
+								[
+									4,
+									"A vengeful spirit"
+								],
+								[
+									5,
+									"The manifestation of a deity or your faith"
+								],
+								[
+									6,
+									"One whose beauty is greatly accented using makeup"
+								],
+								[
+									7,
+									"An impersonation of another hero"
+								],
+								[
+									8,
+									"The embodiment of a school of magic"
+								],
+								[
+									9,
+									"A warrior with distinctive armor"
+								],
+								[
+									10,
+									"A disguise with animalistic or monstrous characteristics, meant to inspire fear"
+								]
+							]
+						}
+					]
+				},
+				{
+					"name": "Feature: Dual Personalities",
+					"type": "entries",
+					"entries": [
+						"Most of your fellow adventurers and the world know you as your persona. Those who seek to learn more about you\u2014your weaknesses, your origins, your purpose\u2014find themselves stymied by your disguise. Upon donning a disguise and behaving as your persona, you are unidentifiable as your true self. By removing your disguise and revealing your true face, you are no longer identifiable as your persona. This allows you to change appearances between your two personalities as often as you wish, using one to hide the other or serve as convenient camouflage. However, should someone realize the connection between your persona and your true self, your deception might lose its effectiveness."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"A faceless character usually plays their persona\u2014the hero or extraordinary person they are every day. That's all a facade, though, or a part of them expressed to an extreme. To define a persona, feel free to choose characteristics from other backgrounds, particularly folk hero, hermit, or noble. For the person behind the persona, the one who truly strives to be faceless, consider a distinct set of faceless characteristics. As a result, those with this background have two sets of characteristics, one for their persona, and one for their faceless selves.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									1,
+									"I'm earnest and uncommonly direct."
+								],
+								[
+									2,
+									"I strive to have no personality\u2014it's easier to forget what's hardly there."
+								],
+								[
+									3,
+									"I treasure a memento of the person or instance that set me upon my path."
+								],
+								[
+									4,
+									"I sleep just as much as I need to and on an unusual schedule."
+								],
+								[
+									5,
+									"I think far ahead, a detachedness often mistaken for daydreaming."
+								],
+								[
+									6,
+									"I cultivate a single obscure hobby or study and eagerly discuss it at length."
+								],
+								[
+									7,
+									"I am ever learning how to be among others\u2014when to stay quiet, when to laugh."
+								],
+								[
+									8,
+									"I behave like an extreme opposite of my persona."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									1,
+									"Justice. Place in society shouldn't determine one's access to what is right. (Good)"
+								],
+								[
+									2,
+									"Security. Doing what must be done can't bring the innocent to harm. (Lawful)"
+								],
+								[
+									3,
+									"Confusion. Deception is a weapon. Strike from where your foes won't expect. (Chaotic)"
+								],
+								[
+									4,
+									"Infamy. My name will be a malediction, a curse that fulfills my will. (Evil)"
+								],
+								[
+									5,
+									"Incorruptibility. Be a symbol, and leave your flawed being behind. (Any)"
+								],
+								[
+									6,
+									"Anonymity. It's my deeds that should be remembered, not their instrument. (Any)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									1,
+									"I do everything for my family. My first thought is keeping them safe."
+								],
+								[
+									2,
+									"What I do, I do for the world. The people don't realize how much they need me."
+								],
+								[
+									3,
+									"I've seen too many in need. I must not fail them as everyone else has."
+								],
+								[
+									4,
+									"I stand in opposition, lest the wicked go unopposed."
+								],
+								[
+									5,
+									"I am exceptional. I do this because no one else can, and no one can stop me."
+								],
+								[
+									6,
+									"I do everything for those who were taken from me."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									1,
+									"I am callous about death. It comes to us all eventually."
+								],
+								[
+									2,
+									"I never make eye contact or hold it unflinchingly."
+								],
+								[
+									3,
+									"I have no sense of humor. Laughing is uncomfortable and embarrassing."
+								],
+								[
+									4,
+									"I overexert myself, sometimes needing to recuperate for a day or more."
+								],
+								[
+									5,
+									"I think far ahead, a detachedness often mistaken for daydreaming."
+								],
+								[
+									6,
+									"I see morality entirely in black and white."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Baldur's Gate Acolyte",
+			"source": "BGDIA",
+			"page": 202,
+			"additionalSources": [
+				{
+					"source": "PHB",
+					"page": 127
+				}
+			],
+			"_copy": {
+				"name": "Acolyte",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "insertArr",
+						"index": 2,
+						"items": {
+							"name": "Baldur's Gate Feature: Religious Community",
+							"type": "entries",
+							"entries": [
+								"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+								"You're tightly connected with the religious community of Baldur's Gate. You know if a deity has a following in the city and any places that faith openly congregates and the neighborhoods those faithful typically inhabit. While this isn't remarkable for most of the city's larger faiths, keeping track of the hundreds of religions newcomers bring with them is no mean feat."
+							],
+							"data": {
+								"isFeature": true
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Baldur's Gate Charlatan",
+			"source": "BGDIA",
+			"additionalSources": [
+				{
+					"source": "PHB",
+					"page": 128
+				}
+			],
+			"page": 202,
+			"_copy": {
+				"name": "Charlatan",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "insertArr",
+						"index": 2,
+						"items": {
+							"name": "Baldur's Gate Feature: Long-Lost Heir",
+							"type": "entries",
+							"entries": [
+								"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+								"You're well-versed in the mannerisms and idiosyncrasies of Baldurian patriars and other nobles, imitating them smoothly enough to convince even the snootiest family heads of your authenticity. You're skilled at posing as the long-lost heir to some imaginary or extinguished patriar lineage.",
+								"Because of your skill in passing yourself off as a patriar, you have a Watch token that allows you alone into the Upper City of Baldur's Gate. You might be able to bluff others through with you, or even convince members of the Watch that you're a patriar. However, any true test of your authenticity is likely to reveal your deception."
+							],
+							"data": {
+								"isFeature": true
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Baldur's Gate Criminal",
+			"source": "BGDIA",
+			"page": 202,
+			"additionalSources": [
+				{
+					"source": "PHB",
+					"page": 129
+				}
+			],
+			"_copy": {
+				"name": "Criminal",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "insertArr",
+						"index": 2,
+						"items": [
+							{
+								"name": "Baldur's Gate Feature: Criminal Connections",
+								"type": "entries",
+								"entries": [
+									"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+									"In Baldur's Gate, crime is just another business. As a result, you can arrange a meeting with a low-ranking operative of nearly any business, patriar family, crew, government institution, or\u2014certainly\u2014the Guild. This operative will hear you out and, at their discretion, take your information or request up their chain of command. These meetings almost always occur in shady venues."
+								],
+								"data": {
+									"isFeature": true
+								}
+							},
+							{
+								"type": "entries",
+								"name": "Criminal Origins",
+								"entries": [
+									"Criminals are pervasive in Baldur's Gate. If you wish, you may roll on the Criminal Origins table for an event that began your life of crime.",
+									{
+										"type": "table",
+										"caption": "Criminal Origins",
+										"colLabels": [
+											"d8",
+											"Origin"
+										],
+										"colStyles": [
+											"col-2 text-center",
+											"col-10"
+										],
+										"rows": [
+											[
+												"1",
+												"You crippled a Guild kingpin's cousin without realizing the connection. You got the Guild to back off demands for your death by offering to make amends by working for the criminals, but even so the kingpin still plots a personal revenge."
+											],
+											[
+												"2",
+												"The Guild took over your family business, ran it into the ground, and burned the building for insurance money. You were driven into crime yourself, but you'll never work for the Guild. You take special joy in hitting its targets first, tipping off its con victims and otherwise frustrating its schemes."
+											],
+											[
+												"3",
+												"It's always been about money. You're not paid what you're worth, working for someone who has more than they deserve. But the Guild offered you a way to fix that. You keep doing what you've always done\u2014guard work, dock labor, business accounting\u2014but what you learn you pass on to the Guild."
+											],
+											[
+												"4",
+												"The inequality of Baldur's Gate has driven you to take matters into your own hands. You steal from patriars and rich Lower City residents, funneling the money through charitable fronts to help the needy."
+											],
+											[
+												"5",
+												"You got into crime as a bored patriar looking for excitement. Your family has no idea of your activities, and neither does the Guild. If either of them ever finds out, your life as you know it will be over."
+											],
+											[
+												"6",
+												"A close friend or relative joined the Guild and vanished mysteriously. You've worked your way into the lower ranks hoping to find out what happened to them."
+											],
+											[
+												"7",
+												"You've always wanted to be a member of the Guild. As a child, you looked up to the Guild members' swagger, their flashy dress, and their competence, which all marked them as different from the other adults you knew. As soon as you could, you joined the organization."
+											],
+											[
+												"8",
+												"To you, this is just a way to earn a living. You go to work, do what needs to be done, and get paid. Anyone who pursues crime for thrill-seeking, to strike back at unjust authorities, or anything else are amateurs, and they're liable to get you arrested or killed with their idiocy."
+											]
+										]
+									}
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Baldur's Gate Entertainer",
+			"source": "BGDIA",
+			"page": 202,
+			"additionalSources": [
+				{
+					"source": "PHB",
+					"page": 130
+				}
+			],
+			"_copy": {
+				"name": "Entertainer",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "insertArr",
+						"index": 2,
+						"items": {
+							"name": "Baldur's Gate Feature: Backstage Pass",
+							"type": "entries",
+							"entries": [
+								"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+								"You've learned that most of the real business of entertainment (or any other venture) happens behind the scenes. It's easy for you to case what sorts of audiences attend what venue\u2014like how toughs gather at the Blushing Mermaid or how brash patriars congregate at the Helm and Cloak. After a successful performance, you may meet an enthusiastic member of the crowd\u2014someone of an occupation or social class that frequents the establishment. This contact is delighted to talk with you, and to listen."
+							],
+							"data": {
+								"isFeature": true
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Baldur's Gate Folk Hero",
+			"source": "BGDIA",
+			"page": 204,
+			"additionalSources": [
+				{
+					"source": "PHB",
+					"page": 131
+				}
+			],
+			"_copy": {
+				"name": "Folk Hero",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "insertArr",
+						"index": 2,
+						"items": [
+							{
+								"name": "Baldur's Gate Feature: Social Vengeance",
+								"type": "entries",
+								"entries": [
+									"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+									"You've lived your entire life in the Lower or Outer City of Baldur's Gate. You grew up seeing arrogant patriars flaunt their wealth while your hardworking neighbors struggled. As a result, you know how eager commoners in Baldur's Gate are to see any patriar get what they deserve. While in a busy part of the Lower City or Outer City of Baldur's Gate, you can spend {@dice 2d10} minutes to convince {@dice 1d6} {@creature commoner||commoners} to perform a non-illegal act that inconveniences a member of the Watch or Flaming Fist, a patriar, or some other wealthy looking individual."
+								],
+								"data": {
+									"isFeature": true
+								}
+							},
+							{
+								"type": "entries",
+								"name": "Folk Hero Origins",
+								"entries": [
+									"Folk heroes might rise from a variety of circumstances, or their origins might be a secret as they do their work anonymously. If you wish, you may roll on the Folk Hero Origins table for an event that started you down your heroic path.",
+									{
+										"type": "table",
+										"caption": "Folk Hero Origins",
+										"colLabels": [
+											"d6",
+											"Origin"
+										],
+										"colStyles": [
+											"col-2 text-center",
+											"col-10"
+										],
+										"rows": [
+											[
+												"1",
+												"You helped get healing for a sick child. Now the sick come to you, knowing you'll help them find a way to salvation."
+											],
+											[
+												"2",
+												"You helped break a Guild protection racket afflicting a community of immigrants in the Outer City. Now, you can't travel through that part of the city without your dozen adopted grandparents inviting you in for a meal."
+											],
+											[
+												"3",
+												"Seeing a lost patriar after dark in the Outer City, you guided the wayward noble through back streets to safety. The patriar repaid your help by paying for improved roofs and lamps in your neighborhood, causing the entire community to celebrate your deed."
+											],
+											[
+												"4",
+												"Fueled by alcohol, you faced down a carrion crawler that slunk out of the sewer, knocking it out with a single punch. Since then, however, the ale you once credited with your heroism has drowned it, and even your most patient admirers are losing hope. You're hoping for one last chance to win back the goodwill you've drunk away."
+											],
+											[
+												"5",
+												"You once defeated a raging bugbear with a hand mirror, a mounted deer's head, and two kicks to the groin. Later, you and the bugbear became friends."
+											],
+											[
+												"6",
+												"Last winter, you dove into the frigid river to haul out a foundering fishing boat with your bare hands, saving all aboard. Now, everyone on the docks knows your name."
+											]
+										]
+									}
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Baldur's Gate Guild Artisan",
+			"source": "BGDIA",
+			"page": 204,
+			"additionalSources": [
+				{
+					"source": "PHB",
+					"page": 132
+				}
+			],
+			"_copy": {
+				"name": "Guild Artisan",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "insertArr",
+						"index": 2,
+						"items": {
+							"name": "Baldur's Gate Feature: Professional Courtesy",
+							"type": "entries",
+							"entries": [
+								"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+								"You're familiar with the city's crews, their territories, and inter-crew politics. Choose one of the three districts of Baldur's Gate: the Upper City, the Lower City, or the Outer City. This is the district where you conduct most of your business. Whenever you need information about something in one of that district's neighborhoods, you can seek out crew members in that area and learn the local gossip. You can also gain unimpeded entry to nearly any bank, guild hall, place of business, workhouse, or crew meeting place in your district."
+							],
+							"data": {
+								"isFeature": true
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Baldur's Gate Hermit",
+			"source": "BGDIA",
+			"page": 204,
+			"additionalSources": [
+				{
+					"source": "PHB",
+					"page": 134
+				}
+			],
+			"_copy": {
+				"name": "Hermit",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "insertArr",
+						"index": 2,
+						"items": [
+							{
+								"name": "Baldur's Gate Feature: The Real City",
+								"type": "entries",
+								"entries": [
+									"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+									"You know the Baldur's Gate most Baldurians ignore, the dog-eat-dog world of the homeless and unfortunate. You know where to go in the Lower City and Outer City for anonymity. In these slums and alley camps, you can get a damp bed and a bad meal, but also a degree of privacy and no questions asked. Living here isn't comfortable, but it's unlikely anyone will find you\u2014and you can stay as long as you want."
+								],
+								"data": {
+									"isFeature": true
+								}
+							},
+							{
+								"type": "entries",
+								"name": "Hermit Origins",
+								"entries": [
+									"Any number of personal choices or ill-fated circumstances might have led you to turn away from society. You may, if you wish, choose or roll an origin event from the Hermit Origins table.",
+									{
+										"type": "table",
+										"caption": "Hermit Origins",
+										"colLabels": [
+											"d6",
+											"Origin"
+										],
+										"colStyles": [
+											"col-2 text-center",
+											"col-10"
+										],
+										"rows": [
+											[
+												"1",
+												"You led an ill-fated expedition into the Riverveins. Your friends were swept away by flooding, and you've never been able to shake the guilt of causing their deaths over a frivolous lark. You've maintained a solitary vigil outside the cavern entrance ever since."
+											],
+											[
+												"2",
+												"You crossed the Guild in a bad way. Fortunately, its members think you're dead. Less fortunately, maintaining that deception might require you to stay in hiding until you actually are."
+											],
+											[
+												"3",
+												"You study the puzzles of mortal natures. You've seen followers of evil deities perform miracles for the helpless at Twin Songs, and you've seen patriars who worship good deities turn their backs on the poor daily. Bearing witness to such things, and meditating on their contradictions, fills your hours."
+											],
+											[
+												"4",
+												"You tend to some part of the city's forgotten history: the unmarked graves in Cliffside Cemetery, the crumbling remains of dead patriar families' manors, or a collection of religious texts stuffed into an attic and forgotten when a believer's patron deity died. In this solitary work, you've learned secrets no one else knows."
+											],
+											[
+												"5",
+												"You killed a patriar's scion in an illegal duel. The family swore revenge, and you fled to the slums rather than risk bringing their wrath down on your kin."
+											],
+											[
+												"6",
+												"You aren't originally from Baldur's Gate. You came here seeking something else, only to learn that the quest that drove you had become impossible to fulfill\u2014its object was destroyed or its purpose was negated by some superseding event. Suddenly directionless and unable to return to your homeland, you have lingered, adrift, in this wretched city."
+											]
+										]
+									}
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Baldur's Gate Noble",
+			"source": "BGDIA",
+			"page": 204,
+			"additionalSources": [
+				{
+					"source": "PHB",
+					"page": 135
+				}
+			],
+			"_copy": {
+				"name": "Noble",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "insertArr",
+						"index": 2,
+						"items": {
+							"name": "Baldur's Gate Feature: Patriar",
+							"type": "entries",
+							"entries": [
+								"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+								"As a member of one of the elite families of Baldur's Gate, you may pass through city gates without paying tolls, mingle among the Gate's nobility unquestioned, and impress those on the lookout for wealthy patrons. You are welcome in the Upper City and may stay there after dark without being harassed or evicted. Your word is accepted over others' without question, and any corruption among guards or government officials tends to work in your favor, not against you\u2014at least until you make some effort to expose it."
+							],
+							"data": {
+								"isFeature": true
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Baldur's Gate Outlander",
+			"source": "BGDIA",
+			"page": 204,
+			"additionalSources": [
+				{
+					"source": "PHB",
+					"page": 136
+				}
+			],
+			"_copy": {
+				"name": "Outlander",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "insertArr",
+						"index": 2,
+						"items": [
+							{
+								"name": "Baldur's Gate Feature: Immigrant Experience",
+								"type": "entries",
+								"entries": [
+									"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+									"Even after your short time in Baldur's Gate, you've learned the city holds more walls and gates than those the Watch and Flaming Fist patrols. You are known within the city's immigrant communities. Should you ever need to learn about a foreign land, people, tradition, or history, you know where to find someone with firsthand experience\u2014likely somewhere in the Outer City."
+								],
+								"data": {
+									"isFeature": true
+								}
+							},
+							{
+								"type": "entries",
+								"name": "Outlander Origins",
+								"entries": [
+									"Foreigners of all kinds come to Baldur's Gate daily, drawn by countless reasons from countless lands. The Outlander Origins table provides ideas for how your character might have come to Baldur's Gate.",
+									{
+										"type": "table",
+										"caption": "Outlander Origins",
+										"colLabels": [
+											"d6",
+											"Origin"
+										],
+										"colStyles": [
+											"col-2 text-center",
+											"col-10"
+										],
+										"rows": [
+											[
+												"1",
+												"Someone stole something precious from your people. You tracked the thief to the city gates, but finding clues in an urban environment is very different from tracking someone across the wilderness. You don't know where to go from here, but your people need you to succeed."
+											],
+											[
+												"2",
+												"You've always been fascinated by the glitter and glamor of city life, so different from the slow pace of life in your homeland. Now you're here, ready to make your mark in the world, but unsure how to begin."
+											],
+											[
+												"3",
+												"War, plague, famine, or a marauding monster ravaged your home, forcing you to flee for your life. You don't even know how many of your people survived or where to find them. Alone or accompanied by a handful of equally bereft survivors, you must navigate a new life that you never asked for."
+											],
+											[
+												"4",
+												"You were captured by kidnappers and taken far from your home. The Knights of the Unicorn freed you and brought you here, but now you're on your own."
+											],
+											[
+												"5",
+												"You were exiled for breaking a trivial-seeming taboo. For this seemingly minor transgression, you lost your friends, family, and homeland in one fell swoop, and were given little choice but to strike out on your own."
+											],
+											[
+												"6",
+												"A peddler once brought something astonishing to your homeland\u2014a Gondan clockwork, shimmering cloth of gold, a trained speaking bird, or some other small wonder\u2014and told you that it came from Baldur's Gate. You've come to see the source of such wonders, and perhaps learn to create them."
+											]
+										]
+									}
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Baldur's Gate Sage",
+			"source": "BGDIA",
+			"page": 204,
+			"additionalSources": [
+				{
+					"source": "PHB",
+					"page": 137
+				}
+			],
+			"_copy": {
+				"name": "Sage",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "insertArr",
+						"index": 2,
+						"items": {
+							"name": "Baldur's Gate Feature: Rumor Monger",
+							"type": "entries",
+							"entries": [
+								"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+								"Via your personal rumor mill and articles published in Baldur's Mouth, you can surmise a great deal about Baldurians' secrets\u2014who's practicing necromancy, who's involved in spying or smuggling, who would purchase or craft dangerous magical wares without batting an eyelash. Whenever a noteworthy crime or mysterious happening occurs in the city, you immediately have a list of {@dice 1d4} suspects who, if they aren't involved, have a strong chance of knowing who is."
+							],
+							"data": {
+								"isFeature": true
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Baldur's Gate Sailor",
+			"source": "BGDIA",
+			"page": 204,
+			"additionalSources": [
+				{
+					"source": "PHB",
+					"page": 139
+				}
+			],
+			"_copy": {
+				"name": "Sailor",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "insertArr",
+						"index": 2,
+						"items": {
+							"name": "Baldur's Gate Feature: Smuggler's Sense",
+							"type": "entries",
+							"entries": [
+								"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+								"You're familiar with the docks of Baldur's Gate, the movement of inspectors and tax collectors, the way cargo and coin flows. As a result, it's easy for you to hustle a load of cargo ashore or see such a cargo onto a cooperative ship without attracting suspicion or taxation. You also know the movements of the Gray Wavers\u2014the Flaming Fist harbor guards\u2014and have a sense of how to operate the city's mechanized cranes."
+							],
+							"data": {
+								"isFeature": true
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Baldur's Gate Soldier",
+			"source": "BGDIA",
+			"page": 204,
+			"additionalSources": [
+				{
+					"source": "PHB",
+					"page": 140
+				}
+			],
+			"_copy": {
+				"name": "Soldier",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "insertArr",
+						"index": 2,
+						"items": [
+							{
+								"name": "Baldur's Gate Feature: City Guard",
+								"type": "entries",
+								"entries": [
+									"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+									"You may choose to currently serve in either the Flaming Fist or the Watch. If you do, you have responsibilities related to your post. For as long as you perform these responsibilities, you gain benefits. If you stop performing your responsibilities, though, you lose access to the benefits and might suffer further fallout. Should you lose these benefits, you may regain them by having an unpleasant conversation with your commanding officer and fulfilling your responsibilities for a month.",
+									{
+										"type": "entries",
+										"name": "Flaming Fist",
+										"entries": [
+											"If you serve in the Flaming Fist, once every ten days, you must report to the Seatower of Balduran for training, and you're required to take a regular shift patrolling either the Lower City or the Outer City. In return, you have access to the Flaming Fist's fortresses and a direct line of communication with Flaming Fist officers and other soldiers. You can also pass through the city's gates without question\u2014although you can't bring guests into the Upper City as a member of the Watch might. Additionally, you're always welcome at the Three Old Kegs, where the Three Old Toads are glad to greet you with a smile and a mug of ale."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "The Watch",
+										"entries": [
+											"If you serve in the Watch, you're required to conduct a regular patrol in the Upper City or take a regular shift at its gates, and must report for training in the Watch Citadel once every ten days. In return, you have access to the Citadel and a direct line of communication with Watch officers and officials. Your word carries considerable weight in the High Hall, and most establishments in the Citadel Streets neighborhood are happy to give you and your friends free meals. Additionally, you can escort people into the Upper City without question, regardless of whether they are patriars or have Watch tokens. Outside the Upper City, however, most people regard you with suspicion, and you generally get a chilly reception while in uniform."
+										]
+									}
+								],
+								"data": {
+									"isFeature": true
+								}
+							},
+							{
+								"type": "entries",
+								"name": "Baldur's Gate Feature: Loyalty Test",
+								"entries": [
+									"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+									"You've had enough dealings with crooked soldiers that you can spot the behaviors common to corrupt guards and military officers a mile away. While awareness of such corruption doesn't equate to evidence of it, and your sense certainly isn't foolproof, your instinct proves a useful starting point when determining who might take a bribe, who might turn a blind eye to a crime, or who might have criminal connections. You can also use this sense to get a feeling about who might fulfill their duties strictly by the book."
+								],
+								"data": {
+									"isFeature": true
+								}
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Baldur's Gate Urchin",
+			"source": "BGDIA",
+			"page": 204,
+			"additionalSources": [
+				{
+					"source": "PHB",
+					"page": 141
+				}
+			],
+			"_copy": {
+				"name": "Urchin",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "insertArr",
+						"index": 2,
+						"items": {
+							"name": "Baldur's Gate Feature: Gateguide Connection",
+							"type": "entries",
+							"entries": [
+								"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate\u2014though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
+								"Even though you might not be a member of the Gateguides crew, you've associated with enough of them that you know their torch-based code. From the lighting, placement, and type of torch arranged on or near a structure, you can gather a great deal of information about those who live or do business there, particularly if they deal fairly with strangers, have Guild or government connections, or have either helped or denied the Gateguides in the past."
+							],
+							"data": {
+								"isFeature": true
+							}
+						}
+					}
+				}
+			}
 		}
 	]
 }

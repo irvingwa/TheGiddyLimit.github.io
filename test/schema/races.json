@@ -1,39 +1,118 @@
 {
-	"$schema": "http://json-schema.org/draft-06/schema#",
-	"version": "1.1.1",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"version": "1.3.1",
 	"type": "object",
 
 	"definitions": {
-		"speed": {
-			"oneOf": [
-				{
-					"type": "object",
-					"properties": {
-						"walk": {
-							"type": "integer"
-						},
-						"climb": {
-							"type": "integer"
-						},
-						"fly": {
-							"type": "integer"
-						},
-						"swim": {
-							"type": "integer"
-						}
-					},
-					"required": ["walk"],
-					"additionalProperties": false
+		"raceData": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
 				},
-				{
+				"source": {
+					"type": "string"
+				},
+				"page": {
 					"type": "integer"
 				},
-				{
-					"type": {
-						"const": "Varies"
+				"otherSources": {
+					"$ref": "util.json#/definitions/otherSources"
+				},
+				"ability": {
+					"$ref": "#/definitions/abilityScores"
+				},
+				"speed": {
+					"$ref": "util.json#/definitions/speed"
+				},
+				"size": {
+					"type": "string",
+					"enum": ["M", "S", "V"]
+				},
+				"entries": {
+					"type": "array",
+					"items": {
+						"$ref": "entry.json"
+					}
+				},
+				"soundClip": {
+					"type": "string"
+				},
+				"subraces": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"name": {
+								"type": "string"
+							},
+							"source": {
+								"type": "string"
+							},
+							"page": {
+								"type": "integer"
+							},
+							"otherSources": {
+								"$ref": "util.json#/definitions/otherSources"
+							},
+							"ability": {
+								"$ref": "#/definitions/abilityScores"
+							},
+							"speed": {
+								"$ref": "util.json#/definitions/speed"
+							},
+							"entries": {
+								"type": "array",
+								"items": {
+									"$ref": "entry.json"
+								}
+							},
+							"darkvision": {
+								"type": "integer"
+							},
+							"traitTags": {
+								"type": "array",
+								"items": {
+									"$ref": "#/definitions/traitTag"
+								}
+							},
+							"languageProficiencies": {
+								"$ref": "util.json#/definitions/languageProficiencies"
+							},
+							"skillProficiencies": {
+								"type": "array",
+								"items": {
+									"$ref": "util.json#/definitions/skillProficiencies"
+								}
+							},
+							"overwrite": {
+								"description": "Map of 'property' -> true where 'property' is a property on the base race which should be overwritten by that of the subrace",
+								"type": "object"
+							}
+						},
+						"additionalProperties": false
+					}
+				},
+				"darkvision": {
+					"type": "integer"
+				},
+				"traitTags": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/traitTag"
+					}
+				},
+				"languageProficiencies": {
+					"$ref": "util.json#/definitions/languageProficiencies"
+				},
+				"skillProficiencies": {
+					"type": "array",
+					"items": {
+						"$ref": "util.json#/definitions/skillProficiencies"
 					}
 				}
-			]
+			},
+			"additionalProperties": false
 		},
 
 		"traitTag": {
@@ -52,60 +131,36 @@
 				"Spellcasting",
 				"Tool Proficiency",
 				"Unarmed Strike",
+				"Uncommon Race",
 				"Weapon Proficiency"
 			]
 		},
 
-		"languageTag": {
-			"type": "string",
-			"enum": [
-				"Abyssal",
-				"Aquan",
-				"Auran",
-				"Celestial",
-				"Choose",
-				"Common",
-				"Draconic",
-				"Dwarvish",
-				"Elvish",
-				"Giant",
-				"Gnomish",
-				"Goblin",
-				"Halfling",
-				"Infernal",
-				"Orc",
-				"Other",
-				"Primordial",
-				"Sylvan",
-				"Terran",
-				"Undercommon"
-			]
-		},
-
 		"abilityScores": {
-			"type": "object",
-			"properties": {
-				"str": {
-					"type": "integer"
-				},
-				"dex": {
-					"type": "integer"
-				},
-				"con": {
-					"type": "integer"
-				},
-				"int": {
-					"type": "integer"
-				},
-				"wis": {
-					"type": "integer"
-				},
-				"cha": {
-					"type": "integer"
-				},
-				"choose": {
-					"type": "array",
-					"items": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"str": {
+						"type": "integer"
+					},
+					"dex": {
+						"type": "integer"
+					},
+					"con": {
+						"type": "integer"
+					},
+					"int": {
+						"type": "integer"
+					},
+					"wis": {
+						"type": "integer"
+					},
+					"cha": {
+						"type": "integer"
+					},
+					"choose": {
+
 						"type": "object",
 						"properties": {
 							"from": {
@@ -120,32 +175,6 @@
 							},
 							"amount": {
 								"type": "integer"
-							},
-							"predefined": {
-								"type": "object",
-								"items": {
-									"type": "object",
-									"properties": {
-										"str": {
-											"type": "integer"
-										},
-										"dex": {
-											"type": "integer"
-										},
-										"con": {
-											"type": "integer"
-										},
-										"int": {
-											"type": "integer"
-										},
-										"wis": {
-											"type": "integer"
-										},
-										"cha": {
-											"type": "integer"
-										}
-									}
-								}
 							},
 							"weighted": {
 								"type": "object",
@@ -169,6 +198,36 @@
 					}
 				}
 			}
+		},
+
+		"race": {
+			"anyOf": [
+				{
+					"type": "object",
+					"$$merge": [
+						{
+							"$ref": "#/definitions/raceData"
+						},
+						{
+							"required": [
+								"name",
+								"source"
+							]
+						}
+					]
+				},
+				{
+					"type": "object",
+					"$$merge": [
+						{
+							"$ref": "#/definitions/raceData"
+						},
+						{
+							"$ref": "util.json#/definitions/copyBlock"
+						}
+					]
+				}
+			]
 		}
 	},
 
@@ -176,141 +235,11 @@
 		"race": {
 			"type": "array",
 			"items": {
-				"type": "object",
-				"properties": {
-					"name": {
-						"type": "string"
-					},
-					"source": {
-						"type": "string"
-					},
-					"page": {
-						"type": "integer"
-					},
-					"otherSources": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"properties": {
-								"source": {
-									"type": "string"
-								},
-								"page": {
-									"type": "integer"
-								}
-							},
-							"required": [
-								"source",
-								"page"
-							],
-							"additionalProperties": false
-						}
-					},
-					"ability": {
-						"$ref": "#/definitions/abilityScores"
-					},
-					"speed": {
-						"$ref": "#/definitions/speed"
-					},
-					"size": {
-						"type": "string",
-						"enum": ["M", "S", "V"]
-					},
-					"entries": {
-						"type": "array",
-						"items": {
-							"$ref": "/Entry"
-						}
-					},
-					"soundClip": {
-						"type": "string"
-					},
-					"subraces": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"properties": {
-								"name": {
-									"type": "string"
-								},
-								"source": {
-									"type": "string"
-								},
-								"page": {
-									"type": "integer"
-								},
-								"otherSources": {
-									"type": "array",
-									"items": {
-										"type": "object",
-										"properties": {
-											"source": {
-												"type": "string"
-											},
-											"page": {
-												"type": "integer"
-											}
-										},
-										"required": [
-											"source",
-											"page"
-										],
-										"additionalProperties": false
-									}
-								},
-								"ability": {
-									"$ref": "#/definitions/abilityScores"
-								},
-								"speed": {
-									"$ref": "#/definitions/speed"
-								},
-								"entries": {
-									"type": "array",
-									"items": {
-										"$ref": "/Entry"
-									}
-								},
-								"darkvision": {
-									"type": "integer"
-								},
-								"traitTags": {
-									"type": "array",
-									"items": {
-										"$ref": "#/definitions/traitTag"
-									}
-								},
-								"languageTags": {
-									"type": "array",
-									"items": {
-										"$ref": "#/definitions/languageTag"
-									}
-								}
-							},
-							"additionalProperties": false
-						}
-					},
-					"darkvision": {
-						"type": "integer"
-					},
-					"traitTags": {
-						"type": "array",
-						"items": {
-							"$ref": "#/definitions/traitTag"
-						}
-					},
-					"languageTags": {
-						"type": "array",
-						"items": {
-							"$ref": "#/definitions/languageTag"
-						}
-					}
-				},
-				"required": [
-					"name",
-					"source"
-				],
-				"additionalProperties": false
+				"$ref": "#/definitions/race"
 			}
+		},
+		"_meta": {
+			"$ref": "util.json#/definitions/metaBlock"
 		}
 	},
 	"additionalProperties": false

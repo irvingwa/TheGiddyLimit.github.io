@@ -11,6 +11,8 @@
 				"str",
 				"dex"
 			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/2",
 			"classTableGroups": [
 				{
 					"colLabels": [
@@ -260,7 +262,7 @@
 				"additionalFromBackground": true,
 				"default": [
 					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
-					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=&}",
+					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
 					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
 					"A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
 				],
@@ -289,7 +291,11 @@
 							"Stealth",
 							"Survival"
 						]
-					}
+					},
+					"weapons": [
+						"simple",
+						"martial"
+					]
 				}
 			},
 			"classFeatures": [
@@ -298,7 +304,7 @@
 						"name": "Favored Enemy",
 						"entries": [
 							"Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.",
-							"Choose a type of favored enemy: {@filter aberrations|bestiary|type=aberration}, {@filter beasts|bestiary|type=beast}, {@filter celestials|bestiary|type=celestial}, {@filter constructs|bestiary|type=construct}, {@filter dragons|bestiary|type=dragon}, {@filter elementals|bestiary|type=elemental}, {@filter fey|bestiary|type=fey}, {@filter fiends|bestiary|type=fiend}, {@filter giants|bestiary|type=giant}, {@filter monstrosities|bestiary|type=monstrosity}, {@filter oozes|bestiary|type=ooze}, {@filter plants|bestiary|type=plant}, or {@filter undead|bestiary|type=undead}. Alternatively, you can select two races of {@filter humanoid|bestiary|type=humanoid} (such as {@creature gnoll|mm|gnolls} and {@creature orc|mm|orcs}) as favored enemies.",
+							"Choose a type of favored enemy: {@filter aberrations|bestiary|type=aberration}, {@filter beasts|bestiary|type=beast}, {@filter celestials|bestiary|type=celestial}, {@filter constructs|bestiary|type=construct}, {@filter dragons|bestiary|type=dragon}, {@filter elementals|bestiary|type=elemental}, {@filter fey|bestiary|type=fey}, {@filter fiends|bestiary|type=fiend}, {@filter giants|bestiary|type=giant}, {@filter monstrosities|bestiary|type=monstrosity}, {@filter oozes|bestiary|type=ooze}, {@filter plants|bestiary|type=plant}, or {@filter undead|bestiary|type=undead}. Alternatively, you can select two races of {@filter humanoid|bestiary|type=humanoid} (such as {@creature gnoll||gnolls} and {@creature orc||orcs}) as favored enemies.",
 							"You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.",
 							"When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.",
 							"You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
@@ -800,8 +806,8 @@
 										"type": "entries",
 										"name": "Ranger's Companion",
 										"entries": [
-											"You gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a {@filter beast that is no larger than Medium and that has a challenge rating of 1/4 or lower|bestiary|challenge rating=0;1/8;1/4|type=beast|size=f;d;t;s;m|miscellaneous=!swarm}. Add your proficiency bonus to the beast's AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals its normal maximum or four times your ranger level, whichever is higher.",
-											"The beast obeys your commands as best as it can. It takes its turn on your initiative, though it doesn't take an action unless you command it to. On your turn, you can verbally command the beast where to move (no action required by you). You can use your action to verbally command it to take the {@action Attack}, {@action Dash}, {@action Disengage}, {@action Dodge}, or {@action Help} action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the {@action Attack} action.",
+											"You gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a {@filter beast that is no larger than Medium and that has a challenge rating of 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=beast|size=f;d;t;s;m|miscellaneous=!swarm}. Add your proficiency bonus to the beast's AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals its normal maximum or four times your ranger level, whichever is higher. Like any creature, the beast can spend Hit Dice during a short rest.",
+											"The beast obeys your commands as best as it can. It takes its turn on your initiative. On your turn, you can verbally command the beast where to move (no action required by you). You can use your action to verbally command it to take the {@action Attack}, {@action Dash}, {@action Disengage}, or {@action Help} action. If you don't issue a command, the beast takes the {@action Dodge} action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the {@action Attack} action.",
 											"If you are {@condition incapacitated} or absent, your beast companion acts on its own, focusing on protecting you and itself. It never requires your command to use its reaction, such as when making an opportunity attack.",
 											"Like any creature, the beast can spend hit dice during a short rest.",
 											"While traveling through your favored terrain with only the beast, you can move stealthily at a normal pace.",
@@ -875,7 +881,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -977,7 +983,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -1091,7 +1097,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -1211,7 +1217,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -1315,7 +1321,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -1426,7 +1432,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -1540,7 +1546,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -1700,7 +1706,7 @@
 										"View"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -1776,7 +1782,7 @@
 										"Homeland"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -1852,7 +1858,7 @@
 										"Enemy"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -1918,7 +1924,8 @@
 					"page": 40,
 					"source": "XGE"
 				}
-			]
+			],
+			"page": 89
 		},
 		{
 			"name": "Ranger (Revised)",
@@ -1931,6 +1938,8 @@
 				"str",
 				"dex"
 			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/2",
 			"classTableGroups": [
 				{
 					"colLabels": [
@@ -2180,7 +2189,7 @@
 				"additionalFromBackground": true,
 				"default": [
 					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
-					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=&}",
+					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
 					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
 					"A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
 				],
@@ -2528,7 +2537,7 @@
 													"Trait"
 												],
 												"colStyles": [
-													"col-1 text-align-center",
+													"col-1 text-center",
 													"col-11"
 												],
 												"rows": [
@@ -2566,7 +2575,7 @@
 													"Flaw"
 												],
 												"colStyles": [
-													"col-1 text-align-center",
+													"col-1 text-center",
 													"col-11"
 												],
 												"rows": [
@@ -2884,7 +2893,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -2999,7 +3008,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -3126,7 +3135,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -3259,7 +3268,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -3376,7 +3385,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -3500,7 +3509,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -3627,7 +3636,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -3800,7 +3809,7 @@
 										"View"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -3876,7 +3885,7 @@
 										"Homeland"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -3952,7 +3961,7 @@
 										"Enemy"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -4018,7 +4027,8 @@
 					"page": 40,
 					"source": "XGE"
 				}
-			]
+			],
+			"page": 1
 		},
 		{
 			"name": "Ranger (Spell-less)",
@@ -4128,7 +4138,7 @@
 				"additionalFromBackground": true,
 				"default": [
 					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
-					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=&}",
+					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
 					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
 					"A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
 				],
@@ -4140,7 +4150,7 @@
 						"name": "Favored Enemy",
 						"entries": [
 							"Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.",
-							"Choose a type of favored enemy: {@filter aberrations|bestiary|type=aberration}, {@filter beasts|bestiary|type=beast}, {@filter celestials|bestiary|type=celestial}, {@filter constructs|bestiary|type=construct}, {@filter dragons|bestiary|type=dragon}, {@filter elementals|bestiary|type=elemental}, {@filter fey|bestiary|type=fey}, {@filter fiends|bestiary|type=fiend}, {@filter giants|bestiary|type=giant}, {@filter monstrosities|bestiary|type=monstrosity}, {@filter oozes|bestiary|type=ooze}, {@filter plants|bestiary|type=plant}, or {@filter undead|bestiary|type=undead}. Alternatively, you can select two races of {@filter humanoid|bestiary|type=humanoid} (such as {@creature gnoll|mm|gnolls} and {@creature orc|mm|orcs}) as favored enemies.",
+							"Choose a type of favored enemy: {@filter aberrations|bestiary|type=aberration}, {@filter beasts|bestiary|type=beast}, {@filter celestials|bestiary|type=celestial}, {@filter constructs|bestiary|type=construct}, {@filter dragons|bestiary|type=dragon}, {@filter elementals|bestiary|type=elemental}, {@filter fey|bestiary|type=fey}, {@filter fiends|bestiary|type=fiend}, {@filter giants|bestiary|type=giant}, {@filter monstrosities|bestiary|type=monstrosity}, {@filter oozes|bestiary|type=ooze}, {@filter plants|bestiary|type=plant}, or {@filter undead|bestiary|type=undead}. Alternatively, you can select two races of {@filter humanoid|bestiary|type=humanoid} (such as {@creature gnoll||gnolls} and {@creature orc||orcs}) as favored enemies.",
 							"You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.",
 							"When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.",
 							"You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
@@ -4707,7 +4717,7 @@
 										"type": "entries",
 										"name": "Ranger's Companion",
 										"entries": [
-											"You gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a {@filter beast that is no larger than Medium and that has a challenge rating of 1/4 or lower|bestiary|challenge rating=0;1/8;1/4|type=beast|size=f;d;t;s;m|miscellaneous=!swarm}. Add your proficiency bonus to the beast's AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals its normal maximum or four times your ranger level, whichever is higher. Like any creature, the beast can spend Hit Dice during a short rest.",
+											"You gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a {@filter beast that is no larger than Medium and that has a challenge rating of 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=beast|size=f;d;t;s;m|miscellaneous=!swarm}. Add your proficiency bonus to the beast's AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals its normal maximum or four times your ranger level, whichever is higher. Like any creature, the beast can spend Hit Dice during a short rest.",
 											"The beast obeys your commands as best as it can. It takes its turn on your initiative. On your turn, you can verbally command the beast where to move (no action required by you). You can use your action to verbally command it to take the {@action Attack}, {@action Dash}, {@action Disengage}, or {@action Help} action. If you don't issue a command, the beast takes the {@action Dodge} action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the {@action Attack} action.",
 											"If you are {@condition incapacitated} or absent, the beast acts on its own, focusing on protecting you and itself. The beast never requires your command to use its reaction, such as when making an opportunity attack.",
 											"Like any creature, the beast can spend hit dice during a short rest.",
@@ -4782,7 +4792,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -4884,7 +4894,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -4998,7 +5008,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -5118,7 +5128,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -5222,7 +5232,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -5333,7 +5343,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -5447,7 +5457,7 @@
 													"Spells"
 												],
 												"colStyles": [
-													"col-3 text-align-center",
+													"col-3 text-center",
 													"col-9"
 												],
 												"rows": [
@@ -5608,7 +5618,7 @@
 										"View"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -5684,7 +5694,7 @@
 										"Homeland"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [
@@ -5760,7 +5770,7 @@
 										"Enemy"
 									],
 									"colStyles": [
-										"col-1 text-align-center",
+										"col-1 text-center",
 										"col-11"
 									],
 									"rows": [

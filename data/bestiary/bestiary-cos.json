@@ -565,7 +565,7 @@
 				{
 					"ac": 17,
 					"from": [
-						"{@item studded leather armor +1|dmg|+1 studded leather armor}"
+						"{@item studded leather armor +1||+1 studded leather armor}"
 					]
 				}
 			],
@@ -656,7 +656,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"In addition to her magic armor and weapons, Ezmerelda has two {@item potion of greater healing|dmg|potions of greater healing}, six {@item holy water (flask)|phb|vials of holy water}, and three wooden stakes."
+						"In addition to her magic armor and weapons, Ezmerelda has two {@item potion of greater healing||potions of greater healing}, six {@item holy water (flask)|phb|vials of holy water}, and three wooden stakes."
 					]
 				}
 			],
@@ -1657,7 +1657,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"In addition to his sword cane, Rictavio wears a {@item hat of disguise} and a {@item ring of mind shielding}, and he carries a {@item spell scroll (5th level)|DMG|spell scroll} of {@spell raise dead}."
+						"In addition to his sword cane, Rictavio wears a {@item hat of disguise} and a {@item ring of mind shielding}, and he carries a {@item spell scroll (5th level)||spell scroll} of {@spell raise dead}."
 					]
 				},
 				{
@@ -1902,7 +1902,7 @@
 				{
 					"name": "Children of the Night (1/Day)",
 					"entries": [
-						"Strahd magically calls {@dice 2d4} {@creature swarm of bats|mm|swarms of bats} or {@creature swarm of rats|mm|swarms of rats}, provided that the sun isn't up. While outdoors, Strahd can call {@dice 3d6} {@creature wolf|mm|wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of Strahd and obeying his spoken commands. The beasts remain for 1 hour, until Strahd dies, or until he dismisses them as a bonus action."
+						"Strahd magically calls {@dice 2d4} {@creature swarm of bats||swarms of bats} or {@creature swarm of rats||swarms of rats}, provided that the sun isn't up. While outdoors, Strahd can call {@dice 3d6} {@creature wolf||wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of Strahd and obeying his spoken commands. The beasts remain for 1 hour, until Strahd dies, or until he dismisses them as a bonus action."
 					]
 				}
 			],
@@ -2546,7 +2546,8 @@
 			"_copy": {
 				"name": "Stone Golem",
 				"source": "MM"
-			}
+			},
+			"page": 186
 		},
 		{
 			"name": "Ludmilla Vilisevic",
@@ -2554,8 +2555,17 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Vampire Spawn",
-				"source": "MM"
-			}
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the vampire",
+						"with": "Ludmilla",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 93
 		},
 		{
 			"name": "Anastrasya Karelova",
@@ -2563,8 +2573,17 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Vampire Spawn",
-				"source": "MM"
-			}
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the vampire",
+						"with": "Anastrasya",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 93
 		},
 		{
 			"name": "Volenta Popofsky",
@@ -2572,8 +2591,17 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Vampire Spawn",
-				"source": "MM"
-			}
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the vampire",
+						"with": "Volenta",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 93
 		},
 		{
 			"name": "Animated Halberd",
@@ -2597,7 +2625,8 @@
 						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d10 + 1}) slashing damage."
 					]
 				}
-			]
+			],
+			"page": 59
 		},
 		{
 			"name": "Arabelle",
@@ -2623,7 +2652,9 @@
 			"hp": {
 				"average": 2,
 				"formula": "1d8"
-			}
+			},
+			"page": 38,
+			"miscTags": []
 		},
 		{
 			"name": "Armored Saber-Toothed Tiger",
@@ -2644,7 +2675,8 @@
 				"average": 84,
 				"formula": "7d10 + 14"
 			},
-			"cr": "3"
+			"cr": "3",
+			"page": 115
 		},
 		{
 			"name": "Arrigal",
@@ -2652,7 +2684,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Assassin",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the assassin",
+						"with": "Arrigal",
+						"flags": "i"
+					}
+				}
 			},
 			"alignment": [
 				"N",
@@ -2663,7 +2703,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 121
 		},
 		{
 			"name": "Baron Vargas Vallakovich",
@@ -2671,7 +2712,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Noble",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the noble",
+						"with": "Vargas",
+						"flags": "i"
+					}
+				}
 			},
 			"alignment": [
 				"N",
@@ -2682,7 +2731,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 105
 		},
 		{
 			"name": "Barovian Commoner",
@@ -2701,7 +2751,8 @@
 			],
 			"damageTags": [
 				"P"
-			]
+			],
+			"page": 29
 		},
 		{
 			"name": "Barovian Scout",
@@ -2725,7 +2776,8 @@
 			"miscTags": [
 				"MW",
 				"RW"
-			]
+			],
+			"page": 29
 		},
 		{
 			"name": "Beucephalus",
@@ -2733,12 +2785,21 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Nightmare",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the nightmare",
+						"with": "Beucephalus",
+						"flags": "i"
+					}
+				}
 			},
 			"hp": {
 				"average": 104,
 				"formula": "8d10 + 24"
-			}
+			},
+			"page": 93
 		},
 		{
 			"name": "Bluto Krogarov",
@@ -2757,7 +2818,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 38
 		},
 		{
 			"name": "Clovin Belview",
@@ -2767,6 +2829,12 @@
 				"name": "Mongrelfolk",
 				"source": "CoS",
 				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mongrelfolk",
+						"with": "Clovin",
+						"flags": "i"
+					},
 					"trait": {
 						"mode": "replaceArr",
 						"replace": "Extraordinary Feature",
@@ -2782,7 +2850,8 @@
 			"alignment": [
 				"N",
 				"E"
-			]
+			],
+			"page": 147
 		},
 		{
 			"name": "Cyrus Belview",
@@ -2792,6 +2861,12 @@
 				"name": "Mongrelfolk",
 				"source": "CoS",
 				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mongrelfolk",
+						"with": "Cyrus",
+						"flags": "i"
+					},
 					"trait": {
 						"mode": "replaceArr",
 						"replace": "Extraordinary Feature",
@@ -2806,7 +2881,8 @@
 			},
 			"traitTags": [
 				"Keen Senses"
-			]
+			],
+			"page": 77
 		},
 		{
 			"name": "Davian Martikov",
@@ -2814,8 +2890,17 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Wereraven",
-				"source": "CoS"
-			}
+				"source": "CoS",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the wereraven",
+						"with": "Davian",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 173
 		},
 		{
 			"name": "Distended Corpse",
@@ -2838,7 +2923,8 @@
 						"When a corpse is reduced to 0 hit points, it splits open, disgorging a {@creature swarm of poisonous snakes}. The snakes are hungry and fight until slain."
 					]
 				}
-			]
+			],
+			"page": 165
 		},
 		{
 			"name": "Donavich",
@@ -2846,7 +2932,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Acolyte",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the acolyte",
+						"with": "Donavich",
+						"flags": "i"
+					}
+				}
 			},
 			"alignment": [
 				"L",
@@ -2857,7 +2951,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 46
 		},
 		{
 			"name": "Doru",
@@ -2865,8 +2960,17 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Vampire Spawn",
-				"source": "MM"
-			}
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the vampire",
+						"with": "Doru",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 47
 		},
 		{
 			"name": "Emil Toranescu",
@@ -2874,12 +2978,21 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Werewolf",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the werewolf",
+						"with": "Emil",
+						"flags": "i"
+					}
+				}
 			},
 			"hp": {
 				"average": 72,
 				"formula": "9d8 + 18"
-			}
+			},
+			"page": 81
 		},
 		{
 			"name": "Escher",
@@ -2887,8 +3000,17 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Vampire Spawn",
-				"source": "MM"
-			}
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the vampire",
+						"with": "Escher",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 70
 		},
 		{
 			"name": "Exethanter",
@@ -2897,7 +3019,14 @@
 			"_copy": {
 				"name": "Lich",
 				"source": "MM",
-				"_mod": {}
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the lich",
+						"with": "Exethanter",
+						"flags": "i"
+					}
+				}
 			},
 			"cr": "10",
 			"hp": {
@@ -2921,7 +3050,8 @@
 					},
 					"ability": "int"
 				}
-			]
+			],
+			"page": 189
 		},
 		{
 			"name": "Gadof Blinsky",
@@ -2940,7 +3070,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 118
 		},
 		{
 			"name": "Gertruda",
@@ -2959,7 +3090,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 68
 		},
 		{
 			"name": "Helga Ruvak",
@@ -2967,8 +3099,17 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Vampire Spawn",
-				"source": "MM"
-			}
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the vampire",
+						"with": "Helga",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 64
 		},
 		{
 			"name": "Henrik van der Voort",
@@ -2987,7 +3128,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 116
 		},
 		{
 			"name": "Ireena Kolyana",
@@ -2995,7 +3137,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Noble",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the noble",
+						"with": "Ireena",
+						"flags": "i"
+					}
+				}
 			},
 			"alignment": [
 				"L",
@@ -3010,7 +3160,8 @@
 			"hp": {
 				"average": 14,
 				"formula": "2d8"
-			}
+			},
+			"page": 44
 		},
 		{
 			"name": "Ismark Kolyanovich",
@@ -3018,7 +3169,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Veteran",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the veteran",
+						"with": "Ismark",
+						"flags": "i"
+					}
+				}
 			},
 			"alignment": [
 				"L",
@@ -3029,7 +3188,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 43
 		},
 		{
 			"name": "Kasimir Velikov",
@@ -3039,6 +3199,12 @@
 				"name": "Mage",
 				"source": "MM",
 				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mage",
+						"with": "Kasimir",
+						"flags": "i"
+					},
 					"trait": {
 						"mode": "appendArr",
 						"items": [
@@ -3131,7 +3297,8 @@
 			],
 			"traitTags": [
 				"Fey Ancestry"
-			]
+			],
+			"page": 233
 		},
 		{
 			"name": "Kiril Stoyanovich",
@@ -3139,12 +3306,21 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Werewolf",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the werewolf",
+						"with": "Kiril",
+						"flags": "i"
+					}
+				}
 			},
 			"hp": {
 				"average": 90,
 				"formula": "9d8 + 18"
-			}
+			},
+			"page": 203
 		},
 		{
 			"name": "Lady Fiona Wachter",
@@ -3152,7 +3328,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Priest",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the priest",
+						"with": "Fiona",
+						"flags": "i"
+					}
+				}
 			},
 			"ac": [
 				10
@@ -3166,7 +3350,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 110
 		},
 		{
 			"name": "Lady Lydia Petrovna",
@@ -3185,7 +3370,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 105
 		},
 		{
 			"name": "Lief Lipsiege",
@@ -3204,7 +3390,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 62
 		},
 		{
 			"name": "Luvash",
@@ -3212,7 +3399,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Bandit Captain",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the captain",
+						"with": "Luvash",
+						"flags": "i"
+					}
+				}
 			},
 			"alignment": [
 				"C",
@@ -3223,7 +3418,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 121
 		},
 		{
 			"name": "Mad Mary",
@@ -3242,7 +3438,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 44
 		},
 		{
 			"name": "Majesto",
@@ -3250,8 +3447,17 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Imp",
-				"source": "MM"
-			}
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the imp",
+						"with": "Majesto",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 115
 		},
 		{
 			"name": "Marzena Belview",
@@ -3261,6 +3467,12 @@
 				"name": "Mongrelfolk",
 				"source": "CoS",
 				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mongrelfolk",
+						"with": "Marzena",
+						"flags": "i"
+					},
 					"trait": {
 						"mode": "replaceArr",
 						"replace": "Extraordinary Feature",
@@ -3276,7 +3488,8 @@
 			"speed": {
 				"walk": 20,
 				"fly": 40
-			}
+			},
+			"page": 150
 		},
 		{
 			"name": "Milivoj",
@@ -3294,7 +3507,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 97
 		},
 		{
 			"name": "Mishka Belview",
@@ -3304,6 +3518,12 @@
 				"name": "Mongrelfolk",
 				"source": "CoS",
 				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mongrelfolk",
+						"with": "Mishka",
+						"flags": "i"
+					},
 					"trait": {
 						"mode": "replaceArr",
 						"replace": "Extraordinary Feature",
@@ -3322,7 +3542,8 @@
 			],
 			"traitTags": [
 				"Spider Climb"
-			]
+			],
+			"page": 150
 		},
 		{
 			"name": "Morgantha",
@@ -3330,8 +3551,17 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Night Hag",
-				"source": "MM"
-			}
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the hag",
+						"with": "Morgantha",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 48
 		},
 		{
 			"name": "Nikolai Wachter",
@@ -3339,7 +3569,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Noble",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the noble",
+						"with": "Nikolai",
+						"flags": "i"
+					}
+				}
 			},
 			"alignment": [
 				"L",
@@ -3350,7 +3588,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 110
 		},
 		{
 			"name": "Otto Belview",
@@ -3360,6 +3599,12 @@
 				"name": "Mongrelfolk",
 				"source": "CoS",
 				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mongrelfolk",
+						"with": "Otto",
+						"flags": "i"
+					},
 					"trait": {
 						"mode": "replaceArr",
 						"replace": "Extraordinary Feature",
@@ -3371,7 +3616,8 @@
 						}
 					}
 				}
-			}
+			},
+			"page": 147
 		},
 		{
 			"name": "Zygfrek Belview",
@@ -3381,6 +3627,12 @@
 				"name": "Mongrelfolk",
 				"source": "CoS",
 				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mongrelfolk",
+						"with": "Zygfrek",
+						"flags": "i"
+					},
 					"trait": {
 						"mode": "replaceArr",
 						"replace": "Extraordinary Feature",
@@ -3398,7 +3650,8 @@
 			],
 			"senseTags": [
 				"D"
-			]
+			],
+			"page": 148
 		},
 		{
 			"name": "Parriwimple",
@@ -3406,7 +3659,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Gladiator",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the gladiator",
+						"with": "Parriwimple",
+						"flags": "i"
+					}
+				}
 			},
 			"alignment": [
 				"L",
@@ -3426,7 +3687,8 @@
 						"{@item studded leather armor|phb}"
 					]
 				}
-			]
+			],
+			"page": 43
 		},
 		{
 			"name": "Patrina Velikovna",
@@ -3434,7 +3696,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Archmage",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the archmage",
+						"with": "Patrina",
+						"flags": "i"
+					}
+				}
 			},
 			"alignment": [
 				"N",
@@ -3445,7 +3715,8 @@
 				"tags": [
 					"dusk elf"
 				]
-			}
+			},
+			"page": 89
 		},
 		{
 			"name": "Piccolo",
@@ -3453,8 +3724,17 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Baboon",
-				"source": "MM"
-			}
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the baboon",
+						"with": "Piccolo",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 118
 		},
 		{
 			"name": "Rosavalda \"Rose\" Durst",
@@ -3464,6 +3744,12 @@
 				"name": "Ghost",
 				"source": "MM",
 				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the ghost",
+						"with": "Rose",
+						"flags": "i"
+					},
 					"action": {
 						"mode": "removeArr",
 						"names": "Horrifying Visage"
@@ -3485,7 +3771,8 @@
 			"cr": "3",
 			"languageTags": [
 				"C"
-			]
+			],
+			"page": 217
 		},
 		{
 			"name": "Thornboldt \"Thorn\" Durst",
@@ -3495,6 +3782,12 @@
 				"name": "Ghost",
 				"source": "MM",
 				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the ghost",
+						"with": "Thorn",
+						"flags": "i"
+					},
 					"action": {
 						"mode": "removeArr",
 						"names": "Horrifying Visage"
@@ -3516,7 +3809,8 @@
 			"cr": "3",
 			"languageTags": [
 				"C"
-			]
+			],
+			"page": 217
 		},
 		{
 			"name": "Sangzor",
@@ -3524,7 +3818,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Giant Goat",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the goat",
+						"with": "Sangzor",
+						"flags": "i"
+					}
+				}
 			},
 			"int": 6,
 			"hp": {
@@ -3541,7 +3843,8 @@
 					"note": "from nonmagical attacks"
 				}
 			],
-			"cr": "1"
+			"cr": "1",
+			"page": 160
 		},
 		{
 			"name": "Savid",
@@ -3549,7 +3852,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Scout",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the scout",
+						"with": "Savid",
+						"flags": "i"
+					}
+				}
 			},
 			"type": {
 				"type": "humanoid",
@@ -3559,7 +3870,8 @@
 			},
 			"alignment": [
 				"N"
-			]
+			],
+			"page": 133
 		},
 		{
 			"name": "Sir Godfrey Gwilym",
@@ -3567,7 +3879,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Revenant",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the revenant",
+						"with": "Sir Godfrey",
+						"flags": "i"
+					}
+				}
 			},
 			"cr": "6",
 			"spellcasting": [
@@ -3611,7 +3931,8 @@
 			],
 			"spellcastingTags": [
 				"CP"
-			]
+			],
+			"page": 139
 		},
 		{
 			"name": "Snow Maiden",
@@ -3649,7 +3970,8 @@
 			"damageTags": [
 				"C",
 				"O"
-			]
+			],
+			"page": 159
 		},
 		{
 			"name": "Stanimir",
@@ -3657,7 +3979,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Mage",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mage",
+						"with": "Stanimir",
+						"flags": "i"
+					}
+				}
 			},
 			"type": {
 				"type": "humanoid",
@@ -3724,7 +4054,8 @@
 					},
 					"ability": "int"
 				}
-			]
+			],
+			"page": 20
 		},
 		{
 			"name": "Stella Wachter",
@@ -3743,7 +4074,8 @@
 			"alignment": [
 				"C",
 				"G"
-			]
+			],
+			"page": 113
 		},
 		{
 			"name": "Szoldar Szoldarovich",
@@ -3751,7 +4083,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Scout",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the scout",
+						"with": "Szoldar",
+						"flags": "i"
+					}
+				}
 			},
 			"type": {
 				"type": "humanoid",
@@ -3761,7 +4101,8 @@
 			},
 			"alignment": [
 				"N"
-			]
+			],
+			"page": 100
 		},
 		{
 			"name": "Yevgeni Krushkin",
@@ -3769,7 +4110,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Scout",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the scout",
+						"with": "Yevgeni",
+						"flags": "i"
+					}
+				}
 			},
 			"type": {
 				"type": "humanoid",
@@ -3779,7 +4128,8 @@
 			},
 			"alignment": [
 				"N"
-			]
+			],
+			"page": 100
 		},
 		{
 			"name": "The Abbot",
@@ -3787,8 +4137,17 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Deva",
-				"source": "MM"
-			}
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the deva",
+						"with": "The Abbot",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 151
 		},
 		{
 			"name": "Vasilka",
@@ -3796,8 +4155,17 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Flesh Golem",
-				"source": "MM"
-			}
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the golem",
+						"with": "Vasilka",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 151
 		},
 		{
 			"name": "The Mad Mage of Mount Baratok",
@@ -3805,7 +4173,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Archmage",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the archmage",
+						"with": "The Mad Mage",
+						"flags": "i"
+					}
+				}
 			},
 			"type": {
 				"type": "humanoid",
@@ -3901,7 +4277,8 @@
 			"alignment": [
 				"C",
 				"N"
-			]
+			],
+			"page": 39
 		},
 		{
 			"name": "Victor Vallakovich",
@@ -3909,7 +4286,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Mage",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mage",
+						"with": "Victor",
+						"flags": "i"
+					}
+				}
 			},
 			"type": {
 				"type": "humanoid",
@@ -3920,7 +4305,8 @@
 			"alignment": [
 				"N",
 				"E"
-			]
+			],
+			"page": 105
 		},
 		{
 			"name": "Vilnius",
@@ -3928,7 +4314,15 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Mage",
-				"source": "MM"
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mage",
+						"with": "Vilnius",
+						"flags": "i"
+					}
+				}
 			},
 			"type": {
 				"type": "humanoid",
@@ -3939,7 +4333,8 @@
 			"alignment": [
 				"N",
 				"E"
-			]
+			],
+			"page": 185
 		},
 		{
 			"name": "Zuleika Toranescu",
@@ -3947,8 +4342,17 @@
 			"source": "CoS",
 			"_copy": {
 				"name": "Werewolf",
-				"source": "MM"
-			}
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the werewolf",
+						"with": "Zuleika",
+						"flags": "i"
+					}
+				}
+			},
+			"page": 204
 		}
 	]
 }

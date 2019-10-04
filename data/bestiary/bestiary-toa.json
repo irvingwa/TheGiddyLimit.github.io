@@ -22,7 +22,7 @@
 			"size": "M",
 			"type": "undead",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -819,7 +819,7 @@
 							"type": "list",
 							"items": [
 								"Artus can expend 1 charge and use the ring to lower the temperature in a 120-foot-radius sphere centered on a point he can see within 300 feet of him. The temperature in that area drops 20 degrees per minute, to a minimum of \u221230 degrees Fahrenheit. Frost and ice begin to form on surfaces once the temperature drops below 32 degrees. This effect is permanent unless Artus uses the ring to end the effect as an action, at which point the temperature in the area returns to normal at a rate of 10 degrees per minute.",
-								"Artus can cast one of the following spells from the ring (spell save {@dc 17}) by expending the necessary number of charges: {@spell Bigby's hand} (2 charges) the hand is made of ice, is immune to cold damage, and deals bludgeoning damage instead of force damage as a clenched fist, {@spell cone of cold} (2 charges), {@spell flesh to stone|phb|flesh to ice} (3 charges); as flesh to stone except that the target turns to solid ice with the density and durability of stone, {@spell ice storm} (2 charges), {@spell Otiluke's freezing sphere} (3 charges), {@spell sleet storm} (1 charge), {@spell spike growth} (1 charge) the spikes are made of ice, or {@spell wall of ice} (2 charges).",
+								"Artus can cast one of the following spells from the ring (spell save {@dc 17}) by expending the necessary number of charges: {@spell Bigby's hand} (2 charges) the hand is made of ice, is immune to cold damage, and deals bludgeoning damage instead of force damage as a clenched fist, {@spell cone of cold} (2 charges), {@spell flesh to stone||flesh to ice} (3 charges); as flesh to stone except that the target turns to solid ice with the density and durability of stone, {@spell ice storm} (2 charges), {@spell Otiluke's freezing sphere} (3 charges), {@spell sleet storm} (1 charge), {@spell spike growth} (1 charge) the spikes are made of ice, or {@spell wall of ice} (2 charges).",
 								"Artus can expend the necessary number of charges and use the ring to create either an inanimate ice object (2 charges) or an animated ice creature (4 charges). The ice object can't have any moving parts, must be able to fit inside a 10-foot cube, and has the density and durability of metal or stone (Artus's choice). The ice creature must be modeled after a beast with a challenge rating of 2 or less. The ice creature has the same statistics as the beast it models, with the following changes: the creature is a construct with vulnerability to fire damage, immunity to cold and poison damage, and immunity to the following conditions: {@condition charmed}, {@condition exhaustion}, {@condition frightened}, {@condition paralyzed}, {@condition petrified}, and {@condition poisoned}. The ice creature obeys only its creator's commands. The object or creature appears in an unoccupied space within 60 feet of Artus. It melts into a pool of normal water after 24 hours or when it drops to 0 hit points. In extreme heat, it loses 5 ({@dice 1d10}) hit points per minute as it melts. Use the guidelines in chapter 8 of the Dungeon Master's Guide to determine the hit points of an inanimate object if they become necessary."
 							]
 						}
@@ -1065,6 +1065,14 @@
 			"miscTags": [
 				"MW",
 				"RCH"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "SDW"
+				}
 			]
 		},
 		{
@@ -1078,7 +1086,7 @@
 				]
 			},
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -1137,12 +1145,6 @@
 			],
 			"cr": "13",
 			"trait": [
-				{
-					"name": "Undead Nature",
-					"entries": [
-						"An atropal doesn't require air, food, drink, or sleep."
-					]
-				},
 				{
 					"name": "Magic Resistance",
 					"entries": [
@@ -1677,7 +1679,7 @@
 			"size": "L",
 			"type": "monstrosity",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -2581,6 +2583,11 @@
 				"MW",
 				"RW",
 				"RNG"
+			],
+			"otherSources": [
+				{
+					"source": "BGDIA"
+				}
 			]
 		},
 		{
@@ -2716,6 +2723,7 @@
 							]
 						},
 						"1": {
+							"lower": 1,
 							"slots": 2,
 							"spells": [
 								"{@spell charm person}",
@@ -2759,7 +2767,7 @@
 			"size": "L",
 			"type": "monstrosity",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -2991,7 +2999,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Ras Nsi wears {@item bracers of defense}, wields a {@item flame tongue longsword}, and carries a {@item sending stones|dmg|sending stone} matched to the one carried by the guide Salida (see chapter 1)."
+						"Ras Nsi wears {@item bracers of defense}, wields a {@item flame tongue longsword}, and carries a {@item sending stones||sending stone} matched to the one carried by the guide Salida (see chapter 1)."
 					]
 				},
 				{
@@ -4364,7 +4372,7 @@
 			"type": "undead",
 			"source": "ToA",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -4542,7 +4550,7 @@
 				]
 			},
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": [
@@ -5091,10 +5099,12 @@
 			"alignment": [
 				"N",
 				"G"
-			]
+			],
+			"page": 33
 		},
 		{
 			"name": "Blind Artist",
+			"isNpc": true,
 			"source": "ToA",
 			"_copy": {
 				"name": "Zombie",
@@ -5109,7 +5119,8 @@
 			],
 			"senseTags": [
 				"B"
-			]
+			],
+			"page": 164
 		},
 		{
 			"name": "Bosco Daggerhand",
@@ -5139,7 +5150,8 @@
 			"alignment": [
 				"N",
 				"E"
-			]
+			],
+			"page": 68
 		},
 		{
 			"name": "Elok Jaharwon",
@@ -5160,7 +5172,8 @@
 			"alignment": [
 				"N",
 				"E"
-			]
+			],
+			"page": 67
 		},
 		{
 			"name": "Laskilar",
@@ -5196,7 +5209,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 67
 		},
 		{
 			"name": "Ortimay Swift and Dark",
@@ -5228,7 +5242,8 @@
 			],
 			"senseTags": [
 				"D"
-			]
+			],
+			"page": 21
 		},
 		{
 			"name": "Zaroum Al-Saryak",
@@ -5255,7 +5270,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 67
 		},
 		{
 			"name": "Yorb",
@@ -5275,7 +5291,8 @@
 				"_preserve": {
 					"variant": true
 				}
-			}
+			},
+			"page": 108
 		},
 		{
 			"name": "Clay No-Face",
@@ -5305,10 +5322,10 @@
 				"N"
 			],
 			"hp": {
-				"special": 1
+				"special": "1"
 			},
 			"passive": 10,
-			"cr": "Unknown"
+			"page": 179
 		},
 		{
 			"name": "Strawbundle",
@@ -5338,10 +5355,10 @@
 				"N"
 			],
 			"hp": {
-				"special": 1
+				"special": "1"
 			},
 			"passive": 10,
-			"cr": "Unknown"
+			"page": 179
 		},
 		{
 			"name": "Joho",
@@ -5371,10 +5388,10 @@
 				"N"
 			],
 			"hp": {
-				"special": 1
+				"special": "1"
 			},
 			"passive": 10,
-			"cr": "Unknown"
+			"page": 179
 		},
 		{
 			"name": "Niles Breakbone",
@@ -5401,7 +5418,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 47
 		},
 		{
 			"name": "Drufi",
@@ -5422,7 +5440,8 @@
 			"alignment": [
 				"N",
 				"E"
-			]
+			],
+			"page": 64
 		},
 		{
 			"name": "Ekene-Afa",
@@ -5449,7 +5468,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 25
 		},
 		{
 			"name": "Faroul",
@@ -5476,7 +5496,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 34
 		},
 		{
 			"name": "Gondolo",
@@ -5510,7 +5531,8 @@
 				"C",
 				"X",
 				"H"
-			]
+			],
+			"page": 34
 		},
 		{
 			"name": "Fenthaza",
@@ -5527,7 +5549,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 113
 		},
 		{
 			"name": "River Mist",
@@ -5544,7 +5567,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 35
 		},
 		{
 			"name": "Flask of Wine",
@@ -5561,7 +5585,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 35
 		},
 		{
 			"name": "Eku",
@@ -5578,7 +5603,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 34
 		},
 		{
 			"name": "Grandfather Zitembe",
@@ -5605,7 +5631,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 20
 		},
 		{
 			"name": "Ifan Talro'a",
@@ -5632,7 +5659,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 25
 		},
 		{
 			"name": "Jessamine",
@@ -5658,7 +5686,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 26
 		},
 		{
 			"name": "Jobal",
@@ -5685,7 +5714,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 26
 		},
 		{
 			"name": "Kupalué",
@@ -5702,7 +5732,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 35
 		},
 		{
 			"name": "Kwayothé",
@@ -5729,7 +5760,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 26
 		},
 		{
 			"name": "Mister Threadneedle",
@@ -5746,7 +5778,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 183
 		},
 		{
 			"name": "Musharib",
@@ -5767,7 +5800,8 @@
 			"alignment": [
 				"L",
 				"G"
-			]
+			],
+			"page": 34
 		},
 		{
 			"name": "Nanny Pu'pu",
@@ -5784,7 +5818,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 72
 		},
 		{
 			"name": "Nepartak",
@@ -5809,7 +5844,8 @@
 			"languageTags": [
 				"C",
 				"TP"
-			]
+			],
+			"page": 137
 		},
 		{
 			"name": "Orvex Ocrammas",
@@ -5843,7 +5879,8 @@
 			"languageTags": [
 				"C",
 				"OTH"
-			]
+			],
+			"page": 96
 		},
 		{
 			"name": "Na",
@@ -5882,7 +5919,8 @@
 			"cr": "0",
 			"languageTags": [
 				"C"
-			]
+			],
+			"page": 228
 		},
 		{
 			"name": "Qawasha",
@@ -5909,7 +5947,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 35
 		},
 		{
 			"name": "Grabstab",
@@ -5926,7 +5965,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 89
 		},
 		{
 			"name": "Salida",
@@ -5953,7 +5993,8 @@
 				"perception": "+3",
 				"stealth": "+3",
 				"survival": "+5"
-			}
+			},
+			"page": 35
 		},
 		{
 			"name": "Sekelok",
@@ -6037,7 +6078,8 @@
 			],
 			"spellcastingTags": [
 				"I"
-			]
+			],
+			"page": 120
 		},
 		{
 			"name": "Shago",
@@ -6069,7 +6111,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 35
 		},
 		{
 			"name": "Skeleton Key",
@@ -6096,7 +6139,7 @@
 				"walk": 30,
 				"climb": 30
 			},
-			"action:": [
+			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
@@ -6112,7 +6155,8 @@
 			],
 			"traitTags": [
 				"Spider Climb"
-			]
+			],
+			"page": 126
 		},
 		{
 			"name": "Syndra Silvane",
@@ -6150,7 +6194,8 @@
 				"D",
 				"E",
 				"H"
-			]
+			],
+			"page": 8
 		},
 		{
 			"name": "Terracotta Warrior",
@@ -6199,7 +6244,8 @@
 			},
 			"damageTags": [
 				"P"
-			]
+			],
+			"page": 161
 		},
 		{
 			"name": "Wakanga O'tamu",
@@ -6226,7 +6272,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 27
 		},
 		{
 			"name": "Wild Dog",
@@ -6242,7 +6289,8 @@
 						"with": "dog"
 					}
 				}
-			}
+			},
+			"page": 96
 		},
 		{
 			"name": "Wine Weird",
@@ -6258,7 +6306,8 @@
 						"with": "wine weird"
 					}
 				}
-			}
+			},
+			"page": 141
 		},
 		{
 			"name": "Yuan-ti Priest",
@@ -6295,7 +6344,8 @@
 			],
 			"miscTags": [
 				"MW"
-			]
+			],
+			"page": 118
 		},
 		{
 			"name": "Zalkoré",
@@ -6312,7 +6362,8 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"page": 79
 		},
 		{
 			"name": "Zebra",
@@ -6320,7 +6371,8 @@
 			"_copy": {
 				"name": "Riding Horse",
 				"source": "MM"
-			}
+			},
+			"page": 106
 		},
 		{
 			"name": "Zhanthi",
@@ -6347,7 +6399,8 @@
 				"tags": [
 					"human"
 				]
-			}
+			},
+			"page": 27
 		}
 	]
 }

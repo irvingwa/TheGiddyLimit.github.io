@@ -29,10 +29,10 @@ class InitiativeTrackerPlayer {
 					.click(() => {
 						// restore original state
 						$wrpClient.remove();
-						$wrpInitial.append($btnConnectRemote).append($btnConnectLocal);
+						view.$wrpInitial.append($btnConnectRemote).append($btnConnectLocal);
 					});
 
-				const $wrpClient = $$`<div class="flex-col full-width">
+				const $wrpClient = $$`<div class="flex-col w-100">
 					<div class="flex-vh-center px-4 mb-2">
 						<span style="min-width: fit-content;" class="mr-2">Server Token</span>
 						${$iptServerToken}
@@ -54,7 +54,7 @@ class InitiativeTrackerPlayer {
 					<div class="flex-vh-center px-4">
 						${$btnCancel}
 					</div>
-				</div>`.appendTo($wrpInitial);
+				</div>`.appendTo(view.$wrpInitial);
 
 				const ui = new InitiativeTrackerPlayerUi(view, $iptServerToken, $btnGenClientToken, $iptClientToken, $cbShortToken);
 				ui.init();
@@ -62,7 +62,7 @@ class InitiativeTrackerPlayer {
 		const $btnConnectLocal = $(`<button class="btn btn-primary" style="min-width: 200px;">Connect to Local Tracker</button>`)
 			.click(() => {
 				const existingTrackers = board.getPanelsByType(PANEL_TYP_INITIATIVE_TRACKER)
-					.map(it => it.tabDatas.filter(td => td.type === PANEL_TYP_INITIATIVE_TRACKER).map(td => td.$content.find(`.dms__data_anchor`)))
+					.map(it => it.tabDatas.filter(td => td.type === PANEL_TYP_INITIATIVE_TRACKER).map(td => td.$content.find(`.dm__data-anchor`)))
 					.flat();
 
 				if (existingTrackers.length) {
@@ -86,28 +86,28 @@ class InitiativeTrackerPlayer {
 
 								// restore original state
 								$btnCancel.remove(); $wrpSel.remove();
-								$wrpInitial.append($btnConnectRemote).append($btnConnectLocal);
+								view.$wrpInitial.append($btnConnectRemote).append($btnConnectLocal);
 							});
 
 						const $wrpSel = $$`<div class="flex-vh-center mb-2">
 							${$selTracker}
 							${$btnOk}
-						</div>`.appendTo($wrpInitial);
+						</div>`.appendTo(view.$wrpInitial);
 
 						const $btnCancel = $(`<button class="btn btn-default btn-xs">Back</button>`)
 							.click(() => {
 								// restore original state
 								$btnCancel.remove(); $wrpSel.remove();
-								$wrpInitial.append($btnConnectRemote).append($btnConnectLocal);
+								view.$wrpInitial.append($btnConnectRemote).append($btnConnectLocal);
 							})
-							.appendTo($wrpInitial);
+							.appendTo(view.$wrpInitial);
 					}
 				} else {
 					JqueryUtil.doToast({content: "No local trackers detected!", type: "warning"});
 				}
 			});
 
-		view.$wrpInitial = $$`<div class="flex-vh-center full-height flex-col">
+		view.$wrpInitial = $$`<div class="flex-vh-center h-100 flex-col dm__panel-bg">
 			${$btnConnectRemote}
 			${$btnConnectLocal}
 		</div>`.appendTo($wrpTracker);
@@ -142,4 +142,5 @@ class InitiativeTrackerPlayerMessageHandlerScreen extends InitiativeTrackerPlaye
 	}
 
 	set $wrpInitial ($wrpInitial) { this._$wrpInitial = $wrpInitial; }
+	get $wrpInitial () { return this._$wrpInitial; }
 }

@@ -18,9 +18,7 @@ async function onJsonLoad (data) {
 		sortFunction: SortUtil.listSort
 	});
 
-	filterBox = await pInitFilterBox(
-		sourceFilter
-	);
+	filterBox = await pInitFilterBox({filters: [sourceFilter]});
 
 	const $outVisibleResults = $(`.lst__wrp-search-visible`);
 	list.on("updated", () => {
@@ -75,12 +73,11 @@ function addShips (data) {
 
 		if (ExcludeUtil.isExcluded(it.name, "ship", it.source)) continue;
 
-		const abvSource = Parser.sourceJsonToAbv(it.source);
 		tempString += `
 			<li class="row" ${FLTR_ID}="${shI}" onclick="ListUtil.toggleSelected(event, this)" oncontextmenu="ListUtil.openContextMenu(event, this)">
 				<a id="${shI}" href="#${UrlUtil.autoEncodeHash(it)}" title="${it.name}">
-					<span class="name col-10">${it.name}</span>
-					<span class="source col-2 text-align-center ${Parser.sourceJsonToColor(abvSource)}" title="${Parser.sourceJsonToFull(it.source)}">${abvSource}</span>
+					<span class="name col-10 pl-0">${it.name}</span>
+					<span class="source col-2 text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${BrewUtil.sourceJsonToStyle(it.source)}>${Parser.sourceJsonToAbv(it.source)}</span>
 					
 					<span class="uniqueid hidden">${it.uniqueId ? it.uniqueId : shI}</span>
 				</a>
@@ -128,22 +125,55 @@ function getSublistItem (it, pinId) {
 	return `
 		<li class="row" ${FLTR_ID}="${pinId}" oncontextmenu="ListUtil.openSubContextMenu(event, this)">
 			<a href="#${UrlUtil.autoEncodeHash(it)}" title="${it.name}">
-				<span class="name col-12">${it.name}</span>
+				<span class="name col-12 px-0">${it.name}</span>
 				<span class="id hidden">${pinId}</span>
 			</a>
 		</li>
 	`;
 }
 
-function loadhash (jsonIndex) {
+function loadHash (jsonIndex) {
 	Renderer.get().setFirstSection(true);
-	const it = shipList[jsonIndex];
+	const ship = shipList[jsonIndex];
 	const $content = $(`#pagecontent`).empty();
-	$content.append(Renderer.ship.getRenderedString(it));
+
+	function buildStatsTab () {
+		$content.append(Renderer.ship.getRenderedString(ship));
+	}
+
+	function buildFluffTab (isImageTab) {
+		return Renderer.utils.buildFluffTab(
+			isImageTab,
+			$content,
+			ship,
+			(fluffJson) => ship.fluff || fluffJson.ship.find(it => it.name === ship.name && it.source === ship.source),
+			`data/fluff-ships.json`,
+			() => true
+		);
+	}
+
+	const statTab = Renderer.utils.tabButton(
+		"Item",
+		() => {},
+		buildStatsTab
+	);
+	const infoTab = Renderer.utils.tabButton(
+		"Info",
+		() => {},
+		buildFluffTab
+	);
+	const picTab = Renderer.utils.tabButton(
+		"Images",
+		() => {},
+		() => buildFluffTab(true)
+	);
+
+	Renderer.utils.bindTabButtons(statTab, infoTab, picTab);
+
 	ListUtil.updateSelected();
 }
 
-function loadsub (sub) {
+function loadSubHash (sub) {
 	sub = filterBox.setFromSubHashes(sub);
 	ListUtil.setFromSubHashes(sub);
 }

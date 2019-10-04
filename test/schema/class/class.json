@@ -1,6 +1,6 @@
 {
-	"$schema": "http://json-schema.org/draft-06/schema#",
-	"version": "1.2.2",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"version": "1.2.3",
 
 	"title": "ClassArray",
 	"type": "object",
@@ -30,7 +30,7 @@
 				"colLabels": {
 					"type": "array",
 					"items": {
-						"anyOf": [{"type": "string"}]
+						"type": "string"
 					}
 				},
 				"rows": {
@@ -38,7 +38,7 @@
 					"items": {
 						"type": "array",
 						"items": {
-							"$ref": "/Entry"
+							"$ref": "entry.json"
 						}
 					}
 				}
@@ -58,7 +58,7 @@
 				"entries": {
 					"type": "array",
 					"items": {
-						"$ref": "/Entry"
+						"$ref": "entry.json"
 					}
 				},
 				"gainSubclassFeature": {
@@ -79,7 +79,7 @@
 				"entries": {
 					"type": "array",
 					"items": {
-						"$ref": "/Entry"
+						"$ref": "entry.json"
 					}
 				}
 			},
@@ -163,6 +163,12 @@
 				},
 				"page": {
 					"type": "integer"
+				},
+				"casterProgression": {
+					"enum": ["full", "1/2", "1/3"]
+				},
+				"spellcastingAbility": {
+					"enum": ["str", "dex", "con", "int", "wis", "cha"]
 				},
 				"subclassFeatures": {
 					"type": "array",
@@ -325,6 +331,12 @@
 					},
 					"additionalProperties": false
 				},
+				"casterProgression": {
+					"enum": ["full", "1/2", "1/3"]
+				},
+				"spellcastingAbility": {
+					"enum": ["str", "dex", "con", "int", "wis", "cha"]
+				},
 				"classFeatures": {
 					"type": "array",
 					"items": {
@@ -353,7 +365,7 @@
 						"properties": {
 							"entries": {
 								"type": "array",
-								"items": {"$ref": "/Entry"}
+								"items": {"$ref": "entry.json"}
 							},
 							"page": {
 								"type": "integer"

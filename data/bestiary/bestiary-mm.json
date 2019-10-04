@@ -492,6 +492,12 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -668,6 +674,9 @@
 				},
 				{
 					"source": "RoT"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -1013,6 +1022,9 @@
 				},
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -1190,6 +1202,11 @@
 				"MW",
 				"RCH",
 				"AOE"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				}
 			]
 		},
 		{
@@ -1386,6 +1403,12 @@
 				},
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "SDW"
 				}
 			]
 		},
@@ -1562,6 +1585,11 @@
 				"MW",
 				"RCH",
 				"AOE"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				}
 			]
 		},
 		{
@@ -1753,6 +1781,11 @@
 				"MW",
 				"RCH",
 				"AOE"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				}
 			]
 		},
 		{
@@ -1928,6 +1961,9 @@
 			"otherSources": [
 				{
 					"source": "RoT"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -2095,6 +2131,9 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -2283,6 +2322,9 @@
 			"otherSources": [
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -2462,6 +2504,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -2597,6 +2645,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -3375,6 +3432,11 @@
 				"MW",
 				"RCH",
 				"AOE"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				}
 			]
 		},
 		{
@@ -3557,6 +3619,11 @@
 				"MW",
 				"RCH",
 				"AOE"
+			],
+			"otherSources": [
+				{
+					"source": "BGDIA"
+				}
 			]
 		},
 		{
@@ -3923,6 +3990,9 @@
 			"otherSources": [
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "DIP"
 				}
 			]
 		},
@@ -4790,6 +4860,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -4870,6 +4946,15 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -5006,6 +5091,9 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -5260,6 +5348,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -5421,15 +5512,15 @@
 							"spells": [
 								"{@spell time stop}"
 							]
-						},
-						"will": [
-							"{@spell disguise self}",
-							"{@spell invisibility}"
-						],
-						"hidden": [
-							"will"
-						]
+						}
 					},
+					"will": [
+						"{@spell disguise self}",
+						"{@spell invisibility}"
+					],
+					"hidden": [
+						"will"
+					],
 					"footerEntries": [
 						"*The archmage casts these spells on itself before combat."
 					],
@@ -5466,6 +5557,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -5616,6 +5713,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -5780,6 +5883,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -5838,6 +5944,9 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -6197,7 +6306,7 @@
 					"name": "Summon Demon (1/Day)",
 					"entries": [
 						"The demon chooses what to summon and attempts a magical summoning.",
-						"A balor has a {@chance 50|50 percent|50% summoning chance} chance of summoning {@dice 1d8} {@creature vrock|mm|vrocks}, {@dice 1d6} {@creature hezrou|mm|hezrous}, {@dice 1d4} {@creature glabrezu|mm|glabrezus}, {@dice 1d3} {@creature nalfeshnee|mm|nalfeshnees}, {@dice 1d2} {@creature marilith|mm|mariliths}, or one {@creature goristro}.",
+						"A balor has a {@chance 50|50 percent|50% summoning chance} chance of summoning {@dice 1d8} {@creature vrock||vrocks}, {@dice 1d6} {@creature hezrou||hezrous}, {@dice 1d4} {@creature glabrezu||glabrezus}, {@dice 1d3} {@creature nalfeshnee||nalfeshnees}, {@dice 1d2} {@creature marilith||mariliths}, or one {@creature goristro}.",
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
@@ -6227,6 +6336,11 @@
 			"miscTags": [
 				"MW",
 				"RCH"
+			],
+			"otherSources": [
+				{
+					"source": "BGDIA"
+				}
 			]
 		},
 		{
@@ -6330,6 +6444,21 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -6457,6 +6586,21 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -6594,6 +6738,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -6751,6 +6904,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -6918,6 +7074,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -6994,6 +7153,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -7213,6 +7375,9 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -7459,6 +7624,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -7674,6 +7842,18 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -7767,6 +7947,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -7989,6 +8172,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -8071,6 +8257,9 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -8152,6 +8341,9 @@
 				},
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -8444,6 +8636,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "DIP"
 				}
 			]
 		},
@@ -8610,6 +8805,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -9162,6 +9366,9 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -9285,6 +9492,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -9627,6 +9837,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -9733,6 +9946,34 @@
 					]
 				}
 			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Demonic Cambions",
+					"entries": [
+						"Few demons consort with mortals, and those with the charm or desire to usually grant their cambion children the Fiendish Charm ability. Cultists of Baphomet and Orcus can also use foul rituals to infuse their master's strength into a young or unborn child, yielding a cult champion who can wield special abilities; a cambion linked to Orcus replaces Fiendish Charm with Spawn of the Grave, and one linked to Baphomet replaces it with Horned One's Call.",
+						{
+							"type": "entries",
+							"name": "Horned One's Call",
+							"entries": [
+								"When the cambion targets only one creature with the attacks of its Multiattack, it can choose one ally it can see within 30 feet. That ally can use its reaction to make one melee attack against a target of its choice."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Spawn of the Grave",
+							"entries": [
+								"At the end of each of the cambion's turns, each undead of its choice that it can see within 30 feet gains 10 temporary hit points, provided the cambion isn't incapacitated.",
+								"In addition, this cambion can use its Innate Spellcasting ability to cast {@spell animate dead} three times per day."
+							]
+						}
+					],
+					"variantSource": {
+						"source": "MTF",
+						"page": 32
+					}
+				}
+			],
 			"page": 36,
 			"spellcasting": [
 				{
@@ -9795,6 +10036,9 @@
 			"otherSources": [
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -9842,6 +10086,11 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				}
 			]
 		},
 		{
@@ -9952,6 +10201,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -10233,6 +10488,12 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
 				}
 			]
 		},
@@ -10373,6 +10634,9 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -10503,6 +10767,9 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -10623,6 +10890,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -10743,6 +11016,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -11117,7 +11393,7 @@
 					"type": "variant",
 					"name": "New Giant Options",
 					"entries": [
-						"Some adult cloud giants have the magical ability to cre­ate barriers of gale-force wind around themselves that can deflect incoming missiles. Others like to fling ene­mies through the air. These abilities are represented by the following action options.",
+						"Some adult cloud giants have the magical ability to create barriers of gale-force wind around themselves that can deflect incoming missiles. Others like to fling enemies through the air. These abilities are represented by the following action options.",
 						{
 							"name": "Fling",
 							"type": "entries",
@@ -11201,6 +11477,9 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -11259,6 +11538,9 @@
 			"otherSources": [
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -11361,6 +11643,21 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -11773,12 +12070,19 @@
 			"senseTags": [
 				"B"
 			],
+			"familiar": true,
 			"miscTags": [
 				"MW"
 			],
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -11812,6 +12116,8 @@
 				"poison"
 			],
 			"conditionImmune": [
+				"charmed",
+				"exhaustion",
 				"poisoned"
 			],
 			"senses": [
@@ -11869,6 +12175,9 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -11947,6 +12256,15 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -12104,6 +12422,21 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -12213,6 +12546,21 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -12309,6 +12657,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -12489,6 +12840,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -12723,12 +13077,6 @@
 			"cr": "17",
 			"trait": [
 				{
-					"name": "Undead Nature",
-					"entries": [
-						"The death knight doesn't require air, food, drink, or sleep."
-					]
-				},
-				{
 					"name": "Magic Resistance",
 					"entries": [
 						"The death knight has advantage on saving throws against spells and other magical effects."
@@ -12842,6 +13190,20 @@
 			"miscTags": [
 				"MW",
 				"AOE"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
+				}
 			]
 		},
 		{
@@ -13029,6 +13391,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -13357,6 +13725,9 @@
 			"otherSources": [
 				{
 					"source": "HotDQ"
+				},
+				{
+					"source": "DIP"
 				}
 			]
 		},
@@ -13444,12 +13815,6 @@
 				"lair": "20"
 			},
 			"trait": [
-				{
-					"name": "Undead Nature",
-					"entries": [
-						"The demilich doesn't require air, food, drink, or sleep. So great is a demilich's will to survive that it always has the maximum number of hit points for its Hit Dice, instead of average hit points."
-					]
-				},
 				{
 					"name": "Avoidance",
 					"entries": [
@@ -13556,6 +13921,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -13796,6 +14164,9 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -14054,6 +14425,9 @@
 			"otherSources": [
 				{
 					"source": "PotA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -14190,6 +14564,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -14247,6 +14624,12 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -14373,6 +14756,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -14480,6 +14866,12 @@
 			"otherSources": [
 				{
 					"source": "CoS"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -14743,7 +15135,7 @@
 							"type": "entries",
 							"entries": [
 								"Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.",
-								"A {@creature drow} wearing a {@item chain shirt +1|dmg|+1 chain shirt} and carrying a {@item shortsword +1|dmg|+1 shortsword} has AC 16 and a +1 bonus on attack and damage rolls with shortsword attacks."
+								"A {@creature drow} wearing a {@item chain shirt +1||+1 chain shirt} and carrying a {@item shortsword +1||+1 shortsword} has AC 16 and a +1 bonus on attack and damage rolls with shortsword attacks."
 							]
 						}
 					]
@@ -14803,6 +15195,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -14911,7 +15312,7 @@
 							"type": "entries",
 							"entries": [
 								"Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.",
-								"A {@creature drow elite warrior} wearing {@item studded leather armor +2|dmg|+2 studded leather} and carrying a {@item shortsword +2|dmg|+2 shortsword} has AC 20 and a +2 bonus on attack and damage rolls with shortsword attacks."
+								"A {@creature drow elite warrior} wearing {@item studded leather armor +2||+2 studded leather} and carrying a {@item shortsword +2||+2 shortsword} has AC 20 and a +2 bonus on attack and damage rolls with shortsword attacks."
 							]
 						}
 					]
@@ -14980,6 +15381,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -15179,6 +15589,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
 				}
 			]
 		},
@@ -15280,7 +15696,7 @@
 							"type": "entries",
 							"entries": [
 								"Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.",
-								"A {@creature drow priestess of lolth} wearing {@item scale mail +3|dmg|+3 scale mail} has AC 19."
+								"A {@creature drow priestess of lolth} wearing {@item scale mail +3||+3 scale mail} has AC 19."
 							]
 						}
 					]
@@ -15398,6 +15814,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -15524,6 +15943,18 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -15655,6 +16086,12 @@
 			"otherSources": [
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -15781,6 +16218,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -16709,6 +17149,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -16861,6 +17304,9 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -17001,6 +17447,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -18259,7 +18711,7 @@
 					"type": "variant",
 					"name": "New Giant Options",
 					"entries": [
-						"Some adult fire giants are trained to lay siege to strong­holds and break through enemy lines. These abilities are represented by the following traits.",
+						"Some adult fire giants are trained to lay siege to strongholds and break through enemy lines. These abilities are represented by the following traits.",
 						{
 							"type": "entries",
 							"name": "Siege Monster",
@@ -18317,6 +18769,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -18609,6 +19064,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -18755,6 +19219,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
 				}
 			]
 		},
@@ -19055,6 +19528,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -19292,7 +19771,7 @@
 					"type": "variant",
 					"name": "New Giant Options",
 					"entries": [
-						"Some adult frost giants are skilled hunters who con­struct and hurl nets weighted down with fragments of metal or bone. This ability is represented by the follow­ing action option.",
+						"Some adult frost giants are skilled hunters who construct and hurl nets weighted down with fragments of metal or bone. This ability is represented by the following action option.",
 						{
 							"name": "Weighted Net",
 							"type": "entries",
@@ -19596,6 +20075,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -19787,6 +20269,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -19897,6 +20382,21 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -20004,7 +20504,7 @@
 					"name": "Possession {@recharge}",
 					"entries": [
 						"One humanoid that the ghost can see within 5 feet of it must succeed on a {@dc 13} Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is {@condition incapacitated} and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being {@condition charmed} and {@condition frightened}. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.",
-						"The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
+						"The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the {@spell dispel evil and good} spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
 					]
 				}
 			],
@@ -20048,6 +20548,24 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -20113,6 +20631,12 @@
 				"urban"
 			],
 			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/188/ghoul.mp3",
+			"altArt": [
+				{
+					"name": "Ghoul",
+					"source": "DIP"
+				}
+			],
 			"languageTags": [
 				"C"
 			],
@@ -20144,6 +20668,21 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -20213,6 +20752,11 @@
 				"MW",
 				"RCH",
 				"RW"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				}
 			]
 		},
 		{
@@ -20454,6 +20998,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -20525,6 +21072,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -20598,6 +21151,15 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -20684,6 +21246,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -20775,6 +21346,12 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -20868,6 +21445,11 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				}
 			]
 		},
 		{
@@ -21140,6 +21722,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -21215,6 +21800,9 @@
 			"otherSources": [
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -21283,6 +21871,12 @@
 			"otherSources": [
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -21382,6 +21976,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -21482,6 +22079,9 @@
 				},
 				{
 					"source": "RoT"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -21652,6 +22252,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -21755,6 +22358,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -21837,6 +22449,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -21908,6 +22523,11 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				}
 			]
 		},
 		{
@@ -21992,6 +22612,18 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "LR"
 				}
 			]
 		},
@@ -22121,6 +22753,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -22212,6 +22853,9 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -22371,6 +23015,9 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -22445,6 +23092,9 @@
 			"otherSources": [
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -22545,6 +23195,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -23236,6 +23889,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -23371,6 +24030,18 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -23478,6 +24149,12 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -23485,7 +24162,7 @@
 			"name": "Gnoll Fang of Yeenoghu",
 			"size": "M",
 			"type": {
-				"type": "humanoid",
+				"type": "fiend",
 				"tags": [
 					"gnoll"
 				]
@@ -23586,6 +24263,11 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"otherSources": [
+				{
+					"source": "BGDIA"
+				}
 			]
 		},
 		{
@@ -23704,6 +24386,12 @@
 			"otherSources": [
 				{
 					"source": "PotA"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -23790,6 +24478,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -23908,6 +24602,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -24031,6 +24731,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -24242,6 +24948,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -24473,7 +25185,7 @@
 					"type": "variant",
 					"name": "Psychic Gray Ooze",
 					"entries": [
-						"A gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability. Such occurrences are more common in gray oozes that live near psioncic creatures such as {@creature mind flayer|mm|mind flayers}, suggesting that the ooze can sense and mimic psionic ability.",
+						"A gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability. Such occurrences are more common in gray oozes that live near psioncic creatures such as {@creature mind flayer||mind flayers}, suggesting that the ooze can sense and mimic psionic ability.",
 						"A psionic gray ooze has an intelligence score of 6 (-2), as well as the following additional action.",
 						{
 							"type": "entries",
@@ -24517,6 +25229,9 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -25006,6 +25721,9 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -25612,6 +26330,9 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -25808,6 +26529,21 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -25977,6 +26713,9 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -26274,6 +27013,9 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -26387,6 +27129,12 @@
 			"otherSources": [
 				{
 					"source": "RoT"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -26476,6 +27224,12 @@
 				},
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
 				}
 			]
 		},
@@ -26537,6 +27291,9 @@
 			"otherSources": [
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -26658,6 +27415,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -26795,6 +27558,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -26942,6 +27708,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -27054,6 +27823,9 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -27257,6 +28029,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -27378,6 +28156,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -27515,6 +28296,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -27590,6 +28374,9 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -27836,6 +28623,9 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -27872,7 +28662,7 @@
 				"perception": "+2"
 			},
 			"senses": [
-				"darkvision 30 ft."
+				"blindsight 30 ft."
 			],
 			"passive": 12,
 			"cr": "2",
@@ -27907,7 +28697,7 @@
 				"Water Breathing"
 			],
 			"senseTags": [
-				"D"
+				"B"
 			],
 			"damageTags": [
 				"P"
@@ -27927,6 +28717,12 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
 				}
 			]
 		},
@@ -28043,6 +28839,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -28280,6 +29085,11 @@
 			"miscTags": [
 				"MW",
 				"RCH"
+			],
+			"otherSources": [
+				{
+					"source": "BGDIA"
+				}
 			]
 		},
 		{
@@ -28511,7 +29321,7 @@
 				{
 					"name": "Sting (Bite in Beast Form)",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, and the target must make on a {@dc 11} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one."
 					]
 				},
 				{
@@ -28571,6 +29381,12 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -28713,6 +29529,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -28966,6 +29785,18 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -29112,6 +29943,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -29181,6 +30015,11 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				}
 			]
 		},
 		{
@@ -29298,6 +30137,12 @@
 			"otherSources": [
 				{
 					"source": "PotA"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -29399,6 +30244,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -29488,6 +30336,9 @@
 			"otherSources": [
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -29619,6 +30470,18 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -29740,6 +30603,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -29924,6 +30793,14 @@
 				"MW",
 				"RCH",
 				"AOE"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "SLW"
+				}
 			]
 		},
 		{
@@ -30063,6 +30940,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -30378,6 +31258,9 @@
 			"otherSources": [
 				{
 					"source": "PotA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -30536,6 +31419,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -30657,6 +31543,11 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				}
 			]
 		},
 		{
@@ -30752,6 +31643,9 @@
 			"otherSources": [
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -31000,6 +31894,9 @@
 			"otherSources": [
 				{
 					"source": "CoS"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -31283,6 +32180,9 @@
 			"otherSources": [
 				{
 					"source": "PotA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -31537,6 +32437,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -31687,6 +32596,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -31841,6 +32753,24 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -31983,6 +32913,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -32086,6 +33019,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -32238,6 +33174,12 @@
 			"otherSources": [
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -32355,6 +33297,18 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -32533,6 +33487,15 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -32699,6 +33662,12 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -32775,6 +33744,9 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -32884,6 +33856,12 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -32966,6 +33944,9 @@
 			"otherSources": [
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -33085,6 +34066,9 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -33276,6 +34260,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -33399,6 +34386,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -33851,6 +34844,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -33955,6 +34951,18 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -34055,6 +35063,9 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -34171,6 +35182,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -34241,6 +35255,9 @@
 				},
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -34359,6 +35376,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -34722,6 +35745,9 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -34869,6 +35895,9 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -35106,6 +36135,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -35170,6 +36202,12 @@
 				"forest"
 			],
 			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/353/needle-blight.mp3",
+			"altArt": [
+				{
+					"name": "Needle Blight",
+					"source": "DIP"
+				}
+			],
 			"languageTags": [
 				"C",
 				"CS"
@@ -35187,6 +36225,9 @@
 			"otherSources": [
 				{
 					"source": "CoS"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -35418,6 +36459,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -35505,6 +36552,11 @@
 			"miscTags": [
 				"MW",
 				"AOE"
+			],
+			"otherSources": [
+				{
+					"source": "BGDIA"
+				}
 			]
 		},
 		{
@@ -35608,6 +36660,18 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -35728,6 +36792,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -35917,6 +36984,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -36026,6 +37096,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -36117,6 +37196,9 @@
 			"otherSources": [
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -36220,6 +37302,18 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -36309,6 +37403,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
 				}
 			]
 		},
@@ -36466,6 +37569,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -36592,6 +37698,12 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
 				}
 			]
 		},
@@ -36875,6 +37987,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -37001,6 +38116,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -37305,6 +38423,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
 				}
 			]
 		},
@@ -37700,6 +38827,9 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -37796,6 +38926,15 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
 				}
 			]
 		},
@@ -38066,6 +39205,9 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -38159,6 +39301,11 @@
 			],
 			"spellcastingTags": [
 				"I"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				}
 			]
 		},
 		{
@@ -38316,6 +39463,11 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"otherSources": [
+				{
+					"source": "BGDIA"
+				}
 			]
 		},
 		{
@@ -38390,6 +39542,9 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -38457,6 +39612,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -38877,6 +40035,24 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -39008,6 +40184,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -39082,6 +40261,9 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -39743,6 +40925,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -39818,6 +41003,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -39964,6 +41152,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -40037,6 +41228,12 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -40194,6 +41391,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -40320,6 +41520,9 @@
 			"otherSources": [
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -40403,6 +41606,9 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -40499,6 +41705,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -40785,6 +41994,12 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -40886,6 +42101,15 @@
 				},
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
 				}
 			]
 		},
@@ -41116,6 +42340,18 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -41408,6 +42644,18 @@
 			"otherSources": [
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -41540,6 +42788,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -41698,6 +42949,15 @@
 			"otherSources": [
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -41826,6 +43086,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -42255,6 +43518,24 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -42446,6 +43727,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -42617,6 +43907,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -42764,6 +44060,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -42881,6 +44180,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -43017,6 +44322,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -43084,6 +44395,9 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -43298,6 +44612,21 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -43709,6 +45038,11 @@
 				"RW",
 				"RNG",
 				"AOE"
+			],
+			"otherSources": [
+				{
+					"source": "BGDIA"
+				}
 			]
 		},
 		{
@@ -43964,6 +45298,21 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -44201,6 +45550,9 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -44357,6 +45709,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -44450,6 +45805,12 @@
 				},
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -44576,6 +45937,18 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -44795,6 +46168,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -45080,6 +46462,18 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -45178,12 +46572,12 @@
 					"type": "variant",
 					"name": "New Giant Options",
 					"entries": [
-						"Some adult storm giants can channel thunderous power through their bodies and release it with a deafening stomp. This ability is represented by the following ac­ tion option.",
+						"Some adult storm giants can channel thunderous power through their bodies and release it with a deafening stomp. This ability is represented by the following action option.",
 						{
 							"type": "entries",
-							"name": "Thunderous Stomp (Recharge 6)",
+							"name": "Thunderous Stomp {@recharge}",
 							"entries": [
-								"The storm giant stomps the ground, triggering a thunderclap. All other creatures within 15 feet of the giant must succeed on a {@dc 17} Constitution saving throw or take 33 ({@damage 6d10}) thunder damage and be {@condition deafened} until the start of the giant's next turn. On a successful save, a crea­ture takes half as much damage and isn't {@condition deafened}. The thun­derclap can be heard out to a range of 1,200 feet."
+								"The storm giant stomps the ground, triggering a thunderclap. All other creatures within 15 feet of the giant must succeed on a {@dc 17} Constitution saving throw or take 33 ({@damage 6d10}) thunder damage and be {@condition deafened} until the start of the giant's next turn. On a successful save, a creature takes half as much damage and isn't {@condition deafened}. The thunderclap can be heard out to a range of 1,200 feet."
 							]
 						}
 					],
@@ -45249,6 +46643,9 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -45397,6 +46794,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -45806,6 +47206,12 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -45901,6 +47307,12 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
 				}
 			]
 		},
@@ -46006,6 +47418,18 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "LR"
 				}
 			]
 		},
@@ -46111,6 +47535,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -46198,6 +47628,12 @@
 				},
 				{
 					"source": "RoT"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
 				}
 			]
 		},
@@ -46321,6 +47757,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
 				}
 			]
 		},
@@ -46418,6 +47863,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -46876,6 +48324,18 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -46969,6 +48429,9 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -47091,6 +48554,12 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -47180,6 +48649,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -47458,6 +48930,10 @@
 				{
 					"name": "Warren Troglodyte",
 					"source": "WDMM"
+				},
+				{
+					"name": "Troglodyte",
+					"source": "HftT"
 				}
 			],
 			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/571/troglodyte.mp3",
@@ -47667,6 +49143,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -47739,6 +49221,12 @@
 				"forest"
 			],
 			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/498/twig-blight.mp3",
+			"altArt": [
+				{
+					"name": "Twig Blight",
+					"source": "DIP"
+				}
+			],
 			"traitTags": [
 				"False Appearance"
 			],
@@ -47764,6 +49252,9 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -48035,6 +49526,9 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -48316,6 +49810,14 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
+				}
 			]
 		},
 		{
@@ -48455,7 +49957,7 @@
 				{
 					"name": "Children of the Night (1/Day)",
 					"entries": [
-						"The vampire magically calls {@dice 2d4} swarms of {@creature swarm of bats|mm|bats} or {@creature swarm of rats|mm|rats}, provided that the sun isn't up. While outdoors, the vampire can call {@dice 3d6} {@creature wolf|mm|wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
+						"The vampire magically calls {@dice 2d4} swarms of {@creature swarm of bats||bats} or {@creature swarm of rats||rats}, provided that the sun isn't up. While outdoors, the vampire can call {@dice 3d6} {@creature wolf||wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
 					]
 				}
 			],
@@ -48523,6 +50025,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -48669,6 +50177,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -48809,7 +50326,7 @@
 				{
 					"name": "Children of the Night (1/Day)",
 					"entries": [
-						"The vampire magically calls {@dice 2d4} swarms of {@creature swarm of bats|mm|bats} or {@creature swarm of rats|mm|rats}, provided that the sun isn't up. While outdoors, the vampire can call {@dice 3d6} {@creature wolf|mm|wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
+						"The vampire magically calls {@dice 2d4} swarms of {@creature swarm of bats||bats} or {@creature swarm of rats||rats}, provided that the sun isn't up. While outdoors, the vampire can call {@dice 3d6} {@creature wolf||wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
 					]
 				}
 			],
@@ -49072,7 +50589,7 @@
 				{
 					"name": "Children of the Night (1/Day)",
 					"entries": [
-						"The vampire magically calls {@dice 2d4} swarms of {@creature swarm of bats|mm|bats} or {@creature swarm of rats|mm|rats}, provided that the sun isn't up. While outdoors, the vampire can call {@dice 3d6} {@creature wolf|mm|wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
+						"The vampire magically calls {@dice 2d4} swarms of {@creature swarm of bats||bats} or {@creature swarm of rats||rats}, provided that the sun isn't up. While outdoors, the vampire can call {@dice 3d6} {@creature wolf||wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
 					]
 				}
 			],
@@ -49238,6 +50755,24 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -49313,6 +50848,12 @@
 				"forest"
 			],
 			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/513/vine-blight.mp3",
+			"altArt": [
+				{
+					"name": "Vine Blight",
+					"source": "DIP"
+				}
+			],
 			"traitTags": [
 				"False Appearance"
 			],
@@ -49333,6 +50874,9 @@
 			"otherSources": [
 				{
 					"source": "CoS"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -49419,6 +50963,9 @@
 				},
 				{
 					"source": "PotA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -49578,6 +51125,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -49656,6 +51209,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -49777,6 +51333,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -49981,6 +51540,18 @@
 				},
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -50087,6 +51658,12 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -50213,7 +51790,7 @@
 				{
 					"name": "Shapechanger",
 					"entries": [
-						"The werebear can use its action to polymorph into a Large bear-humanoid hybrid or into a Large bear, or back into its true form, which is humanoid. Its statistics, other than its size and AC, are the same in each form. Any equipment it. is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+						"The werebear can use its action to polymorph into a Large bear-humanoid hybrid or into a Large bear, or back into its true form, which is humanoid. Its statistics, other than its size and AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
 					]
 				},
 				{
@@ -50282,6 +51859,11 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"otherSources": [
+				{
+					"source": "GoS"
+				}
 			]
 		},
 		{
@@ -50420,6 +52002,15 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -50560,6 +52151,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -50860,6 +52460,12 @@
 				},
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -51098,6 +52704,18 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -51245,6 +52863,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -51354,6 +52981,9 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -51561,6 +53191,9 @@
 				},
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -51786,6 +53419,24 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -51886,6 +53537,15 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -52444,6 +54104,12 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -52565,6 +54231,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -52838,6 +54507,9 @@
 			"otherSources": [
 				{
 					"source": "WDH"
+				},
+				{
+					"source": "GoS"
 				}
 			]
 		},
@@ -53243,6 +54915,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		},
@@ -53838,6 +55513,9 @@
 				},
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "DIP"
 				}
 			]
 		},
@@ -54007,6 +55685,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
 				}
 			]
 		},
@@ -54746,6 +56430,24 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "GoS"
+				},
+				{
+					"source": "DC"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "SDW"
+				},
+				{
+					"source": "BGDIA"
 				}
 			]
 		}
